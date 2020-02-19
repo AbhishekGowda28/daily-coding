@@ -1,90 +1,51 @@
 // @ts-check
 
 import { square } from './models.js';
+import { Camera } from './camera.js';
+import { setUpCanvas } from './canvas.js';
+import { drawPolygon, toMesh } from './geometry.js';
 
-function setUpCanvas() {
-    const canvas = document.querySelector("canvas");
-    const context = canvas.getContext("2d");
-    context.strokeStyle = "#fff";
-    return context;
-}
-
-/**
- * @param {number[]} values
- */
-function toPoint(values) {
-    return {
-        x: values[0],
-        y: values[1],
-        z: values[2]
-    };
-}
-
-/**
- * 
- * @param {number[][]} points 
- */
-function toPolygon(points) {
-    return points.map(toPoint);
-}
-
-/**
- * 
- * @param {number[][][]} shape 
- */
-function toMesh(shape) {
-    return shape.map(toPolygon);
-}
-
-/**
- * @param {{ x: number; y: number; z: number; }[]} shape
- * @param {CanvasRenderingContext2D} context
- */
-function drawPolygon(shape, context) {
-    shape.forEach(point => {
-        offsetToCenter(point, context.canvas);
-    });
-    context.beginPath();
-
-    const first = shape[0];
-    context.moveTo(first.x, first.y);
-    shape.forEach(point => {
-        context.lineTo(point.x, point.y);
-    });
-    context.lineTo(first.x, first.y);
-    context.stroke();
-
-}
-
-/**
- * @param {{ x: number; y: number; z: number; }} point
- * @param {HTMLCanvasElement} canvas
- */
-function offsetToCenter(point, canvas) {
-    point.x += canvas.width / 2;
-    point.y += canvas.height / 2;
-}
-
-
-/**
- * @param {{ x: number; y: number; z: number; }} point
- * @param {number} distance
- */
-function persepective(point, distance) {
-    const focal = point.z + distance;
-    point.x /= focal;
-    point.z /= focal;
-}
-
-
+const camera = new Camera();
 const mesh = toMesh(square);
+
+const position = { x: 0, y: 0, z: 0 };
+
 const canvas = setUpCanvas();
 
-mesh.forEach(shape => {
-    shape.forEach(point => {
-        window.console.log("before", point);
-        persepective(point, 50);
-        window.console.log("after", point);
+
+function offSet(point, position) {
+    point.x += position.x;
+    point.y += position.y;
+    point.z += position.z;
+}
+
+/**
+ * @param {{ x: number; y: number; z: number; }} point
+ */
+function movePoints(point) {
+    point.x += 0.1;
+    point.y += 0.1;
+    point.z += 0.1;
+}
+
+function drawMesh(mesh) {
+    mesh.forEach(shape => {
+        const drawnShape = shape.map(point => ({ ...point }));
+        drawnShape.forEach(point => {
+            offSet(point, position);
+            camera.transform(point);
+            // movePoints(point);
+        });
+        drawPolygon(drawnShape, canvas);
     });
-    drawPolygon(shape, canvas);
-});
+}
+
+function animate() {
+    canvas.clearRect(0, 0, canvas.canvas.width, canvas.canvas.height);
+    position.x += 0.1;
+    camera.distance.z += 10;
+    drawMesh(mesh);
+    requestAnimationFrame(animate);
+}
+
+animate();
