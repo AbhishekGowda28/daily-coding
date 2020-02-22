@@ -1,7 +1,7 @@
 class Camera {
     constructor() {
-        this.distance = { z: 100 };
-        this.zoomFactor = 7; 
+        this.distance = { z: 90 };
+        this.zoomFactor = 8; 
     }
 
     /**

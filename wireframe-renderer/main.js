@@ -5,14 +5,16 @@ import { Camera } from './camera.js';
 import { setUpCanvas } from './canvas.js';
 import { drawPolygon, toMesh } from './geometry.js';
 
-const camera = new Camera();
+const canvas = setUpCanvas();
 const mesh = toMesh(square);
+const camera = new Camera();
 
 const position = { x: 0, y: 0, z: 0 };
 
-const canvas = setUpCanvas();
-
-
+/**
+ * @param {{ x: number; y: number; z: number; }} point
+ * @param {{ x: number; y: number; z: number; }} position
+ */
 function offSet(point, position) {
     point.x += position.x;
     point.y += position.y;
@@ -28,24 +30,27 @@ function movePoints(point) {
     point.z += 0.1;
 }
 
+/**
+ * @param {{x: number; y: number; z: number;}[][]} mesh
+ */
 function drawMesh(mesh) {
     mesh.forEach(shape => {
-        const drawnShape = shape.map(point => ({ ...point }));
-        drawnShape.forEach(point => {
+        const shapeCopy = shape.map(point => ({ ...point }));
+        shapeCopy.forEach(point => {
             offSet(point, position);
             camera.transform(point);
-            // movePoints(point);
         });
-        drawPolygon(drawnShape, canvas);
+        drawPolygon(shapeCopy, canvas);
     });
 }
 
-function animate() {
+function animate(time) {
     canvas.clearRect(0, 0, canvas.canvas.width, canvas.canvas.height);
-    position.x += 0.1;
-    camera.distance.z += 10;
+    position.x += Math.sin(time / 1000);
+    position.y += Math.sin(time / 750);
+    camera.distance.z += 0.1;
     drawMesh(mesh);
     requestAnimationFrame(animate);
 }
 
-animate();
+animate(0);
