@@ -40,4 +40,27 @@ A non-empty array of integers, sorted in ascending order.
 
 - **[output] integer**
 
+## or the same problem can be interpreated as 
+---
+> absoluteValuesSumMinization
+---
+Given an array of integers a, find the median of the array.
+
+**Example**
+
+For a = [2, 4, 7], the output should be
+median(a) = 4.
+
+For a = [2, 4, 7, 6], the output should be
+median(a) = 4.
+
+For a = [2, 4, 7, 6, 6], the output should be
+median(a) = 7.
+
+For a = [2, 4, 7, 6, 6, 8], the output should be
+median(a) = 7.
+
+---
+
+
 ---
