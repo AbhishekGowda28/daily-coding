@@ -1,4 +1,4 @@
-# Day-1:
+# Problem - 1:
 ---
 > absoluteValuesSumMinization
 ---
@@ -29,6 +29,13 @@ For a = [2, 4, 7, 6, 6, 8], the output should be
 median(a) = 7.
 
 ---
+# Problem - 2:
+1. Write a function that returns the sum of two numbers.
+2. Write a function that returns the sum of all numbers regardless of number of params.
 
+**Example**
+
+For param1 = 1 and param2 = 2, the output should be
+add(param1, param2) = 3.
 
 ---
