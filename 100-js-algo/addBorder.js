@@ -1,19 +1,16 @@
 function addBorder(picture) {
-    const borderLength = picture.length > 0 ? picture[0].length : 0;
+    const borderLength = picture.length > 0 ? picture[0].length + 2 : 2;
     const borderedPicture = [];
+    const border = "*".repeat(borderLength);
 
-    if (borderLength > 0) {
-        const border = "*".repeat(borderLength);
+    borderedPicture.push(border);
 
-        borderedPicture.push(border);
+    picture.forEach(str => {
+        borderedPicture.push(`*${str}*`);
+    });
 
-        picture.forEach(str => {
-            borderedPicture.push(`*${str}*`);
-        });
-
-        borderedPicture.push(border);
-    }
-
+    borderedPicture.push(border);
+    
     return borderedPicture;
 }
 
