@@ -1,0 +1,11 @@
+{
+  "name": "100-js-algo",
+  "version": "1.0.0",
+  "description": "100 Algorithm challenge",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhishek Gowda",
+  "license": "GPL-3.0"
+}
