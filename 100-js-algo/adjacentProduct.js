@@ -1,19 +1,32 @@
+// @ts-check
+
+/**
+ * @param {number[]} matrix
+ */
 function adjacentProduct(matrix) {
-    let maxAdjcentProduct = 0;
-    let currentProduct = 1;
-    matrix.forEach((s, i) => {
-        if (i === 0) {
-            currentProduct = s;
-        } else {
-            currentProduct = matrix[i - 1] * s
-        }
-        if (currentProduct >= maxAdjcentProduct) {
-            maxAdjcentProduct = currentProduct;
+    let product = 1;
+    matrix.forEach((ele, index) => {
+        if (index < matrix.length) {
+            const adjProduct = ele * matrix[index + 1];
+            if (adjProduct > product) {
+                product = adjProduct;
+            }
         }
     });
-    return maxAdjcentProduct;
+
+    // using reduce
+    const last = matrix.reduce((totalProd, element, index) => {
+        const product = element * matrix[index + 1];
+        if (product > totalProd) {
+            return product;
+        }
+        return totalProd;
+    }, 1);
+    last;
+    product;
+    return product;
 }
 
-adjacentProduct([5, 2, -1, 15, 1, 0, 30, -1]);
 adjacentProduct([]);
+adjacentProduct([1, 2, 3, 4]);
 adjacentProduct([3, 6, -2, -5, 7, 3]);
