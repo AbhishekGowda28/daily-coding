@@ -11,9 +11,9 @@ function adjacentProduct(matrix) {
     }, initalValue);
 }
 
-console.log(adjacentProduct([]))
-console.log(adjacentProduct([1]));
-console.log(adjacentProduct([1, -1, 2]))
-console.log(adjacentProduct([1, -2]));
-console.log(adjacentProduct([1, 2, 3, 4]));
-console.log(adjacentProduct([3, 6, -2, -5, 7, 3]));
+adjacentProduct([])
+adjacentProduct([1]);
+adjacentProduct([1, -1, 2])
+adjacentProduct([1, -2]);
+adjacentProduct([1, 2, 3, 4]);
+adjacentProduct([3, 6, -2, -5, 7, 3]);
