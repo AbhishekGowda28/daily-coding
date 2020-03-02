@@ -1,16 +1,16 @@
 function longestString(stringArray) {
-    const allString = [];
-    const length = stringArray.reduce((largLen, str) => {
-        return largLen < str.length ? str.length : largLen;
-    }, 0);
+    let allLongestString = [];
     stringArray.forEach(str => {
-        if (str.length === length) {
-            allString.push(str);
+        const currentLongestString = allLongestString.length > 0 ?
+            allLongestString[0] : "";
+        if (str.length > currentLongestString.length) {
+            allLongestString = [str];
+        } else if (str.length === currentLongestString.length) {
+            allLongestString.push(str);
         }
     });
-    allString;
 
-    return allString;
+    return allLongestString;
 }
 
 longestString(["aba", "aa", "ad", "vcd", "aba"]);
