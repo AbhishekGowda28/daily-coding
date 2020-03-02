@@ -1,17 +1,18 @@
 function addBorder(picture) {
-    const borderLength = picture.length > 0 ? picture[0].length + 2 : 2;
-    const border = "*".repeat(borderLength);
-    const borderedPicture = [border];
+	const borderLength = picture.length > 0 ? 
+		picture[0].length + 2 : 2;
+	const border = "*".repeat(borderLength);
+	const borderedPicture = [border];
 
-    picture.forEach(str => {
-        borderedPicture.push(`*${str}*`);
-    });
+	picture.forEach(str => {
+		borderedPicture.push(`*${str}*`);
+	});
 
-    borderedPicture.push(border);
+	borderedPicture.push(border);
 
-    return borderedPicture;
+	return borderedPicture;
 }
 
 addBorder(["abc", "def"]);
-addBorder(['']);
+addBorder([""]);
 addBorder([]);

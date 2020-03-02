@@ -1,18 +1,20 @@
 function add() {
-    let argumentsLength = arguments.length;
-    let sum = 0;
-    while (argumentsLength > 0) {
-        sum += arguments[--argumentsLength];
-    }
-    return sum;
+	let argumentsLength = arguments.length;
+	let sum = 0;
+	while (argumentsLength > 0) {
+		sum += arguments[--argumentsLength];
+	}
+	
+	return sum;
 }
 
 function addWithSpreadOperator(...params) {
-    let sum = 0;
-    params.forEach(element => {
-        sum += element;
-    });
-    return sum;
+	let sum = 0;
+	params.forEach(element => {
+		sum += element;
+	});
+	
+	return sum;
 }
 
 add();
