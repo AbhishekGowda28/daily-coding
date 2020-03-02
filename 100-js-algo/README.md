@@ -1,7 +1,8 @@
 # Problem - 1:
----
-> absoluteValuesSumMinization
----
+
+absoluteValuesSumMinization
+
+Example: 
 Given a sorted array of integers a, find an integer x from a such that the value of
 
     abs(a[0] - x) + abs(a[1] - x) + ... + abs(a[a.length - 1] - x)
@@ -9,13 +10,12 @@ is the smallest possible (here abs denotes the absolute value).
 If there are several possible answers, output the smallest one.
 
 ## or the same problem can be interpreated as 
----
-> median
----
+
+median
+
 Given an array of integers a, find the median of the array.
 
-**Example**
-
+Example :
 For a = [2, 4, 7], the output should be
 median(a) = 4.
 
@@ -33,8 +33,7 @@ median(a) = 7.
 1. Write a function that returns the sum of two numbers.
 2. Write a function that returns the sum of all numbers regardless of number of params.
 
-**Example**
-
+Example :
 For param1 = 1 and param2 = 2, the output should be
 add(param1, param2) = 3.
 
@@ -42,8 +41,7 @@ add(param1, param2) = 3.
 ### Problem - 3
 Given a rectangular matrix of characters, add a border of asterisks(*) to it.
 
-**Example**
-
+Example :
 For
 
     picture =   [
@@ -66,9 +64,20 @@ You are given a two-digit integer n. Return the sum of its digits.
 
 ---
 # Problem - 5
+
 Given an array of integers, find the pair of adjacent elements that has the largest product and return that product.
 
 Example: 
 For inputArray = [3, 6, -2, -5, 7, 3], the output should be
  adjacentElementsProduct(inputArray) = 21.
  7 and 3 produce the largest product.
+
+---
+# Problem - 6
+
+Given an array of strings, return another array containing all of its longest strings.
+
+Example :
+For inputArray = ["aba", "aa", "ad", "vcd", "aba"], the output should be allLongestStrings(inputArray) = ["aba", "vcd", "aba"].
+
+---
