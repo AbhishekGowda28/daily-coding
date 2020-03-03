@@ -4,7 +4,7 @@ function summation(array, element) {
 	array.forEach((e) => {
 		sum += Math.abs(e - element);
 	});
-	
+
 	return sum;
 }
 
@@ -21,18 +21,18 @@ function absoluteValuesSumMinization(arr) {
 		smallest;
 	});
 	returnValue;
-	
+
 	return returnValue;
 }
 
 function median(array) {
 	array.sort((a, b) => {
-		return a - b; 
+		return a - b;
 	});
 	const evenArray = array.length % 2;
-	
-	return evenArray === 0 ? 
-		array[Math.floor(array.length / 2) - 1] : 
+
+	return evenArray === 0 ?
+		array[Math.floor(array.length / 2) - 1] :
 		array[Math.floor(array.length / 2)];
 }
 
@@ -52,3 +52,5 @@ absoluteValuesSumMinization([-1000000, -10000, -10000, -1000, -100, -10, -1, 0, 
 median([-1000000, -10000, -10000, -1000, -100, -10, -1, 0, 1, 10, 100, 1000, 10000, 100000, 1000000]);
 absoluteValuesSumMinization([2, 4, 6, 6, 7]);
 median([2, 4, 6, 6, 7]);
+
+export { median, absoluteValuesSumMinization };

@@ -28,7 +28,7 @@
         ],
         "max-len": [
             "error",
-            70
+            85
         ],
         "max-lines": [
             "warn",

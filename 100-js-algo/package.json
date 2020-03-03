@@ -4,7 +4,7 @@
   "description": "100 Algorithm challenge",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Abhishek Gowda",
   "license": "GPL-3.0",
