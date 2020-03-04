@@ -4,8 +4,9 @@ function add() {
 	while (argumentsLength > 0) {
 		sum += arguments[--argumentsLength];
 	}
-	
-	return sum;
+
+	// sum was returned as string
+	return Number(sum); 
 }
 
 function addWithSpreadOperator(...params) {
@@ -13,15 +14,11 @@ function addWithSpreadOperator(...params) {
 	params.forEach(element => {
 		sum += element;
 	});
-	
-	return sum;
+
+	return Number(sum);
 }
 
-add();
-addWithSpreadOperator();
-add(4);
-addWithSpreadOperator(4);
-add(15, 32);
-addWithSpreadOperator(15, 32);
-add(1, 3, 15, 8);
-addWithSpreadOperator(1, 3, 15, 8);
+module.exports = {
+	add,
+	addWithSpreadOperator
+}
