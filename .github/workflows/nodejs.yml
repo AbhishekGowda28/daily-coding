@@ -12,8 +12,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
+    - name: Rename project directory
+      run: mv "./100-js-algo" "100DaysChallenge"
     - name: Change to project directory
-      run: cd "./100-js-algo"
+      run: cd "./100DaysChallenge"
     - name: Install node modules
       run: npm install
     - name: Run test
