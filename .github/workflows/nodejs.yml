@@ -1,12 +1,6 @@
 name: Node.js CI
 
-# on: [push, pull_request]
-on: 
-  push:
-    branches: 
-      - master
-    paths: 
-      - '100-js-algo/*'
+on: [push, pull_request]
 
 jobs:
   build:
