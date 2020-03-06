@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Run Test
+    - name: Run Test in 100-js-algo
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
