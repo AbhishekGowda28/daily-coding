@@ -1,5 +1,5 @@
 const expect = require("expect");
-const { add, addWithSpreadOperator } = require("./add");
+const { add, addWithSpreadOperator } = require("../add");
 
 describe("Problem 2", () => {
     test("Add ", () => {

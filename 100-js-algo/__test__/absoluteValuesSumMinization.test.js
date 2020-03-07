@@ -1,5 +1,5 @@
 const expect = require("expect");
-const { absoluteValuesSumMinization, median } = require("./absoluteValuesSumMinization");
+const { absoluteValuesSumMinization, median } = require("../absoluteValuesSumMinization");
 
 describe("Absolute Values SumMinization", () => {
 
