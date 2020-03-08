@@ -1,3 +1,5 @@
+const { checkForElementInArray } = require("./utils");
+
 function increasingSequence(input) {
   const sequence = input.map((element, index) => {
 
@@ -7,7 +9,9 @@ function increasingSequence(input) {
     return checkIncreasingSequence(clone);
   });
 
-  return !sequence.includes(false);
+  const notIncreasingSequence = checkForElementInArray(sequence, false);
+
+  return !notIncreasingSequence;
 }
 
 function checkIncreasingSequence(array) {
@@ -28,6 +32,3 @@ module.exports = {
   increasingSequence,
   checkIncreasingSequence
 };
-
-console.log(increasingSequence([1, 2, 3, 2]));
-console.log(increasingSequence([1, 2, 3]));

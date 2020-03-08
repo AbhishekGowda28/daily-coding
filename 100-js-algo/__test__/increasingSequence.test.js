@@ -1,5 +1,5 @@
 const expect = require("expect");
-const { checkIncreasingSequence } = require("../increasingSequence");
+const { checkIncreasingSequence, increasingSequence } = require("../increasingSequence");
 
 describe("Check for increaing sequence", () => {
     test("Empty array", () => {
@@ -25,5 +25,18 @@ describe("Check for increaing sequence", () => {
     test("decreasing order of element", () => {
         const input = [5, 4, 3, 2, 1];
         expect(checkIncreasingSequence(input)).toBeFalsy();
+    });
+});
+
+describe("Almost increasing sequence", () => {
+    test("Not an increasing sequence", () => {
+        const input = [1, 2, 3, 2];
+        const output = increasingSequence(input);
+        expect(output).toBeFalsy();
+    });
+    test("An increasing sequence", () => {
+        const input = [1, 2, 3];
+        const output = increasingSequence(input);
+        expect(output).toBeTruthy();
     });
 });
