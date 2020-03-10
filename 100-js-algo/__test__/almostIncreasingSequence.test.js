@@ -39,4 +39,25 @@ describe("Almost increasing sequence", () => {
         const output = increasingSequence(input);
         expect(output).toBeTruthy();
     });
+    test("Random sequence", () => {
+        // eslint-disable-next-line no-debugger
+        debugger;
+        const input = [1, 3, 2, 1];
+        const output = increasingSequence(input);
+        expect(output).toBeFalsy();
+    });
+    test("Descreasing sequence", () => {
+        // eslint-disable-next-line no-debugger
+        debugger;
+        const input = [5, 4, 3, 2, 1];
+        const output = increasingSequence(input);
+        expect(output).toBeFalsy();
+    });
+    test("Descreasing sequence", () => {
+        // eslint-disable-next-line no-debugger
+        debugger;
+        const input = [5, 4, 3, 6, 2, 1];
+        const output = increasingSequence(input);
+        expect(output).toBeFalsy();
+    });
 });

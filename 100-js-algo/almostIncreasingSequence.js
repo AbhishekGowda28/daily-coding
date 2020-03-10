@@ -1,13 +1,13 @@
 const { checkForElementInArray } = require("./utils");
 
 function increasingSequence(input) {
-  const sequence = input.map((element, index) => {
-
+  const sequence = [];
+  for (let index = 0; index < input.length; index++) {
     const clone = input.slice();
     clone.splice(index, 1);
 
-    return checkIncreasingSequence(clone);
-  });
+    sequence.push(checkIncreasingSequence(clone));
+  }
 
   const notIncreasingSequence = checkForElementInArray(sequence, false);
 
