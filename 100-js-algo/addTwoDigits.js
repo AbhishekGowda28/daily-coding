@@ -5,5 +5,6 @@ function addTwoDigits(twoDigitNumber = 0) {
 		}, 0);
 }
 
-addTwoDigits(123);
-addTwoDigits(29);
+module.exports = {
+	addTwoDigits,
+};
