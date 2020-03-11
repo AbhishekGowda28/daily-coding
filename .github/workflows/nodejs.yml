@@ -13,6 +13,8 @@ jobs:
   
     runs-on: ubuntu-latest
     steps:
+    - name: Change to working directory
+    - uses: cd ./100-js-algo
     - uses: actions/checkout@v1
     - name: Run Test in 100-js-algo
       uses: actions/setup-node@v1
