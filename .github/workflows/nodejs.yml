@@ -9,7 +9,9 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run Test in 100-js-algo
-      uses: actions/setup-node@v1
+      id: Change directory
+      run: cd ./100-js-algo
+    - uses: actions/setup-node@v1
       with:
         node-version: '12.x'
     - name: Install node modules
