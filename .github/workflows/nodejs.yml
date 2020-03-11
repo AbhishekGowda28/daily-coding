@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run Test in 100-js-algo
-      id: Change directory
+      id: Change-directory
       run: cd ./100-js-algo
     - uses: actions/setup-node@v1
       with:
