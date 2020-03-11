@@ -16,3 +16,13 @@ jobs:
         node-version: '12.x'
     - name: Install node modules
       run: npm install
+  
+  install-node-modules:
+    runs-on: [windows-latest, ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout the repo
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - run: npm install
