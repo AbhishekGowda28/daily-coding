@@ -12,8 +12,5 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-        change-directory: cd ./100-js-algo
     - name: Install node modules
       run: npm install
-    - name: Run test
-      run: npm run test
