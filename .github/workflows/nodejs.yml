@@ -1,26 +1,17 @@
 name: "100 Algorithm Challenge"
 
 on: [push, pull_request]
-  #push:
-    #branches: 
-      #- master
-      #- 100-algo-challenge
-    #paths:
-      #- "**.js"
-    
+
 jobs:
   build:
   
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1    
-    - uses: cd ./100-js-algo
-    - name: Change to working directory
-    - with:
-        node-version: '12.x'
-        working-directory: ./100-js-algo
+    - uses: actions/checkout@v1
     - name: Run Test in 100-js-algo
       uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
     - name: Install node modules
       run: npm install
     - name: Run test
