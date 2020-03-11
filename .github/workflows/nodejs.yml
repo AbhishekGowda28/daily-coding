@@ -1,13 +1,13 @@
 name: "100 Algorithm Challenge"
 
-on:
-  push:
-    branches: 
-      - master
-      - 100-algo-challenge
-    paths:
-      - "**.js"
-
+on: [push, pull_request]
+  #push:
+    #branches: 
+      #- master
+      #- 100-algo-challenge
+    #paths:
+      #- "**.js"
+    
 jobs:
   build:
   
