@@ -15,3 +15,7 @@ function longestString(stringArray) {
 
 longestString(["aba", "aa", "ad", "vcd", "aba"]);
 longestString(["", "af"]);
+
+module.exports = {
+    longestString
+};

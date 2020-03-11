@@ -1,5 +1,5 @@
 function addBorder(picture) {
-	const borderLength = picture.length > 0 ? 
+	const borderLength = picture.length > 0 ?
 		picture[0].length + 2 : 2;
 	const border = "*".repeat(borderLength);
 	const borderedPicture = [border];
@@ -16,3 +16,7 @@ function addBorder(picture) {
 addBorder(["abc", "def"]);
 addBorder([""]);
 addBorder([]);
+
+module.exports = {
+	addBorder,
+};
