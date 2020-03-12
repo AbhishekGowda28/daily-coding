@@ -100,3 +100,13 @@ almostIncreasingSequence(sequence) = true.
 You can remove 3 from the array to get the strictly increasing sequence [1, 2]. Alternately, you can remove 2 to get the strictly increasing sequence [1, 3].
 
 ---
+# Problem - 8
+
+Given a string, replace each its character by the next one in the English alphabet (z would be replaced by a).
+
+**Example**
+
+For inputString = "crazy", the output should be
+alphabeticShift(inputString) = "dsbAz".
+
+---
