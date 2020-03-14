@@ -1,4 +1,4 @@
-name: "100 Algorithm Challenge"
+name: "100 Algorithm Challene"
 
 on: [push, pull_request]
 
