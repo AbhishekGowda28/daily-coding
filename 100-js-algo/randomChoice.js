@@ -13,7 +13,13 @@ function randomChoice(numberOfChoices) {
         readLineInterface.question(`Enter choice ${choiceNumber}`, (choice) => {
             console.log("choice", choice);
         });
+        if(numberOfChoices === choiceNumber){
+            stopReadingChoice();
+        }
     }
+}
+
+function stopReadingChoice() {
     readLineInterface.close();
 }
 
