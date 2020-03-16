@@ -8,6 +8,10 @@ const readLineInterface = readLine.createInterface({
     output: process.stdout
 });
 
+function stopReadingChoice() {
+    readLineInterface.close();
+}
+
 function randomChoice(numberOfChoices) {
     for (let choiceNumber = 1; choiceNumber <= numberOfChoices; choiceNumber++) {
         readLineInterface.question(`Enter choice ${choiceNumber}`, (choice) => {
@@ -17,10 +21,6 @@ function randomChoice(numberOfChoices) {
             stopReadingChoice();
         }
     }
-}
-
-function stopReadingChoice() {
-    readLineInterface.close();
 }
 
 randomChoice(5);
