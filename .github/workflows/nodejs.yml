@@ -20,6 +20,7 @@ jobs:
   install-node-modules:
     runs-on: windows-latest
     steps:
+      - working-directory: "100-js-algo"
       - uses: actions/checkout@v2
         name: Checkout the repo
       - uses: actions/setup-node@v1
