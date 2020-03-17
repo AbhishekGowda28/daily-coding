@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: Hello
         id: Hello
-        run: cd "../../100-js-algo"
+        run: cd ".."
       - uses: actions/checkout@v2
         name: Checkout the repo
       - uses: actions/setup-node@v1
