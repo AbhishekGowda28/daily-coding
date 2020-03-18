@@ -44,4 +44,10 @@ describe("Alternating sum", () => {
         const actual = alternatingSums(input);
         expect(actual).toStrictEqual(expected);
     });
+    test("Random Element", () => {
+        const input = [50, 60, 60, 45, 70];
+        const expected = [180, 105];
+        const actual = alternatingSums(input);
+        expect(actual).toStrictEqual(expected);
+    });
 });
