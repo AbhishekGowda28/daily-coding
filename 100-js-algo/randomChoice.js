@@ -12,14 +12,29 @@ function stopReadingChoice() {
     readLineInterface.close();
 }
 
-function randomChoice(numberOfChoices) {
-    for (let choiceNumber = 1; choiceNumber <= numberOfChoices; choiceNumber++) {
-        readLineInterface.question(`Enter choice ${choiceNumber}`, (choice) => {
-            console.log("choice", choice);
-        });
-        if(numberOfChoices === choiceNumber){
+/**
+ * @param {number} choiceNumber
+ * @param {number} numberOfChoices
+ */
+function readChoice(choiceNumber, numberOfChoices) {
+    /**
+     * @param {string} choice
+     */
+    readLineInterface.question(`Enter choice ${choiceNumber}`, (choice) => {
+        console.log("choice", choice);
+        if (numberOfChoices === choiceNumber) {
             stopReadingChoice();
         }
+    });
+}
+
+/**
+ * @param {number} numberOfChoices
+ */
+function randomChoice(numberOfChoices) {
+    for (let choiceNumber = 1; choiceNumber <= numberOfChoices; choiceNumber++) {
+        console.log("choice number", choiceNumber);
+        readChoice(choiceNumber, numberOfChoices);
     }
 }
 
