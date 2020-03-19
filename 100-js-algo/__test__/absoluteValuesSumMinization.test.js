@@ -16,7 +16,18 @@ describe("Absolute Values SumMinization", () => {
         const actual = median(input);
         expect(actual).toBe(expected);
     });
-
+    test("formula with even array", () => {
+        const input = [1, 1, 3, 4];
+        const expected = 1;
+        const actual = absoluteValuesSumMinization(input);
+        expect(actual).toBe(expected);
+    });
+    test("median with even array", () => {
+        const input = [1, 1, 3, 4];
+        const expected = 1;
+        const actual = median(input);
+        expect(actual).toBe(expected);
+    });
 });
 
 /*
