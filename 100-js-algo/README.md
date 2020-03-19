@@ -123,3 +123,24 @@ and the second element is the total weight of team 2 after the division is compl
 
 For a = [50, 60, 60, 45, 70], the output should be
 alternatingSums(a) = [180, 105].
+
+---
+# Problem 10
+
+Call two arms equally strong if the heaviest weights they each are able to lift are equal.
+
+Call two people equally strong if their strongest arms are equally strong (the strongest arm can be both the right and the left), 
+and so are their weakest arms.
+
+Given you and your friend's arms' lifting capabilities find out if you two are equally strong.
+
+**Example**
+
+For yourLeft = 10, yourRight = 15, friendsLeft = 15 and friendsRight = 10, the output should be
+areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight) = true;
+For yourLeft = 15, yourRight = 10, friendsLeft = 15 and friendsRight = 10, the output should be
+areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight) = true;
+For yourLeft = 15, yourRight = 10, friendsLeft = 15 and friendsRight = 9, the output should be
+areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight) = false.
+
+---
