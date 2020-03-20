@@ -18,7 +18,7 @@ describe("Are Array Similar", () => {
         const firstArray = [1, 2, 2];
         const secondArray = [2, 1, 1];
         const actual = areSimilar(firstArray, secondArray);
-        expect(actual).toBeTruthy();
+        expect(actual).toBeFalsy();
     });
     test("Arguments with one empty array", () => {
         const firstArray = [1, 2, 2];

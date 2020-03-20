@@ -1,5 +1,10 @@
 function areSimilar(firstArray, secondArray) {
-    return "";
+    let similar = false;
+    if (firstArray.length !== secondArray.length) {
+        return false;
+    }
+
+    return true;
 }
 
 module.exports = { areSimilar };
