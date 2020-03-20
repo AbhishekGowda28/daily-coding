@@ -165,3 +165,5 @@ We can obtain B from A by swapping 2 and 1 in B.
 For A = [1, 2, 2] and B = [2, 1, 1], the output should be
 areSimilar(A, B) = false.
 Any swap of any two elements either in A or in B won't make A and B equal.
+
+---
