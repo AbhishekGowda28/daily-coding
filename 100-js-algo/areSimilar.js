@@ -1,18 +1,17 @@
 function areSimilar(firstArray, secondArray) {
-    let similar = true;
     if (firstArray.length !== secondArray.length) {
         return false;
     }
+    firstArray.sort((a, b) => { return a - b });
+    secondArray.sort((a, b) => { return a - b });
+    for (let index = 0; index < firstArray.length - 1; index++) {
+        if (firstArray[index] !== secondArray[index]) {
+            return false;
 
-    const arr = Array.from(new Set(firstArray));
-
-    arr.forEach((ele) => {
-        if (secondArray.includes(ele) === false) {
-            similar = false;
         }
-    });
+    }
 
-    return similar;
+    return true;
 }
 
 module.exports = { areSimilar };
