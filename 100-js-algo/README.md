@@ -193,3 +193,5 @@ Given an array of 2*k integers (for some integer k), perform the following opera
  1st iteration -> [1,2,3,4,5,6,7,8] => [3,7,11,15]
  2nd iteration -> [3,7,11,15] => [21,165]
  3rd iteration -> [21,165] => 186
+
+ ---
