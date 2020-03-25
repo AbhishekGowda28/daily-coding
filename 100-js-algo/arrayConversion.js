@@ -7,18 +7,18 @@ function arrayConversion(inputArray) {
         return "Array doesn't contain even elements";
     }
     let eventItteration = false;
-    let tArray = inputArray;
-    while (tArray.length !== 1) {
+    let total = inputArray;
+    while (total.length !== 1) {
         if (eventItteration === false) {
-            tArray = addElements(tArray);
+            total = addElements(total);
             eventItteration = true;
         } else {
-            tArray = productElements(tArray);
+            total = productElements(total);
             eventItteration = false;
         }
     }
 
-    return tArray[0];
+    return total[0];
 }
 
 function addElements(array) {
