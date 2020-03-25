@@ -1,5 +1,5 @@
 const expect = require("expect");
-const arrayConversion = require("../arrayConversion");
+const { arrayConversion } = require("../arrayConversion");
 
 describe("Array conversion", () => {
     test("For 8 elements", () => {
