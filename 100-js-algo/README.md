@@ -211,3 +211,12 @@ All possible sums of 2 consecutive elements are:
 Thus, the answer is 8.
 
 ---
+# Problem 15
+
+Given an array of integers, find the maximal absolute difference between any two of ts adjacent elements.
+
+**Example**
+ For inputArray = [2, 4, 1, 0], the output should be
+ arrayMaximalAdjacentDifference(inputArray) = 3.
+
+---
