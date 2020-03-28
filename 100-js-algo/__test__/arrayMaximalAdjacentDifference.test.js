@@ -3,7 +3,7 @@ const { arrayMaximalAdjacentDifference } = require("../arrayMaximalAdjacentDiffe
 
 describe("Maximal Adjacent Difference", () => {
     test("Empty Array", () => {
-        const inputArray = [2, 4, 1, 0];
+        const inputArray = [];
         const expected = 0;
         const actual = arrayMaximalAdjacentDifference(inputArray);
         expect(actual).toBe(expected);
