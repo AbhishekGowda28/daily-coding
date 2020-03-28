@@ -220,3 +220,12 @@ Given an array of integers, find the maximal absolute difference between any two
  arrayMaximalAdjacentDifference(inputArray) = 3.
 
 ---
+# Problem 16
+
+Given an array of integers, replace all the occurrences of elemToReplace with substitutionElem.
+
+**Example**
+For inputArray = [1, 2, 1], elemToReplace = 1 and substitutionElem = 3, the output should be
+arrayReplace(inputArray, elemToReplace, substitutionElem) = [3, 2, 3].
+
+---
