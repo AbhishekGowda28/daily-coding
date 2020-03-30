@@ -241,4 +241,6 @@ For inputArray = [5, 3, 6, 7, 9], the output should be
 avoidObstacles(inputArray) = 4.
 Check out the image below for better understanding:
 
+[Image](https://codefightsuserpics.s3.amazonaws.com/tasks/avoidObstacles/img/example.png?_tm=1490625560816)
+
 ---
