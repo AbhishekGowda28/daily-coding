@@ -9,7 +9,21 @@ function avoidObstacles(inputArray) {
         return 1;
     }
 
-    return inputArray.length;
+    let highestJump = 0;
+    let previousPoint = 0;
+
+    for (let counter = 0; counter < inputArray.length;) {
+        if (highestJump + previousPoint > inputArray[counter]) {
+            // previousPoint = inputArray[counter];
+            previousPoint = highestJump;
+            counter++;
+        } else {
+            highestJump++;
+        }
+        console.log("highestJump", highestJump, previousPoint);
+    }
+    
+    return highestJump;
 }
 
 module.exports = { avoidObstacles };

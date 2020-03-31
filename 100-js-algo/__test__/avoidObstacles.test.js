@@ -20,4 +20,10 @@ describe("Avoid Obstacles", () => {
         const actual = avoidObstacles(inputArray);
         expect(actual).toBe(expected);
     });
+    test("Odd number", () => {
+        const inputArray = [1, 3, 5, 7, 9];
+        const expected = 2;
+        const actual = avoidObstacles(inputArray);
+        expect(actual).toBe(expected);
+    });
 });
