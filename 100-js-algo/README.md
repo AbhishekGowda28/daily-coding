@@ -1,4 +1,4 @@
-# Problem - 1:
+# Problem 1
 
 absoluteValuesSumMinization
 
@@ -31,7 +31,7 @@ For a = [2, 4, 7, 6, 6, 8], the output should be
 median(a) = 7.
 
 ---
-# Problem - 2:
+# Problem 2
 1. Write a function that returns the sum of two numbers.
 2. Write a function that returns the sum of all numbers regardless of number of params.
 
@@ -41,7 +41,7 @@ For param1 = 1 and param2 = 2, the output should be
 add(param1, param2) = 3.
 
 ---
-# Problem - 3
+# Problem 3
 Given a rectangular matrix of characters, add a border of asterisks(*) to it.
 
 **Example**
@@ -62,12 +62,12 @@ the output should be
                             ]
 
 ---
-# Problem - 4
+# Problem 4
 
 You are given a two-digit integer n. Return the sum of its digits.
 
 ---
-# Problem - 5
+# Problem 5
 
 Given an array of integers, find the pair of adjacent elements that has the largest product and return that product.
 
@@ -78,7 +78,7 @@ For inputArray = [3, 6, -2, -5, 7, 3], the output should be
  7 and 3 produce the largest product.
 
 ---
-# Problem - 6
+# Problem 6
 
 Given an array of strings, return another array containing all of its longest strings.
 
@@ -87,7 +87,7 @@ Given an array of strings, return another array containing all of its longest st
 For inputArray = ["aba", "aa", "ad", "vcd", "aba"], the output should be allLongestStrings(inputArray) = ["aba", "vcd", "aba"].
 
 ---
-# Problem - 7
+# Problem 7
 
 Given a sequence of integers as an array, determine whether it is possible to obtain a strictly increasing sequence by removing no more than one element from the array.
 
@@ -106,14 +106,13 @@ almostIncreasingSequence(sequence) = true.
 You can remove 3 from the array to get the strictly increasing sequence [1, 2]. Alternately, you can remove 2 to get the strictly increasing sequence [1, 3].
 
 ---
-# Problem - 8
+# Problem 8
 
 Given a string, replace each its character by the next one in the English alphabet (z would be replaced by a).
 
 **Example**
 
-For inputString = "crazy", the output should be
-alphabeticShift(inputString) = "dsbAz".
+For inputString = "crazy", the output should be alphabeticShift(inputString) = "dsbAz".
 
 ---
 # Problem 9
@@ -127,8 +126,7 @@ and the second element is the total weight of team 2 after the division is compl
 
 **Example**
 
-For a = [50, 60, 60, 45, 70], the output should be
-alternatingSums(a) = [180, 105].
+For a = [50, 60, 60, 45, 70], the output should be alternatingSums(a) = [180, 105].
 
 ---
 # Problem 10
@@ -222,6 +220,7 @@ Thus, the answer is 8.
 Given an array of integers, find the maximal absolute difference between any two of ts adjacent elements.
 
 **Example**
+
  For inputArray = [2, 4, 1, 0], the output should be
  arrayMaximalAdjacentDifference(inputArray) = 3.
 
@@ -231,6 +230,7 @@ Given an array of integers, find the maximal absolute difference between any two
 Given an array of integers, replace all the occurrences of elemToReplace with substitutionElem.
 
 **Example**
+
 For inputArray = [1, 2, 1], elemToReplace = 1 and substitutionElem = 3, the output should be
 arrayReplace(inputArray, elemToReplace, substitutionElem) = [3, 2, 3].
 
