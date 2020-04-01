@@ -244,7 +244,7 @@ Check out the image below for better understanding:
 [Image](https://codefightsuserpics.s3.amazonaws.com/tasks/avoidObstacles/img/example.png?_tm=1490625560816)
 
 ---
-#Problem 18
+# Problem 18
 
 Given the positions of a white bishop and a black pawn on the standard chess board, determine whether the bishop can capture the pawn in one move.
 
