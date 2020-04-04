@@ -288,14 +288,6 @@ buildPalindrome(st) = "abcdcba".
 ---
 # Problem 21
 
-Given a string, find the shortest possible string which can be achieved by adding characters to the end of initial string to make it a palindrome.
-**Example**
-For st = "abcdc", the output should be
-buildPalindrome(st) = "abcdcba".
-
----
-# Problem 22
-
 Given two cells on the standard chess board, determine whether they have the same color or not.
 **Example**
 For cell1 = "A1" and cell2 = "C3", the output should be
