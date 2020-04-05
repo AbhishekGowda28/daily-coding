@@ -14,15 +14,13 @@ function avoidObstacles(inputArray) {
 
     for (let counter = 0; counter < inputArray.length;) {
         if (highestJump + previousPoint > inputArray[counter]) {
-            // previousPoint = inputArray[counter];
-            previousPoint = highestJump;
+            previousPoint = highestJump + previousPoint;
             counter++;
         } else {
             highestJump++;
         }
-        console.log("highestJump", highestJump, previousPoint);
     }
-    
+
     return highestJump;
 }
 
