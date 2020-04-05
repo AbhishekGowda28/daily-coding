@@ -9,19 +9,14 @@ function avoidObstacles(inputArray) {
         return 1;
     }
 
-    let highestJump = 0;
-    let previousPoint = 0;
-
-    for (let counter = 0; counter < inputArray.length;) {
-        if (highestJump + previousPoint > inputArray[counter]) {
-            previousPoint = highestJump + previousPoint;
-            counter++;
-        } else {
-            highestJump++;
+    for (let counter = 1; counter < inputArray[inputArray.length - 1]; counter++) {
+        if (inputArray.every(element => element % counter !== 0)) {
+            return counter;
         }
     }
 
-    return highestJump;
+    // When the same element is repeated ; Maximum element + 1 
+    return inputArray[inputArray.length - 1] + 1;
 }
 
 module.exports = { avoidObstacles };
