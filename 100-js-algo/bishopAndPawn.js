@@ -48,17 +48,17 @@ function bishopAndPawn(bishop, pawn) {
     downRightMovement(bishopLocation.outerIndex, bishopLocation.innerIndex);
 }
 
-function findPawn(location) {
-    let err;
+function findPawn(pawn) {
+    let location;
     chessBoard.forEach((drr, outerIndex) => {
         drr.forEach((element, innerIndex) => {
-            if (element === location) {
-                err = { outerIndex, innerIndex };
+            if (element === pawn) {
+                location = { outerIndex, innerIndex };
             }
         });
     });
 
-    return err;
+    return location;
 }
 
 // module.exports = { bishopAndPawn };
