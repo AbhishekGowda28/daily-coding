@@ -14,6 +14,19 @@ function bishopAndPawn(bishop, pawn) {
     const pawnLocation = findPawn(pawn);
     console.log("bishop at", bishopLocation);
     console.log("pawn at", pawnLocation);
+    bishopMoves(bishopLocation.outerIndex, bishopLocation.innerIndex);
+}
+
+function bishopMoves(num, alpha) {
+    let move = { num, alpha };
+    let tempNum = num;
+    let tempAlpha = alpha;
+    while (tempNum < 7 || alpha < 7) {
+        console.log(move);
+        tempNum++;
+        alpha++;
+        move = { tempNum, alpha };
+    }
 }
 
 function findPawn(location) {
