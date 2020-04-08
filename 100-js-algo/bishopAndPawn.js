@@ -9,51 +9,90 @@ const chessBoard = [
     ["a8", "b8", "c8", "d8", "e8", "f8", "g8", "h8"],
 ];
 
-function topRightMovement(num, alpha) {
-    console.log(chessBoard[num][alpha]);
-    num--;
-    alpha++;
-    console.log(chessBoard[num][alpha]);
+function topRightMovement(bishop, pawn) {
+    const location = findPawn(bishop);
+    let num = location.num;
+    let alpha = location.alpha;
+    while ((num < 7 && num > 0) && (alpha < 7 && alpha > 0)) {
+        console.log("topRightMovement", num, alpha, chessBoard[num][alpha], pawn);
+        if (chessBoard[num][alpha] === pawn) {
+            return true;
+        }
+        num++;
+        alpha++;
+    }
+
+    return false;
 }
 
-function topLeftMovement(num, alpha) {
-    console.log(chessBoard[num][alpha]);
-    num--;
-    alpha--;
-    console.log(chessBoard[num][alpha]);
+function topLeftMovement(bishop, pawn) {
+    const location = findPawn(bishop);
+    let num = location.num;
+    let alpha = location.alpha;
+    while ((num < 7 && num > 0) && (alpha < 7 && alpha > 0)) {
+        num--;
+        alpha--;
+        console.log("topLeftMovement", num, alpha, chessBoard[num][alpha], pawn);
+        if (chessBoard[num][alpha] === pawn) {
+            return true;
+        }
+    }
+
+    return false;
 }
 
-function downLeftMovement(num, alpha) {
-    console.log(chessBoard[num][alpha]);
-    num++;
-    alpha--;
-    console.log(chessBoard[num][alpha]);
+function downLeftMovement(bishop, pawn) {
+    const location = findPawn(bishop);
+    let num = location.num;
+    let alpha = location.alpha;
+    while ((num < 7 && num > 0) && (alpha < 7 && alpha > 0)) {
+        num++;
+        alpha--;
+        if (chessBoard[num][alpha] === pawn) {
+            return true;
+        }
+    }
+
+    return false;
+
 }
 
-function downRightMovement(num, alpha) {
-    console.log(chessBoard[num][alpha]);
-    num++;
-    alpha++;
-    console.log(chessBoard[num][alpha]);
+function downRightMovement(bishop, pawn) {
+    const location = findPawn(bishop);
+    let num = location.num;
+    let alpha = location.alpha;
+    while ((num < 7 && num > 0) && (alpha < 7 && alpha > 0)) {
+        num++;
+        alpha++;
+        if (chessBoard[num][alpha] === pawn) {
+            return true;
+        }
+    }
+
+    return false;
 }
 
 function bishopAndPawn(bishop, pawn) {
-    const bishopLocation = findPawn(bishop);
-    const pawnLocation = findPawn(pawn);
-    console.log("bishop at", bishopLocation);
-    console.log("pawn at", pawnLocation);
-    topLeftMovement(bishopLocation.outerIndex, bishopLocation.innerIndex);
-    topRightMovement(bishopLocation.outerIndex, bishopLocation.innerIndex);
-    downLeftMovement(bishopLocation.outerIndex, bishopLocation.innerIndex);
-    downRightMovement(bishopLocation.outerIndex, bishopLocation.innerIndex);
+    console.log(bishop, pawn);
+    if (topLeftMovement(bishop, pawn) === false) {
+        if (topRightMovement(bishop, pawn) === false) {
+            if (downLeftMovement(bishop, pawn) === false) {
+                if (downRightMovement(bishop, pawn) === false) {
+                    return false;
+                }
+            }
+        }
+    }
+
+    return true;
 }
 
 function findPawn(pawn) {
     let location;
-    chessBoard.forEach((drr, outerIndex) => {
-        drr.forEach((element, innerIndex) => {
+    chessBoard.forEach((drr, num) => {
+        drr.forEach((element, alpha) => {
             if (element === pawn) {
-                location = { outerIndex, innerIndex };
+                location = { num, alpha };
             }
         });
     });
@@ -61,6 +100,6 @@ function findPawn(pawn) {
     return location;
 }
 
-// module.exports = { bishopAndPawn };
+module.exports = { bishopAndPawn };
 
-bishopAndPawn("c4", "g8");
+// bishopAndPawn("c4", "g8");
