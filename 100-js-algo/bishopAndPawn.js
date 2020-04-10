@@ -11,11 +11,9 @@ const chessBoard = [
 
 function topRightMovement(bishop, pawn) {
     const location = findPawn(bishop);
-    console.log("topRightMovement", location);
     let row = location.row;
     let column = location.column;
     do {
-        console.log("topRightMovement", row, column, chessBoard[row][column], pawn);
         if (chessBoard[row][column] === pawn) {
             return true;
         }
@@ -43,15 +41,15 @@ function topLeftMovement(bishop, pawn) {
 
 function downLeftMovement(bishop, pawn) {
     const location = findPawn(bishop);
-    let num = location.num;
-    let alpha = location.alpha;
-    while ((num < 7 && num > 0) && (alpha < 7 && alpha > 0)) {
-        num--;
-        alpha--;
-        if (chessBoard[num][alpha] === pawn) {
+    let row = location.row;
+    let column = location.column;
+    do {
+        if (chessBoard[row][column] === pawn) {
             return true;
         }
-    }
+        row--;
+        column++;
+    } while ((row < 7 && row > 0) && (column < 7 && column > 0));
 
     return false;
 
@@ -59,21 +57,20 @@ function downLeftMovement(bishop, pawn) {
 
 function downRightMovement(bishop, pawn) {
     const location = findPawn(bishop);
-    let num = location.num;
-    let alpha = location.alpha;
-    while ((num < 7 && num > 0) && (alpha < 7 && alpha > 0)) {
-        num--;
-        alpha++;
-        if (chessBoard[num][alpha] === pawn) {
+    let row = location.row;
+    let column = location.column;
+    do {
+        if (chessBoard[row][column] === pawn) {
             return true;
         }
-    }
+        row++;
+        column++;
+    } while ((row < 7 && row > 0) && (column < 7 && column > 0));
 
     return false;
 }
 
 function bishopAndPawn(bishop, pawn) {
-    console.log(bishop, pawn);
     if (topLeftMovement(bishop, pawn) === false) {
         if (topRightMovement(bishop, pawn) === false) {
             if (downLeftMovement(bishop, pawn) === false) {
@@ -102,4 +99,6 @@ function findPawn(pawn) {
 
 module.exports = { bishopAndPawn };
 
-bishopAndPawn("a1", "c3");
+// bishopAndPawn("a1", "c3");
+
+// bishopAndPawn("a1", "c5");
