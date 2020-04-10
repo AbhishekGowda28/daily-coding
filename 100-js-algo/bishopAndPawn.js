@@ -89,10 +89,10 @@ function bishopAndPawn(bishop, pawn) {
 
 function findPawn(pawn) {
     let location;
-    chessBoard.forEach((drr, num) => {
-        drr.forEach((element, alpha) => {
+    chessBoard.forEach((drr, column) => {
+        drr.forEach((element, row) => {
             if (element === pawn) {
-                location = { num, alpha };
+                location = { row, column };
             }
         });
     });
@@ -102,4 +102,4 @@ function findPawn(pawn) {
 
 module.exports = { bishopAndPawn };
 
-// bishopAndPawn("c4", "g8");
+bishopAndPawn("c4", "g8");
