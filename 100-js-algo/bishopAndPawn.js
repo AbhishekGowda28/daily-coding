@@ -16,9 +16,9 @@ function topRightMovement(location, pawn) {
         if (chessBoard[row][column] === pawn) {
             return true;
         }
-        row++;
-        column--;
-    } while ((row < 7 && row > 0) && (column < 7 && column > 0));
+        row--;
+        column++;
+    } while ((row <= 7 && row > 0) && (column <= 7 && column > 0));
 
     return false;
 }
@@ -32,7 +32,7 @@ function topLeftMovement(location, pawn) {
         }
         row--;
         column--;
-    } while ((row < 7 && row > 0) && (column < 7 && column > 0));
+    } while ((row <= 7 && row > 0) && (column <= 7 && column > 0));
 
     return false;
 }
@@ -44,9 +44,9 @@ function downLeftMovement(location, pawn) {
         if (chessBoard[row][column] === pawn) {
             return true;
         }
-        row--;
-        column++;
-    } while ((row < 7 && row > 0) && (column < 7 && column > 0));
+        row++;
+        column--;
+    } while ((row <= 7 && row > 0) && (column <= 7 && column > 0));
 
     return false;
 
@@ -61,21 +61,21 @@ function downRightMovement(location, pawn) {
         }
         row++;
         column++;
-    } while ((row < 7 && row > 0) && (column < 7 && column > 0));
+    } while ((row <= 7 && row > 0) && (column <= 7 && column > 0));
 
     return false;
 }
 
 function bishopAndPawn(bishop, pawn) {
-    const location = findPawn(bishop);
+    const bishopLocation = findPawn(bishop);
     const pawnLocation = findPawn(pawn);
 
-    if (location !== undefined && pawnLocation !== undefined) {
+    if (bishopLocation !== undefined && pawnLocation !== undefined) {
 
-        if (topLeftMovement(location, pawn) === false) {
-            if (topRightMovement(location, pawn) === false) {
-                if (downLeftMovement(location, pawn) === false) {
-                    if (downRightMovement(location, pawn) === false) {
+        if (topLeftMovement(bishopLocation, pawn) === false) {
+            if (topRightMovement(bishopLocation, pawn) === false) {
+                if (downLeftMovement(bishopLocation, pawn) === false) {
+                    if (downRightMovement(bishopLocation, pawn) === false) {
                         return false;
                     }
                 }
@@ -91,8 +91,8 @@ function bishopAndPawn(bishop, pawn) {
 
 function findPawn(pawn) {
     let location;
-    chessBoard.forEach((drr, column) => {
-        drr.forEach((element, row) => {
+    chessBoard.forEach((drr, row) => {
+        drr.forEach((element, column) => {
             if (element === pawn) {
                 location = { row, column };
             }

@@ -9,8 +9,8 @@ describe("Bishop and Pawn", () => {
         expect(actual).toBeTruthy();
     });
     test("Bishop capturing the pawn with Top Left Movement", () => {
-        const bishopLocation = "c3";
-        const pawnLocation = "a5";
+        const bishopLocation = "d4";
+        const pawnLocation = "c5";
         const actual = bishopAndPawn(bishopLocation, pawnLocation);
         expect(actual).toBeTruthy();
     });
