@@ -9,8 +9,7 @@ const chessBoard = [
     ["a1", "b1", "c1", "d1", "e1", "f1", "g1", "h1"],
 ];
 
-function topRightMovement(bishop, pawn) {
-    const location = findPawn(bishop);
+function topRightMovement(location, pawn) {
     let row = location.row;
     let column = location.column;
     do {
@@ -24,8 +23,7 @@ function topRightMovement(bishop, pawn) {
     return false;
 }
 
-function topLeftMovement(bishop, pawn) {
-    const location = findPawn(bishop);
+function topLeftMovement(location, pawn) {
     let row = location.row;
     let column = location.column;
     do {
@@ -39,8 +37,7 @@ function topLeftMovement(bishop, pawn) {
     return false;
 }
 
-function downLeftMovement(bishop, pawn) {
-    const location = findPawn(bishop);
+function downLeftMovement(location, pawn) {
     let row = location.row;
     let column = location.column;
     do {
@@ -55,8 +52,7 @@ function downLeftMovement(bishop, pawn) {
 
 }
 
-function downRightMovement(bishop, pawn) {
-    const location = findPawn(bishop);
+function downRightMovement(location, pawn) {
     let row = location.row;
     let column = location.column;
     do {
@@ -71,17 +67,25 @@ function downRightMovement(bishop, pawn) {
 }
 
 function bishopAndPawn(bishop, pawn) {
-    if (topLeftMovement(bishop, pawn) === false) {
-        if (topRightMovement(bishop, pawn) === false) {
-            if (downLeftMovement(bishop, pawn) === false) {
-                if (downRightMovement(bishop, pawn) === false) {
-                    return false;
+    const location = findPawn(bishop);
+
+    if (location !== undefined) {
+
+        if (topLeftMovement(location, pawn) === false) {
+            if (topRightMovement(location, pawn) === false) {
+                if (downLeftMovement(location, pawn) === false) {
+                    if (downRightMovement(location, pawn) === false) {
+                        return false;
+                    }
                 }
             }
         }
+
+        return true;
+    } else {
+        return false;
     }
 
-    return true;
 }
 
 function findPawn(pawn) {
@@ -98,7 +102,3 @@ function findPawn(pawn) {
 }
 
 module.exports = { bishopAndPawn };
-
-// bishopAndPawn("a1", "c3");
-
-// bishopAndPawn("a1", "c5");
