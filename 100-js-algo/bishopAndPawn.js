@@ -20,7 +20,7 @@ function topRightMovement(bishop, pawn) {
             return true;
         }
         row++;
-        column++;
+        column--;
     } while ((row < 7 && row > 0) && (column < 7 && column > 0));
 
     return false;
