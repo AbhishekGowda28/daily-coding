@@ -68,8 +68,9 @@ function downRightMovement(location, pawn) {
 
 function bishopAndPawn(bishop, pawn) {
     const location = findPawn(bishop);
+    const pawnLocation = findPawn(pawn);
 
-    if (location !== undefined) {
+    if (location !== undefined && pawnLocation !== undefined) {
 
         if (topLeftMovement(location, pawn) === false) {
             if (topRightMovement(location, pawn) === false) {
