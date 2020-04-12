@@ -247,6 +247,7 @@ Find the minimal length of the jump enough to avoid all the obstacles.
 For inputArray = [5, 3, 6, 7, 9], the output should be avoidObstacles(inputArray) = 4.
 
 Check out the image for better understanding:
+
 ![Image](https://codefightsuserpics.s3.amazonaws.com/tasks/avoidObstacles/img/example.png?_tm=1490625560816 "Avoid Obstacles")
 
 ---
@@ -269,11 +270,12 @@ For bishop = "h1" and pawn = "h3", the output should be bishopAndPawn(bishop, pa
 Last night you had to study, but decided to party instead. Now there is a black and white photo of you that is about to go viral. You cannot let this ruin your reputation, so you want to apply box blur algorithm to the photo to hide its content.
 The algorithm works as follows: each pixel x in the resulting image has a value equal to the average value of the input image pixels' values from the 3 × 3 square with the center at x. All pixels at the edges are cropped.
 As pixel's value is an integer, all fractions should be rounded down.
+
 **Example**
-For
-image = [[1, 1, 1], 
-         [1, 7, 1], 
-         [1, 1, 1]]
+
+For image = [[1, 1, 1], 
+            [1, 7, 1], 
+            [1, 1, 1]]
 the output should be boxBlur(image) = [[1]].
 In the given example all boundary pixels were cropped, and the value of the pixel in the middle was obtained as (1 + 1 + 1 + 1 + 7 + 1 + 1 + 1 + 1) / 9 = 15 / 9 = rounded down = 1.
 
@@ -281,7 +283,9 @@ In the given example all boundary pixels were cropped, and the value of the pixe
 # Problem 20
 
 Given a string, find the shortest possible string which can be achieved by adding characters to the end of initial string to make it a palindrome.
+
 **Example**
+
 For st = "abcdc", the output should be
 buildPalindrome(st) = "abcdcba".
 
@@ -289,7 +293,9 @@ buildPalindrome(st) = "abcdcba".
 # Problem 21
 
 Given two cells on the standard chess board, determine whether they have the same color or not.
+
 **Example**
+
 For cell1 = "A1" and cell2 = "C3", the output should be
 chessBoardCellColor(cell1, cell2) = true.
 For cell1 = "A1" and cell2 = "H3", the output should be
