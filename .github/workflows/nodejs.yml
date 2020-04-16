@@ -1,28 +1,18 @@
-name: "CI"
+name: Run Node Unit Test
 
-on: [push, pull_request]
+on:
+  pull_request:
+    branches: [master]
 
 jobs:
-
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - name: Run Test in 100-js-algo
-      id: Change-directory
-      run: cd ./100-js-algo
-    - uses: actions/setup-node@v1
-      with:
-        node-version: '12.x'
-    - name: Install node modules
-      run: npm install
-  
-  install-node-modules:
-    runs-on: windows-latest
+  test_pull_request:
+    runs-on: ubunut-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: pwd
     steps:
       - uses: actions/checkout@v2
-        name: Checkout the repository
       - uses: actions/setup-node@v1
         with:
-          node-version: '12.x'
-      - run: npm install
+          node-version: 12
