@@ -35,9 +35,8 @@ jobs:
         with:
           node-version: 12
       - name: Display path
-        run: cd "100-js-algo"
+        run: |
+              cd "100-js-algo"
+              npm install
+              npm run test
         shell: bash
-      - name: Install node modules
-        run: npm install
-      - name: Run Unit Test
-        run: npm run test
