@@ -1,5 +1,5 @@
 function boxBlur(image) {
-    return [[1]];
+    return 0;
 }
 
 module.exports = { boxBlur };

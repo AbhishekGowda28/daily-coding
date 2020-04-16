@@ -6,6 +6,6 @@ describe("Box Blur", () => {
         const input = [[1, 1, 1], [1, 7, 1], [1, 1, 1]];
         const expected = [[1]];
         const actual = boxBlur(input);
-        expect(actual).toStrictEqual(expected);
+        expect(actual).toBe(expected);
     });
 });
