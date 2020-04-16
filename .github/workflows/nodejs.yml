@@ -36,8 +36,6 @@ jobs:
           node-version: 12
       - name: Display path
         run:  |
-              echo $PATH
-              ls -l
               cd "100-js-algo"
+              npm install
         shell: bash
-      - run: npm install
