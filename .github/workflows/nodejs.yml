@@ -4,29 +4,6 @@ on: [push, pull_request]
 
 jobs:
 
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - name: Run Test in 100-js-algo
-      id: Change-directory
-      run: cd ./100-js-algo
-    - uses: actions/setup-node@v1
-      with:
-        node-version: '12.x'
-    - name: Install node modules
-      run: npm install
-  
-  install-node-modules:
-    runs-on: windows-latest
-    steps:
-      - uses: actions/checkout@v2
-        name: Checkout the repository
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '12.x'
-      - run: npm install
-      
   test_pull_request:
     runs-on: ubuntu-latest
     steps:
@@ -34,7 +11,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - name: Display path
+      - name: Run unit test
         run: |
               cd "100-js-algo"
               npm install

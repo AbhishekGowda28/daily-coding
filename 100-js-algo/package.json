@@ -4,8 +4,10 @@
   "description": "100 Algorithm challenge",
   "main": "main.js",
   "scripts": {
-    "test": "jest --watchAll",
-    "test-coverage": "npx jest --coverage --watchAll"
+    "test": "jest",
+    "dev-test": "jest --watchAll",
+    "test-coverage": "npx jest --coverage",
+    "dev-test-coverage": "npx jest --coverage --watchAll"
   },
   "author": "Abhishek Gowda",
   "license": "GPL-3.0",
