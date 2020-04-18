@@ -1,7 +1,9 @@
 function boxBlur(image) {
     let sum=0;
-    image.forEach((data) => {
+    image.forEach((err) => {
+        err.forEach((data) => {
         sum+=data;
+        });
     });
     sum = sum/9;
     sum = Number(sum.toFixed(0))
