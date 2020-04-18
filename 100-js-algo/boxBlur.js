@@ -7,7 +7,7 @@ function boxBlur(image) {
     });
     sum = sum/9;
     sum = Number(sum.toString().split(".")[0])
-    return sum;
+    return [[sum]];
 }
 
 module.exports = { boxBlur };
