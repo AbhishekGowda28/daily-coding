@@ -6,7 +6,7 @@ function boxBlur(image) {
         });
     });
     sum = sum/9;
-    sum = Number(e.toString().split(".")[0])
+    sum = Number(sum.toString().split(".")[0])
     return sum;
 }
 
