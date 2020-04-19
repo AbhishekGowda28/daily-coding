@@ -7,7 +7,8 @@
     "test": "jest",
     "dev-test": "jest --watchAll",
     "test-coverage": "npx jest --coverage",
-    "dev-test-coverage": "npx jest --coverage --watchAll"
+    "dev-test-coverage": "npx jest --coverage --watchAll",
+    "lint": "npx eslint *.js ./__test__/*.test.js"
   },
   "author": "Abhishek Gowda",
   "license": "GPL-3.0",

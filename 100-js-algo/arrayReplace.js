@@ -1,3 +1,4 @@
+// eslint-disable-next-line max-params
 function arrayReplace(inputArray, elemToReplace, substitutionElem) {
     let index = inputArray.indexOf(elemToReplace);
     if (substitutionElem !== "") {

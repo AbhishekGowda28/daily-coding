@@ -20,8 +20,7 @@ function readChoice(choiceNumber, numberOfChoices) {
     /**
      * @param {string} choice
      */
-    readLineInterface.question(`Enter choice ${choiceNumber}`, (choice) => {
-        console.log("choice", choice);
+    readLineInterface.question(`Enter choice ${choiceNumber}`, () => {
         if (numberOfChoices === choiceNumber) {
             stopReadingChoice();
         }
@@ -33,7 +32,6 @@ function readChoice(choiceNumber, numberOfChoices) {
  */
 function randomChoice(numberOfChoices) {
     for (let choiceNumber = 1; choiceNumber <= numberOfChoices; choiceNumber++) {
-        console.log("choice number", choiceNumber);
         readChoice(choiceNumber, numberOfChoices);
     }
 }
