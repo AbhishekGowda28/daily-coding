@@ -4,7 +4,7 @@ on: [push, pull_request]
 
 jobs:
 
-  test_pull_request:
+  unit_test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
