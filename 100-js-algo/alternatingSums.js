@@ -7,6 +7,7 @@ function alternatingSums(weights) {
             evenSum += weight;
         }
     });
+
     return [oddSum, evenSum];
 }
 

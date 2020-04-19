@@ -6,7 +6,7 @@ function add() {
 	}
 
 	// sum was returned as string
-	return Number(sum); 
+	return Number(sum);
 }
 
 function addWithSpreadOperator(...params) {
@@ -21,4 +21,4 @@ function addWithSpreadOperator(...params) {
 module.exports = {
 	add,
 	addWithSpreadOperator
-}
+};

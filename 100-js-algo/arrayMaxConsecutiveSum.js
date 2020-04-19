@@ -6,7 +6,7 @@ function arrayMaxConsecutiveSum(inputArray, steps) {
         return "Array cannot be empty";
     }
     if (steps > inputArray.length) {
-        return "Steps size cannot be more than the array length"
+        return "Steps size cannot be more than the array length";
     }
 
     let finalSum = 0;

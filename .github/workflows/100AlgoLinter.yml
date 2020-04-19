@@ -1,0 +1,19 @@
+name: "100 Algorithm Linter"
+
+on: [push, pull_request]
+
+jobs:
+
+  test_pull_request:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Run unit test
+        run: |
+              cd "100-js-algo"
+              npm install
+              npm run lint
+        shell: bash

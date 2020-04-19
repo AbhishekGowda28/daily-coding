@@ -7,12 +7,23 @@
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly",
-        "module": false
+        "module": false,
+        "require": false
     },
     "parserOptions": {
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
+    "overrides": [
+        {
+            "files": [
+                "**/*.test.js"
+            ],
+            "env": {
+                "jest": true
+            }
+        }
+    ],
     "rules": {
         "no-console": "warn",
         "no-debugger": "warn",
@@ -29,7 +40,7 @@
         ],
         "max-len": [
             "error",
-            85
+            320
         ],
         "max-lines": [
             "warn",
