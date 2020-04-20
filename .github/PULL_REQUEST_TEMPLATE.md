@@ -1,7 +1,7 @@
 ## PR Checklist
 Please check if your PR fulfills the following requirements:
 
-- [ ] The commit message follows our guidelines: https://github.com/AbhishekGowda28/100DaysChallenge/
+- [ ] The commit message follows our guidelines: https://github.com/AbhishekGowda28/100DaysChallenge/blob/master/CODE_OF_CONDUCT.md
 - [ ] Tests for the changes have been added (for bug fixes / features)
 - [ ] Docs have been added / updated (for bug fixes / features)
 
