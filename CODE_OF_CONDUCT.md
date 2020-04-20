@@ -5,10 +5,11 @@
 ## Branching guid lines
 
 - Create a branch from the relevant branch and merge it to the same branch.
-- Any changes related to documentation should be under **documentation** branch
-- Any changes related to feature changes should be under **dev/feature** branch
-- Any changes related to bugs should be under **bugs** branch
-- Delete the branch after the code has been merged
+- Before creating PR, please rebase the branch with the parent branch.
+- Any changes related to documentation should be under **documentation** branch.
+- Any changes related to feature changes should be under **dev/feature** branch.
+- Any changes related to bugs should be under **bugs** branch.
+- Delete the branch after the code has been merged.
 
 ## Few other guid lines
 
