@@ -1,3 +1,3 @@
 # CODE OF CONDUCT
 
-## Update 
+Please treat everyone with respect.
