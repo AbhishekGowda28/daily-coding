@@ -10,7 +10,7 @@ describe("Build Palindrom", () => {
     });
     test("Two non repeated Character", () => {
         const input = "AB";
-        const expected = "ABBA";
+        const expected = "ABA";
         const actual = buildPalindrom(input);
         expect(actual).toMatch(expected);
     });
