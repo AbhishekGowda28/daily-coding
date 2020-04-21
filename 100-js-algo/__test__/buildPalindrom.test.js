@@ -32,4 +32,10 @@ describe("Build Palindrom", () => {
         const actual = buildPalindrom(input);
         expect(actual).toMatch(expected);
     });
+    test("String already palindrom", () => {
+        const input = "AmmA";
+        const expected = "AmmA";
+        const actual = buildPalindrom(input);
+        expect(actual).toMatch(expected);
+    });
 });
