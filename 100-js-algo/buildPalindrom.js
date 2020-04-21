@@ -1,4 +1,9 @@
 function buildPalindrom(inputString) {
+    let isNumber = false
+    if (typeof inputString === "number") {
+        inputString = new String(inputString);
+        isNumber = true;
+    }
     const charactersNotAvailable = [];
 
     let counter = inputString.length - 1;
@@ -13,6 +18,10 @@ function buildPalindrom(inputString) {
     counter = charactersNotAvailable.length;
     for (let index = counter; index > 0; index--) {
         palindrom += charactersNotAvailable.pop();
+    }
+
+    if(isNumber){
+        palindrom = Number(palindrom);
     }
 
     return palindrom;
