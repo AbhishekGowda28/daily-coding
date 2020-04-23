@@ -1,4 +1,4 @@
-name: "100 Algorithm Linter"
+name: "Static Code Check"
 
 on: [push, pull_request]
 
