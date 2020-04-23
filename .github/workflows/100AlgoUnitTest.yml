@@ -1,4 +1,4 @@
-name: "100 Algorithm Unit Test"
+name: "Unit Test"
 
 on: [push, pull_request]
 
