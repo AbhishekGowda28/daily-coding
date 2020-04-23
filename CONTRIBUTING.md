@@ -13,4 +13,4 @@
  - Please wait till the workflow is completed
  - Code will be merged only if all the existing unit test passes
  - For newly added feature please add relevant unit test
- - If there are any possible breaking changes, please notify
+ - If there are any possible breaking changes, please mention in the PR
