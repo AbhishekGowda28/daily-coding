@@ -1,4 +1,3 @@
-## Please treat everyone with respect.
 
 ## Branching guid lines
 
