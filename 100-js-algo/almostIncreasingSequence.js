@@ -1,4 +1,4 @@
-const { checkForElementInArray } = require("./utils");
+const { checkForElementInArray } = require("./utils/utils");
 
 function increasingSequence(input) {
   const sequence = [];
