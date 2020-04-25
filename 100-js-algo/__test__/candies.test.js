@@ -1,7 +1,7 @@
 const expect = require("expect");
 const { candies } = require("../candies");
 
-descibe("Candies", () => {
+describe("Candies", () => {
     test("More candies than equal distrubtion", () => {
         const childern = 3;
         const numberOfCandies = 10;
