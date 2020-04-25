@@ -20,7 +20,7 @@ function checkForElementInObject(object, element) {
 }
 
 function getInteger(integerNumber){
-    Number((integerNumber).toFixed(0));
+    return Number((integerNumber).toFixed(0));
 }
 
 module.exports = {
