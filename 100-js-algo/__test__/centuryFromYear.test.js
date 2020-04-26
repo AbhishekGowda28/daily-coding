@@ -28,7 +28,7 @@ describe("Century from the year", () => {
     });
     test("Year 0", () => {
         const year = 0;
-        const expected = "Not a year";
+        const expected = "Please provide proper year";
         const actual = centuryFromYear(year);
         expect(actual).toMatch(expected);
     });
