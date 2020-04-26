@@ -36,7 +36,7 @@
         "eol-last": "error",
         "linebreak-style": [
             "error",
-            "unix"
+            "window"
         ],
         "max-len": [
             "error",

@@ -310,19 +310,16 @@ n children have got m pieces of candy. They want to eat as much candy as they ca
 -   For n = 3 and m = 10, the output should be candies(n, m) = 9.
 
     Each child will eat 3 pieces. So the answer is 9.
-
-**Input/Output**
-
--   **[input] integer n**
-
-    The number of children.
-    *Guaranteed constraints:* 1 ≤ n ≤ 10.
-
--   **[input] integer m**
-    The number of pieces of candy.
-    *Guaranteed constraints:* 2 ≤ m ≤ 100.
-    
--   [output] integer 
+ 
     The total number of pieces of candy the children will eat provided they eat as much as they can and all children eat the same amount.
+
+---
+# Problem 23
+Given a year, return the century it is in. The first century spans from the year 1 up to and including the year 100, the second - from the year 101 up to and including the year 200, etc.
+
+**Example**
+
+- For year = 1905, the output should be centuryFromYear(year) = 20;
+- For year = 1700, the output should be centuryFromYear(year) = 17.
 
 ---
