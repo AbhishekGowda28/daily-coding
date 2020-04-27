@@ -323,3 +323,13 @@ Given a year, return the century it is in. The first century spans from the year
 - For year = 1700, the output should be centuryFromYear(year) = 17.
 
 ---
+# Problem 24
+Given the string, check if it is a palindrome.
+
+**Example**
+
+- For inputString = "aabaa", the output should be checkPalindrome(inputString) = true;
+- For inputString = "abac", the output should be checkPalindrome(inputString) = false;
+- For inputString = "a", the output should be checkPalindrome(inputString) = true.
+
+---
