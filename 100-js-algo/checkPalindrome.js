@@ -1,5 +1,9 @@
+const { reverse } = require("./utils/string");
+
 function checkPalindrome(inputString) {
-    return inputString.legth ? true : false;
+    const reverseStr = reverse(inputString);
+
+    return inputString === reverseStr;
 }
 
 module.exports = { checkPalindrome };

@@ -5,7 +5,7 @@ describe("Check for the string to be palindrom", () => {
     test("String is a palindrom", () => {
         const inputString = "AMMA";
         const actual = checkPalindrome(inputString);
-        expect(actual).teBeTruthy();
+        expect(actual).toBeTruthy();
     });
     test("String is not a palindrom", () => {
         const inputString = "PEN";
