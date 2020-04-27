@@ -9,63 +9,6 @@ const chessBoard = [
     ["a1", "b1", "c1", "d1", "e1", "f1", "g1", "h1"],
 ];
 
-function topRightMovement(location, pawn) {
-    let row = location.row;
-    let column = location.column;
-    do {
-        if (chessBoard[row][column] === pawn) {
-            return true;
-        }
-        row--;
-        column++;
-    } while ((row <= 7 && row > 0) && (column <= 7 && column > 0));
-
-    return false;
-}
-
-function topLeftMovement(location, pawn) {
-    let row = location.row;
-    let column = location.column;
-    do {
-        if (chessBoard[row][column] === pawn) {
-            return true;
-        }
-        row--;
-        column--;
-    } while ((row <= 7 && row > 0) && (column <= 7 && column > 0));
-
-    return false;
-}
-
-function downLeftMovement(location, pawn) {
-    let row = location.row;
-    let column = location.column;
-    do {
-        if (chessBoard[row][column] === pawn) {
-            return true;
-        }
-        row++;
-        column--;
-    } while ((row <= 7 && row > 0) && (column <= 7 && column > 0));
-
-    return false;
-
-}
-
-function downRightMovement(location, pawn) {
-    let row = location.row;
-    let column = location.column;
-    do {
-        if (chessBoard[row][column] === pawn) {
-            return true;
-        }
-        row++;
-        column++;
-    } while ((row <= 7 && row > 0) && (column <= 7 && column > 0));
-
-    return false;
-}
-
 function findPawn(pawn) {
     let location;
     chessBoard.forEach((drr, row) => {
@@ -79,4 +22,65 @@ function findPawn(pawn) {
     return location;
 }
 
-module.exports = { findPawn, downRightMovement, downLeftMovement, topLeftMovement, topRightMovement, chessBoard };
+const BishopMovement = {
+
+    topRightMovement(location, pawn) {
+        let row = location.row;
+        let column = location.column;
+        do {
+            if (chessBoard[row][column] === pawn) {
+                return true;
+            }
+            row--;
+            column++;
+        } while ((row <= 7 && row > 0) && (column <= 7 && column > 0));
+
+        return false;
+    },
+
+    topLeftMovement(location, pawn) {
+        let row = location.row;
+        let column = location.column;
+        do {
+            if (chessBoard[row][column] === pawn) {
+                return true;
+            }
+            row--;
+            column--;
+        } while ((row <= 7 && row > 0) && (column <= 7 && column > 0));
+
+        return false;
+    },
+
+    downLeftMovement(location, pawn) {
+        let row = location.row;
+        let column = location.column;
+        do {
+            if (chessBoard[row][column] === pawn) {
+                return true;
+            }
+            row++;
+            column--;
+        } while ((row <= 7 && row > 0) && (column <= 7 && column > 0));
+
+        return false;
+
+    },
+
+    downRightMovement(location, pawn) {
+        let row = location.row;
+        let column = location.column;
+        do {
+            if (chessBoard[row][column] === pawn) {
+                return true;
+            }
+            row++;
+            column++;
+        } while ((row <= 7 && row > 0) && (column <= 7 && column > 0));
+
+        return false;
+    }
+
+};
+
+module.exports = { findPawn, BishopMovement, chessBoard };
