@@ -7,7 +7,8 @@ function centuryFromYear(year) {
     if (year % 100 === 0) {
         return century;
     }
-    return century + 1;
+    
+return century + 1;
 }
 
 module.exports = { centuryFromYear };

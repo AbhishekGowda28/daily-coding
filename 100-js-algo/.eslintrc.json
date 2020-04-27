@@ -34,10 +34,6 @@
         "curly": "error",
         "default-case": "error",
         "eol-last": "error",
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
         "max-len": [
             "error",
             320
