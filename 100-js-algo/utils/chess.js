@@ -83,4 +83,55 @@ const BishopMovement = {
 
 };
 
-module.exports = { findPawn, BishopMovement, chessBoard };
+const KnightMovements = {
+    forwardLeft: function (location) {
+        let row = location.row;
+        let column = location.column;
+        if (row > 1) {
+            row -= 2;
+        }
+        if (column > 0) {
+            column--;
+        }
+
+        return { row, column };
+    },
+    forwardRight: function (location) {
+        let row = location.row;
+        let column = location.column;
+        if (row > 1) {
+            row -= 2;
+        }
+        if (column < 7) {
+            column++;
+        }
+
+        return { row, column };
+    },
+    backwardLeft: function (location) {
+        let row = location.row;
+        let column = location.column;
+        if (row < 5) {
+            row += 2;
+        }
+        if (column > 0) {
+            column--;
+        }
+
+        return { row, column };
+    },
+    backwardRight: function (location) {
+        let row = location.row;
+        let column = location.column;
+        if (row < 5) {
+            row += 2;
+        }
+        if (column < 7) {
+            column++;
+        }
+
+        return { row, column };
+    }
+};
+
+module.exports = { findPawn, BishopMovement, KnightMovements, chessBoard };
