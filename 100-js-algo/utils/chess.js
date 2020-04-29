@@ -89,9 +89,17 @@ const KnightMovements = {
         let column = location.column;
         if (row > 1) {
             row -= 2;
+        } else {
+            console.log("knight forwardLeft move not possible");
+
+            return undefined;
         }
         if (column > 0) {
             column--;
+        } else {
+            console.log("knight forwardLeft move not possible");
+
+            return undefined;
         }
 
         return { row, column };
@@ -101,9 +109,17 @@ const KnightMovements = {
         let column = location.column;
         if (row > 1) {
             row -= 2;
+        } else {
+            console.log("knight forwardRight move not possible");
+
+            return undefined;
         }
         if (column < 7) {
             column++;
+        } else {
+            console.log("knight forwardRight move not possible");
+
+            return undefined;
         }
 
         return { row, column };
@@ -113,9 +129,17 @@ const KnightMovements = {
         let column = location.column;
         if (row < 5) {
             row += 2;
+        } else {
+            console.log("knight backwardLeft move not possible");
+
+            return undefined;
         }
         if (column > 0) {
             column--;
+        } else {
+            console.log("knight backwardLeft move not possible");
+
+            return undefined;
         }
 
         return { row, column };
@@ -125,9 +149,17 @@ const KnightMovements = {
         let column = location.column;
         if (row < 5) {
             row += 2;
+        } else {
+            console.log("knight backwardRight move not possible");
+
+            return undefined;
         }
         if (column < 7) {
             column++;
+        } else {
+            console.log("knight backwardRight move not possible");
+
+            return undefined;
         }
 
         return { row, column };
