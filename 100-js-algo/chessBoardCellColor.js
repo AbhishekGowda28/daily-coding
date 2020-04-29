@@ -1,8 +1,6 @@
 const chess = require("./utils/chess");
 
 function chessBoardCellColor(cell1, cell2) {
-    cell1 = cell1.toLowerCase();
-    cell2 = cell2.toLowerCase();
     const cell1Loc = chess.findPawn(cell1);
     const cell2Loc = chess.findPawn(cell2);
 

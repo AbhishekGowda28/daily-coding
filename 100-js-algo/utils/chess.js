@@ -9,7 +9,12 @@ const chessBoard = [
     ["a1", "b1", "c1", "d1", "e1", "f1", "g1", "h1"],
 ];
 
+/**
+ * 
+ * @param {string} pawn 
+ */
 function findPawn(pawn) {
+    pawn = pawn.toLowerCase();
     let location;
     chessBoard.forEach((drr, row) => {
         drr.forEach((element, column) => {
