@@ -9,67 +9,15 @@ const chessBoard = [
     ["a1", "b1", "c1", "d1", "e1", "f1", "g1", "h1"],
 ];
 
-function topRightMovement(location, pawn) {
-    let row = location.row;
-    let column = location.column;
-    do {
-        if (chessBoard[row][column] === pawn) {
-            return true;
-        }
-        row--;
-        column++;
-    } while ((row <= 7 && row > 0) && (column <= 7 && column > 0));
-
-    return false;
-}
-
-function topLeftMovement(location, pawn) {
-    let row = location.row;
-    let column = location.column;
-    do {
-        if (chessBoard[row][column] === pawn) {
-            return true;
-        }
-        row--;
-        column--;
-    } while ((row <= 7 && row > 0) && (column <= 7 && column > 0));
-
-    return false;
-}
-
-function downLeftMovement(location, pawn) {
-    let row = location.row;
-    let column = location.column;
-    do {
-        if (chessBoard[row][column] === pawn) {
-            return true;
-        }
-        row++;
-        column--;
-    } while ((row <= 7 && row > 0) && (column <= 7 && column > 0));
-
-    return false;
-
-}
-
-function downRightMovement(location, pawn) {
-    let row = location.row;
-    let column = location.column;
-    do {
-        if (chessBoard[row][column] === pawn) {
-            return true;
-        }
-        row++;
-        column++;
-    } while ((row <= 7 && row > 0) && (column <= 7 && column > 0));
-
-    return false;
-}
-
+/**
+ * 
+ * @param {string} pawn 
+ */
 function findPawn(pawn) {
+    pawn = pawn.toLowerCase();
     let location;
-    chessBoard.forEach((drr, row) => {
-        drr.forEach((element, column) => {
+    chessBoard.forEach((boardRow, row) => {
+        boardRow.forEach((element, column) => {
             if (element === pawn) {
                 location = { row, column };
             }
@@ -79,4 +27,175 @@ function findPawn(pawn) {
     return location;
 }
 
-module.exports = { findPawn, downRightMovement, downLeftMovement, topLeftMovement, topRightMovement, chessBoard };
+const BishopMovement = {
+
+    topRightMovement(location, pawn) {
+        let row = location.row;
+        let column = location.column;
+        do {
+            if (chessBoard[row][column] === pawn) {
+                return true;
+            }
+            row--;
+            column++;
+        } while ((row <= 7 && row > 0) && (column <= 7 && column > 0));
+
+        return false;
+    },
+
+    topLeftMovement(location, pawn) {
+        let row = location.row;
+        let column = location.column;
+        do {
+            if (chessBoard[row][column] === pawn) {
+                return true;
+            }
+            row--;
+            column--;
+        } while ((row <= 7 && row > 0) && (column <= 7 && column > 0));
+
+        return false;
+    },
+
+    downLeftMovement(location, pawn) {
+        let row = location.row;
+        let column = location.column;
+        do {
+            if (chessBoard[row][column] === pawn) {
+                return true;
+            }
+            row++;
+            column--;
+        } while ((row <= 7 && row > 0) && (column <= 7 && column > 0));
+
+        return false;
+
+    },
+
+    downRightMovement(location, pawn) {
+        let row = location.row;
+        let column = location.column;
+        do {
+            if (chessBoard[row][column] === pawn) {
+                return true;
+            }
+            row++;
+            column++;
+        } while ((row <= 7 && row > 0) && (column <= 7 && column > 0));
+
+        return false;
+    }
+
+};
+
+const KnightMovements = {
+    upLeft: function (location) {
+        let row = location.row;
+        let column = location.column;
+        if (row > 1 && column > 0) {
+            row -= 2;
+            column--;
+        } else {
+            // knight upLeft move not possible
+            return undefined;
+        }
+
+        return { row, column };
+    },
+    upRight: function (location) {
+        let row = location.row;
+        let column = location.column;
+        if (row > 1 && column < 7) {
+            row -= 2;
+            column++;
+        } else {
+            // knight upRight move not possible
+            return undefined;
+        }
+
+        return { row, column };
+
+    },
+    downLeft: function (location) {
+        let row = location.row;
+        let column = location.column;
+        if (row < 6 && column > 0) {
+            row += 2;
+            column--;
+        } else {
+            // knight downLeft move not possible
+            return undefined;
+        }
+
+        return { row, column };
+
+    },
+    downRight: function (location) {
+        let row = location.row;
+        let column = location.column;
+        if (row < 6 && column < 7) {
+            row += 2;
+            column++;
+        } else {
+            // knight downRight move not possible
+            return undefined;
+        }
+
+        return { row, column };
+
+    },
+    leftUp: function (location) {
+        let row = location.row;
+        let column = location.column;
+        if (row > 0 && column > 1) {
+            row--;
+            column -= 2;
+        } else {
+            // knight leftUp move not possible
+            return undefined;
+        }
+
+        return { row, column };
+    },
+    leftRight: function (location) {
+        let row = location.row;
+        let column = location.column;
+        if (row < 7 && column > 1) {
+            row++;
+            column -= 2;
+        } else {
+            // knight leftRight move not possible
+            return undefined;
+        }
+
+        return { row, column };
+    },
+    rightUp: function (location) {
+        let row = location.row;
+        let column = location.column;
+        if (row > 0 && column < 6) {
+            row--;
+            column += 2;
+        } else {
+            // knight leftRight move not possible
+            return undefined;
+        }
+
+        return { row, column };
+    },
+    rightDown: function (location) {
+        let row = location.row;
+        let column = location.column;
+        if (row < 7 && column < 6) {
+            row++;
+            column += 2;
+        } else {
+            // knight leftRight move not possible
+            return undefined;
+        }
+
+        return { row, column };
+    }
+};
+
+module.exports = { findPawn, BishopMovement, KnightMovements, chessBoard };

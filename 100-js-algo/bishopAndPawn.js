@@ -6,10 +6,10 @@ function bishopAndPawn(bishop, pawn) {
 
     if (bishopLocation !== undefined && pawnLocation !== undefined) {
 
-        if (chess.topLeftMovement(bishopLocation, pawn) === false) {
-            if (chess.topRightMovement(bishopLocation, pawn) === false) {
-                if (chess.downLeftMovement(bishopLocation, pawn) === false) {
-                    if (chess.downRightMovement(bishopLocation, pawn) === false) {
+        if (chess.BishopMovement.topLeftMovement(bishopLocation, pawn) === false) {
+            if (chess.BishopMovement.topRightMovement(bishopLocation, pawn) === false) {
+                if (chess.BishopMovement.downLeftMovement(bishopLocation, pawn) === false) {
+                    if (chess.BishopMovement.downRightMovement(bishopLocation, pawn) === false) {
                         return false;
                     }
                 }
