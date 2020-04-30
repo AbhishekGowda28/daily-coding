@@ -16,8 +16,8 @@ const chessBoard = [
 function findPawn(pawn) {
     pawn = pawn.toLowerCase();
     let location;
-    chessBoard.forEach((drr, row) => {
-        drr.forEach((element, column) => {
+    chessBoard.forEach((boardRow, row) => {
+        boardRow.forEach((element, column) => {
             if (element === pawn) {
                 location = { row, column };
             }
@@ -89,203 +89,113 @@ const BishopMovement = {
 };
 
 const KnightMovements = {
-    /**
-     * 
-     * @description 2 step forward, 1 step left
-     */
-    forwardLeft: function (location) {
+    upLeft: function (location) {
         let row = location.row;
         let column = location.column;
-        if (row > 1) {
+        if (row > 1 && column > 0) {
             row -= 2;
-        } else {
-            console.log("knight forwardLeft move not possible");
-
-            return undefined;
-        }
-        if (column > 0) {
             column--;
         } else {
-            console.log("knight forwardLeft move not possible");
-
+            // knight upLeft move not possible
             return undefined;
         }
 
         return { row, column };
     },
-    /**
-     * 
-     * @description 2 step forward, 1 step right
-     */
-    forwardRight: function (location) {
+    upRight: function (location) {
         let row = location.row;
         let column = location.column;
-        if (row > 1) {
+        if (row > 1 && column < 7) {
             row -= 2;
-        } else {
-            console.log("knight forwardRight move not possible");
-
-            return undefined;
-        }
-        if (column < 7) {
             column++;
         } else {
-            console.log("knight forwardRight move not possible");
-
+            // knight upRight move not possible
             return undefined;
         }
 
         return { row, column };
+
     },
-    /**
-     * 
-     * @description 2 step backwards, 1 step left
-     */
-    backwardLeft: function (location) {
+    downLeft: function (location) {
         let row = location.row;
         let column = location.column;
-        if (row < 5) {
+        if (row < 6 && column > 0) {
             row += 2;
-        } else {
-            console.log("knight backwardLeft move not possible");
-
-            return undefined;
-        }
-        if (column > 0) {
             column--;
         } else {
-            console.log("knight backwardLeft move not possible");
-
+            // knight downLeft move not possible
             return undefined;
         }
 
         return { row, column };
+
     },
-    /**
-     * 
-     * @description 2 step backwards, 1 step right 
-     */
-    backwardRight: function (location) {
+    downRight: function (location) {
         let row = location.row;
         let column = location.column;
-        if (row < 5) {
+        if (row < 6 && column < 7) {
             row += 2;
-        } else {
-            console.log("knight backwardRight move not possible");
-
-            return undefined;
-        }
-        if (column < 7) {
             column++;
         } else {
-            console.log("knight backwardRight move not possible");
-
+            // knight downRight move not possible
             return undefined;
         }
 
         return { row, column };
+
     },
-    /**
-     * 
-     * @description 2 step left, 1 step forward
-     */
-    leftForward: function (location) {
+    leftUp: function (location) {
         let row = location.row;
         let column = location.column;
-
-        if (row > 1) {
-            row -= 2;
+        if (row > 0 && column > 1) {
+            row--;
+            column -= 2;
         } else {
-            console.log("knight leftForward move not possible");
-
-            return undefined;
-        }
-        if (column > 0) {
-            column--;
-        } else {
-            console.log("knight leftForward move not possible");
-
+            // knight leftUp move not possible
             return undefined;
         }
 
         return { row, column };
     },
-    /**
-     * 
-     * @description 2 step left, 1 step backward
-     */
-    leftBackward: function (location) {
+    leftRight: function (location) {
         let row = location.row;
         let column = location.column;
-
-        if (row > 1) {
-            row -= 2;
+        if (row < 7 && column > 1) {
+            row++;
+            column -= 2;
         } else {
-            console.log("knight leftBackward move not possible");
-
-            return undefined;
-        }
-        if (column < 7) {
-            column++;
-        } else {
-            console.log("knight leftBackward move not possible");
-
+            // knight leftRight move not possible
             return undefined;
         }
 
         return { row, column };
     },
-    /**
-     * 
-     * @description 2 step right, 1 step forward
-     */
-    rightForward: function (location) {
+    rightUp: function (location) {
         let row = location.row;
         let column = location.column;
-
-        if (row < 6) {
-            row += 2;
+        if (row > 0 && column < 6) {
+            row--;
+            column += 2;
         } else {
-            console.log("knight rightForward move not possible");
-
-            return undefined;
-        }
-        if (column > 0) {
-            column--;
-        } else {
-            console.log("knight rightForward move not possible");
-
+            // knight leftRight move not possible
             return undefined;
         }
 
         return { row, column };
     },
-    /**
-    * 
-    * @description 2 step right, 1 step backward
-    */
-    rightBackward: function (location) {
+    rightDown: function (location) {
         let row = location.row;
         let column = location.column;
-
-        if (row < 6) {
-            row += 2;
+        if (row < 7 && column < 6) {
+            row++;
+            column += 2;
         } else {
-            console.log("knight rightBackward move not possible");
-
-            return undefined;
-        }
-        if (column < 7) {
-            column++;
-        } else {
-            console.log("knight rightBackward move not possible");
-
+            // knight leftRight move not possible
             return undefined;
         }
 
         return { row, column };
-    },
-
+    }
 };
 
 module.exports = { findPawn, BishopMovement, KnightMovements, chessBoard };
