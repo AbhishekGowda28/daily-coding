@@ -26,4 +26,9 @@ describe("Add two digits", () => {
         const actual = addTwoDigits(input);
         expect(actual).toEqual(expected);
     });
+    test("No arguments provided", () => {
+        const expected = 0;
+        const actual = addTwoDigits();
+        expect(actual).toEqual(expected);
+    });
 });
