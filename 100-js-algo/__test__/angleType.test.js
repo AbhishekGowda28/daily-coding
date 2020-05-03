@@ -14,12 +14,6 @@ describe("Angle Types", () => {
         const expected = "acute";
         expect(actual).toMatch(expected);
     });
-    test("Acute Angle", () => {
-        const angle = -15;
-        const actual = angleType(angle);
-        const expected = "";
-        expect(actual).toMatch(expected);
-    });
     test("Right", () => {
         const angle = 90;
         const actual = angleType(angle);
@@ -39,7 +33,7 @@ describe("Angle Types", () => {
         expect(actual).toMatch(expected);
     });
     test("Angle is more than 180", () => {
-        const angle = -15;
+        const angle = 270;
         const actual = angleType(angle);
         const expected = "Angle is more than 180";
         expect(actual).toMatch(expected);
