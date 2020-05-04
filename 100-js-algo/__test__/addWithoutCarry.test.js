@@ -16,4 +16,11 @@ describe("Adding without Carry", () => {
         const actual = addWithoutCarry(value1, value2);
         expect(actual).toBe(expected);
     });
+    test("Example tets", () => {
+        const value1 = 456;
+        const value2 = 1734;
+        const expected = 1180;
+        const actual = addWithoutCarry(value1, value2);
+        expect(actual).toBe(expected);
+    });
 });
