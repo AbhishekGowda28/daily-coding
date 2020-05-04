@@ -115,12 +115,14 @@ Given an array of strings, return another array containing all of its longest st
 
 **Example**
 ```
-For inputArray = ["aba", "aa", "ad", "vcd", "aba"], the output should be allLongestStrings(inputArray) = ["aba", "vcd", "aba"].
+For inputArray = ["aba", "aa", "ad", "vcd", "aba"], the output should be 
+allLongestStrings(inputArray) = ["aba", "vcd", "aba"].
 ```
 ---
 # almostIncreasingSequence
 ```
-Given a sequence of integers as an array, determine whether it is possible to obtain a strictly increasing sequence by removing no more than one element from the array.
+Given a sequence of integers as an array, determine whether it is possible to obtain a strictly increasing sequence 
+by removing no more than one element from the array.
 
 ```
 On more details on [Strictly increasing sequence](https://math.stackexchange.com/questions/808338/what-is-a-strictly-increasing-sequence-in-discrete-math)
@@ -135,7 +137,8 @@ There is no one element in this array that can be removed in order to get a stri
 - For sequence = [1, 3, 2], the output should be
 almostIncreasingSequence(sequence) = true.
 
-You can remove 3 from the array to get the strictly increasing sequence [1, 2]. Alternately, you can remove 2 to get the strictly increasing sequence [1, 3].
+You can remove 3 from the array to get the strictly increasing sequence [1, 2]. 
+Alternately, you can remove 2 to get the strictly increasing sequence [1, 3].
 ```
 ---
 # alphabeticShift
@@ -323,7 +326,8 @@ For image = [[1, 1, 1],
             [1, 7, 1], 
             [1, 1, 1]]
 the output should be boxBlur(image) = [[1]].
-In the given example all boundary pixels were cropped, and the value of the pixel in the middle was obtained as (1 + 1 + 1 + 1 + 7 + 1 + 1 + 1 + 1) / 9 = 15 / 9 = rounded down = 1.
+In the given example all boundary pixels were cropped, and the value of the pixel in the middle was obtained as 
+(1 + 1 + 1 + 1 + 7 + 1 + 1 + 1 + 1) / 9 = 15 / 9 = rounded down = 1.
 ```
 ---
 # buildPalindrome
@@ -346,7 +350,8 @@ n children have got m pieces of candy. They want to eat as much candy as they ca
 
     Each child will eat 3 pieces. So the answer is 9.
  
-    The total number of pieces of candy the children will eat provided they eat as much as they can and all children eat the same amount.
+    The total number of pieces of candy the children will eat provided they eat as much as they can and all 
+    children eat the same amount.
 ```
 ---
 # centuryFromYear
