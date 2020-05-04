@@ -19,8 +19,10 @@ function checkForElementInObject(object, element) {
     return data === undefined ? false : true;
 }
 
-function getInteger(integerNumber){
-    return Number((integerNumber).toFixed(0));
+function getInteger(integerNumber) {
+    integerNumber = Number(integerNumber);
+
+    return Number(integerNumber.toString().split(".")[0]);
 }
 
 module.exports = {
