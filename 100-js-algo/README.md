@@ -438,3 +438,16 @@ For k = 5, there will be 1 + 3 _ 3 + 5 _ 5 = 35 yellow apples and 2 _ 2 + 4 _ 4 
 20 - 35 = -15.
 ```
 ---
+# applesDistribution
+
+There are some apples. You are going to distribute them into gift boxes in such a way that boxes will contain equal number of apples. It's possible that some of the apples won't be used but there is a max limit on the number of apples that can be left out.
+
+Assume that you have an infinite amount of gift boxes and that all the boxes have equal capacity.
+
+Find the number of different apple distributions satisfying all of the above conditions.
+
+**Example**
+```
+for apples = 7, boxCapacity = 4, maxResidue = 1 output should be 3
+```
+---
