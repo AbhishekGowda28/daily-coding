@@ -1,4 +1,4 @@
-const { getInteger } = require("./utils/utils");
+const { getInteger } = require("./utils/math");
 
 function candies(children, numberOfCandies) {
     if (numberOfCandies < children || children === 0) {

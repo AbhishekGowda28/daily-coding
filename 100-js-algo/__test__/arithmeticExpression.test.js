@@ -31,9 +31,9 @@ describe("Artimatic Expression", () => {
         expect(actual).toBeTruthy();
     });
     test("Test for / operator ", () => {
-        const operand1 = 2;
+        const operand1 = 12;
         const operand2 = 3;
-        const result = 1;
+        const result = 4;
         const actual = arithmeticExpression(operand1, operand2, result);
         expect(actual).toBeTruthy();
     });
