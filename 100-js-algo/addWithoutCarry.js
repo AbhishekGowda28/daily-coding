@@ -1,5 +1,5 @@
 function addWithoutCarry(value1, value2) {
-    const { getInteger } = require("./utils/utils");
+    const { getInteger } = require("./utils/math");
     let result = 0;
     let powerOf10 = 1;
     while (value1 > 0 || value2 > 0) {

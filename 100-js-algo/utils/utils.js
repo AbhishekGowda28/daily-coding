@@ -19,14 +19,7 @@ function checkForElementInObject(object, element) {
     return data === undefined ? false : true;
 }
 
-function getInteger(integerNumber) {
-    integerNumber = Number(integerNumber);
-
-    return Number(integerNumber.toString().split(".")[0]);
-}
-
 module.exports = {
     checkForElementInArray,
     checkForElementInObject,
-    getInteger
 };
