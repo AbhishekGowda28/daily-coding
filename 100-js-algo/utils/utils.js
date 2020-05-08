@@ -23,7 +23,9 @@ function isEmpty(object) {
     if (object !== undefined) {
         if (object !== null) {
             if (object !== {}) {
-                return false;
+                if (object.length !== 0) {
+                    return false;
+                }
             }
         }
     }
