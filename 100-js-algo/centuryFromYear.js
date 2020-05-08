@@ -1,4 +1,4 @@
-const { getInteger } = require("./utils/math");
+const { getInteger } = require("./utils/Math");
 function centuryFromYear(year) {
     if (year < 1) {
         return "Please provide proper year";
