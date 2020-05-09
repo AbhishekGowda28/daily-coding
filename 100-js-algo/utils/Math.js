@@ -29,8 +29,19 @@ function getInteger(integerNumber) {
     return Number(integerNumber.toString().split(".")[0]);
 }
 
+function factorial(number) {
+    let result = 1;
+    while (number > 0) {
+        result *= number;
+        number--;
+    }
+
+    return result;
+}
+
 module.exports = {
     arthimaticProgression,
     geometricProgression,
-    getInteger
+    getInteger,
+    factorial
 };
