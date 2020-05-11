@@ -1,17 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { getNewStorieIds, getItem } from "./services/api";
 
 
 function App() {
-  const newStoreiesIds = getNewStorieIds();
 
-  const randomItem = getItem(newStoreiesIds[0]);
+  const [item, setItem] = useState({});
+  const [newStoryIds, setNewStoryIds] = useState([]);
 
-  console.log(randomItem);
+  React.useEffect(() => {
+    getNewStorieIds().then((newStoreiesIds) => {
+      setNewStoryIds(newStoreiesIds);
+    });
+  }, []);
+
+  React.useEffect(() => {
+    debugger;
+    getItem(newStoryIds[0]).then((randomItem) => {
+      setItem(randomItem);
+    });
+  }, [newStoryIds]);
 
   return (
     <div className="App">
       Hacker NEWS
+      {JSON.stringify(item)}
     </div>
   );
 }
