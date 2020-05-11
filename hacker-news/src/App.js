@@ -1,9 +1,14 @@
 import React from 'react';
-import { getNewStories } from "./services/api";
+import { getNewStorieIds, getItem } from "./services/api";
 
 
 function App() {
-  getNewStories();
+  const newStoreiesIds = getNewStorieIds();
+
+  const randomItem = getItem(newStoreiesIds[0]);
+
+  console.log(randomItem);
+
   return (
     <div className="App">
       Hacker NEWS

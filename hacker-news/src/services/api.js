@@ -1,10 +1,9 @@
 import { get } from "./agent";
 import { BASE_URL, OPTIONS } from "../constants/constants";
 
-function getNewStories() {
+function getNewStorieIds() {
     const url = `${BASE_URL}/${OPTIONS.NEW_STORIES}.json`;
-    get(url).then((new_stories_list) => {
-        getItem(new_stories_list[0]);
+    return get(url).then((new_stories_list) => {
         return new_stories_list;
     });
 }
@@ -17,6 +16,6 @@ function getItem(itemId) {
 }
 
 export {
-    getNewStories,
+    getNewStorieIds,
     getItem
 };
