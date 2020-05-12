@@ -12,7 +12,6 @@ function getNewStorieIds() {
 function getItem(itemId) {
     const url = `${BASE_URL}/${OPTIONS.ITEM}/${itemId}.json`;
     return get(url).then((item) => {
-        console.log({ item });
         return { title: item.title, url: item.url };
     });
 }

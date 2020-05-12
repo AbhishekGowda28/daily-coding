@@ -2,6 +2,14 @@ import React, { useState } from 'react';
 import { getNewStorieIds, getItem } from "./services/api";
 
 
+function StoryItems(item) {
+  console.log(item);
+  return (
+    <div>{item.title}</div>
+  );
+}
+
+
 function App() {
 
   const [item, setItem] = useState({});
@@ -14,7 +22,6 @@ function App() {
   }, []);
 
   React.useEffect(() => {
-    debugger;
     getItem(newStoryIds[0]).then((randomItem) => {
       setItem(randomItem);
     });
@@ -23,7 +30,7 @@ function App() {
   return (
     <div className="App">
       Hacker NEWS
-      {JSON.stringify(item)}
+      <StoryItems item={item} />
     </div>
   );
 }
