@@ -1,4 +1,4 @@
-import { get } from "./agent";
+import {get } from "./agent";
 import { HackerNewsURL } from "../constants/constants";
 
 function getNewStorieIds() {
@@ -10,7 +10,7 @@ function getNewStorieIds() {
 function getItem(itemId) {
     const url = `${HackerNewsURL.ITEM}${itemId}.json`;
     return get(url).then((item) => {
-        return { title: item.title, url: item.url };
+        return { title: item.title, url: item.url, author: item.by, updateTime: item.time * 1000 };
     });
 }
 

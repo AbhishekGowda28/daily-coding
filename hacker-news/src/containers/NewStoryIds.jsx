@@ -14,11 +14,13 @@ function NewStoryIds() {
 
     return (
         <div className="App">
-            {newStoryIds.map((storyId, index) => {
-                return (
-                    <Story storyId={storyId} key={index} />
-                )
-            })}
+            <div className="stories">
+                {newStoryIds.map((storyId) => {
+                    return (
+                        <Story storyId={storyId} key={storyId} />
+                    )
+                })}
+            </div>
         </div>
     );
 }

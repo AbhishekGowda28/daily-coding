@@ -3,21 +3,25 @@ import { getItem } from "../services/api";
 
 function Story({ storyId }) {
 
-    const [storyTitle, setStoryTitle] = React.useState("");
-    const [storyLink, setStoryLink] = React.useState("");
+    const [story, setStory] = React.useState({});
 
     React.useEffect(() => {
         getItem(storyId).then((result) => {
-            setStoryTitle(result.title);
-            setStoryLink(result.url);
+            setStory(result);
         })
     }, []);
 
     return (
         <div className="story">
-            <div>
-                <a href={storyLink}>{storyTitle}</a>
-            </div>
+            {story.url ?
+                <div >
+                    <p>
+                        <a href={story.url} target="__blank">{story.title}</a>
+                    </p>
+                    <div>Author: {story.author} </div>
+                    <div>Last Updated: {new Date(story.updateTime).toLocaleDateString()} </div>
+                </div>
+                : null}
         </div>
     );
 }
