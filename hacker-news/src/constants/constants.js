@@ -1,12 +1,12 @@
 const BASE_URL = "https://hacker-news.firebaseio.com/v0";
 
-const OPTIONS = {
-    USER: "user",
-    ITEM: "item",
-    MAX_ITEM: "maxitem",
-    TOP_STORIES: "topstories",
-    NEW_STORIES: "newstories",
-    BEST_STORIES: "beststories"
+const HackerNewsURL = {
+    USER: `${BASE_URL}/user/`,
+    ITEM: `${BASE_URL}/item/`,
+    MAX_ITEM: `${BASE_URL}/maxitem.json`,
+    TOP_STORIES: `${BASE_URL}/topstories.json`,
+    NEW_STORIES: `${BASE_URL}/newstories.json`,
+    BEST_STORIES: `${BASE_URL}/beststories.json`
 }
 
-export { BASE_URL, OPTIONS };
+export { HackerNewsURL };

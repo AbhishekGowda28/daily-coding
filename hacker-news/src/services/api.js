@@ -1,16 +1,14 @@
 import { get } from "./agent";
-import { BASE_URL, OPTIONS } from "../constants/constants";
+import { HackerNewsURL } from "../constants/constants";
 
 function getNewStorieIds() {
-    const url = `${BASE_URL}/${OPTIONS.NEW_STORIES}.json`;
-    return get(url).then((new_stories_list) => {
-        console.log(new_stories_list);
+    return get(HackerNewsURL.NEW_STORIES).then((new_stories_list) => {
         return new_stories_list;
     });
 }
 
 function getItem(itemId) {
-    const url = `${BASE_URL}/${OPTIONS.ITEM}/${itemId}.json`;
+    const url = `${HackerNewsURL.ITEM}${itemId}.json`;
     return get(url).then((item) => {
         return { title: item.title, url: item.url };
     });
