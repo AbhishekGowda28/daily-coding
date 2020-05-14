@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { getNewStorieIds } from "../services/api";
-import { Story } from '../components/Story';
+import { Story } from './Story';
 
 function NewStoryIds() {
 
@@ -13,15 +13,12 @@ function NewStoryIds() {
     }, []);
 
     return (
-        <div>
-            <h1 className="AppTitle">Hacker News Stories</h1>
-            <div className="stories">
-                {newStoryIds.map((storyId) => {
-                    return (
-                        <Story storyId={storyId} key={storyId} />
-                    )
-                })}
-            </div>
+        <div className="stories">
+            {newStoryIds.map((storyId) => {
+                return (
+                    <Story storyId={storyId} key={storyId} />
+                )
+            })}
         </div>
     );
 }

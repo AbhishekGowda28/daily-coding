@@ -1,3 +1,5 @@
+@import "./credits.css";
+@import "./story.css";
 :root {
     --primary-background-color: #000000de;
     --primary-color: #f5f5f5;
@@ -13,32 +15,4 @@
 
 body {
     margin-left: 30px;
-}
-
-.credits-ribbon {
-    top: 0px;
-    left: 0px;
-    position: fixed;
-    background: #1a181888;
-    transform: rotate(320deg);
-    padding: 10px;
-    margin-left: -50px;
-    margin-top: 50px;
-    width: 265px;
-    color: #f0f0f0;
-}
-
-.story {
-    padding-top: 10px;
-    margin-bottom: 20px;
-    border-top: 1px solid #cccccc;
-}
-
-.story:first-of-type {
-    border-top: 0;
-}
-
-.story:last-of-type {
-    margin-bottom: 0;
-    padding-bottom: 0;
 }
