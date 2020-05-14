@@ -1,6 +1,5 @@
 import React from "react";
 import { getItem } from "../services/api";
-import { StoryStyles } from "../styles/StoryStyle";
 
 function Story({ storyId }) {
 
@@ -10,18 +9,18 @@ function Story({ storyId }) {
         getItem(storyId).then((result) => {
             setStory(result);
         })
-    }, []);
+    }, [storyId]);
 
     return (
-        <div className="story">
+        <div >
             {story.url ?
-                <StoryStyles >
+                <div className="story">
                     <p>
                         <a href={story.url} target="__blank">{story.title}</a>
                     </p>
                     <div>Author: {story.author} </div>
                     <div>Last Updated: {new Date(story.updateTime).toLocaleDateString()} </div>
-                </StoryStyles>
+                </div>
                 : null}
         </div>
     );

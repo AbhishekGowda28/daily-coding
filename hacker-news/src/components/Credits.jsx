@@ -2,7 +2,7 @@ import React from "react";
 
 function Credits() {
     return (
-        <div className="credits">
+        <div className="credits-ribbon">
             Powered by Hacker News API
         </div>
     );

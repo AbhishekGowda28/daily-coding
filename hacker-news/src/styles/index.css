@@ -15,7 +15,7 @@ body {
     margin-left: 30px;
 }
 
-.credits {
+.credits-ribbon {
     top: 0px;
     left: 0px;
     position: fixed;
@@ -28,25 +28,17 @@ body {
     color: #f0f0f0;
 }
 
-.App {
-    text-align: center;
-}
-
-
-/* 
-body {
-    color: var(--primary-color); 
-    font-family: var(--primary-font-family);
-    font-size: var(--primary-font-size);
-}
-
 .story {
-    margin: 10px;
-    border-radius: 2px solid var(--primary-color);
+    padding-top: 10px;
+    margin-bottom: 20px;
+    border-top: 1px solid #cccccc;
 }
 
-.story a {
-    text-decoration-line: none;
-    cursor: pointer;
-} 
-*/
+.story:first-of-type {
+    border-top: 0;
+}
+
+.story:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
