@@ -1,0 +1,14 @@
+.story {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    border-top: 1px solid #cccccc;
+}
+
+.story:first-of-type {
+    border-top: 0;
+}
+
+.story:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
