@@ -1,5 +1,6 @@
 import React from "react";
 import { getItem } from "../services/api";
+import { StoryStyles } from "../styles/StoryStyle";
 
 function Story({ storyId }) {
 
@@ -14,13 +15,13 @@ function Story({ storyId }) {
     return (
         <div className="story">
             {story.url ?
-                <div >
+                <StoryStyles >
                     <p>
                         <a href={story.url} target="__blank">{story.title}</a>
                     </p>
                     <div>Author: {story.author} </div>
                     <div>Last Updated: {new Date(story.updateTime).toLocaleDateString()} </div>
-                </div>
+                </StoryStyles>
                 : null}
         </div>
     );

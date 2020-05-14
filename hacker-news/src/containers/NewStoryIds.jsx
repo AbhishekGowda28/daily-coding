@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { getNewStorieIds } from "../services/api";
 import { Story } from '../components/Story';
+import { AppTitle } from '../styles/TitleStyle';
 
 function NewStoryIds() {
 
@@ -13,7 +14,8 @@ function NewStoryIds() {
     }, []);
 
     return (
-        <div className="App">
+        <div>
+            <AppTitle>Hacker News Stories</AppTitle>
             <div className="stories">
                 {newStoryIds.map((storyId) => {
                     return (
