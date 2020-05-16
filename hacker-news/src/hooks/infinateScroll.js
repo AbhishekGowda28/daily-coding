@@ -12,7 +12,7 @@ function infiniteScroll() {
 
         const innerHeight = window.innerHeight;
         const scrollPosition = window.document.documentElement.scrollTop;
-        const offSetHeight = window.document.documentElement.offsetHeight
+        const offSetHeight = window.document.documentElement.offsetHeight;
 
         const totalScroll = innerHeight + scrollPosition;
         if ((totalScroll > offSetHeight || totalScroll === offSetHeight) && loading === false) {
