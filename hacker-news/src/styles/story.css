@@ -12,3 +12,25 @@
     margin-bottom: 0;
     padding-bottom: 0;
 }
+
+.storyTitle {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 1.8;
+    text-decoration: none;
+}
+
+.storyTitle a {
+    color: #2e2e2c;
+    background-color: #f8dc3d;
+    text-decoration: none;
+}
+
+.storyMeta {
+    font-style: italic;
+}
+
+.storyMeta span {
+    font-weight: bold;
+}

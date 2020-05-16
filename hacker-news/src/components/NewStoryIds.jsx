@@ -13,12 +13,12 @@ function NewStoryIds() {
     }, []);
 
     return (
-        <div className="stories">
-            {newStoryIds.map((storyId) => {
-                return (
-                    <Story storyId={storyId} key={storyId} />
-                )
-            })}
+        <div className="stories" data-testId="stories">
+            {
+                newStoryIds.map((storyId) => {
+                    return (<Story key={storyId} storyId={storyId} />)
+                })
+            }
         </div>
     );
 }

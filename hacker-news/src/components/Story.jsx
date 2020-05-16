@@ -12,17 +12,24 @@ function Story({ storyId }) {
     }, [storyId]);
 
     return (
-        <div >
-            {story.url ?
-                <div className="story">
-                    <p>
-                        <a href={story.url} target="__blank">{story.title}</a>
-                    </p>
-                    <div>Author: {story.author} </div>
-                    <div>Last Updated: {new Date(story.updateTime).toLocaleDateString()} </div>
+        story.url ?
+            <div className="story" data-testId="story">
+                <div className="storyTitle" data-testId="story-title">
+                    <a href={story.url} target="__blank">{story.title}</a>
                 </div>
-                : null}
-        </div>
+                <div className="storyMeta">
+                    <div className="storyMetaElement story__author" data-testId="story-author">
+                        <span>Author: </span>
+                        {story.author}
+                    </div>
+                    <div className="storyMetaElement story__time" data-testId="story-time">
+                        <span>Last Upated: </span>
+                        {new Date(story.updateTime).toLocaleDateString()}
+                    </div>
+                </div>
+            </div>
+            : null
+
     );
 }
 

@@ -10,7 +10,7 @@ async function get(url) {
             return data;
         })
         .catch((error) => {
-            console.error("Error in get", error);
+            console.error(`Error in getting data from ${url}`, error);
         });
 }
 
