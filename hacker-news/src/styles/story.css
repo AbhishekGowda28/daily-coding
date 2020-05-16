@@ -2,6 +2,7 @@
     padding-top: 10px;
     margin-bottom: 20px;
     border-top: 1px solid #cccccc;
+    font-family: 'Catamaran', sans-serif;
 }
 
 .story:first-of-type {
@@ -29,6 +30,8 @@
 
 .storyMeta {
     font-style: italic;
+    margin-left: 10px;
+    font-family: 'Baloo+Tamma', sans-serif;
 }
 
 .storyMeta span {
