@@ -7,6 +7,7 @@
 
 .story:first-of-type {
     border-top: 0;
+    margin-top: 50px;
 }
 
 .story:last-of-type {

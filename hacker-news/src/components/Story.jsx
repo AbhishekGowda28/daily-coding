@@ -1,5 +1,6 @@
 import React from "react";
 import { getItem } from "../services/api";
+import { mapTime } from "../helper/mapTime";
 
 function Story({ storyId }) {
 
@@ -23,8 +24,8 @@ function Story({ storyId }) {
                         {story.author}
                     </div>
                     <div className="storyMetaElement story__time" data-testId="story-time">
-                        <span>Last Upated: </span>
-                        {new Date(story.updateTime).toLocaleDateString()}
+                        <span>Posted : </span>
+                        {mapTime(story.updateTime * 1000)}
                     </div>
                 </div>
             </div>
