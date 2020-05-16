@@ -10,7 +10,9 @@ function getNewStorieIds() {
 function getItem(itemId) {
     const url = `${HackerNewsURL.ITEM}${itemId}.json`;
     return get(url).then((item) => {
-        return { title: item.title, url: item.url, author: item.by, updateTime: item.time };
+        if (item !== null) {
+            return { title: item.title, url: item.url, author: item.by, updateTime: item.time };
+        }
     });
 }
 

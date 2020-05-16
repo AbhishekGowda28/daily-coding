@@ -16,7 +16,7 @@ function NewStoryIds() {
     }, []);
 
     return (
-        <div className="stories" data-testId="stories">
+        <div className="stories" data-testid="stories">
             {newStoryIds.length > 0 ?
                 newStoryIds.slice(0, counts).map((storyId) => {
                     return (<Story key={storyId} storyId={storyId} />)

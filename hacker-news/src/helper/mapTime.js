@@ -31,7 +31,13 @@ function mapTime(time) {
     } else {
         interval = Math.floor(timeDiff / 60);
         const seconds = timeDiff / 60;
-        return `${interval} Minute ${seconds.toFixed(0)} seconds ago`;
+        if (interval === 0) {
+            return `${seconds.toFixed(0)} seconds ago`;
+        } else if (seconds.toFixed(0) === "0") {
+            return "Just now";
+        } else {
+            return `${interval} Minute ${seconds.toFixed(0)} seconds ago`;
+        }
     }
 }
 

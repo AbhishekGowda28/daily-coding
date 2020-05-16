@@ -2,36 +2,39 @@ import React from "react";
 import { getItem } from "../services/api";
 import { mapTime } from "../helper/mapTime";
 
-function Story({ storyId }) {
+const Story = React.memo(
 
-    const [story, setStory] = React.useState({});
+    function Story({ storyId }) {
 
-    React.useEffect(() => {
-        getItem(storyId).then((result) => {
-            setStory(result);
-        })
-    }, [storyId]);
+        const [story, setStory] = React.useState({});
 
-    return (
-        story.url ?
-            <div className="story" data-testId="story">
-                <div className="storyTitle" data-testId="story-title">
-                    <a href={story.url} target="__blank">{story.title}</a>
-                </div>
-                <div className="storyMeta">
-                    <div className="storyMetaElement story__author" data-testId="story-author">
-                        <span>Author: </span>
-                        {story.author}
+        React.useEffect(() => {
+            getItem(storyId).then((result) => {
+                setStory(result);
+            })
+        }, [storyId]);
+
+        return (
+            story.url ?
+                <div className="story" data-testid="story">
+                    <div className="storyTitle" data-testid="story-title">
+                        <a href={story.url} target="__blank">{story.title}</a>
                     </div>
-                    <div className="storyMetaElement story__time" data-testId="story-time">
-                        <span>Posted : </span>
-                        {mapTime(story.updateTime * 1000)}
+                    <div className="storyMeta">
+                        <div className="storyMetaElement story__author" data-testid="story-author">
+                            <span>Author: </span>
+                            {story.author}
+                        </div>
+                        <div className="storyMetaElement story__time" data-testid="story-time">
+                            <span>Posted : </span>
+                            {mapTime(story.updateTime * 1000)}
+                        </div>
                     </div>
                 </div>
-            </div>
-            : null
+                : null
 
-    );
-}
+        );
+    }
+)
 
 export { Story }
