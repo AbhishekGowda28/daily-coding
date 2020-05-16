@@ -1,5 +1,5 @@
 import {get } from "./agent";
-import { HackerNewsURL } from "../constants/constants";
+import { HackerNewsURL } from "../constants/url";
 
 function getNewStorieIds() {
     return get(HackerNewsURL.NEW_STORIES).then((new_stories_list) => {
