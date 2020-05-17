@@ -5,7 +5,6 @@ import { App } from "../App";
 import { getNewStorieIds } from "../services/api";
 
 jest.mock("../services/api", () => ({
-    getItem: jest.fn(),
     getNewStorieIds: jest.fn(),
 }));
 

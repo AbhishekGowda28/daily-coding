@@ -2,7 +2,6 @@ import { render, waitForElement, act, cleanup, } from "@testing-library/react";
 import React from "react";
 
 import { App } from "../App";
-
 import { storyIds, singularStory } from "../fixture/Story";
 import { getItem, getNewStorieIds } from "../services/api";
 
