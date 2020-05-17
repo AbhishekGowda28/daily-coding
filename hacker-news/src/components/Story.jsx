@@ -15,7 +15,7 @@ const Story = React.memo(
         }, [storyId]);
 
         return (
-            story.url ?
+            story?.url ?
                 <div className="story" data-testid="story">
                     <div className="storyTitle" data-testid="story-title">
                         <a href={story.url} target="__blank">{story.title}</a>

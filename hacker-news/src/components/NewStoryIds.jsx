@@ -1,30 +1,63 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { getNewStorieIds } from "../services/api";
 import { Story } from './Story';
 import { Loader } from './Loader';
-import { infiniteScroll } from '../hooks/infinateScroll';
+import { STORY_INCREMENT, MAX_STORIES } from "../constants/constants";
 
-function NewStoryIds() {
 
-    const [newStoryIds, setNewStoryIds] = useState([]);
-    const counts = infiniteScroll();
+class NewStoryIds extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            newStoryIds: [],
+            counts: STORY_INCREMENT
+        }
 
-    React.useEffect(() => {
+        this.handleScroll = this.handleScroll.bind(this);
+    }
+
+    componentDidMount() {
         getNewStorieIds().then((newStoreiesIds) => {
-            setNewStoryIds(newStoreiesIds);
-        });
-    }, []);
-
-    return (
-        <div className="stories" data-testid="stories">
-            {newStoryIds.length > 0 ?
-                newStoryIds.slice(0, counts).map((storyId) => {
-                    return (<Story key={storyId} storyId={storyId} />)
-                }) :
-                <Loader />
+            if (newStoreiesIds !== undefined && newStoreiesIds !== null) {
+                this.setState({ newStoryIds: newStoreiesIds });
             }
-        </div>
-    );
+        });
+        window.addEventListener("scroll", this.handleScroll);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("scroll", this.handleScroll);
+    }
+
+
+    handleScroll() {
+        const innerHeight = window.innerHeight;
+        const scrollPosition = window.document.documentElement.scrollTop;
+        const offSetHeight = window.document.documentElement.offsetHeight;
+
+        const totalScroll = innerHeight + scrollPosition;
+        if ((totalScroll > offSetHeight || totalScroll === offSetHeight)) {
+            if (this.state.counts + STORY_INCREMENT >= MAX_STORIES) {
+                this.setState({ counts: MAX_STORIES });
+            } else {
+                this.setState({ counts: this.state.counts + STORY_INCREMENT });
+            }
+        }
+    }
+
+    render() {
+        return (
+            <div className="stories" data-testid="stories">
+                {this.state.newStoryIds.length > 0 ?
+                    this.state.newStoryIds.slice(0, this.state.counts).map((storyId) => {
+                        return (<Story key={storyId} storyId={storyId} />)
+                    })
+                    :
+                    <Loader />
+                }
+            </div>
+        );
+    }
 }
 
 export { NewStoryIds };

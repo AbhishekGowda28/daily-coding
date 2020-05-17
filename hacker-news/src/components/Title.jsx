@@ -2,7 +2,7 @@ import React from "react";
 
 function Title() {
     return (
-        <h1 className="AppTitle">Hacker News Stories</h1>
+        <h1 className="AppTitle" data-testid="appTitle">Hacker News Stories</h1>
     );
 }
 
