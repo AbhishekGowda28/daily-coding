@@ -5,7 +5,7 @@ import { Loader } from './Loader';
 import { STORY_INCREMENT, MAX_STORIES } from "../constants/constants";
 
 
-class NewStoryIds extends React.Component {
+class StoriesContainer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -31,6 +31,7 @@ class NewStoryIds extends React.Component {
 
 
     handleScroll() {
+        console.log("scrolling");
         const innerHeight = window.innerHeight;
         const scrollPosition = window.document.documentElement.scrollTop;
         const offSetHeight = window.document.documentElement.offsetHeight;
@@ -49,8 +50,8 @@ class NewStoryIds extends React.Component {
         return (
             <div className="stories" data-testid="stories">
                 {this.state.newStoryIds.length > 0 ?
-                    this.state.newStoryIds.slice(0, this.state.counts).map((storyId) => {
-                        return (<Story key={storyId} storyId={storyId} />)
+                    this.state.newStoryIds.slice(0, this.state.counts).map((storyId, index) => {
+                        return (<Story key={index} storyId={storyId} />)
                     })
                     :
                     <Loader />
@@ -60,4 +61,4 @@ class NewStoryIds extends React.Component {
     }
 }
 
-export { NewStoryIds };
+export { StoriesContainer };
