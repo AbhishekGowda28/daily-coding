@@ -1,4 +1,4 @@
-import { render, waitForElement, act, cleanup, fireEvent, } from "@testing-library/react";
+import { render, waitForElement, act, cleanup } from "@testing-library/react";
 import React from "react";
 
 import { multipleStoryIds, singularStory } from "../fixture/Story";
@@ -19,16 +19,10 @@ test("Testing Story Container", async () => {
     await act(async () => {
         const { getAllByTestId } = render(<StoriesContainer />);
         await waitForElement(() => [
-            expect(getAllByTestId("story-author")[0].textContent).toEqual("Author: Abhishek Gowda"),
+            expect(getAllByTestId("story-author")[multipleStoryIds.length - 1].textContent).toEqual("Author: Abhishek Gowda"),
         ]);
-        fireEvent.scroll(document);
-        fireEvent.scroll(document);
-        fireEvent.scroll(document);
-        fireEvent.scroll(document);
-        fireEvent.scroll(document);
-        fireEvent.scroll(document);
-        fireEvent.scroll(document);
-        fireEvent.scroll(document);
-        fireEvent.scroll(document);
+        // Testing for scrolling 
+        document.body.scrollTop = 100;
+        window.dispatchEvent(new window.UIEvent('scroll', { detail: 0 }));
     });
 });

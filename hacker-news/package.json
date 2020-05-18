@@ -29,7 +29,12 @@
             "!src/serviceWorker.js",
             "!src/constants/*.js",
             "src/**/*.jsx"
-        ]
+        ],
+        "coverageThreshold": {
+            "global": {
+                "branches": 40
+            }
+        }
     },
     "browserslist": {
         "production": [

@@ -31,7 +31,6 @@ class StoriesContainer extends React.Component {
 
 
     handleScroll() {
-        console.log("scrolling");
         const innerHeight = window.innerHeight;
         const scrollPosition = window.document.documentElement.scrollTop;
         const offSetHeight = window.document.documentElement.offsetHeight;
