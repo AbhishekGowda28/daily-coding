@@ -26,23 +26,13 @@
     "jest": {
         "collectCoverageFrom": [
             "src/**/*.js",
+            "src/**/*.jsx",
             "!src/index.js",
             "!src/serviceWorker.js",
             "!src/constants/*.js",
-            "src/**/*.jsx"
-        ],
-        "coverageThreshold": {
-            "global": {
-                "branches": 65,
-                "lines": 95
-            },
-            "src/helper/mapTime": {
-                "branches": 50,
-                "lines": 50,
-                "statements": 50,
-                "functions": 100
-            }
-        }
+            "!src/services/agent.js",
+            "!src/helper/mapTime.js"
+        ]
     },
     "browserslist": {
         "production": [

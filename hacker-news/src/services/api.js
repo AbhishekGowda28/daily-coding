@@ -11,7 +11,7 @@ function getItem(itemId) {
     const url = `${HackerNewsURL.ITEM}${itemId}.json`;
     return get(url).then((item) => {
         if (item !== null) {
-            return { id: item.id, title: item.title, url: item.url, author: item.by, updateTime: item.time };
+            return { id: item.id, title: item.title, url: item.url, by: item.by, time: item.time };
         }
     });
 }

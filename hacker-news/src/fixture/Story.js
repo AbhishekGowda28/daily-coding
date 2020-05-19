@@ -2,16 +2,16 @@ const singularStory = {
     id: 1,
     title: "Github repo",
     url: "https://github.com/AbhishekGowda28/",
-    author: "Abhishek Gowda",
-    updateTime: 1589653488
+    by: "Abhishek Gowda",
+    time: 1589653488
 };
 
 const emptyStory = {
     id: undefined,
     title: undefined,
     url: undefined,
-    author: undefined,
-    updateTime: undefined
+    by: undefined,
+    time: undefined
 };
 
 const storyIds = [1];

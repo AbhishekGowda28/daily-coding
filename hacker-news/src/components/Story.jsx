@@ -23,11 +23,11 @@ const Story = React.memo(
                     <div className="storyMeta">
                         <div className="storyMetaElement story__author" data-testid="story-author">
                             <span>Author: </span>
-                            {story.author}
+                            {story.by}
                         </div>
                         <div className="storyMetaElement story__time" data-testid="story-time">
                             <span>Posted : </span>
-                            {mapTime(story.updateTime * 1000)}
+                            {mapTime(story.time * 1000)}
                         </div>
                     </div>
                 </div>
