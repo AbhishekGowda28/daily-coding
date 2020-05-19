@@ -1,12 +1,14 @@
-const BASE_URL = "https://hacker-news.firebaseio.com/v0";
+const MAX_STORIES = 500;
+let STORY_INCREMENT = 10;
 
-const HackerNewsURL = {
-    USER: `${BASE_URL}/user/`,
-    ITEM: `${BASE_URL}/item/`,
-    MAX_ITEM: `${BASE_URL}/maxitem.json`,
-    TOP_STORIES: `${BASE_URL}/topstories.json`,
-    NEW_STORIES: `${BASE_URL}/newstories.json`,
-    BEST_STORIES: `${BASE_URL}/beststories.json`
+if (window.innerHeight < 500) {
+    STORY_INCREMENT = 5;
+} else if (window.innerHeight > 950 && window.innerHeight < 1320) {
+    STORY_INCREMENT = 15;
+} else if (window.innerHeight > 1320 && window.innerHeight < 2000) {
+    STORY_INCREMENT = 20;
+} else if (window.innerHeight >= 2000) {
+    STORY_INCREMENT = 30;
 }
 
-export { HackerNewsURL };
+export { STORY_INCREMENT, MAX_STORIES };

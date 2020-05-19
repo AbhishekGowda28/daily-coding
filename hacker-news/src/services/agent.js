@@ -7,6 +7,7 @@ async function get(url) {
             return responseData.json();
         })
         .then((data) => {
+            console.log("data", data);
             return data;
         })
         .catch((error) => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { NewStoryIds } from "./components/NewStoryIds";
+import { StoriesContainer } from "./components/StoriesContainer";
 import { Credits } from './components/Credits';
 import { Title } from './components/Title';
 
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Credits />
       <Title />
-      <NewStoryIds />
+      <StoriesContainer />
     </div>
   );
 }
