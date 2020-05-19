@@ -10,7 +10,8 @@
     "devDependencies": {
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.5.0",
-        "@testing-library/user-event": "^7.2.1"
+        "@testing-library/user-event": "^7.2.1",
+        "expect": "^26.0.1"
     },
     "scripts": {
         "start": "react-scripts start",
@@ -32,7 +33,14 @@
         ],
         "coverageThreshold": {
             "global": {
-                "branches": 40
+                "branches": 65,
+                "lines": 95
+            },
+            "src/helper/mapTime": {
+                "branches": 50,
+                "lines": 50,
+                "statements": 50,
+                "functions": 100
             }
         }
     },
