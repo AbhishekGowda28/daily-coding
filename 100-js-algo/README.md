@@ -10,7 +10,7 @@ If there are several possible answers, output the smallest one.
 ```
 ## or the same problem can be interpreated as 
 
-median
+**median**
 
 Given an array of integers a, find the median of the array.
 
