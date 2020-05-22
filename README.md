@@ -7,4 +7,4 @@
 ![Static Code Check](https://github.com/AbhishekGowda28/100DaysChallenge/workflows/Static%20Code%20Check/badge.svg)
 
 
-Wireframe (https://abhishekgowda28.github.io/100DaysChallenge/wireframe-renderer/)
+[Wireframe](https://abhishekgowda28.github.io/100DaysChallenge/wireframe-renderer/)
