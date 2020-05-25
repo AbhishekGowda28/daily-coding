@@ -1,0 +1,31 @@
+body{
+    background-color: #eef7ee;
+}
+
+table{
+    margin: auto;
+    background-color: #8f8f8f
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+td:hover{
+    box-shadow: 5px 5px 20px #000000;
+}
+
+.match{
+    background-color: #dd5772;
+}
+
+.lower{
+    background-color: #60e460;
+}
+
+.greater{
+    background-color: #00a2ff;
+}
