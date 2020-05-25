@@ -1,0 +1,16 @@
+h1{
+    color: #ba0808;
+}
+
+h2{
+    color: #0808ba;
+}
+
+div{
+    background-color: #fafafa;
+    margin: 50px;
+    padding: 5px;
+    font-size: 150%;
+    border: 2px solid #808080;
+    box-shadow: 5px 5px 10px #0f0f0f;
+}

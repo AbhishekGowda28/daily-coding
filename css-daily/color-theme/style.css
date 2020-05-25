@@ -1,0 +1,24 @@
+.default-color {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.black-color {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.red-color {
+  background-color: #ff0000;
+  color: #00ffff;
+}
+
+.blue-color {
+  background-color: #0000ff;
+  color: #ffff00;
+}
+
+.green-color {
+  background-color: #008000;
+  color: #ff8fff;
+}

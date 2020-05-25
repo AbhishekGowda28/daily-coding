@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.google-img img {
+  height: 100px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  line-height: 40px;
+  min-width: 98%;
+}
+
+.country-banner {
+  margin-left: 30px;
+  text-align: left;
+  color: #0000008a;
+  padding-left: 2%;
+}
+
+.advertize {
+  color: #5f6368;
+  border-top: 1px solid gray;
+}
+
+.advertize > .left-banner {
+  float: left;
+}
+.advertize > .right-banner {
+  float: right;
+  margin-right: 30px;
+}
+
+.advertize span {
+  padding-left: 27px;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid;
+  border-radius: 25px;
+  /* width: 20%;
+  height: 30px; */
+}
+
+.search input {
+  border: none;
+}
+
+.search-icon {
+  width: 10%;
+  position: relative;
+  top: 25%;
+}
+
+.container {
+  width: 98%;
+  height: 100%;
+}
+
+.main {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+}
+
+.header {
+  float: right;
+}
