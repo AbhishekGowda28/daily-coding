@@ -27,3 +27,14 @@
     "extensions.ignoreRecommendations": false,
     "flow.useNPMPackagedFlow": true,
     "workbench.colorTheme": "Default Light+"
+
+
+**Extensions**
+
+[Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+[deno](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno)
+
+[Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
+[Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
