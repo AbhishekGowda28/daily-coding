@@ -1,6 +1,5 @@
 # VS Code setup
 
-`
 
     "editor.minimap.enabled": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
@@ -26,5 +25,5 @@
     "editor.lineHeight": 27,
     "editor.lineNumbers": "off",
     "extensions.ignoreRecommendations": false,
-    "flow.useNPMPackagedFlow": true
-`
+    "flow.useNPMPackagedFlow": true,
+    "workbench.colorTheme": "Default Light+"
