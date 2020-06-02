@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin : 0;
+    padding: 0;
+}
+
+#timer-container {
+    border         : 1px solid #555555;
+    margin         : auto;
+    margin-top     : 5%;
+    justify-content: center;
+    align-content  : center;
+    text-align     : center;
+}
+
+.contollers {
+    margin: 50px;
+    border: 1px solid #555555;
+}
+
+.other-controllers {
+    display       : flex;
+    flex-direction: column;
+}
+
+.device-controller {
+    display       : flex;
+    flex-direction: column;
+    margin-left   : auto;
+}
+
+
+#play,
+#stop {
+    border-radius: 50%;
+    border-color : transparent;
+    width        : 00px;
+}
