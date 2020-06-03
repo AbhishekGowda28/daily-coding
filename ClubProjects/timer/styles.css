@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'digital-7';
+    src        : url('./Assets/digital-7/digital-7-mono.ttf');
+}
+
+:root {
+    --digital-text-size: 55px;
+    --digital-text-font: 'digital-7';
+}
+
 * {
     box-sizing: border-box;
 }
@@ -37,5 +47,11 @@ body {
 #stop {
     border-radius: 50%;
     border-color : transparent;
-    width        : 00px;
+    width        : 20px;
+    height       : 20px;
+}
+
+.display {
+    font-family: var(--digital-text-font);
+    font-size  : var(--digital-text-size);
 }
