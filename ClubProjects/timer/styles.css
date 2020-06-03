@@ -54,4 +54,5 @@ body {
 .display {
     font-family: var(--digital-text-font);
     font-size  : var(--digital-text-size);
+    color: red;
 }
