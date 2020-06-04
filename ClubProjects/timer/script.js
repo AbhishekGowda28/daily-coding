@@ -14,18 +14,16 @@ let fourthDigit = digital_time[4].innerText;
 
 // Contants
 let show_blinker = true;
-const BLINK_INTERVAL = 1000;
+const BLINK_INTERVAL = 750;
 let position = 4;
 
 play_pause_button.onclick = function () {
     const text = play_pause_button.innerText;
     if (text.toLowerCase() === "play") {
-        play_pause_button.innerText = "Pause";
         play_pause_button.style = `
         background-color: red
         `;
     } else {
-        play_pause_button.innerText = "Play";
         play_pause_button.style = `
         background-color: green
         `;
@@ -35,12 +33,10 @@ play_pause_button.onclick = function () {
 stop_reset_button.onclick = function () {
     const text = stop_reset_button.innerText;
     if (text.toLowerCase() === "stop") {
-        stop_reset_button.innerText = "Reset";
         stop_reset_button.style = `
         background-color: blue
         `;
     } else {
-        stop_reset_button.innerText = "Stop";
         stop_reset_button.style = `
         background-color: grey
         `;
@@ -49,6 +45,7 @@ stop_reset_button.onclick = function () {
 
 // Moving bliner to the left of the digital screen
 left_arrow.onclick = function () {
+    resetValue();
     if (position === 0) {
         position = 0;
     } else {
@@ -62,6 +59,7 @@ left_arrow.onclick = function () {
 
 // Moving bliner to the right of the digital screen
 right_arrow.onclick = function () {
+    resetValue();
     if (position === 4) {
         position = 4;
     } else {
@@ -151,6 +149,13 @@ function showAndHideBlinker() {
         } else {
             digital_time[position].innerText = sanitizeValue(currentValue());
         }
+    }
+}
+
+function resetValue() {
+    const value = previousValue();
+    if (digital_time[position].innerText === "_") {
+        digital_time[position].innerText = value;
     }
 }
 
