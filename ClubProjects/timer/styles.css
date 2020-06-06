@@ -51,15 +51,6 @@ body {
     margin-left: auto;
 }
 
-
-#play,
-#stop {
-    border-radius: 50%;
-    border-color : transparent;
-    width        : 20px;
-    height       : 20px;
-}
-
 .display {
     font-family     : var(--digital-text-font);
     font-size       : var(--digital-text-size);
