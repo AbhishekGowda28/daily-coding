@@ -24,6 +24,7 @@ const STATUS = {
 let timer_status = STATUS.Stopped;
 
 let intervalPointer = setInterval(showAndHideBlinker, BLINK_INTERVAL);
+let startTimer_interval_pointer;
 
 play_pause_button.onclick = function () {
     if (timer_status === STATUS.Paused) {
@@ -31,7 +32,9 @@ play_pause_button.onclick = function () {
         clearInterval(intervalPointer);
         resetValue();
         timer_status = STATUS.Playing;
+        pauseTimer();
     } else {
+        startTimer_interval_pointer = setInterval(startTimer, BLINK_INTERVAL)
         play_pause_button.innerHTML = `<img src="Assets/pause.svg" alt="pause" />`;
         clearInterval(intervalPointer);
         resetValue();
@@ -39,13 +42,7 @@ play_pause_button.onclick = function () {
     }
 }
 
-reset_button.onclick = function () {
-    resetClock();
-    play_pause_button.innerHTML = `<img src="Assets/play.svg" alt="play" />`;
-    intervalPointer = setInterval(showAndHideBlinker, BLINK_INTERVAL);
-    position = 4;
-    timer_status = STATUS.Stopped;
-}
+reset_button.onclick = stopTimer;
 
 /**
  * @description Moving bliner to the left of the digital screen
@@ -79,35 +76,8 @@ right_arrow.onclick = function () {
     }
 }
 
-up_arrow.onclick = function () {
-    let currentPositionValue = currentValue();
-    if (currentPositionValue === "_") {
-        currentPositionValue = sanitizeValue(previousValue())
-    }
-    currentPositionValue = Number(currentPositionValue);
-    currentPositionValue += 1;
-    if (currentPositionValue > 9) {
-        currentPositionValue = 9
-    }
-    if (position === 0 || position === 3) {
-        if (currentPositionValue > 5) {
-            currentPositionValue = 5
-        }
-    }
-    digital_time[position].innerText = currentPositionValue;
-}
-
-down_arrow.onclick = function () {
-    let currentPositionValue = currentValue();
-    if (currentPositionValue === "_") {
-        currentPositionValue = sanitizeValue(previousValue())
-    }
-    currentPositionValue -= 1;
-    if (currentPositionValue < 0) {
-        currentPositionValue = 0;
-    }
-    digital_time[position].innerText = currentPositionValue;
-}
+up_arrow.onclick = incrementValue;
+down_arrow.onclick = decrementValue;
 
 /**
  * @param {string} value 
@@ -184,4 +154,68 @@ function resetClock() {
     digital_time[1].innerText = 0;
     digital_time[3].innerText = 0;
     digital_time[4].innerText = 0;
+}
+
+function startTimer() {
+    position = 4;
+    if (sanitizeValue(digital_time[0].innerText) === 0 && sanitizeValue(digital_time[1].innerText) === 0 && sanitizeValue(digital_time[3].innerText) === 0 && sanitizeValue(digital_time[4].innerText) === 0) {
+        stopTimer();
+    } else if (sanitizeValue(digital_time[1].innerText) === 0 && sanitizeValue(digital_time[3].innerText) === 0 && sanitizeValue(digital_time[4].innerText) === 0) {
+        position = 0;
+        digital_time[1].innerText = 9;
+        digital_time[3].innerText = 5;
+        digital_time[4].innerText = 9;
+    } else if (sanitizeValue(digital_time[3].innerText) === 0 && sanitizeValue(digital_time[4].innerText) === 0) {
+        position = 1;
+        digital_time[3].innerText = 5;
+        digital_time[4].innerText = 9;
+    } else if (sanitizeValue(digital_time[4].innerText) === 0) {
+        position = 3;
+        digital_time[4].innerText = 9;
+    }
+    decrementValue();
+}
+
+function pauseTimer() {
+    clearInterval(startTimer_interval_pointer);
+}
+
+function stopTimer() {
+    resetClock();
+    clearInterval(intervalPointer);
+    play_pause_button.innerHTML = `<img src="Assets/play.svg" alt="play" />`;
+    intervalPointer = setInterval(showAndHideBlinker, BLINK_INTERVAL);
+    position = 4;
+    timer_status = STATUS.Stopped;
+    clearInterval(startTimer_interval_pointer);
+}
+
+function decrementValue() {
+    let currentPositionValue = currentValue();
+    if (currentPositionValue === "_") {
+        currentPositionValue = sanitizeValue(previousValue())
+    }
+    currentPositionValue -= 1;
+    if (currentPositionValue < 0) {
+        currentPositionValue = 0;
+    }
+    digital_time[position].innerText = currentPositionValue;
+}
+
+function incrementValue() {
+    let currentPositionValue = currentValue();
+    if (currentPositionValue === "_") {
+        currentPositionValue = sanitizeValue(previousValue())
+    }
+    currentPositionValue = Number(currentPositionValue);
+    currentPositionValue += 1;
+    if (currentPositionValue > 9) {
+        currentPositionValue = 9
+    }
+    if (position === 0 || position === 3) {
+        if (currentPositionValue > 5) {
+            currentPositionValue = 5
+        }
+    }
+    digital_time[position].innerText = currentPositionValue;
 }
