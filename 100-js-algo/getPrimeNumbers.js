@@ -1,5 +1,5 @@
 function getPrimeNumbers(range) {
-    let numbers = Array(range + 1).fill(true);
+    const numbers = Array(range + 1).fill(true);
     numbers[0] = false;
     numbers[1] = false;
     for (let count = 2; count <= range;) {
@@ -15,13 +15,14 @@ function getPrimeNumbers(range) {
             count++;
         }
     }
-    let primes = []
+    const primes = [];
     numbers.forEach((isPrime, index) => {
         if (isPrime === true) {
             primes.push(index);
         }
     });
-    return primes;
+    
+return primes;
 }
 
 module.exports = { getPrimeNumbers };
