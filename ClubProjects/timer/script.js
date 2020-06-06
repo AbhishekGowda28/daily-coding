@@ -1,6 +1,6 @@
 // Reterive all DOM controller elements
 const play_pause_button = document.getElementById("play");
-const stop_reset_button = document.getElementById("stop");
+const reset_button = document.getElementById("reset");
 const up_arrow = document.getElementById("up");
 const down_arrow = document.getElementById("down");
 const left_arrow = document.getElementById("left");
@@ -14,36 +14,42 @@ let fourthDigit = digital_time[4].innerText;
 
 // Contants
 let show_blinker = true;
-const BLINK_INTERVAL = 750;
+const BLINK_INTERVAL = 1000;
 let position = 4;
+const STATUS = {
+    Playing: "playing",
+    Stopped: "stopped",
+    Paused: "paused"
+};
+let timer_status = STATUS.Stopped;
+
+let intervalPointer = setInterval(showAndHideBlinker, BLINK_INTERVAL);
 
 play_pause_button.onclick = function () {
-    const text = play_pause_button.innerText;
-    if (text.toLowerCase() === "play") {
-        play_pause_button.style = `
-        background-color: red
-        `;
+    if (timer_status === STATUS.Paused) {
+        play_pause_button.innerHTML = `<img src="Assets/play.svg" alt="play" />`;
+        clearInterval(intervalPointer);
+        resetValue();
+        timer_status = STATUS.Playing;
     } else {
-        play_pause_button.style = `
-        background-color: green
-        `;
+        play_pause_button.innerHTML = `<img src="Assets/pause.svg" alt="pause" />`;
+        clearInterval(intervalPointer);
+        resetValue();
+        timer_status = STATUS.Paused;
     }
 }
 
-stop_reset_button.onclick = function () {
-    const text = stop_reset_button.innerText;
-    if (text.toLowerCase() === "stop") {
-        stop_reset_button.style = `
-        background-color: blue
-        `;
-    } else {
-        stop_reset_button.style = `
-        background-color: grey
-        `;
-    }
+reset_button.onclick = function () {
+    resetClock();
+    play_pause_button.innerHTML = `<img src="Assets/play.svg" alt="play" />`;
+    intervalPointer = setInterval(showAndHideBlinker, BLINK_INTERVAL);
+    position = 4;
+    timer_status = STATUS.Stopped;
 }
 
-// Moving bliner to the left of the digital screen
+/**
+ * @description Moving bliner to the left of the digital screen
+ */
 left_arrow.onclick = function () {
     resetValue();
     if (position === 0) {
@@ -57,7 +63,9 @@ left_arrow.onclick = function () {
     }
 }
 
-// Moving bliner to the right of the digital screen
+/**
+ * @description Moving bliner to the right of the digital screen
+ */
 right_arrow.onclick = function () {
     resetValue();
     if (position === 4) {
@@ -101,7 +109,12 @@ down_arrow.onclick = function () {
     digital_time[position].innerText = currentPositionValue;
 }
 
+/**
+ * @param {string} value 
+ * @description Converts the string to number
+ */
 function sanitizeValue(value) {
+    // When value is _, resets the value to 0
     if (Number(value) === NaN) {
         return 0;
     }
@@ -152,6 +165,10 @@ function showAndHideBlinker() {
     }
 }
 
+/**
+ * @description On moving when the binker is show used to end up showing binker,
+ * this reset the value to the previous value before the binker, even when moved
+ */
 function resetValue() {
     const value = previousValue();
     if (digital_time[position].innerText === "_") {
@@ -159,4 +176,12 @@ function resetValue() {
     }
 }
 
-// setInterval(showAndHideBlinker, BLINK_INTERVAL);
+/**
+ * @description Resetting the Digital Time value to 0
+ */
+function resetClock() {
+    digital_time[0].innerText = 0;
+    digital_time[1].innerText = 0;
+    digital_time[3].innerText = 0;
+    digital_time[4].innerText = 0;
+}
