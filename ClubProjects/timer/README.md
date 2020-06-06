@@ -1,6 +1,6 @@
 # Digital Timer
 
-Design ![](Assets\timerDesign.png)
+Design ![](Assets/timerDesign.png)
 
 Using digital-7 font from [1001fonts](https://www.1001fonts.com/digital-7-font.html). 
 
