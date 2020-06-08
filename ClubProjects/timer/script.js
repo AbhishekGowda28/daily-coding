@@ -34,7 +34,8 @@ down_arrow.onclick = decrementValue;
 
 play_pause_button.onclick = function () {
     if (timer_status === STATUS.Paused) {
-        play_pause_button.innerHTML = `<img src="Assets/play.svg" alt="play" />`;
+        play_pause_button.src = "Assets/play.svg";
+        play_pause_button.alt = "play";
         clearInterval(show_hide_blinker_timer);
         resetValue();
         timer_status = STATUS.Playing;
@@ -42,7 +43,8 @@ play_pause_button.onclick = function () {
     } else {
         if (sanitizeValue(digital_time[0].innerText) !== 0 || sanitizeValue(digital_time[1].innerText) !== 0 || sanitizeValue(digital_time[3].innerText) !== 0 || sanitizeValue(digital_time[4].innerText) !== 0) {
             startTimer_interval_timer = setInterval(startTimer, BLINK_INTERVAL)
-            play_pause_button.innerHTML = `<img src="Assets/pause.svg" alt="pause" />`;
+            play_pause_button.src = `Assets/pause.svg`;
+            play_pause_button.alt = "pause";
             clearInterval(show_hide_blinker_timer);
             resetValue();
             timer_status = STATUS.Paused;
@@ -182,7 +184,8 @@ function pauseTimer() {
 function stopTimer() {
     resetClock();
     clearInterval(show_hide_blinker_timer);
-    play_pause_button.innerHTML = `<img src="Assets/play.svg" alt="play" />`;
+    play_pause_button.src = "Assets/play.svg";
+    play_pause_button.alt = "play";
     show_hide_blinker_timer = setInterval(showAndHideBlinker, BLINK_INTERVAL);
     position = 4;
     timer_status = STATUS.Stopped;
