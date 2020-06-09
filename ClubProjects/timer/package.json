@@ -1,0 +1,12 @@
+{
+  "name": "timer",
+  "version": "1.0.0",
+  "main": "script.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "serve ."
+  },
+  "dependencies": {
+    "serve": "^11.3.2"
+  }
+}
