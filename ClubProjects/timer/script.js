@@ -27,15 +27,24 @@ let timer_status = STATUS.Stopped;
 let show_hide_blinker_timer = setInterval(showAndHideBlinker, BLINK_INTERVAL);
 let startTimer_interval_timer;
 
-left_arrow.onclick = moveBlinkerToLeft;
-right_arrow.onclick = moveBlinkerToRight;
-up_arrow.onclick = incrementValue;
-down_arrow.onclick = decrementValue;
+left_arrow.onclick = moveCursorLeftEvent;
+right_arrow.onclick = moveCursorRightEvent;
+up_arrow.onclick = incrementValueEvent;
+down_arrow.onclick = decrementValueEvent;
+
+function setPlayPauseImage() {
+    if (timer_status === STATUS.Paused || timer_status === STATUS.Stopped) {
+        play_pause_button.src = "Assets/play.svg";
+        play_pause_button.alt = "play";
+    } else {
+        play_pause_button.src = `Assets/pause.svg`;
+        play_pause_button.alt = "pause";
+    }
+}
 
 play_pause_button.onclick = function () {
     if (timer_status === STATUS.Paused) {
-        play_pause_button.src = "Assets/play.svg";
-        play_pause_button.alt = "play";
+        setPlayPauseImage();
         clearInterval(show_hide_blinker_timer);
         resetValue();
         timer_status = STATUS.Playing;
@@ -43,8 +52,7 @@ play_pause_button.onclick = function () {
     } else {
         if (sanitizeValue(digital_time[0].innerText) !== 0 || sanitizeValue(digital_time[1].innerText) !== 0 || sanitizeValue(digital_time[3].innerText) !== 0 || sanitizeValue(digital_time[4].innerText) !== 0) {
             startTimer_interval_timer = setInterval(startTimer, BLINK_INTERVAL)
-            play_pause_button.src = `Assets/pause.svg`;
-            play_pause_button.alt = "pause";
+            setPlayPauseImage();
             clearInterval(show_hide_blinker_timer);
             resetValue();
             timer_status = STATUS.Paused;
@@ -60,7 +68,7 @@ reset_button.onclick = function () {
 /**
  * @description Moving bliner to the left of the digital screen
  */
-function moveBlinkerToLeft() {
+function moveCursorLeftEvent() {
     resetValue();
     if (position === 0) {
         position = 0;
@@ -76,7 +84,7 @@ function moveBlinkerToLeft() {
 /**
  * @description Moving bliner to the right of the digital screen
  */
-function moveBlinkerToRight() {
+function moveCursorRightEvent() {
     resetValue();
     if (position === 4) {
         position = 4;
@@ -174,7 +182,7 @@ function startTimer() {
         position = 3;
         digital_time[4].innerText = 9;
     }
-    decrementValue();
+    decrementValueEvent();
 }
 
 function pauseTimer() {
@@ -182,17 +190,15 @@ function pauseTimer() {
 }
 
 function stopTimer() {
-    resetClock();
     clearInterval(show_hide_blinker_timer);
-    play_pause_button.src = "Assets/play.svg";
-    play_pause_button.alt = "play";
+    setPlayPauseImage();
     show_hide_blinker_timer = setInterval(showAndHideBlinker, BLINK_INTERVAL);
     position = 4;
     timer_status = STATUS.Stopped;
     clearInterval(startTimer_interval_timer);
 }
 
-function decrementValue() {
+function decrementValueEvent() {
     let currentPositionValue = currentValue();
     if (currentPositionValue === "_") {
         currentPositionValue = sanitizeValue(previousValue())
@@ -204,7 +210,7 @@ function decrementValue() {
     digital_time[position].innerText = currentPositionValue;
 }
 
-function incrementValue() {
+function incrementValueEvent() {
     let currentPositionValue = currentValue();
     if (currentPositionValue === "_") {
         currentPositionValue = sanitizeValue(previousValue())
@@ -229,6 +235,7 @@ function playAudio() {
 
 function stopAudio() {
     audioControl.pause();
+    audioControl.currentTime = 0;
     resetClock();
 }
 

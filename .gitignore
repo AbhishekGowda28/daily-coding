@@ -5,7 +5,7 @@ coverage/
 
 # Fiels
 package-lock.json
-
+yarn.lock
 
 #### New update from different repo
 
