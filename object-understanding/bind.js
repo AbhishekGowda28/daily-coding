@@ -1,4 +1,4 @@
-let Song = {
+const Song = {
     name: "new-song",
     year: 2020
 };
