@@ -1,0 +1,23 @@
+Different value types in JavaScript
+
+- Numbers
+ - Integers
+ - Floting
+ - Base 2 upto Base 32 Numbers are supported
+ - Exponent format   Example ==>  +3e-1 => 0.3
+ - 
+
+Text / Strings
+ - Characters
+ - Strings
+
+Boolean Values
+ - true
+ - false
+
+Null value
+
+undefined
+
+
+Object from the persepective of the user of objects -> It is a place to hold data and methods that perform come operation related to the data.
