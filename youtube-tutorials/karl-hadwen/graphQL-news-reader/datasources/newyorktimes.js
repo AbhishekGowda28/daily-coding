@@ -1,9 +1,7 @@
 import { RESTDataSource } from "apollo-datasource-rest";
 
 export class NewYorkNewsAPI extends RESTDataSource {
-    // articleFormator({ id, title, byline, url, published_date } = {}) {
-    articleFormator(data = {}) {
-        console.log("dataaaaa", data);
+    articleFormator({ id, title, byline, url, published_date } = {}) {
         return {
             id: `ny-${id}`,
             author: byline,
@@ -19,9 +17,7 @@ export class NewYorkNewsAPI extends RESTDataSource {
         const result = await this.get(
             `https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=${API_KEY}`
         );
-        debugger;
-        // console.log(result)
-        return result?.map(article => this.articleFormator(article));
+        return result?.results.map(article => this.articleFormator(article));
     }
 
 }
