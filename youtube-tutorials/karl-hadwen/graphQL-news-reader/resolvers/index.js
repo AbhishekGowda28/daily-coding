@@ -13,6 +13,10 @@ export const resolvers = {
         getAllArticles: (_, args, { dataSources }) => {
             const { source } = args;
             return datasources[source].getAllArticles();
+        },
+        getArticles: (_, __, { dataSources }) => {
+            return Promise.all(Object.keys(dataSources).map(news_source => dataSources[news_source].getAllArticles())
+            ).then(result => result.reduce((acc, data) => acc.concat(data), []));
         }
     }
 }

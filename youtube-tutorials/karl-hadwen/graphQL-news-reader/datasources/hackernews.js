@@ -10,7 +10,7 @@ export class HackerNewsAPI extends RESTDataSource {
         return {
             id: `hn-${id}`,
             author: by,
-            source: "HackerNews",
+            source: "Hacker News",
             title,
             url,
             time,

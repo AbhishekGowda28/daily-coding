@@ -5,7 +5,7 @@ export class NewYorkNewsAPI extends RESTDataSource {
         return {
             id: `ny-${id}`,
             author: byline,
-            source: "NewyorkTimes",
+            source: "New York Times",
             title: title,
             url: url,
             time: published_date
