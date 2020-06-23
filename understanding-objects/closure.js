@@ -5,4 +5,4 @@ var outer_object = 5;
 	outer_object+=25;
 	console.log(outer_object);
 })();
-console.log(outer_object);
+console.log("outer_object", outer_object);
