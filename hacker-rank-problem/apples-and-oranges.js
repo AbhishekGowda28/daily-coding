@@ -14,7 +14,7 @@ process.stdin.on('end', _ => {
     inputString = inputString.replace(/\s*$/, '')
         .split('\n')
         .map(str => str.replace(/\s*$/, ''));
-
+    console.log("end");
     main();
 });
 
@@ -24,24 +24,27 @@ function readLine() {
 
 // Complete the countApplesAndOranges function below.
 function countApplesAndOranges(starting_postion_of_house, ending_position_of_house, apple_tree_position, orange_tree_position, number_of_apples, number_of_oranges) {
-    const actual_distance_of_apples = number_of_apples.map(apple => {
-        return (apple_tree_position + apple)
-    });
-    let actual_distance_of_oranges = number_of_oranges.map(orange => {
-        return (orange_tree_position + orange)
-    });
-    let apples_count = 0, oranges_count = 0;
-    actual_distance_of_apples.forEach(apple => {
-        if (apple >= starting_postion_of_house && apple <= ending_position_of_house) {
-            apples_count++;
-        }
-    });
-    actual_distance_of_oranges.forEach(oranges => {
-        if (oranges >= starting_postion_of_house && oranges <= ending_position_of_house) {
-            oranges_count++;
-        }
-    });
+    const actual_distance_of_apples = distanceOfFruit(number_of_apples, apple_tree_position);
+    const actual_distance_of_oranges = distanceOfFruit(number_of_oranges, orange_tree_position);
+    const apples_count = countOfFruits(actual_distance_of_apples, starting_postion_of_house, ending_position_of_house);
+    const oranges_count = countOfFruits(actual_distance_of_oranges, starting_postion_of_house, ending_position_of_house);
     return [apples_count, oranges_count];
+}
+
+function distanceOfFruit(number_of_fruits, tree_distance) {
+    return number_of_fruits.map(fruit => {
+        return (tree_distance + fruit)
+    });
+}
+
+function countOfFruits(acutal_distance, start_position, end_position) {
+    let fruit_count = 0;
+    acutal_distance.forEach(distance => {
+        if (distance >= start_position && distance <= end_position) {
+            fruit_count++;
+        }
+    });
+    return fruit_count;
 }
 
 function main() {
