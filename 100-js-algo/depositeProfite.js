@@ -1,6 +1,6 @@
 /* eslint-disable prefer-const */
 /* eslint-disable max-params */
-let counter = 0;
+let counter = 1;
 
 function depositeProfit(initalAmount, recurringPercentage, expectedProfite) {
     if (expectedProfite <= recurringPercentage + initalAmount) {
@@ -14,4 +14,4 @@ function depositeProfit(initalAmount, recurringPercentage, expectedProfite) {
 
 }
 
-export { depositeProfit };
+module.exports = { depositeProfit };
