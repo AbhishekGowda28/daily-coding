@@ -22,7 +22,7 @@ function checkForElementInObject(object, element) {
 function isEmpty(object) {
     if (object !== undefined) {
         if (object !== null) {
-            if (object !== {}) {
+            if (JSON.stringify(object) !== "{}") {
                 if (object.length !== 0) {
                     return false;
                 }
