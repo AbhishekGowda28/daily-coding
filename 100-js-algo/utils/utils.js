@@ -33,8 +33,15 @@ function isEmpty(object) {
     return true;
 }
 
+function removeDuplicatesFromArray(inputArray) {
+    const set = new Set(inputArray);
+
+    return Array.from(set);
+}
+
 module.exports = {
     checkForElementInArray,
     checkForElementInObject,
-    isEmpty
+    isEmpty,
+    removeDuplicatesFromArray
 };
