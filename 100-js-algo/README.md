@@ -494,3 +494,12 @@ Each year the amount of money on your account increases by 20%. It means that th
 Thus, it will take 3 years for your balance to pass the threshold, which is the answer.
 
 ---
+# Different Characters in a String
+
+Given a string, find the number of different characters in it.
+
+**Example**
+
+For s = "cabbage", the output should be differentCharacters(s) = 5.
+
+---

@@ -1,5 +1,5 @@
 const expect = require("expect");
-const { checkForElementInObject, isEmpty } = require("../utils");
+const { checkForElementInObject, isEmpty, removeDuplicatesFromArray } = require("../utils");
 
 describe("Checking for element in object", () => {
     test("Presence of element", () => {
@@ -57,5 +57,32 @@ describe("Test suit to test is object empty", () => {
         const inputObject = "Test";
         const actual = isEmpty(inputObject);
         expect(actual).toBeFalsy();
+    });
+});
+
+describe("Removing duplicates from array", () => {
+    test("Array is empty", () => {
+        const input = [];
+        const expected = [];
+        const actual = removeDuplicatesFromArray(input);
+        expect(actual).toStrictEqual(expected);
+    });
+    test("Array contains 1 element", () => {
+        const input = ["A"];
+        const expected = ["A"];
+        const actual = removeDuplicatesFromArray(input);
+        expect(actual).toStrictEqual(expected);
+    });
+    test("Array contains single duplicate element", () => {
+        const input = ["A", "A"];
+        const expected = ["A"];
+        const actual = removeDuplicatesFromArray(input);
+        expect(actual).toStrictEqual(expected);
+    });
+    test("Array contains is string", () => {
+        const input = "Kannada";
+        const expected = ["K", "a", "n", "d"];
+        const actual = removeDuplicatesFromArray(input);
+        expect(actual).toStrictEqual(expected);
     });
 });

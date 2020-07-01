@@ -20,7 +20,7 @@ function buildPalindrom(inputString) {
         palindrom += charactersNotAvailable.pop();
     }
 
-    if(isNumber){
+    if (isNumber) {
         palindrom = Number(palindrom);
     }
 
