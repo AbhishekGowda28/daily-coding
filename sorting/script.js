@@ -1,6 +1,27 @@
-const { SelectionSort } = require("./selectionSort");
-
-const randomArray = [], ARRAY_SIZE = 130;
+function SelectionSort(inputArray) {
+    // console.time("SelectionSort");
+    if (inputArray.length > 0) {
+        if (typeof inputArray === "string") {
+            inputArray = inputArray.split("");
+        }
+        let number_of_comprasion = 0;
+        for (let inputArrayIndex = 0; inputArrayIndex < inputArray.length; inputArrayIndex++) {
+            let selectedCard = inputArray[inputArrayIndex];
+            for (let outerIndex = 0; outerIndex < inputArrayIndex; outerIndex++) {
+                number_of_comprasion++;
+                if (inputArray[outerIndex] > selectedCard) {
+                    inputArray[inputArrayIndex] = inputArray[outerIndex];
+                    inputArray[outerIndex] = selectedCard;
+                    selectedCard = inputArray[inputArrayIndex];
+                }
+            }
+        }
+    }
+    // console.timeEnd("SelectionSort");
+    // console.log("Total comparisions for %s items", inputArray.length, number_of_comprasion);
+    return inputArray;
+}
+const randomArray = [], ARRAY_SIZE = 13;
 
 function getRandomColor(lightness) {
     return `hsl(240, 99%, ${lightness}%)`;
@@ -28,5 +49,4 @@ document.addEventListener("DOMContentLoaded", () => {
     result.forEach((element) => {
         createSquares(element);
     });
-    console.log(SelectionSort);
 });
