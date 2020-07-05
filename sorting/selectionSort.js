@@ -1,7 +1,7 @@
 /**
  * @param {string | any[]} inputArray
  */
-function SelectionSort(inputArray) {
+export function SelectionSort(inputArray) {
     // console.time("SelectionSort");
     if (inputArray.length > 0) {
         if (typeof inputArray === "string") {
