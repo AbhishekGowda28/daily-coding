@@ -1,4 +1,4 @@
-function* GenerateSelectionSort(inputArray) {
+function* yieldInsertionSort(inputArray) {
     if (inputArray.length > 0) {
         if (typeof inputArray === "string") {
             inputArray = inputArray.split("");
@@ -18,7 +18,7 @@ function* GenerateSelectionSort(inputArray) {
     return inputArray;
 }
 
-function SelectionSort(inputArray) {
+function insertionSort(inputArray) {
     if (inputArray.length > 0) {
         if (typeof inputArray === "string") {
             inputArray = inputArray.split("");
@@ -37,4 +37,4 @@ function SelectionSort(inputArray) {
     return inputArray;
 }
 
-export { SelectionSort, GenerateSelectionSort };
+export { insertionSort, yieldInsertionSort };
