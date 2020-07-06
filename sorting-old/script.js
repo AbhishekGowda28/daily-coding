@@ -1,6 +1,3 @@
-/**
- * @param {string | any[]} inputArray
- */
 function SelectionSort(inputArray) {
     // console.time("SelectionSort");
     if (inputArray.length > 0) {
@@ -24,16 +21,32 @@ function SelectionSort(inputArray) {
     // console.log("Total comparisions for %s items", inputArray.length, number_of_comprasion);
     return inputArray;
 }
+const randomArray = [], ARRAY_SIZE = 13;
 
-let result = SelectionSort([]);
-console.log(result)
-result = SelectionSort("");
-console.log(result)
-result = SelectionSort([1, 5, 3, 4, 2]);
-console.log(result)
-result = SelectionSort(["a", "b", "h", "i", "s", "h", "e", "k"]);
-console.log(result)
-result = SelectionSort("gowda");
-console.log(result)
-result = SelectionSort("Abhishek Gowda");
-console.log(result)
+function getRandomColor(lightness) {
+    return `hsl(240, 99%, ${lightness}%)`;
+}
+
+for (let count = 0; count < ARRAY_SIZE; count++) {
+    const value = Number((Math.random() * ARRAY_SIZE).toFixed(0));
+    randomArray.push(value);
+}
+
+function createSquares(el) {
+    const color = getRandomColor(ARRAY_SIZE - el)
+    const element = document.createElement("div");
+    element.style = `width: 50px; height: 50px; background: ${color}; float: left`;
+    element.innerText = el;
+    const parentElement = document.getElementsByClassName("parentElement")[0];
+    parentElement.appendChild(element);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    randomArray.forEach((element) => {
+        createSquares(element);
+    });
+    const result = SelectionSort(randomArray);
+    result.forEach((element) => {
+        createSquares(element);
+    });
+});
