@@ -1,0 +1,12 @@
+button {
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+    background-color: #6495ed;
+    color: #f8f8ff;
+    border: none;
+}
+
+button:disabled {
+    background-color: gray;
+}

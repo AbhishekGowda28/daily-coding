@@ -1,3 +1,16 @@
 export default function getRandomColor(lightness) {
-    return `hsl(200, 100%, ${100 - lightness}%)`;
+    try {
+        if (typeof lightness === "string") {
+            lightness = lightness.charCodeAt(0);
+        }
+        let hue = 200;
+        while (lightness > 90) {
+            hue += 15;
+            lightness -= 30;
+        }
+        lightness = 100 - lightness;
+        return `hsl(${hue}, 100%, ${lightness}%)`;
+    } catch (error) {
+        throw new Error("Invalid Input for lightness");
+    }
 }
