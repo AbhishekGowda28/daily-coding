@@ -1,3 +1,9 @@
 export default function getRandomColor(lightness) {
-    return `hsl(200, 100%, ${100 - lightness}%)`;
+    let hue = 200;
+    while (lightness > 90) {
+        hue += 50;
+        lightness -= 30;
+    }
+    lightness = 100 - lightness;
+    return `hsl(${hue}, 100%, ${lightness}%)`;
 }
