@@ -1,7 +1,7 @@
 export default function getRandomColor(lightness) {
     let hue = 200;
     while (lightness > 90) {
-        hue += 50;
+        hue += 15;
         lightness -= 30;
     }
     lightness = 100 - lightness;
