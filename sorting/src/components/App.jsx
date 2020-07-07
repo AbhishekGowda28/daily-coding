@@ -46,7 +46,7 @@ function App() {
                 setIsSorted(true);
               }
             }, 5);
-          }}>Click Me to Sort Using Insertion Sort</button>
+          }}>Insertion Sort</button>
       </div>
       <div>
         <button
@@ -68,7 +68,7 @@ function App() {
                 setIsSorted(true);
               }
             }, 5);
-          }}>Click Me to Sort Using Selection Sort</button>
+          }}>Selection Sort</button>
       </div>
 
       {data.map((value, index) => {
