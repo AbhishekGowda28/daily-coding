@@ -7,11 +7,9 @@ import { yeildSelectionSort } from "../utils/selectionSort";
 
 function App() {
   const [data, setData] = React.useState([]);
-  const [sortedData, setSortedData] = React.useState({});
   const [timeTaken, setTimeTaken] = React.useState(0);
   const [disableController, setDisableController] = React.useState(false);
   const [isSorted, setIsSorted] = React.useState(false);
-  const [selectionSort, setselectionSort] = React.useState({});
   React.useEffect(() => {
     randomizeNumber();
   }, []);
@@ -19,10 +17,6 @@ function App() {
     setTimeTaken(0);
     const randomData = generateRandomNumbers()
     setData(randomData);
-    const value = yieldInsertionSort(randomData);
-    const selectionValue = yeildSelectionSort(randomData);
-    setselectionSort(selectionValue);
-    setSortedData(value);
     setIsSorted(false);
   }
   return (
@@ -36,10 +30,11 @@ function App() {
         <button
           disabled={disableController || isSorted}
           onClick={() => {
+            const insertionSortData = yieldInsertionSort(data);
             setDisableController(true);
             const startTime = (new Date()).getTime();
             const interval = setInterval(() => {
-              let other = sortedData.next();
+              let other = insertionSortData.next();
               if (other.value !== undefined) {
                 setData([...other.value]);
                 setTimeTaken("--");
@@ -57,10 +52,11 @@ function App() {
         <button
           disabled={disableController || isSorted}
           onClick={() => {
+            const selectionSortData = yeildSelectionSort(data);
             setDisableController(true);
             const startTime = (new Date()).getTime();
             const interval = setInterval(() => {
-              let other = selectionSort.next();
+              let other = selectionSortData.next();
               if (other.value !== undefined) {
                 setData([...other.value]);
                 setTimeTaken("--");
