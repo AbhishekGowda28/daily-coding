@@ -38,3 +38,4 @@ function insertionSort(inputArray) {
 }
 
 export { insertionSort, yieldInsertionSort };
+
