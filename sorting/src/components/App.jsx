@@ -10,15 +10,18 @@ function App() {
   const [timeTaken, setTimeTaken] = React.useState(0);
   const [disableController, setDisableController] = React.useState(false);
   const [isSorted, setIsSorted] = React.useState(false);
-  React.useEffect(() => {
-    randomizeNumber();
-  }, []);
+
   const randomizeNumber = () => {
     setTimeTaken(0);
     const randomData = generateRandomNumbers()
     setData(randomData);
     setIsSorted(false);
   }
+
+  React.useEffect(() => {
+    randomizeNumber();
+  }, []);
+
   return (
     <div className="App">
       <h1>Sorting APP</h1>
@@ -26,7 +29,7 @@ function App() {
       <div>
         <button disabled={disableController} onClick={() => { randomizeNumber(); }}>Randomize</button>
       </div>
-      <div>
+      <div className="Sorting-Types">
         <button
           disabled={disableController || isSorted}
           onClick={() => {
@@ -47,8 +50,6 @@ function App() {
               }
             }, 5);
           }}>Insertion Sort</button>
-      </div>
-      <div>
         <button
           disabled={disableController || isSorted}
           onClick={() => {
@@ -70,10 +71,11 @@ function App() {
             }, 5);
           }}>Selection Sort</button>
       </div>
-
-      {data.map((value, index) => {
-        return (<div key={index} className="value-block" style={{ backgroundColor: getRandomColor(value) }}>{value}</div>)
-      })}
+      <div className="data-block">
+        {data.map((value, index) => {
+          return (<div key={index} className="value-block" style={{ backgroundColor: getRandomColor(value) }}>{value}</div>)
+        })}
+      </div>
     </div>
   );
 }
