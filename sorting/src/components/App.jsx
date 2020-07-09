@@ -1,9 +1,11 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React from 'react';
 import '../styles/App.css';
 import generateRandomNumbers from '../utils/generateRandomNumbers';
 import { yieldInsertionSort } from '../utils/insertionSort';
 import { yeildSelectionSort } from "../utils/selectionSort";
 import DataBlock from './DataBlock';
+import CheckBox from './Common/Checkbox';
 // import Controllers from './Controllers';
 
 function App() {
@@ -11,12 +13,13 @@ function App() {
   const [timeTaken, setTimeTaken] = React.useState(0);
   const [disableController, setDisableController] = React.useState(false);
   const [isSorted, setIsSorted] = React.useState(false);
-  const ARRAY_SIZE = 150;
-  const CONTROL_RATE = 15;
+  const [allowDuplicate, setAllowDuplicate] = React.useState(false);
+  const ARRAY_SIZE = 50;
+  const CONTROL_RATE = 0;
 
   const randomizeNumber = () => {
     setTimeTaken(0);
-    setData(generateRandomNumbers(ARRAY_SIZE));
+    setData(generateRandomNumbers(ARRAY_SIZE, allowDuplicate));
     setIsSorted(false);
   }
 

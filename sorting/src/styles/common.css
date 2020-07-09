@@ -17,3 +17,7 @@ button:disabled {
     background-color: gray;
     cursor: not-allowed;
 }
+
+label.checkBox.disabled {
+    color: gray;
+}
