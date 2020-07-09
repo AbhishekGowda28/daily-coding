@@ -10,7 +10,8 @@ function App() {
   const [timeTaken, setTimeTaken] = React.useState(0);
   const [disableController, setDisableController] = React.useState(false);
   const [isSorted, setIsSorted] = React.useState(false);
-  const ARRAY_SIZE = 500;
+  const ARRAY_SIZE = 150;
+  const CONTROL_RATE = 15;
 
   const randomizeNumber = () => {
     setTimeTaken(0);
@@ -38,17 +39,7 @@ function App() {
         setDisableController(false);
         setIsSorted(true);
       }
-    }, 5);
-  }
-
-  const sortByInsertion = () => {
-    const insertionSortData = yieldInsertionSort(data);
-    sortData(insertionSortData);
-  }
-
-  const sortBySelection = () => {
-    const selectionSortData = yeildSelectionSort(data);
-    sortData(selectionSortData);
+    }, CONTROL_RATE);
   }
 
   React.useEffect(() => {
@@ -65,10 +56,10 @@ function App() {
       <div className="Sorting-Types">
         <button
           disabled={disableController || isSorted}
-          onClick={sortByInsertion}>Insertion Sort</button>
+          onClick={() => { sortData(yieldInsertionSort(data)) }}>Insertion Sort</button>
         <button
           disabled={disableController || isSorted}
-          onClick={sortBySelection}>Selection Sort</button>
+          onClick={() => { sortData(yeildSelectionSort(data)) }}>Selection Sort</button>
       </div>
       <div className="data-block">
         {data.map((value, index) => {
