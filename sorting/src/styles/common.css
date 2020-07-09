@@ -1,12 +1,23 @@
+:root {
+    --text-color: #f8f8ff;
+}
+
 button {
     display: inline;
     margin: 10px;
     padding: 10px;
-    background-color: #6495ed;
-    color: #f8f8ff;
+    background-color: #1b61e2;
+    color: var(--text-color, "#f8f8f8");
     border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 button:disabled {
     background-color: gray;
+    cursor: not-allowed;
+}
+
+label.checkBox.disabled {
+    color: gray;
 }
