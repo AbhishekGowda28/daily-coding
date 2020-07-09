@@ -6,7 +6,6 @@ import { yieldInsertionSort } from '../utils/insertionSort';
 import { yeildSelectionSort } from "../utils/selectionSort";
 import DataBlock from './DataBlock';
 import CheckBox from './Common/Checkbox';
-// import Controllers from './Controllers';
 
 function App() {
   const [data, setData] = React.useState([]);
@@ -14,7 +13,7 @@ function App() {
   const [disableController, setDisableController] = React.useState(false);
   const [isSorted, setIsSorted] = React.useState(false);
   const [allowDuplicate, setAllowDuplicate] = React.useState(false);
-  const ARRAY_SIZE = 50;
+  const ARRAY_SIZE = 150;
   const CONTROL_RATE = 0;
 
   const randomizeNumber = () => {
@@ -70,11 +69,6 @@ function App() {
           disabled={disableController || isSorted}
           onClick={() => { sortData(yeildSelectionSort(data)) }}>Selection Sort</button>
       </div>
-      {/* <Controllers
-        data={data}
-        updateTime={(time) => setTimeTaken(time)}
-        updateData={(data) => { setData(data) }}
-      /> */}
       <DataBlock data={data} />
     </div>
   );
