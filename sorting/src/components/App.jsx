@@ -6,6 +6,7 @@ import { yieldInsertionSort } from '../utils/insertionSort';
 import { yeildSelectionSort } from "../utils/selectionSort";
 import DataBlock from './DataBlock';
 import CheckBox from './Common/Checkbox';
+import Button from './Common/Button';
 
 function App() {
   const [data, setData] = React.useState([]);
@@ -53,7 +54,11 @@ function App() {
       <h1>Sorting APP</h1>
       <h1>Time Taken {timeTaken} Seconds</h1>
       <div>
-        <button disabled={disableController} onClick={randomizeNumber}>Randomize</button>
+        <Button
+          disabled={disableController}
+          onClick={randomizeNumber}
+          label="Randomize"
+        />
         <CheckBox
           checked={allowDuplicate}
           label="Allow Duplicates"
@@ -62,12 +67,16 @@ function App() {
         />
       </div>
       <div className="Sorting-Types">
-        <button
+        <Button
           disabled={disableController || isSorted}
-          onClick={() => { sortData(yieldInsertionSort(data)) }}>Insertion Sort</button>
-        <button
+          onClick={() => { sortData(yieldInsertionSort(data)) }}
+          label="Insertion Sort"
+        />
+        <Button
           disabled={disableController || isSorted}
-          onClick={() => { sortData(yeildSelectionSort(data)) }}>Selection Sort</button>
+          onClick={() => { sortData(yeildSelectionSort(data)) }}
+          label="Selection Sort"
+        />
       </div>
       <DataBlock data={data} />
     </div>
