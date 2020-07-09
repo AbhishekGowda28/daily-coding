@@ -52,6 +52,12 @@ function App() {
       <h1>Time Taken {timeTaken} Seconds</h1>
       <div>
         <button disabled={disableController} onClick={randomizeNumber}>Randomize</button>
+        <CheckBox
+          checked={allowDuplicate}
+          label="Allow Duplicates"
+          disabled={disableController}
+          onChange={() => { setAllowDuplicate(!allowDuplicate); randomizeNumber() }}
+        />
       </div>
       <div className="Sorting-Types">
         <button
