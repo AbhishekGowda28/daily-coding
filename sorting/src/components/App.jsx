@@ -1,9 +1,10 @@
 import React from 'react';
 import '../styles/App.css';
-import getRandomColor from '../utils';
 import generateRandomNumbers from '../utils/generateRandomNumbers';
 import { yieldInsertionSort } from '../utils/insertionSort';
 import { yeildSelectionSort } from "../utils/selectionSort";
+import DataBlock from './DataBlock';
+// import Controllers from './Controllers';
 
 function App() {
   const [data, setData] = React.useState([]);
@@ -15,23 +16,22 @@ function App() {
 
   const randomizeNumber = () => {
     setTimeTaken(0);
-    const randomData = generateRandomNumbers(ARRAY_SIZE);
-    setData(randomData);
+    setData(generateRandomNumbers(ARRAY_SIZE));
     setIsSorted(false);
   }
 
   /**
    * 
-   * @param {Generator<any, any, unknown>} sortMethod 
+   * @param {Generator<number, number[], number[]>} sortMethod 
    */
   const sortData = (sortMethod) => {
     setDisableController(true);
     const startTime = (new Date()).getTime();
+    setTimeTaken("--");
     const interval = setInterval(() => {
       let other = sortMethod.next();
       if (other.value !== undefined) {
         setData([...other.value]);
-        setTimeTaken("--");
       } else {
         clearInterval(interval);
         const endTime = (new Date()).getTime();
@@ -61,11 +61,12 @@ function App() {
           disabled={disableController || isSorted}
           onClick={() => { sortData(yeildSelectionSort(data)) }}>Selection Sort</button>
       </div>
-      <div className="data-block">
-        {data.map((value, index) => {
-          return (<div key={index} className="value-block" style={{ backgroundColor: getRandomColor(value) }}>{value}</div>)
-        })}
-      </div>
+      {/* <Controllers
+        data={data}
+        updateTime={(time) => setTimeTaken(time)}
+        updateData={(data) => { setData(data) }}
+      /> */}
+      <DataBlock data={data} />
     </div>
   );
 }
