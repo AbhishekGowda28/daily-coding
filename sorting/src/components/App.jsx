@@ -10,12 +10,45 @@ function App() {
   const [timeTaken, setTimeTaken] = React.useState(0);
   const [disableController, setDisableController] = React.useState(false);
   const [isSorted, setIsSorted] = React.useState(false);
+  const ARRAY_SIZE = 500;
 
   const randomizeNumber = () => {
     setTimeTaken(0);
-    const randomData = generateRandomNumbers()
+    const randomData = generateRandomNumbers(ARRAY_SIZE);
     setData(randomData);
     setIsSorted(false);
+  }
+
+  /**
+   * 
+   * @param {Generator<any, any, unknown>} sortMethod 
+   */
+  const sortData = (sortMethod) => {
+    setDisableController(true);
+    const startTime = (new Date()).getTime();
+    const interval = setInterval(() => {
+      let other = sortMethod.next();
+      if (other.value !== undefined) {
+        setData([...other.value]);
+        setTimeTaken("--");
+      } else {
+        clearInterval(interval);
+        const endTime = (new Date()).getTime();
+        setTimeTaken((endTime - startTime) / 1000);
+        setDisableController(false);
+        setIsSorted(true);
+      }
+    }, 5);
+  }
+
+  const sortByInsertion = () => {
+    const insertionSortData = yieldInsertionSort(data);
+    sortData(insertionSortData);
+  }
+
+  const sortBySelection = () => {
+    const selectionSortData = yeildSelectionSort(data);
+    sortData(selectionSortData);
   }
 
   React.useEffect(() => {
@@ -27,49 +60,15 @@ function App() {
       <h1>Sorting APP</h1>
       <h1>Time Taken {timeTaken} Seconds</h1>
       <div>
-        <button disabled={disableController} onClick={() => { randomizeNumber(); }}>Randomize</button>
+        <button disabled={disableController} onClick={randomizeNumber}>Randomize</button>
       </div>
       <div className="Sorting-Types">
         <button
           disabled={disableController || isSorted}
-          onClick={() => {
-            const insertionSortData = yieldInsertionSort(data);
-            setDisableController(true);
-            const startTime = (new Date()).getTime();
-            const interval = setInterval(() => {
-              let other = insertionSortData.next();
-              if (other.value !== undefined) {
-                setData([...other.value]);
-                setTimeTaken("--");
-              } else {
-                clearInterval(interval);
-                const endTime = (new Date()).getTime();
-                setTimeTaken((endTime - startTime) / 1000);
-                setDisableController(false);
-                setIsSorted(true);
-              }
-            }, 5);
-          }}>Insertion Sort</button>
+          onClick={sortByInsertion}>Insertion Sort</button>
         <button
           disabled={disableController || isSorted}
-          onClick={() => {
-            const selectionSortData = yeildSelectionSort(data);
-            setDisableController(true);
-            const startTime = (new Date()).getTime();
-            const interval = setInterval(() => {
-              let other = selectionSortData.next();
-              if (other.value !== undefined) {
-                setData([...other.value]);
-                setTimeTaken("--");
-              } else {
-                clearInterval(interval);
-                const endTime = (new Date()).getTime();
-                setTimeTaken((endTime - startTime) / 1000);
-                setDisableController(false);
-                setIsSorted(true);
-              }
-            }, 5);
-          }}>Selection Sort</button>
+          onClick={sortBySelection}>Selection Sort</button>
       </div>
       <div className="data-block">
         {data.map((value, index) => {
