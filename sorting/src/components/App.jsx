@@ -2,11 +2,10 @@
 import React from 'react';
 import '../styles/App.css';
 import generateRandomNumbers from '../utils/generateRandomNumbers';
-import { yieldInsertionSort } from '../utils/insertionSort';
-import { yeildSelectionSort } from "../utils/selectionSort";
-import DataBlock from './DataBlock';
-import CheckBox from './Common/Checkbox';
 import Button from './Common/Button';
+import CheckBox from './Common/Checkbox';
+import DataBlock from './DataBlock';
+import SortinTypes from './SortingTypes';
 
 function App() {
   const [data, setData] = React.useState([]);
@@ -63,21 +62,14 @@ function App() {
           checked={allowDuplicate}
           label="Allow Duplicates"
           disabled={disableController}
-          onChange={() => { setAllowDuplicate(!allowDuplicate); randomizeNumber() }}
+          onChange={() => { setAllowDuplicate(!allowDuplicate); }}
         />
       </div>
-      <div className="Sorting-Types">
-        <Button
-          disabled={disableController || isSorted}
-          onClick={() => { sortData(yieldInsertionSort(data)) }}
-          label="Insertion Sort"
-        />
-        <Button
-          disabled={disableController || isSorted}
-          onClick={() => { sortData(yeildSelectionSort(data)) }}
-          label="Selection Sort"
-        />
-      </div>
+      <SortinTypes
+        data={data}
+        disabled={isSorted || disableController}
+        sortData={(sortMethod) => { sortData(sortMethod) }}
+      />
       <DataBlock data={data} />
     </div>
   );
