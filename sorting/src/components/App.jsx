@@ -13,7 +13,7 @@ function App() {
   const [disableController, setDisableController] = React.useState(false);
   const [isSorted, setIsSorted] = React.useState(false);
   const [allowDuplicate, setAllowDuplicate] = React.useState(false);
-  const ARRAY_SIZE = 150;
+  const ARRAY_SIZE = 100;
   const CONTROL_RATE = 0;
 
   const randomizeNumber = () => {
