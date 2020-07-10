@@ -1,8 +1,6 @@
 import React from "react";
+import { yeildSelectionSort, yieldBubbleSort, yieldInsertionSort } from "../utils/sortingAlgorithms";
 import Button from "./Common/Button";
-import { yieldInsertionSort } from "../utils/insertionSort";
-import { yeildSelectionSort } from "../utils/selectionSort";
-import { yieldBubbleSort } from "../utils/bubleSort";
 
 const SortinTypes = props => {
     return (
