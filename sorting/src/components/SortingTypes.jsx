@@ -9,6 +9,11 @@ const SortinTypes = props => {
         <div className="Sorting-Types">
             <Button
                 disabled={props.disabled}
+                onClick={() => { props.sortData(yieldBubbleSort(props.data)) }}
+                label="Bubble Sort"
+            />
+            <Button
+                disabled={props.disabled}
                 onClick={() => { props.sortData(yieldInsertionSort(props.data)) }}
                 label="Insertion Sort"
             />
@@ -16,11 +21,6 @@ const SortinTypes = props => {
                 disabled={props.disabled}
                 onClick={() => { props.sortData(yeildSelectionSort(props.data)) }}
                 label="Selection Sort"
-            />
-            <Button
-                disabled={props.disabled}
-                onClick={() => { props.sortData(yieldBubbleSort(props.data)) }}
-                label="Bubble Sort"
             />
         </div>
     )
