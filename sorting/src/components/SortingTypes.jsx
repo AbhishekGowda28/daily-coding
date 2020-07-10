@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./Common/Button";
 import { yieldInsertionSort } from "../utils/insertionSort";
 import { yeildSelectionSort } from "../utils/selectionSort";
+import { yieldBubbleSort } from "../utils/bubleSort";
 
 const SortinTypes = props => {
     return (
@@ -15,6 +16,11 @@ const SortinTypes = props => {
                 disabled={props.disabled}
                 onClick={() => { props.sortData(yeildSelectionSort(props.data)) }}
                 label="Selection Sort"
+            />
+            <Button
+                disabled={props.disabled}
+                onClick={() => { props.sortData(yieldBubbleSort(props.data)) }}
+                label="Bubble Sort"
             />
         </div>
     )
