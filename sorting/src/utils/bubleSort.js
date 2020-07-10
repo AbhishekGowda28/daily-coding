@@ -3,12 +3,12 @@ function* yieldBubbleSort(inputArray) {
         if (typeof inputArray === "string") {
             inputArray = inputArray.split("");
         }
-        for (let counter = 0; counter < inputArray.length - 1; counter++) {
-            for (let innerCounter = 0; innerCounter < inputArray.length - 1 - counter; innerCounter++) {
-                if (inputArray[innerCounter] > inputArray[innerCounter + 1]) {
-                    let selectedItem = inputArray[innerCounter];
-                    inputArray[innerCounter] = inputArray[innerCounter + 1];
-                    inputArray[innerCounter + 1] = selectedItem;
+        for (let inputArrayIndex = 0; inputArrayIndex < inputArray.length - 1; inputArrayIndex++) {
+            for (let counter = 0; counter < inputArray.length - 1 - inputArrayIndex; counter++) {
+                if (inputArray[counter] > inputArray[counter + 1]) {
+                    let selectedItem = inputArray[counter];
+                    inputArray[counter] = inputArray[counter + 1];
+                    inputArray[counter + 1] = selectedItem;
                 }
             }
             yield inputArray;
@@ -22,12 +22,12 @@ function bubbleSort(inputArray) {
         if (typeof inputArray === "string") {
             inputArray = inputArray.split("");
         }
-        for (let counter = 0; counter < inputArray.length - 1; counter++) {
-            for (let innerCounter = 0; innerCounter < inputArray.length - 1 - counter; innerCounter++) {
-                if (inputArray[innerCounter] > inputArray[innerCounter + 1]) {
-                    let selectedItem = inputArray[innerCounter];
-                    inputArray[innerCounter] = inputArray[innerCounter + 1];
-                    inputArray[innerCounter + 1] = selectedItem;
+        for (let inputArrayIndex = 0; inputArrayIndex < inputArray.length - 1; inputArrayIndex++) {
+            for (let counter = 0; counter < inputArray.length - 1 - inputArrayIndex; counter++) {
+                if (inputArray[counter] > inputArray[counter + 1]) {
+                    let selectedItem = inputArray[counter];
+                    inputArray[counter] = inputArray[counter + 1];
+                    inputArray[counter + 1] = selectedItem;
                 }
             }
         }

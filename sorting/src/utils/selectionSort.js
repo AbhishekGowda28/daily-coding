@@ -2,18 +2,18 @@ function* yeildSelectionSort(inputArray) {
     if (typeof inputArray === "string") {
         inputArray = inputArray.split("");
     }
-    for (let index = 0; index < inputArray.length; index++) {
-        let leastValueIndex = index;
-        let elementCounter = index + 1;
-        while (elementCounter < inputArray.length) {
-            if (inputArray[elementCounter] < inputArray[leastValueIndex]) {
-                leastValueIndex = elementCounter;
+    for (let inputArrayIndex = 0; inputArrayIndex < inputArray.length; inputArrayIndex++) {
+        let leastValueIndex = inputArrayIndex;
+        let counter = inputArrayIndex + 1;
+        while (counter < inputArray.length) {
+            if (inputArray[counter] < inputArray[leastValueIndex]) {
+                leastValueIndex = counter;
             }
-            elementCounter++;
+            counter++;
         }
-        if (leastValueIndex !== index) {
-            let swapPlaceHolder = inputArray[index];
-            inputArray[index] = inputArray[leastValueIndex];
+        if (leastValueIndex !== inputArrayIndex) {
+            let swapPlaceHolder = inputArray[inputArrayIndex];
+            inputArray[inputArrayIndex] = inputArray[leastValueIndex];
             inputArray[leastValueIndex] = swapPlaceHolder;
         }
         yield inputArray;
@@ -25,18 +25,18 @@ function selectionSort(inputArray) {
     if (typeof inputArray === "string") {
         inputArray = inputArray.split("");
     }
-    for (let index = 0; index < inputArray.length; index++) {
-        let leastValueIndex = index;
-        let elementCounter = index + 1;
-        while (elementCounter < inputArray.length) {
-            if (inputArray[elementCounter] < inputArray[index]) {
-                leastValueIndex = elementCounter;
+    for (let inputArrayIndex = 0; inputArrayIndex < inputArray.length; inputArrayIndex++) {
+        let leastValueIndex = inputArrayIndex;
+        let counter = inputArrayIndex + 1;
+        while (counter < inputArray.length) {
+            if (inputArray[counter] < inputArray[inputArrayIndex]) {
+                leastValueIndex = counter;
             }
-            elementCounter++;
+            counter++;
         }
-        if (leastValueIndex !== index) {
-            let swapPlaceHolder = inputArray[index];
-            inputArray[index] = inputArray[leastValueIndex];
+        if (leastValueIndex !== inputArrayIndex) {
+            let swapPlaceHolder = inputArray[inputArrayIndex];
+            inputArray[inputArrayIndex] = inputArray[leastValueIndex];
             inputArray[leastValueIndex] = swapPlaceHolder;
         }
     }
