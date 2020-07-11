@@ -8,7 +8,8 @@ const CheckBox = (props) => {
                 type="checkbox"
                 disabled={props.disabled}
                 onChange={props.onChange} />
-            <span>{props.label}</span>
+            {/* <span>{props.label}</span> */}
+            {props.label}
         </label>
     )
 }
