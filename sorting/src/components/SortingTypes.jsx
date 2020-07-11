@@ -1,11 +1,15 @@
 import React from "react";
+import { yeildSelectionSort, yieldBubbleSort, yieldInsertionSort } from "../utils/sortingAlgorithms";
 import Button from "./Common/Button";
-import { yieldInsertionSort } from "../utils/insertionSort";
-import { yeildSelectionSort } from "../utils/selectionSort";
 
 const SortinTypes = props => {
     return (
         <div className="Sorting-Types">
+            <Button
+                disabled={props.disabled}
+                onClick={() => { props.sortData(yieldBubbleSort(props.data)) }}
+                label="Bubble Sort"
+            />
             <Button
                 disabled={props.disabled}
                 onClick={() => { props.sortData(yieldInsertionSort(props.data)) }}

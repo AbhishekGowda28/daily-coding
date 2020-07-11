@@ -5,10 +5,10 @@ function* yieldInsertionSort(inputArray) {
         }
         for (let inputArrayIndex = 0; inputArrayIndex < inputArray.length; inputArrayIndex++) {
             let selectedCard = inputArray[inputArrayIndex];
-            for (let outerIndex = 0; outerIndex < inputArrayIndex; outerIndex++) {
-                if (inputArray[outerIndex] > selectedCard) {
-                    inputArray[inputArrayIndex] = inputArray[outerIndex];
-                    inputArray[outerIndex] = selectedCard;
+            for (let counter = 0; counter < inputArrayIndex; counter++) {
+                if (inputArray[counter] > selectedCard) {
+                    inputArray[inputArrayIndex] = inputArray[counter];
+                    inputArray[counter] = selectedCard;
                     selectedCard = inputArray[inputArrayIndex];
                 }
             }
@@ -25,10 +25,10 @@ function insertionSort(inputArray) {
         }
         for (let inputArrayIndex = 0; inputArrayIndex < inputArray.length; inputArrayIndex++) {
             let selectedCard = inputArray[inputArrayIndex];
-            for (let outerIndex = 0; outerIndex < inputArrayIndex; outerIndex++) {
-                if (inputArray[outerIndex] > selectedCard) {
-                    inputArray[inputArrayIndex] = inputArray[outerIndex];
-                    inputArray[outerIndex] = selectedCard;
+            for (let counter = 0; counter < inputArrayIndex; counter++) {
+                if (inputArray[counter] > selectedCard) {
+                    inputArray[inputArrayIndex] = inputArray[counter];
+                    inputArray[counter] = selectedCard;
                     selectedCard = inputArray[inputArrayIndex];
                 }
             }
