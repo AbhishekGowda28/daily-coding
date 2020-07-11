@@ -1,14 +1,17 @@
 import React from "react";
 
 const CheckBox = (props) => {
+    let labelClassName = "checkBox";
+    if (props.disabled) {
+        labelClassName = "checkBox disabled";
+    }
     return (
-        <label className={props.disabled ? "checkBox disabled" : "checkBox"}>
+        <label className={labelClassName}>
             <input
                 checked={props.checked}
                 type="checkbox"
                 disabled={props.disabled}
                 onChange={props.onChange} />
-            {/* <span>{props.label}</span> */}
             {props.label}
         </label>
     )
