@@ -1,0 +1,1 @@
+Install eslint vs code extension to automatically lint the files in the folder

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Donate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="progress-msg">
+            <div class="msg">
+                <span style="font-weight: 700">$</span>
+                <span id="amount-required">1000</span> still need for this project
+            </div>
+            <div class="triangle"></div>
+        </div>
+        <div class="card">
+            <div class="progress">
+                <div class="progressBar"></div>
+                <div class="progressBarBottom"></div>
+            </div>
+
+            <div class="message">
+                <span id="daysLeft">Only 7 days left</span>
+                to fund this project.
+                <div class="break"></div>
+                Join the
+                <span id="donars">42</span> other who have already supported this project. Every dollar helps.
+            </div>
+            <div class="support">
+                <div class="donnar-amout">
+                    <input type="text" value="$" disabled>
+                    <input class="donnar" type="text">
+                </div>
+                <button id="donate">Give Now</button>
+                <a class="reason" href="#" style="color: #42AAf0;">Why give $50?</a>
+            </div>
+        </div>
+        <div class="options">
+            <button class="save">Save for later</button>
+            <button class="share">Tell your friends</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- modal Dialog when amount is less than 0 -->
+
+    <div id="amountLessModal" class="modal">
+        <div class="modal-content">
+            <span class="amountLessModal close">&times;</span>
+            <p>Please Donate more than $0. We are using it for good purpose</p>
+        </div>
+    </div>
+
+    <!-- modal Dialog when fund amount is 100% (progressBar is 100% or completed) -->
+
+    <div id="fundRaised" class="modal">
+        <div class="modal-content">
+            <span class="fundRaised close">&times;</span>
+            <p>Thanks for your support. Required Fund is raised for the project.</p>
+        </div>
+    </div>
+
+    <!-- modal dialog for save -->
+
+    <div id="saveDialog" class="modal">
+        <div class="modal-content">
+            <h1>Save</h1>
+            <span class="saveDialog close">&times;</span>
+            <p style="text-align: center; font-size: 50px;">Saved!</p>
+        </div>
+    </div>
+
+    <!-- modal dialog to share with friends -->
+
+    <div id="shareDialog" class="modal">
+        <div class="modal-content">
+            <h1>Social</h1>
+            <span class="shareDialog close">&times;</span>
+            <div>
+                <div class="twitter">
+                    <a href="https://twitter.com/intent/tweet?text=' Yay, I donated!'" target="_blank">
+                        <span>Tweet </span>
+                        <i class="fa fa-twitter-square"></i>
+                    </a>
+                </div>
+                <div class="facebook">
+                    <a href="http://www.facebook.com/sharer.php?u=https://www.google.com/" target="_blank">
+                        <span>Share </span>
+                        <i class="fa fa-facebook-official"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal dialog for reson to share -->
+
+    <div id="resonDialog" class="modal">
+        <div class="modal-content">
+            <h1>Reson to donate</h1>
+            <span class="resonDialog close">&times;</span>
+            <p>One gives freely, yet grows all the richer; another withholds what he should give, and only suffers want.</p>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
