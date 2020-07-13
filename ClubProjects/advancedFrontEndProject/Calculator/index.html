@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Object</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h3>Simple Calculator</h3>
+    </header>
+    <div class="calculator">
+        <span class="title">Simple Calculator</span>
+        <div class="container">
+            <input id="screen" readonly>
+            <div class="buttons">
+                <div class="row">
+                    <button id="clear" class="btn col-6" onclick="clearData()">Clear</button>
+                    <button id="clearPrevious" class="btn col-6" onclick="clearPreviousData()">
+                        <span style="font-weight:bold;font-size:20px;">&lsaquo;&mdash;</span>
+                    </button>
+                </div>
+                <div class="row">
+                    <button id="7" class="col-3 btn" onclick="calculate(this)" value=7>7</button>
+                    <button id="8" class="col-3 btn" onclick="calculate(this)" value=8>8</button>
+                    <button id="9" class="col-3 btn" onclick="calculate(this)" value=9>9</button>
+                    <button id="div" class="col-3 btn" onclick="calculate(this)" value=/>&div;</button>
+                </div>
+                <div class="row">
+                    <button id="4" class="col-3 btn" onclick="calculate(this)" value=4>4</button>
+                    <button id="5" class="col-3 btn" onclick="calculate(this)" value=5>5</button>
+                    <button id="6" class="col-3 btn" onclick="calculate(this)" value=6>6</button>
+                    <button id="mul" class="col-3 btn" onclick="calculate(this)" value=*>&times;</button>
+                </div>
+                <div class="row">
+                    <button id="1" class="col-3 btn" onclick="calculate(this)" value=1>1</button>
+                    <button id="2" class="col-3 btn" onclick="calculate(this)" value=2>2</button>
+                    <button id="3" class="col-3 btn" onclick="calculate(this)" value=3>3</button>
+                    <button id="minus" class="col-3 btn" onclick="calculate(this)" value=->&minus;</button>
+                </div>
+                <div class="row">
+                    <button id="0" class="col-3 btn" onclick="calculate(this)" value=0>0</button>
+                    <button id="dot" class="col-3 btn" onclick="calculate(this)" value=.>.</button>
+                    <button id="plus" class="col-3 btn" onclick="calculate(this)" value=+>&plus;</button>
+                    <button id="equals" class="col-3 btn" onclick="calculate(this)" value='='>&equals;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <span style="float: left">2018 Abhishek Gowda</span>
+            <span style="float: right">&copy;
+                <a href="https://github.com/AbhishekGowda28/webDevelopment/tree/master/advancedFrontEndProject/Calculator" target="_blank">
+                    <i class="fa fa-github"></i>source code</a> for the Project
+            </span>
+        </div>
+    </footer>
+    <!-- <script src="./Firstscript.js"></script> -->
+    <script src="./finalScript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Local weather</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./weather.js"></script>
+    <link rel="stylesheet" href="./weather.css">
+</head>
+
+<body class="bgImg">
+    <div>
+        <span id="app">
+            Local Weather Report
+        </span>
+        <div class="container">
+
+            <br/>
+            <!-- You'r current location is -->
+            <div class="box1">
+                <img id="small-img" alt='' src='img' />
+                <span class="mainTemp" onclick="toggleTemperature()"></span>
+            </div>
+            <div class="box2">
+                <button class="btn" disabled>
+                    <span class="weatherDescription"></span>
+                </button>
+            </div>
+            <br/>
+            <div class="box3">
+                <button class="btn" disabled>
+                    <span class="tMin"></span>
+                    <span class="tMax"></span>
+                </button>
+                <button class="btn" disabled>
+                    <span class="pressure"></span>
+                </button>
+            </div>
+            <br/>
+            <div class="box4">
+                <button class="btn" disabled>
+                    <span class="wind"></span>
+                </button>
+                <br/>
+                <div>
+                    <button class="btn" disabled>
+                        <span class="humidity"></span>
+                    </button>
+                </div>
+                <br/>
+                <button class="btn" disabled>
+                    <span class="location"></span>
+                </button>
+                <br/>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+body {
+    background-color: #3690da;
+}
+
+.container {
+    background-color: #ee827a;
+    border: 1px solid #fff;
+}
+
+h1 {
+    color: #555;
+}
+
+.timer {
+    border: 1px solid #fcfafa;
+    background-color: #000;
+    color: #FFF;
+    margin: 125px;
+    margin-right: 700px;
+    height: 200px;
+    font-weight: bolder;
+    font-size: 125px;
+}
+
+button {
+    width: 75px;
+    height: 40px;
+}
+
+.box {
+    background-color: #333;
+}
+
+audio {
+    width: 500px;
+}
+
+a {
+    text-decoration-line: underline;
+    text-decoration-color: grey;
+    color: black;
+}
+
+header {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    background-color: #0064e6;
+    color: silver;
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: #0039e6;
+    color: silver;
+}
+
+footer a {
+    color: silver;
+}
+
+a:hover {
+    color: #345e80;
+}

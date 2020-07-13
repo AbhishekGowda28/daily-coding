@@ -1,0 +1,28 @@
+#about {
+    background-image: url(http://www.businessnewsdaily.com/images/i/000/008/389/original/blue-ocean.jpg?1427902830);
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.col-5 {
+    border-style: solid;
+    border-width: 1pt;
+    border-color: red;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+#protfolio {
+    background-image: url(https://www.nature.org/cs/groups/webcontent/@photopublic/documents/media/montana-forest.jpg?redirect=https-301);
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#contact {
+    background-image: url(https://grist.files.wordpress.com/2013/11/sand.jpg);
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+}

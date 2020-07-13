@@ -1,0 +1,14 @@
+#btns{
+    width: 75%;
+    position: relative;
+}
+
+
+.btn{
+    position: relative;
+    width: 30%;
+    height: 48px;
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: -1px;
+}

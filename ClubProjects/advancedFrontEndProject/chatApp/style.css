@@ -1,0 +1,90 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #0abde37f;
+    color: rgba(1, 1, 1, 0.9);
+}
+
+header {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    margin: 0px;
+    padding: 0px;
+    height: 50px;
+    background: #ee5253ff;
+    color: #10ac84;
+    text-shadow: 1px 1px 1px #000;
+    text-align: center;
+}
+
+.profile {
+    display: block;
+    height: 70px;
+    background-color: #fff;
+    font-size: 50px;
+    font-family: sans-serif;
+    letter-spacing: 0px;
+    font-weight: 100;
+    padding: 10px;
+}
+
+img.profile-img {
+    border-radius: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+.send {
+    background-color: #1B9CFCa0;
+    display: inline-block;
+    width: 85px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.fa {
+    margin-right: 10px;
+}
+
+.send:hover {
+    background-color: #1B9CFC;
+}
+
+
+section.msg-area{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    /* background-color: orange; */
+}
+
+.message-user{
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin : 15px;
+    background: linear-gradient(to left,#00ff00f0, #00ff000f);
+    box-shadow: 1px 1px 1px #000000;
+    text-align: right;
+}
+
+.msg-area{
+    overflow: auto;
+}
+
+.message-chat-bot{
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 15px;
+    background: linear-gradient(to right, #00f0f0ff, #00fff000);
+    box-shadow: 1px 1px 1px #000000;
+    text-align: left;
+}

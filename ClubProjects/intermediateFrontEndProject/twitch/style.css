@@ -1,0 +1,102 @@
+h1{
+    padding-left : 35%;
+    color : purple;
+}
+
+img {
+    float: left;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+}
+
+.nameContainer {
+    width: 238px;
+    height: 50px;
+    float: left;
+    margin-left: 5px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.nameContainer:hover {
+    margin-left: 5px;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+[data-online~="true"] {
+    background: green;
+}
+
+[data-online="false"] {
+    background: #0059ff;
+}
+
+.logo {
+    position: relative;
+    top: 60px;
+    left: 25px;
+}
+
+.user {
+    border: 1px solid #808080;
+    margin: 10px;
+    padding: 0px;
+    background-color: whitesmoke;
+    box-shadow: -3px 3px 1px #808080;
+    float: left;
+    clear: both;
+    width: 700px;
+    height: 150px;
+    color: silver;
+}
+
+.user:hover {
+    box-shadow: 3px -3px 1px grey;
+}
+
+.name {
+    color: silver;
+    text-align: center;
+}
+
+.status {
+    position: relative;
+    top: 50px;
+    left: 75px;
+    text-align: center;
+    float: left;
+}
+
+.live {
+    border-radius: 100%;
+    background-color: whitesmoke;
+    width: 50px;
+    height: 50px;
+    float: right;
+    position: relative;
+    top: 40px;
+    right: 20px;
+    background-image: url("./image/play.jpg");
+    background-size: cover;
+}
+
+.sidebar {
+    position: fixed;
+    top : 100px;
+    bottom: 0px;
+    left : 0px;
+    width : 50px;
+}
+
+.btn {
+    height: 30px;
+    width: 80px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.collection{
+    text-align: center;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="to-do">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tables</title>
+    <link rel="stylesheet" href="example2.style.css">
+</head>
+
+<body ng-controller="main" class="container">
+    <div>
+        <label for="firstName">
+            Title:
+            <input id="firstName" data-ng-model="firstName" placeholder="title">
+        </label>
+        <br>
+        <label for="lastName">
+            Desctiption :
+            <input id="lastName" data-ng-model="lastName" placeholder="Desription">
+        </label>
+        <br>
+        <label for="date">
+            Date :
+            <input type="date">
+        </label>
+        <br>
+        <label for="time">
+            Time :
+            <input type="time">
+        </label>
+        <br>
+        <div class="center">
+            <button class="btn btn-primary" data-ng-disabled="!(firstName.length && lastName.length)" ng-click="add()">Add</button>
+        </div>
+    </div>
+    <div>
+        <table border="2">
+            <thead>
+                <th>
+                    Title
+                </th>
+                <th>
+                    Description
+                </th>
+                <th style="padding-left:50px"></th>
+            </thead>
+            <tbody>
+                <tr data-ng-repeat="p in person">
+                    <td>{{p.fName}}</td>
+                    <td>&nbsp;{{p.lName}}</td>
+                    <td>
+                        <button ng-click="$parent.remove(p)" class="btn btn-danger">Remove</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script>
+        var app = angular.module('to-do', []);
+        app.controller('main', ['$scope', function ($scope) {
+            $scope.firstName = $scope.lastName = "";
+
+            $scope.person = [];
+
+            $scope.add = function () {
+                $scope.person.push({
+                    fName: $scope.firstName,
+                    lName: $scope.lastName
+                });
+                $scope.firstName = $scope.lastName = "";
+            };
+
+            $scope.remove = function (person) {
+                $scope.person.splice(($scope.person.indexOf(person)), 1);
+            }
+        }]);
+    </script>
+</body>
+
+</html>

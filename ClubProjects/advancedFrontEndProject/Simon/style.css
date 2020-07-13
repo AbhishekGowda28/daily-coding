@@ -1,0 +1,178 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.game {
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    background-color: #313131;
+    position: relative;
+    margin: 100px;
+    border: 5px solid #000;
+    overflow: hidden;
+    box-shadow: 5px 1px 150px #0f0f0f;
+}
+
+.red,
+.blue,
+.green,
+.yellow {
+    width: 40%;
+    height: 40%;
+    /* border-radius: 50%; */
+    /* To make colors look like a blob uncomment the border-radius*/
+    opacity: 0.7;
+    margin: 5%;
+    cursor: pointer;
+    position: absolute;
+    border: 5px solid;
+    overflow: hidden;
+}
+
+/*
+
+.red:hover,
+.blue:hover,
+.green:hover,
+.yellow:hover {
+    opacity: 1;
+}
+
+*/
+
+.red {
+    top: 0;
+    left: 0;
+    border-top-left-radius: 100%;
+    background-color: red;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.blue {
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 100%;
+    background-color: aqua;
+}
+
+.green {
+    top: 0;
+    right: 0;
+    border-top-right-radius: 100%;
+    background-color: green;
+}
+
+.yellow {
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius: 100%;
+    background-color: #f3f300;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.center {
+    position: absolute;
+    height: 65%;
+    width: 65%;
+    background-color: #313131;
+    border-radius: 100%;
+    margin: 17%;
+    position: absolute;
+    border: 5px solid #000000;
+    z-index: 2;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+}
+
+.score {
+    margin: 50px;
+    height: 60px;
+    background-color: #dadaff;
+    font-size: 50px;
+    text-align: center;
+    font-family: monospace;
+    border-radius: 10px;
+    color: #f00;
+}
+
+.controls {
+    position: relative;
+    /* margin-top: 100px; */
+    margin-top: 20%;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+}
+
+.power {
+    position: absolute;
+    left: 10%;
+    float: left;
+    margin: 20px;
+    width: 30px;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.power #on {
+    background-color: #f00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.start {
+    /* height: 50px; */
+    /* width: 50px; */
+    height: 3em;
+    width: 3em;
+    margin: 20px;
+    margin-top: 0px;
+    position: absolute;
+    left: 40%;
+    border-radius: 50%;
+    background-color: yellow;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 1px #656565;
+}
+
+.strict {
+    /* height: 50px; */
+    /* width: 50px; */
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    right: 20%;
+    margin-top: 0px;
+    border-radius: 50%;
+    background-color: yellow;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 1px #656565;
+}
+
+.title {
+    padding-top: 75px;
+    padding-left: 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.strick-light {
+    margin-top: 20px;
+    margin-right: 90px;
+    float: right;
+    background-color: #941414;
+    /* height: 15px;
+    width: 15px;
+     */
+    height: 3%;
+    width: 3%;
+    border-radius: 100%;
+}

@@ -1,0 +1,14 @@
+button {
+    background: rgb(17, 62, 211);
+    border: 1px solid #000;
+    border-radius: 10px;
+    height: 40px;
+    width: 20%;
+    font-weight: bolder;
+    font-family: 'Calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 150%;
+}
+
+h1 {
+    color: rgb(45, 189, 64);
+}
