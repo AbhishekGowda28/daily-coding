@@ -1,0 +1,20 @@
+.lockScreen {
+    position: relative;
+    background-repeat: round;
+    height: 500px;
+    width: 250px;
+}
+
+.time,
+.date,
+.userName {
+    margin: auto;
+    width: 50%;
+}
+
+button{
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    bottom: 0;
+}

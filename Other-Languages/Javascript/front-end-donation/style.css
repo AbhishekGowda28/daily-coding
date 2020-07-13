@@ -1,0 +1,270 @@
+body {
+    background-color: #fefefe;
+    color: #131313;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    width: 600px;
+    margin: 50px;
+}
+
+.progress-msg {
+    position: relative;
+}
+
+.progress-msg .msg {
+    height: 100px;
+    width: 100%;
+    background-color: #535353;
+    color: #f0f0f0;
+    border-radius: 10px;
+    font-size: 1.3em;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    font-weight: 500;
+}
+
+.triangle {
+    border: 14px solid transparent;
+    border-bottom: none;
+    border-top: 14px solid #535353;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    right: 55px;
+}
+
+#amount-required {
+    font-weight: bolder;
+    font-size: 2em;
+    font-family: monospace;
+    letter-spacing: -0.1em;
+}
+
+.progress {
+    background-color: #f5f5f5;
+}
+
+.progressBar {
+    height: 20px;
+    background-color: orangered;
+    width: 0%;
+}
+
+.progressBarBottom {
+    border-top: 1px solid #e0e0e0;
+}
+
+.card {
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+}
+
+.message {
+    font-size: 24px;
+    text-align: left;
+    padding: 30px;
+    color: #797474;
+    margin-right: 90px;
+}
+
+#daysLeft {
+    color: orangered;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.break {
+    margin-top: 10px;
+}
+
+#donars {
+    font-weight: 900;
+}
+
+input {
+    border: 0px solid #ffffff;
+    font-size: 2em;
+    width: 75px;
+}
+
+input:disabled {
+    color: grey;
+    background-color: white;
+    width: 1.6rem;
+    margin-left: 5%;
+}
+
+input.donnar {
+    margin-left: -10px;
+}
+
+.donnar-amout {
+    display: inline-block;
+    width: 40%;
+    height: 80px;
+    vertical-align: middle;
+    line-height: 90px;
+    border: 2px solid #a9a9a9;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 0 5%;
+}
+
+#donate {
+    margin-left: 5%;
+    height: 90px;
+    width: 220px;
+    background-color: #00be1c;
+    box-shadow: 0xp 0px 0px #fff;
+    border: 1px solid #d0d0d0;
+    border-radius: 10px;
+    font-size: 1.5em;
+    letter-spacing: 0.09em;
+    font-weight: 600;
+    color: #f5f5f5;
+}
+
+a.reason {
+    display: block;
+    text-decoration-line: none;
+    margin: 10px 50px;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.options button {
+    margin-top: 50px;
+    background-color: #f5f5f5;
+    border: 3px solid #A0A0A0;
+    width: 45%;
+    height: 75px;
+    border-radius: 10px;
+    font-size: 24px;
+    color: #505050;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    box-shadow: 0px 1px 5px grey;
+}
+
+.share {
+    float: right;
+}
+
+/*
+    modal dialog styling
+*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #000000;
+    background-color: #00000066;
+}
+
+h1{
+    margin-top: -10px;
+    text-align: center;
+    background-color: #15b6e7;
+    border : 1px solid grey;
+}
+
+.modal-content {
+    background-color: #f5f5f5;
+    margin: 30% auto;
+    padding: 20px;
+    border: 1px solid grey;
+    width: 60%;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+a:visited,
+a {
+    color: #000000;
+}
+
+.twitter,
+.facebook {
+    float: left;
+    margin-left: 150px;
+    height: 50px;
+    width: 175px;
+    background-color: #42AAf0;
+    text-align: center;
+    border-radius: 10px;
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 25px;
+}
+
+#shareDialog .modal-content {
+    background-color: #f5f5f5;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid grey;
+    width: 80%;
+    height: 120px;
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        margin: 0px;
+    }
+    .donnar-amout,
+    #donate {
+        margin: 5%;
+        width: 90%;
+    }
+    .options button {
+        margin: 5%;
+        width: 90%;
+    }
+
+
+    .donnar{
+        width: 85%;
+    }
+
+
+    a.reason {
+        text-align: center;
+    }
+
+    #shareDialog .modal-content {
+        background-color: #f5f5f5;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid grey;
+        width: 80%;
+        height: 150px;
+    }
+}

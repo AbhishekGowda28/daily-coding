@@ -1,0 +1,51 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-console": "warn",
+        "no-debugger": "warn",
+
+        "array-bracket-newline": "error",
+        "brace-style": "error",
+        "comma-spacing": "error",
+        "camelcase": "error",
+        "curly": "error",
+        "default-case": "error",
+        "eol-last": "error",
+        "indent": ["error", "tab"],
+        "linebreak-style": ["error", "unix"],
+        "max-len": ["error", 60],
+        "max-lines": ["warn", {
+            "max": 150
+        }],
+        "max-params": ["error", {
+            "max": 2
+        }],
+        "newline-before-return": "error",
+        "no-var": "error",
+        "no-extra-semi": "error",
+        "no-inline-comments": "error",
+        "no-multiple-empty-lines": ["error", {
+            "max": 1,
+            "maxEOF": 0,
+            "maxBOF": 0
+        }],
+        "no-useless-call": "error",
+        "no-eval": "error",
+        "prefer-const": "error",
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"],
+        "sort-imports": "error"
+    }
+}
