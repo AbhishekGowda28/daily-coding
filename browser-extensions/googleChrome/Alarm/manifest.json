@@ -1,0 +1,31 @@
+{
+  "manifest_version":2,
+
+  "name":"Clock",
+  "version":"0.1",
+  "description":"Keeps track of working time.",
+  "author":"Abhishek Gowda",
+
+
+  "icons":{
+    "128":"alarmLogo.png"
+  },
+
+  "options_page":"options.html",
+
+  "browser_action":{
+    "default_title":"Clock In",
+    "default_popup":"alarm_popup.html"
+  },
+
+  "background":{
+    "scripts": ["alarmEvent.js"],
+    "persistent": false
+  },
+
+  "permissions": [
+	"alarms", 
+	"notifications",
+	"storage"
+	]
+}

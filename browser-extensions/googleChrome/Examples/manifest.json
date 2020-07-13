@@ -1,0 +1,28 @@
+{
+	"manifest_version":2,
+
+	"name" : "Chrome Extension",
+	"version": "0.1",
+	"description":"Chrome Extension for chrome browser",
+
+	"icons":{"128":"icon.png"},
+
+	"browser_action":{
+		"default_icon":"icon.png",
+		"default_title":"Clickl Here!!",
+		"default_popup":"popup2.html"
+	},
+
+	"content_scripts":[
+		{
+			"matches":["*://*/*"],
+			"css":["content_scripts_css.css"],
+			"js":["content_scripts_js.js"]
+		}
+	],
+
+	"permissions":[
+		"activeTab",
+		"storage"
+	]
+}
