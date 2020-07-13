@@ -1,0 +1,28 @@
+body{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.loading{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    align-content: center;
+    font-family: fantasy;
+    font-size: 50px;
+}
+
+.inline{
+    display: inline;
+    color: rebeccapurple;
+}
+
+.inlineBlock{
+    display: inline-block;
+    color: palegreen;
+}
+
+.block{
+    display: block;
+    color: blueviolet;
+}

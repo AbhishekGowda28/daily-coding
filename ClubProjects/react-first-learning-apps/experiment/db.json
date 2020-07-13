@@ -1,0 +1,43 @@
+{
+    "post": [{
+            "id": 1,
+            "title": "json-server",
+            "author": "typicode"
+        },
+        {
+            "id": 2,
+            "title": "json-server",
+            "author": "typicode"
+        }
+    ],
+    "comments": [{
+        "id": 1,
+        "body": "some comment",
+        "postId": 1
+    }],
+    "profile": {
+        "name": "typicode"
+    },
+    "users": [{
+            "id": 1,
+            "count": 2000,
+            "rows": [{
+                    "id": 1,
+                    "name": "John"
+                },
+                {
+                    "id": 2,
+                    "name": "Something"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "count": 1000,
+            "rows": [{
+                "id": 1,
+                "name": "James"
+            }]
+        }
+    ]
+}
