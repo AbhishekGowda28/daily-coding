@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Timer</title>
+    <link rel="stylesheet" href="timer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+</head>
+
+<body>
+    <!-- Removing controls hides the audio -->
+    <audio class="alarm" controls src="./EFX INT Digital Alarm Chicken .mp3" type="audio/mpeg" hidden></audio>
+
+    <header>
+            <h3>Pomodoro Clock</h3>
+    </header>
+    <div class="container">
+        <div role="pomdoro-btn">
+            Pomodoro :
+            <button class="pomdoroInc">+</button>
+            <button class="pomdoro" value=25>25</button>
+            <button class="pomdoroDec">-</button>
+        </div>
+
+        <div role="break-btn">
+            Break :
+            <button class="pomdoroBreakInc">+</button>
+            <button class="break" value=5>5</button>
+            <button class="pomdoroBreakDec">-</button>
+        </div>
+
+        <div class="timer" value=25>25:00</div>
+        <div class="box" role="timer-contol">
+            <button class="start">Start</button>
+            <button class="reset">Reset</button>
+            <button class="stop">Stop</button>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <span style="float: left">2018 Abhishek Gowda</span>
+            <span style="float: right">&copy;
+                <a href="https://github.com/AbhishekGowda28/webDevelopment/tree/master/advancedFrontEndProject/PomodoroClock" target="_blank">
+                    <i class="fa fa-github"></i>source code</a> for the Project
+            </span>
+        </div>
+    </footer>
+    <script src="timer.js"></script>
+</body>
+
+</html>

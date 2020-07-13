@@ -1,0 +1,116 @@
+body {
+    background-color: whitesmoke;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    position: relative;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #282c34;
+    color: silver;
+    height: 45px;
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    bottom: 0px;
+    background-color: #282c34;
+    color: silver;
+    height: 45px;
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    text-decoration-line: none;
+    color: silver;
+}
+
+footer div {
+    padding: 10px 15px;
+}
+
+.problem {
+    float: left;
+}
+
+.solution {
+    float: right;
+}
+
+nav {
+    position: relative;
+    right: 0px;
+}
+
+ul {
+    list-style: none;
+    padding-right: 10px;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    padding-left: 5px;
+    float: right;
+    color: #0366fa;
+}
+
+.mainHeader {
+    text-align: center;
+    font-size: 45px;
+}
+
+.options {
+    float: left;
+    margin: 25px;
+    width: 125px;
+}
+
+input {
+    margin-top: 10px;
+}
+
+.vehicles {
+    display: none;
+}
+
+.vehicles.show {
+    display: block;
+}
+
+.timeOut {
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    float: right;
+    margin-right: 50px;
+    font-size: 50px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.time {
+    font-size: 35px;
+}
+
+input[disabled~='true'] {
+    color: red;
+}
+
+.calculateFalconeLocation {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 450px;
+    left: 150px;
+}

@@ -1,0 +1,7 @@
+#canvas {
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    margin: 2px;
+    background-color: rgb(245, 245, 245);
+}

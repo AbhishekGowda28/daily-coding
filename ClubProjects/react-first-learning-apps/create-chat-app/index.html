@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>Chat APP</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                <a href="/">video Chat</a>
+            </h1>
+            <h2>
+                <a href="/">A simple video chat app</a>
+            </h2>
+        </header>
+        <div id="okta-login-container"></div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-md-auto align-self-center">
+                <p id="login">
+                    <b>NOTE </b>: You are not cuttently logged in. If you'd like to start your own chat room please
+                    <button type="button" class="btn btn-light">log in</button>
+                </p>
+                <div id="url" class="alert alert-dark" role="alert">
+                    <span id="roomIntro">ROOM URL</span>:
+                    <span id="roomUrl"></span>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div id="remotes" class="row">
+            <div class="col-md-6">
+                <div class="videoContainer">
+                    <video id="selfVideo"></video>
+                    <meter id="localVolume" class="volume"></meter>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Hacked by
+            <a href="https://twitter.com/AbhishekGowda_2" target="_blank">@AbhishekGowda_2</a>
+            .</p>
+        <p class="alert alert-dark">
+            <a href="https://developer.okta.com/blog/2018/05/08/build-video-chat-app-with-javascript-webrtc-and-okta" target="_blank">Followed Randall Degges</a>
+        </p>
+    </footer>
+</body>
+
+</html>

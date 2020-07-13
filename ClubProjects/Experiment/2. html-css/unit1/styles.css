@@ -1,0 +1,15 @@
+table {
+    border: 5px solid #31bde0;
+    font-family: cursive;
+    border-spacing: 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    background-color: silver;
+    color: black;
+}

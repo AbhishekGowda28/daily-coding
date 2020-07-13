@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Drop Down Menu</title>
+    <style>
+        body {
+            margin: 200px;
+        }
+
+        #main {
+            display: inline;
+            margin: 0px;
+            box-shadow: 1px 1px 5px #00000026;
+        }
+
+        #main li {
+            display: inline-block;
+            margin: 0px;
+            padding: 15px 20px;
+            background-color: #fefefe;
+            position: relative;
+        }
+
+        #main li:hover {
+            background-color: red;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .dropDown{
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 48px;
+            left : 0;
+            z-index: 2;
+        }
+
+        li:hover .dropDown {
+            background-color: white;
+            opacity: 1;
+            visibility: visible;
+            color : black;
+            text-align: left;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="main">
+        <li>HOME</li>
+        <li>
+            Web Development
+            <ul class="dropDown">
+                <li>Web Design</li>
+                <li>Web Development</li>
+                <li>Illustration</li>
+            </ul>
+        </li>
+        <li>Corporate</li>
+        <li>Ecommerce News</li>
+        <li>Tourism &apm; Travel</li>
+        <li>Contact</li>
+    </ul>
+</body>
+
+</html>

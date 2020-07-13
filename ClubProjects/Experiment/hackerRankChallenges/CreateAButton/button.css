@@ -1,0 +1,8 @@
+#btn{
+    width : 96px;
+    height : 48px;
+    font-size: 24px;
+    background : linear-gradient(#e3e3e3, #f7f7f7);
+    border : 1px solid #afafaf;
+    font-family: Arial, Helvetica, sans-serif;
+}

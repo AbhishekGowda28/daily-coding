@@ -1,0 +1,113 @@
+<!-- This is sample copy don't consider this copy -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Object</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <style>
+        .container {
+            margin-top: 50px;
+            width: 350px;
+            height: 234px;
+            background-color: steelblue;
+            border: 1px solid #000000;
+            color: white;
+        }
+
+        input {
+            margin-left: -15px;
+            width: 349px;
+            height: 40px;
+            background: linear-gradient(#13315e, #4eb3c5);
+            color: #ffffff;
+            /* border: 0px solid #13315e; */
+            border-radius: 5px;
+        }
+
+        .btn {
+            border: 1px solid silver;
+            color: #000;
+            /* border-radius: 30px; */
+        }
+
+        .calculator {
+            margin: 100px;
+            padding: 50px;
+            background-color: #dadada;
+
+        }
+
+        .inputContainer {
+            width: 350px;
+            height: 50px;
+            border: 1px solid #000000;
+            padding: 0px;
+            margin-left: -15px;
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="container">
+            <div class="inputContainer">
+                <div class="calculations"></div>
+                <div id="screen" readonly></div>
+            </div>
+            <div class="buttons">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <button class="btn">CE</button>
+                            </td>
+                            <td>
+                                <button class="btn">C</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="7" class="btn" onclick="calculate(this)" value=7>7</button>
+                            </td>
+                            <td>
+                                <button id="8" class="btn" onclick="calculate(this)" value=8>8</button>
+                            </td>
+                            <td>
+                                <button id="9" class="btn" onclick="calculate(this)" value=9>9</button>
+                            </td>
+                            <td>
+                                <button id="div" class="btn" onclick="calculate(this)" value=/>&div;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="4" class="btn" onclick="calculate(this)" value=4>4</button>
+                            </td>
+                            <td>
+                                <button id="5" class="btn" onclick="calculate(this)" value=5>5</button>
+                            </td>
+                            <td>
+                                <button id="6" class="btn" onclick="calculate(this)" value=6>6</button>
+                            </td>
+                            <td>
+                                <button id="mul" class="btn" onclick="calculate(this)" value=*>&times;</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

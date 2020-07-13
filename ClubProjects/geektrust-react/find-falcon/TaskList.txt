@@ -1,0 +1,7 @@
+Adding async and await to the application to fetch data from the server and render it.
+
+Intergrating logic.js into the Main.js file
+
+
+1. Adding route to calculate
+2. Reseting the selected options

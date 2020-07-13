@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>2DAnimation</title>
+    <style>
+        body {
+            margin: 25px;
+            width: 500px;
+            height: 200px;
+            background-color: green;
+            -webkit-animation: animate 15s;
+            animation: animate 15s;
+            animation-iteration-count: infinite;
+            /* specifies how long the animation should continue */
+        }
+
+        @keyframes animate {
+            0% {
+                background-color: #800000;
+            }
+            20% {
+                background-color: #d9ff00;
+            }
+            40% {
+                background-color: #3cff00;
+            }
+            60% {
+                background-color: #00f7ff;
+            }
+            80% {
+                background-color: #0019fd;
+            }
+            100% {
+                background-color: #f80160;
+            }
+        }
+
+        .imageSlides {
+            width: 700px;
+            height: 200px;
+            background-image: url("../images/image1.jpg");
+            background-size: cover;
+            animation-name: sildes;
+            /*  provide this name in @keyframes */
+            animation-duration: 25s;
+            animation-timing-function: ease-in;
+            animation-delay: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-play-state: running;
+        }
+
+        @keyframes sildes {
+            0% {
+                background-image: url("../images/image1.jpg");
+                background-size: cover;
+                left: 0px;
+                top: 0px;
+            }
+            20% {
+                background-image: url("../images/image2.jpg");
+                left: 0px;
+                top: 0px;
+            }
+            40% {
+
+                background-image: url("../images/image3.jpg");
+                left: 0px;
+                top: 0px;
+            }
+            60% {
+                background-image: url("../images/image4.jpg");
+                left: 0px;
+                top: 0px;
+            }
+            80% {
+                background-image: url("../images/image5.jpg");
+                left: 0px;
+                top: 0px;
+            }
+            100% {
+                background-image: url("../images/image1.jpg");
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+
+        .rotate {
+            margin: 40px;
+        }
+
+
+        .rotate img {
+            animation-name: rotate;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            transition-timing-function: linear;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="imageSlides"></div>
+
+    <!-- image rotatopn -->
+    <div class="rotate">
+        <img src="../images/rotate.jpg" alt="image" width=900 height=400>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+https://wind-bow.glitch.me/twitch-api/users/medryBW
+
+https://wind-bow.glitch.me/twitch-api/channels/medryBW
+
+https://wind-bow.glitch.me/twitch-api/streams/medryBW

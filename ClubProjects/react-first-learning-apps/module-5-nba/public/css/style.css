@@ -1,0 +1,206 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto';
+    color: #1b1b1b;
+}
+
+.flexbox-container {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+h3 {
+    font-family: 'Fjalla One';
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+h4 {
+    font-family: 'Fjalla One';
+    font-size: 20px;
+    margin: 15px 0px 5px;
+}
+
+header {
+    border-bottom: 1px solid #f5f5f5;
+}
+
+header,
+footer {
+    background-color: white;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Fjalla One';
+}
+
+header .logo,
+footer .logo {
+    flex-grow: 1;
+    height: 22px;
+}
+
+header .logo span,
+footer .logo span {
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 58px;
+    height: 24px;
+    ;
+}
+
+footer {
+    bottom: 0px;
+    background-color: #1f1f1f;
+    margin-top: 30px;
+}
+
+main {
+    margin: 0px;
+    padding: 0px;
+}
+
+.caption {
+    margin: 0px;
+    padding: 0px;
+    height: 700px;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center center !important;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 100;
+}
+
+.caption h4,
+.caption p {
+    font-size: 25px;
+    padding-right: 10px;
+    float: right;
+    clear: both;
+}
+
+.subscribe_panel {
+    text-align: center;
+}
+
+.subscribe_panel h3 {
+    font-weight: 500;
+}
+
+.subscribe_panel input {
+    border-radius: 10px;
+    border: 3px solid #dddddd;
+    text-align: center;
+    font-size: 22px;
+    margin: 10px 0px;
+}
+
+.subscribe_panel input:focus {
+    outline-width: 0px;
+}
+
+.sucess-fail,
+.error-fail {
+    display: none;
+}
+
+.error-show {
+    color: #f26157;
+}
+
+.success-show {
+    color: #008000;
+}
+
+/* Blocks */
+
+.home_blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.home_blocks .item{
+    flex-grow: 1;
+    position: relative;
+    height: 270px;
+    overflow: hidden;
+}
+
+.home_blocks .item.lg{
+    width: 50%;
+}
+
+.home_blocks .item.md {
+    width: 30%;
+}
+
+.home_blocks .item.sm {
+    width: 20%;
+}
+
+.home_blocks .item .image{
+    height: 270px;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.home_blocks .item .title {
+    background-color: black;
+    padding: 10px;
+    transition: all 500ms ease-in-out;
+}
+
+.home_blocks .item:hover .title {
+    transform: translate(0px, -39px);
+    transition: all 500ms ease-in-out;
+}
+
+.home_blocks .item .title a{
+    color: #ffffff;
+}
+
+.home_blocks .item:hover .title a {
+    color: #ffffff;
+}
+
+.home_blocks .item.lg{
+    -webkit-animation-delay: 200ms;
+    -moz-animation-delay: 200ms;
+    animation-delay: 200ms
+}
+
+.home_blocks .item.md {
+    -webkit-animation-delay: 500ms;
+    -moz-animation-delay: 500ms;
+    animation-delay: 500ms;
+}
+
+.home_blocks .item.sm {
+    -webkit-animation-delay: 8000ms;
+    -moz-animation-delay: 800ms;
+    animation-delay: 800ms
+}
+
+.home_blocks .item .veil {
+    position: absolute;
+    background:#000000;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    transition: all 500ms ease-in-out;
+}
+
+.home_blocks .item:hover .veil {
+    opacity: 0.1;
+}

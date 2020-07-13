@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <style>
+        h1 {
+            color: cadetblue;
+        }
+
+        form {
+            background-color: whitesmoke;
+            width: 50%;
+            padding: 20px;
+        }
+
+        td {
+            color: #0030ff;
+        }
+
+        input[type="submit"] {
+            background: white;
+            width: 25%;
+            height: 30px;
+            color: green;
+            font-size: medium;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for='firstname'>First Name </label>
+                    </td>
+                    <td>
+                        <input id='firstname' required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable for='lastname'>Last Name </lable>
+                    </td>
+                    <td>
+                        <input id='lastname' required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label name='gender' for='male'>Male </label>
+                        <input id='male' value='Male' type='radio' />
+                    </td>
+                    <td>
+                        <label name='gender' for='female'>Female </label>
+                        <input id='fmale' value='Female' type='radio' />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable for='email'>Email </lable>
+                    </td>
+                    <td>
+                        <input id='email' type='email' required/>
+                    </td>
+                    <td>
+                        <lable for='password'>Password </lable>
+                    </td>
+                    <td>
+                        <input id='password' type='password' pattern=".{5,10}" required title="5 to 10 characters" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for='date'>DOB</label>
+                    </td>
+                    <td>
+                        <input id='date' type="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for='termandconditions'>I agree to the terms and conditions</label>
+                    </td>
+                    <td>
+                        <input id='termandconditions' type='checkbox' required>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <input type='Submit' value='Submit'>
+    </form>
+</body>
+
+</html>
