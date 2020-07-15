@@ -1,11 +1,12 @@
-function getPrimeNumbers(range) {
-    if (typeof range === "number") {
-        const numbers = Array(range + 1).fill(true);
-        numbers[0] = false;
-        numbers[1] = false;
-        for (let count = 2; count <= range;) {
+function getPrimeNumbers(startRange, endRange) {
+    if ((typeof endRange === "number" || typeof startRange === "number") && startRange > 1) {
+        const numbers = [];
+        for (let index = startRange; index <= endRange; index++) {
+            numbers[index] = true;
+        }
+        for (let count = 2; count <= endRange;) {
             let nextFactor = count * count;
-            while (nextFactor <= range) {
+            while (nextFactor <= endRange) {
                 if (numbers[nextFactor] === true) {
                     numbers[nextFactor] = false;
                 }
