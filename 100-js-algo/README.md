@@ -512,3 +512,12 @@ Give a time in 24 Hours format. Find the angle between minute and hour hands of 
 For  time="01:12", the output should be convertTime(time) = 36.
 
 ---
+# EncloseInBrackets
+
+Given a string, enclose it in round brackets.
+
+**Example**
+
+For inputString = "abacaba", the output should be encloseInBrackets(inputString) = "(abacaba)".
+
+---
