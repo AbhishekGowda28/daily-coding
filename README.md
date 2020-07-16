@@ -6,7 +6,7 @@
 
 ![Static Code Check](https://github.com/AbhishekGowda28/daily-coding/workflows/Static%20Code%20Check/badge.svg)
 
-[Test Report Status](https://abhishekgowda28.github.io/daily-coding/100-js-algo/coverage/lcov-report/)
+[100 Algorithm Test Coverage](https://abhishekgowda28.github.io/daily-coding/100-js-algo/coverage/lcov-report/)
 
 ---
 
