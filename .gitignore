@@ -1,6 +1,5 @@
 # Folders
 node_modules/
-coverage/
 .vscode/
 
 # Fiels
@@ -70,3 +69,6 @@ typings/
 
 # next.js build output
 .next
+
+# Exception
+!100-js-algo/coverage/
