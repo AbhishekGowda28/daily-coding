@@ -1,0 +1,22 @@
+name: "Unit Test"
+
+on: 
+  pull_request:
+    branches: 
+      - master
+
+jobs:
+
+  unit_test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Run unit test
+        run: |
+              cd "100-js-algo"
+              npm install
+              npm run test-coverage
+        shell: bash
