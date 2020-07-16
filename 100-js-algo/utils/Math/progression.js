@@ -1,5 +1,4 @@
 /* eslint-disable max-params */
-//@ts-check
 
 /**
  * @param {number} initalValue
@@ -20,28 +19,7 @@ function geometricProgression(initalValue, ratio, nthTerm) {
     return nthValue;
 }
 
-/**
- * @param {number} integerNumber
- */
-function getInteger(integerNumber) {
-    integerNumber = Number(integerNumber);
-
-    return Number(integerNumber.toString().split(".")[0]);
-}
-
-function factorial(number) {
-    let result = 1;
-    while (number > 0) {
-        result *= number;
-        number--;
-    }
-
-    return result;
-}
-
 module.exports = {
     arthimaticProgression,
     geometricProgression,
-    getInteger,
-    factorial
 };
