@@ -4,7 +4,7 @@ function getPrimeNumbers(startRange, endRange) {
         for (let index = startRange; index <= endRange; index++) {
             numbers[index] = true;
         }
-        for (let count = 2; count <= endRange;) {
+        for (let count = 2; count <= Math.sqrt(endRange);) {
             let nextFactor = count * count;
             while (nextFactor <= endRange) {
                 if (numbers[nextFactor] === true) {
