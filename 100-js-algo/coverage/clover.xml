@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1595005214644" clover="3.2.0">
-  <project timestamp="1595005214645" name="All files">
-    <metrics statements="601" coveredstatements="601" conditionals="285" coveredconditionals="285" methods="101" coveredmethods="101" elements="987" coveredelements="987" complexity="0" loc="601" ncloc="601" packages="4" files="55" classes="55"/>
+<coverage generated="1595091049418" clover="3.2.0">
+  <project timestamp="1595091049418" name="All files">
+    <metrics statements="610" coveredstatements="610" conditionals="293" coveredconditionals="293" methods="103" coveredmethods="103" elements="1006" coveredelements="1006" complexity="0" loc="610" ncloc="610" packages="4" files="56" classes="56"/>
     <package name="100-js-algo">
-      <metrics statements="403" coveredstatements="403" conditionals="177" coveredconditionals="177" methods="66" coveredmethods="66"/>
+      <metrics statements="412" coveredstatements="412" conditionals="185" coveredconditionals="185" methods="68" coveredmethods="68"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -517,6 +517,18 @@
         <line num="8" count="13" type="cond" truecount="4" falsecount="0"/>
         <line num="10" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
+      </file>
+      <file name="extractMatrixColumn.js" path="D:\git\daily-coding\100-js-algo\extractMatrixColumn.js">
+        <metrics statements="9" coveredstatements="9" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
+        <line num="2" count="3" type="cond" truecount="4" falsecount="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
       </file>
       <file name="extractNth.js" path="D:\git\daily-coding\100-js-algo\extractNth.js">
         <metrics statements="6" coveredstatements="6" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>

@@ -549,3 +549,14 @@ Given array of integers, remove each kth element from it.
 **Example**
 
 For inputArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] and n = 3, the output should be extractNth(inputArray, n) = [1, 2, 4, 5, 7, 8, 10].
+
+---
+# Extract Elements from Matrix
+
+Given a rectangular matrix and an integer column, return an array containing the elements of the columnth column of the given matrix (0th index elements).
+
+**Example**
+
+For matrix = [[1, 1, 1, 2], [0, 5, 0, 4], [2, 1, 3, 6]] and column = 2, the output should be extractMatrixColumn(matrix, column) = [1, 0, 3].
+
+---
