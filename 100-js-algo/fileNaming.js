@@ -5,18 +5,22 @@ function fileNaming(fileNames) {
             if (outputFileNames.includes(fileName) === false) {
                 outputFileNames.push(fileName);
             } else {
-                const newName = `${fileName}(1)`;
+                let newName = `${fileName}(1)`;
                 if (outputFileNames.includes(newName) === false) {
                     outputFileNames.push(newName);
                 } else {
-                    const extractNumber = /.*?\((\d)\)/;
-                    const data = extractNumber.exec(newName);
-                    if (data !== null) {
+                    let checker = true;
+                    while (checker) {
+                        const extractNumber = /.*?\((\d)\)/;
+                        const data = extractNumber.exec(newName);
                         let nextFileName = Number(data[1]);
                         nextFileName++;
-                        console.log(data, nextFileName)
-                        outputFileNames.push(`${fileName}(${nextFileName})`);
+                        newName = `${fileName}(${nextFileName})`;
+                        if (outputFileNames.includes(newName) === false) {
+                            checker = false;
+                        }
                     }
+                    outputFileNames.push(newName);
                 }
             }
         });
