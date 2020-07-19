@@ -1,13 +1,7 @@
-// @ts-check
-
-/**
- * @param {string[]} fileNames
- */
 function fileNaming(fileNames) {
     if (Array.isArray(fileNames)) {
         const outputFileNames = [];
-        for (let fileCounter = 0; fileCounter < fileNames.length; fileCounter++) {
-            const fileName = fileNames[fileCounter];
+        fileNames.forEach((fileName) => {
             if (outputFileNames.includes(fileName) === false) {
                 outputFileNames.push(fileName);
             } else {
@@ -20,16 +14,17 @@ function fileNaming(fileNames) {
                     if (data !== null) {
                         let nextFileName = Number(data[1]);
                         nextFileName++;
-                        outputFileNames.push(`${fileName}(${nextFileName})`)
+                        console.log(data, nextFileName)
+                        outputFileNames.push(`${fileName}(${nextFileName})`);
                     }
                 }
             }
-        }
+        });
+
+        return outputFileNames;
     } else {
         throw new Error("Invalid Input");
     }
 }
-
-fileNaming(["doc", "doc", "image", "doc(1)", "doc"]);
 
 module.exports = { fileNaming };
