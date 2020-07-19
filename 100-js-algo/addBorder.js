@@ -13,10 +13,6 @@ function addBorder(picture) {
 	return borderedPicture;
 }
 
-addBorder(["abc", "def"]);
-addBorder([""]);
-addBorder([]);
-
 module.exports = {
 	addBorder,
 };
