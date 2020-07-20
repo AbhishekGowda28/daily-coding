@@ -17,9 +17,8 @@ function digitsProduct(inputNumber) {
                 }
             }
         }
-    } else {
-        throw new Error("Invalid Input");
     }
+    throw new Error("Invalid Input");
 }
 
 module.exports = { digitsProduct };
