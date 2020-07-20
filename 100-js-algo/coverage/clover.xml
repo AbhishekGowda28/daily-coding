@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1595261474934" clover="3.2.0">
-  <project timestamp="1595261474934" name="All files">
+<coverage generated="1595261621649" clover="3.2.0">
+  <project timestamp="1595261621649" name="All files">
     <metrics statements="646" coveredstatements="646" conditionals="304" coveredconditionals="304" methods="115" coveredmethods="115" elements="1065" coveredelements="1065" complexity="0" loc="646" ncloc="646" packages="4" files="58" classes="58"/>
     <package name="100-js-algo">
       <metrics statements="440" coveredstatements="440" conditionals="196" coveredconditionals="196" methods="74" coveredmethods="74"/>
@@ -489,7 +489,7 @@
         <line num="30" count="1" type="stmt"/>
         <line num="34" count="3" type="cond" truecount="2" falsecount="0"/>
         <line num="35" count="1" type="stmt"/>
-        <line num="37" count="2" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
       </file>
       <file name="encloseInBrackets.js" path="D:\git\daily-coding\100-js-algo\encloseInBrackets.js">
@@ -503,7 +503,7 @@
         <line num="8" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
       </file>
       <file name="evenDigitsOnly.js" path="D:\git\daily-coding\100-js-algo\evenDigitsOnly.js">
         <metrics statements="6" coveredstatements="6" conditionals="9" coveredconditionals="9" methods="3" coveredmethods="3"/>
