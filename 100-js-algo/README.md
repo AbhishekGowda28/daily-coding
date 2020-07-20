@@ -548,7 +548,9 @@ Given array of integers, remove each kth element from it.
 
 **Example**
 
-For inputArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] and n = 3, the output should be extractNth(inputArray, n) = [1, 2, 4, 5, 7, 8, 10].
+For inputArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] and n = 3, 
+
+the output should be extractNth(inputArray, n) = [1, 2, 4, 5, 7, 8, 10].
 
 ---
 # Extract Elements from Matrix
@@ -557,7 +559,9 @@ Given a rectangular matrix and an integer column, return an array containing the
 
 **Example**
 
-For matrix = [[1, 1, 1, 2], [0, 5, 0, 4], [2, 1, 3, 6]] and column = 2, the output should be extractMatrixColumn(matrix, column) = [1, 0, 3].
+For matrix = [[1, 1, 1, 2], [0, 5, 0, 4], [2, 1, 3, 6]] and column = 2, 
+
+the output should be extractMatrixColumn(matrix, column) = [1, 0, 3].
 
 ---
 # File Naming
@@ -570,6 +574,21 @@ Return an array of names that will be given to the files.
 
 **Example**
 
-For names = ["doc", "doc", "image", "doc(1)", "doc"], the output should be fileNaming(names) = ["doc", "doc(1)", "image", "doc(1)(1)", "doc(2)"].
+For names = ["doc", "doc", "image", "doc(1)", "doc"], 
+
+the output should be fileNaming(names) = ["doc", "doc(1)", "image", "doc(1)(1)", "doc(2)"].
+
+---
+# Uber Ride
+
+Being a new Uber user, you have ₹20 off your first ride. You want to make the most out of it and drive in the fanciest car you can afford, without spending any out-of-pocket money. There are 5 options, from the least to the most expensive: "UberX", "UberXL", "UberPlus", "UberBlack" and "UberSUV".
+
+You know the length *l* of your ride in kilometers and how much one kilometer costs for each car. Find the best car you can afford.
+
+**Example**
+
+For *l* = 30 and fares = [0.3, 0.5, 0.7, 1, 1.3], 
+
+the output should be fancyRide(l, fares) = "UberXL".
 
 ---
