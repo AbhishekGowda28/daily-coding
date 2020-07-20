@@ -33,9 +33,9 @@ function domainType(domainList) {
 
     if (error === true) {
         return "Domain does not exist";
-    } else {
-        return domainLabels;
     }
+
+    return domainLabels;
 }
 
 module.exports = { domainType };
