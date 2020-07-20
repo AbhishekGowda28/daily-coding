@@ -9,9 +9,8 @@ function encloseInBrackets(inputStr) {
         } else {
             return "(" + inputStr + ")";
         }
-    } else {
-        throw new Error("Invalid Input");
     }
+    throw new Error("Invalid Input");
 }
 
 module.exports = { encloseInBrackets };

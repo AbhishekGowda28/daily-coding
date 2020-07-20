@@ -15,12 +15,10 @@ function getPrimeFactors(inputNumber) {
             });
 
             return products;
-        } else {
-            throw new Error("Invalid Input");
         }
-    } else {
         throw new Error("Invalid Input");
     }
+    throw new Error("Invalid Input");
 }
 
 module.exports = { getPrimeFactors };

@@ -26,9 +26,8 @@ function fileNaming(fileNames) {
         });
 
         return outputFileNames;
-    } else {
-        throw new Error("Invalid Input");
     }
+    throw new Error("Invalid Input");
 }
 
 module.exports = { fileNaming };

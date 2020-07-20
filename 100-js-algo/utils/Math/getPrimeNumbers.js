@@ -66,9 +66,8 @@ function getPrimeNumbers(startRange, endRange) {
         filterPrimeNumbers(endRange, numbers);
 
         return extractPrimeNumbers(numbers);
-    } else {
-        throw new Error("Invalid Input");
     }
+    throw new Error("Invalid Input");
 }
 
 module.exports = { getPrimeNumbers };
