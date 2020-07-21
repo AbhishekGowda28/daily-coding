@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1595348739507" clover="3.2.0">
-  <project timestamp="1595348739507" name="All files">
-    <metrics statements="661" coveredstatements="661" conditionals="302" coveredconditionals="302" methods="123" coveredmethods="123" elements="1086" coveredelements="1086" complexity="0" loc="661" ncloc="661" packages="4" files="61" classes="61"/>
+<coverage generated="1595349214232" clover="3.2.0">
+  <project timestamp="1595349214233" name="All files">
+    <metrics statements="663" coveredstatements="663" conditionals="302" coveredconditionals="302" methods="124" coveredmethods="124" elements="1089" coveredelements="1089" complexity="0" loc="663" ncloc="663" packages="4" files="61" classes="61"/>
     <package name="100-js-algo">
-      <metrics statements="452" coveredstatements="452" conditionals="194" coveredconditionals="194" methods="81" coveredmethods="81"/>
+      <metrics statements="454" coveredstatements="454" conditionals="194" coveredconditionals="194" methods="82" coveredmethods="82"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -140,19 +140,20 @@
         <line num="14" count="1" type="stmt"/>
       </file>
       <file name="angleType.js" path="D:\git\daily-coding\100-js-algo\angleType.js">
-        <metrics statements="12" coveredstatements="12" conditionals="12" coveredconditionals="12" methods="1" coveredmethods="1"/>
-        <line num="2" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="2" type="cond" truecount="4" falsecount="0"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
+        <metrics statements="13" coveredstatements="13" conditionals="12" coveredconditionals="12" methods="1" coveredmethods="1"/>
+        <line num="2" count="6" type="stmt"/>
+        <line num="3" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
       </file>
       <file name="applesDistribution.js" path="D:\git\daily-coding\100-js-algo\applesDistribution.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -164,20 +165,21 @@
         <line num="12" count="1" type="stmt"/>
       </file>
       <file name="applesInbox.js" path="D:\git\daily-coding\100-js-algo\applesInbox.js">
-        <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="7" count="18" type="cond" truecount="2" falsecount="0"/>
-        <line num="8" count="10" type="stmt"/>
-        <line num="10" count="8" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="14" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="16" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
+        <metrics statements="14" coveredstatements="14" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+        <line num="6" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="24" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="10" type="stmt"/>
+        <line num="27" count="8" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="32" count="3" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
       </file>
       <file name="areEquallyStrong.js" path="D:\git\daily-coding\100-js-algo\areEquallyStrong.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
