@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1595346554155" clover="3.2.0">
-  <project timestamp="1595346554156" name="All files">
-    <metrics statements="654" coveredstatements="654" conditionals="306" coveredconditionals="306" methods="118" coveredmethods="118" elements="1078" coveredelements="1078" complexity="0" loc="654" ncloc="654" packages="4" files="60" classes="60"/>
+<coverage generated="1595347433896" clover="3.2.0">
+  <project timestamp="1595347433896" name="All files">
+    <metrics statements="662" coveredstatements="662" conditionals="306" coveredconditionals="306" methods="119" coveredmethods="119" elements="1087" coveredelements="1087" complexity="0" loc="662" ncloc="662" packages="4" files="61" classes="61"/>
     <package name="100-js-algo">
-      <metrics statements="443" coveredstatements="443" conditionals="196" coveredconditionals="196" methods="76" coveredmethods="76"/>
+      <metrics statements="451" coveredstatements="451" conditionals="196" coveredconditionals="196" methods="77" coveredmethods="77"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -555,6 +555,17 @@
         <line num="12" count="4" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
       </file>
+      <file name="fermatFactorization.js" path="D:\git\daily-coding\100-js-algo\fermatFactorization.js">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+      </file>
       <file name="fileNaming.js" path="D:\git\daily-coding\100-js-algo\fileNaming.js">
         <metrics statements="21" coveredstatements="21" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
         <line num="2" count="3" type="cond" truecount="2" falsecount="0"/>
@@ -833,11 +844,11 @@
       </file>
       <file name="isSquare.js" path="D:\git\daily-coding\100-js-algo\utils\Math\isSquare.js">
         <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="2" count="2" type="stmt"/>
-        <line num="3" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
+        <line num="7" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
       </file>
       <file name="progression.js" path="D:\git\daily-coding\100-js-algo\utils\Math\progression.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
