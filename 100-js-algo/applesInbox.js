@@ -1,3 +1,20 @@
+// @ts-check
+/**
+ * @param {number} reminder
+ */
+function getFruitCount(reminder) {
+    if (reminder > 0) {
+        return `${reminder} Yellow apples`;
+    } else if (reminder < 0) {
+        return `${Math.abs(reminder)} Red apples`;
+    }
+
+    return "There are same number of Red and Yellow apples";
+}
+
+/**
+ * @param {number} numberOfBoxes
+ */
 function applesInbox(numberOfBoxes) {
     // Yellow apples
     let oddCount = 0;
@@ -11,13 +28,8 @@ function applesInbox(numberOfBoxes) {
         }
     }
     const reminder = oddCount - evenCount;
-    if (reminder > 0) {
-        return `${reminder} Yellow apples`;
-    } else if (reminder < 0) {
-        return `${Math.abs(reminder)} Red apples`;
-    } else {
-        return "There are same number of Red and Yellow apples";
-    }
+
+    return getFruitCount(reminder);
 }
 
 module.exports = { applesInbox };

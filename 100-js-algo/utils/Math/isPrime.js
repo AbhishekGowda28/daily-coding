@@ -15,11 +15,8 @@ function isPrime(number) {
     if (isNumberValid(number)) {
         number = checkForNegativeNumbers(number);
         const primeNumbersInRange = getPrimeNumbers(2, number);
-        if (primeNumbersInRange.includes(number)) {
-            return true;
-        }
 
-        return false;
+        return primeNumbersInRange.includes(number);
     }
     throw new Error("Invalid Input");
 }

@@ -609,3 +609,12 @@ For ride_time = 30, ride_distance = 7, cost_per_minute = [0.2, 0.35, 0.4, 0.45] 
 the output should be fareEstimator(ride_time, ride_distance, cost_per_minute, cost_per_km) = [13.7, 23.1, 28.1, 38].
 
 ---
+# Fermat's factorization method
+
+Wiki Link [Fermat's factorization method](https://en.wikipedia.org/wiki/Fermat%27s_factorization_method)
+
+**Example**
+
+For n = 15, the output should be FermatFactorization(n) = [4, 1] => 15 = 4^2 - 1^2.
+
+---
