@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1595348505389" clover="3.2.0">
-  <project timestamp="1595348505389" name="All files">
-    <metrics statements="663" coveredstatements="663" conditionals="304" coveredconditionals="304" methods="123" coveredmethods="123" elements="1090" coveredelements="1090" complexity="0" loc="663" ncloc="663" packages="4" files="61" classes="61"/>
+<coverage generated="1595348739507" clover="3.2.0">
+  <project timestamp="1595348739507" name="All files">
+    <metrics statements="661" coveredstatements="661" conditionals="302" coveredconditionals="302" methods="123" coveredmethods="123" elements="1086" coveredelements="1086" complexity="0" loc="661" ncloc="661" packages="4" files="61" classes="61"/>
     <package name="100-js-algo">
       <metrics statements="452" coveredstatements="452" conditionals="194" coveredconditionals="194" methods="81" coveredmethods="81"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
@@ -766,7 +766,7 @@
       </file>
     </package>
     <package name="100-js-algo.utils.Math">
-      <metrics statements="71" coveredstatements="71" conditionals="30" coveredconditionals="30" methods="16" coveredmethods="16"/>
+      <metrics statements="69" coveredstatements="69" conditionals="28" coveredconditionals="28" methods="16" coveredmethods="16"/>
       <file name="Math.js" path="D:\git\daily-coding\100-js-algo\utils\Math\Math.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="5" count="48" type="stmt"/>
@@ -828,7 +828,7 @@
         <line num="73" count="4" type="stmt"/>
       </file>
       <file name="isPrime.js" path="D:\git\daily-coding\100-js-algo\utils\Math\isPrime.js">
-        <metrics statements="13" coveredstatements="13" conditionals="9" coveredconditionals="9" methods="3" coveredmethods="3"/>
+        <metrics statements="11" coveredstatements="11" conditionals="7" coveredconditionals="7" methods="3" coveredmethods="3"/>
         <line num="1" count="2" type="stmt"/>
         <line num="4" count="8" type="cond" truecount="3" falsecount="0"/>
         <line num="8" count="6" type="cond" truecount="2" falsecount="0"/>
@@ -837,11 +837,9 @@
         <line num="15" count="8" type="cond" truecount="2" falsecount="0"/>
         <line num="16" count="6" type="stmt"/>
         <line num="17" count="6" type="stmt"/>
-        <line num="18" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="19" count="2" type="stmt"/>
-        <line num="22" count="4" type="stmt"/>
+        <line num="19" count="6" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
         <line num="24" count="2" type="stmt"/>
-        <line num="27" count="2" type="stmt"/>
       </file>
       <file name="isSquare.js" path="D:\git\daily-coding\100-js-algo\utils\Math\isSquare.js">
         <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
