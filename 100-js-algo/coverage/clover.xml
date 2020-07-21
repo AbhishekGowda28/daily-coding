@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1595347433896" clover="3.2.0">
-  <project timestamp="1595347433896" name="All files">
-    <metrics statements="662" coveredstatements="662" conditionals="306" coveredconditionals="306" methods="119" coveredmethods="119" elements="1087" coveredelements="1087" complexity="0" loc="662" ncloc="662" packages="4" files="61" classes="61"/>
+<coverage generated="1595348505389" clover="3.2.0">
+  <project timestamp="1595348505389" name="All files">
+    <metrics statements="663" coveredstatements="663" conditionals="304" coveredconditionals="304" methods="123" coveredmethods="123" elements="1090" coveredelements="1090" complexity="0" loc="663" ncloc="663" packages="4" files="61" classes="61"/>
     <package name="100-js-algo">
-      <metrics statements="451" coveredstatements="451" conditionals="196" coveredconditionals="196" methods="77" coveredmethods="77"/>
+      <metrics statements="452" coveredstatements="452" conditionals="194" coveredconditionals="194" methods="81" coveredmethods="81"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -515,25 +515,26 @@
         <line num="14" count="1" type="stmt"/>
       </file>
       <file name="extractMatrixColumn.js" path="D:\git\daily-coding\100-js-algo\extractMatrixColumn.js">
-        <metrics statements="9" coveredstatements="9" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
-        <line num="2" count="3" type="cond" truecount="4" falsecount="0"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="2" type="cond" truecount="4" falsecount="0"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
+        <metrics statements="11" coveredstatements="11" conditionals="8" coveredconditionals="8" methods="5" coveredmethods="5"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="13" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="26" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="34" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="42" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
       </file>
       <file name="extractNth.js" path="D:\git\daily-coding\100-js-algo\extractNth.js">
-        <metrics statements="6" coveredstatements="6" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
-        <line num="2" count="3" type="cond" truecount="4" falsecount="0"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="4" count="10" type="cond" truecount="2" falsecount="0"/>
-        <line num="5" count="7" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
+        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+        <line num="8" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="10" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
       </file>
       <file name="fancyRide.js" path="D:\git\daily-coding\100-js-algo\fancyRide.js">
         <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
