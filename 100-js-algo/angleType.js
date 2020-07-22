@@ -1,18 +1,21 @@
 function angleType(angle) {
-    let returnAngle = "Angle is more than 180";
     if (angle < 0) {
-        returnAngle = "Angle is less than 0";
-    } else if (angle < 90) {
-        returnAngle = "acute";
-    } else if (angle === 90) {
-        returnAngle = "right";
-    } else if (angle === 180) {
-        returnAngle = "straight";
-    } else if (angle > 90 && angle < 180) {
-        returnAngle = "obtuse";
+        return "Angle is less than 0";
+    }
+    if (angle < 90) {
+        return "acute";
+    }
+    if (angle === 90) {
+        return "right";
+    }
+    if (angle === 180) {
+        return "straight";
+    }
+    if (angle > 90 && angle < 180) {
+        return "obtuse";
     }
 
-    return returnAngle;
+    return "Angle is more than 180";
 }
 
 module.exports = { angleType };
