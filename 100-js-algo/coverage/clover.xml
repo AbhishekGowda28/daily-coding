@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1595422458610" clover="3.2.0">
-  <project timestamp="1595422458610" name="All files">
-    <metrics statements="662" coveredstatements="662" conditionals="302" coveredconditionals="302" methods="125" coveredmethods="125" elements="1089" coveredelements="1089" complexity="0" loc="662" ncloc="662" packages="4" files="61" classes="61"/>
+<coverage generated="1595423709853" clover="3.2.0">
+  <project timestamp="1595423709853" name="All files">
+    <metrics statements="663" coveredstatements="663" conditionals="302" coveredconditionals="302" methods="126" coveredmethods="126" elements="1091" coveredelements="1091" complexity="0" loc="663" ncloc="663" packages="4" files="61" classes="61"/>
     <package name="100-js-algo">
-      <metrics statements="453" coveredstatements="453" conditionals="194" coveredconditionals="194" methods="83" coveredmethods="83"/>
+      <metrics statements="454" coveredstatements="454" conditionals="194" coveredconditionals="194" methods="84" coveredmethods="84"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -72,15 +72,16 @@
         <line num="16" count="1" type="stmt"/>
       </file>
       <file name="adjacentProduct.js" path="D:\git\daily-coding\100-js-algo\adjacentProduct.js">
-        <metrics statements="8" coveredstatements="8" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
-        <line num="2" count="8" type="cond" truecount="2" falsecount="0"/>
-        <line num="7" count="8" type="stmt"/>
-        <line num="8" count="24" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="17" type="stmt"/>
-        <line num="10" count="17" type="cond" truecount="2" falsecount="0"/>
-        <line num="11" count="5" type="stmt"/>
-        <line num="15" count="19" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
+        <metrics statements="9" coveredstatements="9" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3"/>
+        <line num="7" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="24" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="17" type="stmt"/>
+        <line num="21" count="17" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="26" count="19" type="stmt"/>
+        <line num="33" count="8" type="stmt"/>
+        <line num="35" count="8" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
       </file>
       <file name="allLongestString.js" path="D:\git\daily-coding\100-js-algo\allLongestString.js">
         <metrics statements="11" coveredstatements="11" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3"/>
