@@ -1,3 +1,7 @@
+//@ts-check
+/**
+ * @param {string} inputString
+ */
 function alphabeticShift(inputString) {
     if (inputString.length < 1) {
         return "Please provide input";

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1595421357815" clover="3.2.0">
-  <project timestamp="1595421357815" name="All files">
-    <metrics statements="662" coveredstatements="662" conditionals="302" coveredconditionals="302" methods="124" coveredmethods="124" elements="1088" coveredelements="1088" complexity="0" loc="662" ncloc="662" packages="4" files="61" classes="61"/>
+<coverage generated="1595422458610" clover="3.2.0">
+  <project timestamp="1595422458610" name="All files">
+    <metrics statements="662" coveredstatements="662" conditionals="302" coveredconditionals="302" methods="125" coveredmethods="125" elements="1089" coveredelements="1089" complexity="0" loc="662" ncloc="662" packages="4" files="61" classes="61"/>
     <package name="100-js-algo">
-      <metrics statements="453" coveredstatements="453" conditionals="194" coveredconditionals="194" methods="82" coveredmethods="82"/>
+      <metrics statements="453" coveredstatements="453" conditionals="194" coveredconditionals="194" methods="83" coveredmethods="83"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -83,18 +83,18 @@
         <line num="19" count="1" type="stmt"/>
       </file>
       <file name="allLongestString.js" path="D:\git\daily-coding\100-js-algo\allLongestString.js">
-        <metrics statements="11" coveredstatements="11" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="4" count="28" type="cond" truecount="2" falsecount="0"/>
-        <line num="6" count="28" type="cond" truecount="2" falsecount="0"/>
-        <line num="7" count="7" type="stmt"/>
+        <metrics statements="11" coveredstatements="11" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3"/>
         <line num="8" count="21" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="17" type="stmt"/>
-        <line num="13" count="9" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
+        <line num="10" count="21" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="12" count="21" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="14" type="stmt"/>
+        <line num="16" count="21" type="stmt"/>
+        <line num="24" count="7" type="stmt"/>
+        <line num="28" count="7" type="stmt"/>
+        <line num="29" count="21" type="stmt"/>
+        <line num="32" count="7" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
       </file>
       <file name="almostIncreasingSequence.js" path="D:\git\daily-coding\100-js-algo\almostIncreasingSequence.js">
         <metrics statements="16" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
@@ -117,17 +117,17 @@
       </file>
       <file name="alphabeticShift.js" path="D:\git\daily-coding\100-js-algo\alphabeticShift.js">
         <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-        <line num="2" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="6" count="5" type="stmt"/>
-        <line num="8" count="5" type="stmt"/>
+        <line num="6" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="1" type="stmt"/>
         <line num="10" count="5" type="stmt"/>
-        <line num="11" count="16" type="stmt"/>
-        <line num="12" count="16" type="cond" truecount="2" falsecount="0"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="15" count="14" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="16" type="stmt"/>
+        <line num="16" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="19" count="14" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
       </file>
       <file name="alternatingSums.js" path="D:\git\daily-coding\100-js-algo\alternatingSums.js">
         <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
