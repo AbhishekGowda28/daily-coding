@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1595425506936" clover="3.2.0">
-  <project timestamp="1595425506936" name="All files">
+<coverage generated="1595425942206" clover="3.2.0">
+  <project timestamp="1595425942206" name="All files">
     <metrics statements="661" coveredstatements="661" conditionals="300" coveredconditionals="300" methods="126" coveredmethods="126" elements="1087" coveredelements="1087" complexity="0" loc="661" ncloc="661" packages="4" files="61" classes="61"/>
     <package name="100-js-algo">
       <metrics statements="452" coveredstatements="452" conditionals="192" coveredconditionals="192" methods="84" coveredmethods="84"/>
@@ -387,9 +387,9 @@
         <line num="7" count="5" type="stmt"/>
         <line num="8" count="5" type="stmt"/>
         <line num="9" count="5" type="stmt"/>
-        <line num="16" count="4" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
       </file>
       <file name="chessKnight.js" path="D:\git\daily-coding\100-js-algo\chessKnight.js">
         <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
@@ -472,8 +472,8 @@
         <line num="14" count="4" type="stmt"/>
         <line num="15" count="4" type="cond" truecount="2" falsecount="0"/>
         <line num="16" count="3" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
       </file>
       <file name="domainType.js" path="D:\git\daily-coding\100-js-algo\domainType.js">
         <metrics statements="14" coveredstatements="14" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
@@ -497,13 +497,13 @@
         <line num="2" count="5" type="cond" truecount="2" falsecount="0"/>
         <line num="3" count="4" type="cond" truecount="4" falsecount="0"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="5" count="3" type="cond" truecount="4" falsecount="0"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="2" type="cond" truecount="4" falsecount="0"/>
-        <line num="8" count="1" type="stmt"/>
+        <line num="6" count="3" type="cond" truecount="4" falsecount="0"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="2" type="cond" truecount="4" falsecount="0"/>
         <line num="10" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
       </file>
       <file name="evenDigitsOnly.js" path="D:\git\daily-coding\100-js-algo\evenDigitsOnly.js">
         <metrics statements="6" coveredstatements="6" conditionals="9" coveredconditionals="9" methods="3" coveredmethods="3"/>
