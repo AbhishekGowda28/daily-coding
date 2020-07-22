@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1595427506292" clover="3.2.0">
-  <project timestamp="1595427506292" name="All files">
-    <metrics statements="662" coveredstatements="662" conditionals="298" coveredconditionals="298" methods="128" coveredmethods="128" elements="1088" coveredelements="1088" complexity="0" loc="662" ncloc="662" packages="4" files="61" classes="61"/>
+<coverage generated="1595433130370" clover="3.2.0">
+  <project timestamp="1595433130370" name="All files">
+    <metrics statements="669" coveredstatements="669" conditionals="300" coveredconditionals="300" methods="129" coveredmethods="129" elements="1098" coveredelements="1098" complexity="0" loc="669" ncloc="669" packages="4" files="62" classes="62"/>
     <package name="100-js-algo">
-      <metrics statements="453" coveredstatements="453" conditionals="190" coveredconditionals="190" methods="86" coveredmethods="86"/>
+      <metrics statements="460" coveredstatements="460" conditionals="192" coveredconditionals="192" methods="87" coveredmethods="87"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -591,6 +591,16 @@
         <line num="48" count="2" type="stmt"/>
         <line num="50" count="1" type="stmt"/>
         <line num="53" count="1" type="stmt"/>
+      </file>
+      <file name="findClosestPair.js" path="D:\git\daily-coding\100-js-algo\findClosestPair.js">
+        <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="11" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
       </file>
     </package>
     <package name="100-js-algo.temperature-conversions">
