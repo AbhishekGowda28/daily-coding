@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1595423709853" clover="3.2.0">
-  <project timestamp="1595423709853" name="All files">
-    <metrics statements="663" coveredstatements="663" conditionals="302" coveredconditionals="302" methods="126" coveredmethods="126" elements="1091" coveredelements="1091" complexity="0" loc="663" ncloc="663" packages="4" files="61" classes="61"/>
+<coverage generated="1595425506936" clover="3.2.0">
+  <project timestamp="1595425506936" name="All files">
+    <metrics statements="661" coveredstatements="661" conditionals="300" coveredconditionals="300" methods="126" coveredmethods="126" elements="1087" coveredelements="1087" complexity="0" loc="661" ncloc="661" packages="4" files="61" classes="61"/>
     <package name="100-js-algo">
-      <metrics statements="454" coveredstatements="454" conditionals="194" coveredconditionals="194" methods="84" coveredmethods="84"/>
+      <metrics statements="452" coveredstatements="452" conditionals="192" coveredconditionals="192" methods="84" coveredmethods="84"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -117,10 +117,11 @@
         <line num="31" count="1" type="stmt"/>
       </file>
       <file name="alphabeticShift.js" path="D:\git\daily-coding\100-js-algo\alphabeticShift.js">
-        <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="6" count="6" type="cond" truecount="2" falsecount="0"/>
         <line num="7" count="1" type="stmt"/>
         <line num="10" count="5" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
         <line num="12" count="5" type="stmt"/>
         <line num="14" count="5" type="stmt"/>
         <line num="15" count="16" type="stmt"/>
@@ -199,22 +200,22 @@
         <line num="11" count="4" type="stmt"/>
         <line num="12" count="6" type="cond" truecount="2" falsecount="0"/>
         <line num="13" count="1" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
       </file>
       <file name="arithmeticExpression.js" path="D:\git\daily-coding\100-js-algo\arithmeticExpression.js">
         <metrics statements="11" coveredstatements="11" conditionals="12" coveredconditionals="12" methods="1" coveredmethods="1"/>
         <line num="3" count="6" type="stmt"/>
         <line num="4" count="6" type="cond" truecount="2" falsecount="0"/>
         <line num="5" count="1" type="stmt"/>
-        <line num="6" count="5" type="cond" truecount="4" falsecount="0"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="8" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="7" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="3" type="cond" truecount="2" falsecount="0"/>
         <line num="11" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
+        <line num="13" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
       </file>
       <file name="arrayChange.js" path="D:\git\daily-coding\100-js-algo\arrayChange.js">
         <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
@@ -293,18 +294,17 @@
         <line num="14" count="1" type="stmt"/>
       </file>
       <file name="avoidObstacles.js" path="D:\git\daily-coding\100-js-algo\avoidObstacles.js">
-        <metrics statements="11" coveredstatements="11" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3"/>
+        <metrics statements="10" coveredstatements="10" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3"/>
         <line num="2" count="6" type="cond" truecount="2" falsecount="0"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="5" count="5" type="stmt"/>
-        <line num="6" count="25" type="stmt"/>
-        <line num="8" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="12" count="4" type="stmt"/>
-        <line num="13" count="28" type="cond" truecount="2" falsecount="0"/>
-        <line num="14" count="3" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
+        <line num="5" count="25" type="stmt"/>
+        <line num="7" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="28" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
       </file>
       <file name="bishopAndPawn.js" path="D:\git\daily-coding\100-js-algo\bishopAndPawn.js">
         <metrics statements="12" coveredstatements="12" conditionals="12" coveredconditionals="12" methods="1" coveredmethods="1"/>
@@ -318,8 +318,8 @@
         <line num="12" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="13" count="1" type="stmt"/>
         <line num="19" count="4" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
       </file>
       <file name="boxBlur.js" path="D:\git\daily-coding\100-js-algo\boxBlur.js">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
@@ -380,18 +380,16 @@
         <line num="9" count="1" type="stmt"/>
       </file>
       <file name="chessBoardCellColor.js" path="D:\git\daily-coding\100-js-algo\chessBoardCellColor.js">
-        <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="4" count="5" type="stmt"/>
         <line num="5" count="5" type="stmt"/>
         <line num="7" count="5" type="stmt"/>
         <line num="8" count="5" type="stmt"/>
         <line num="9" count="5" type="stmt"/>
-        <line num="10" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
       </file>
       <file name="chessKnight.js" path="D:\git\daily-coding\100-js-algo\chessKnight.js">
         <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>

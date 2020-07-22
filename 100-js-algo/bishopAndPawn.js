@@ -17,10 +17,9 @@ function bishopAndPawn(bishop, pawn) {
         }
 
         return true;
-    } else {
-        return false;
     }
 
+    return false;
 }
 
 module.exports = { bishopAndPawn };
