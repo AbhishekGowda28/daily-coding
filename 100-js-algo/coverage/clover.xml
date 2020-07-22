@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1595425942206" clover="3.2.0">
-  <project timestamp="1595425942206" name="All files">
-    <metrics statements="661" coveredstatements="661" conditionals="300" coveredconditionals="300" methods="126" coveredmethods="126" elements="1087" coveredelements="1087" complexity="0" loc="661" ncloc="661" packages="4" files="61" classes="61"/>
+<coverage generated="1595427506292" clover="3.2.0">
+  <project timestamp="1595427506292" name="All files">
+    <metrics statements="662" coveredstatements="662" conditionals="298" coveredconditionals="298" methods="128" coveredmethods="128" elements="1088" coveredelements="1088" complexity="0" loc="662" ncloc="662" packages="4" files="61" classes="61"/>
     <package name="100-js-algo">
-      <metrics statements="452" coveredstatements="452" conditionals="192" coveredconditionals="192" methods="84" coveredmethods="84"/>
+      <metrics statements="453" coveredstatements="453" conditionals="190" coveredconditionals="190" methods="86" coveredmethods="86"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -568,28 +568,29 @@
         <line num="19" count="1" type="stmt"/>
       </file>
       <file name="fileNaming.js" path="D:\git\daily-coding\100-js-algo\fileNaming.js">
-        <metrics statements="21" coveredstatements="21" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
-        <line num="2" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="5" count="9" type="cond" truecount="2" falsecount="0"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="8" count="6" type="stmt"/>
-        <line num="9" count="6" type="cond" truecount="2" falsecount="0"/>
+        <metrics statements="22" coveredstatements="22" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
+        <line num="9" count="3" type="stmt"/>
         <line num="10" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
         <line num="14" count="4" type="stmt"/>
         <line num="15" count="4" type="stmt"/>
         <line num="16" count="4" type="stmt"/>
-        <line num="17" count="4" type="stmt"/>
-        <line num="18" count="4" type="stmt"/>
-        <line num="19" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="20" count="3" type="stmt"/>
-        <line num="23" count="3" type="stmt"/>
-        <line num="28" count="2" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="27" count="6" type="stmt"/>
+        <line num="28" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="32" count="6" type="stmt"/>
+        <line num="39" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="42" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="43" count="6" type="stmt"/>
+        <line num="45" count="9" type="stmt"/>
+        <line num="48" count="2" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
       </file>
     </package>
     <package name="100-js-algo.temperature-conversions">
