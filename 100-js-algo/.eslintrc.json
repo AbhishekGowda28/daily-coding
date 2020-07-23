@@ -25,6 +25,7 @@
         }
     ],
     "rules": {
+        "eqeqeq": "error",
         "no-console": "warn",
         "no-debugger": "warn",
         "array-bracket-newline": "error",
