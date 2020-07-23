@@ -618,3 +618,39 @@ Wiki Link [Fermat's factorization method](https://en.wikipedia.org/wiki/Fermat%2
 For n = 15, the output should be FermatFactorization(n) = [4, 1] => 15 = 4^2 - 1^2.
 
 ---
+# Closed Sum Pair
+
+Given an array of integers numbers, we'd like to find the closest pair of elements that add up to sum. Return the distance between the closest pair (absolute difference between the two indices). If there isn't a pair that adds up to sum, return -1.
+
+**Example**
+- For numbers = [1, 0, 2, 4, 3, 0] and sum = 5 the output should be findClosestPair(numbers, sum) = 2.
+
+- For numbers = [2, 3, 7] and sum = 8 the output should be findClosestPair(numbers, sum) = -1. 
+
+---
+# Domain Name of a given Email
+
+An email address such as "John.Smith@example.com" is made up of a local part "John.Smith", an "@" symbol, then a domain part "example.com".
+
+The domain name part of an email address may only consist of letters, digits, hyphens and dots. The local part, however, also allows a lot of different special characters.
+
+Given a valid email address, find its domain part.
+
+**Example**
+
+- For address = "prettyandsimple@example.com", the output should be findEmailDomain(address) = "example.com";
+
+- For address = "<>[]:,;@"!#$%&*+-/=?^_{}| ~.a"@example.org", the output should be findEmailDomain(address) = "example.org".
+
+---
+# firstDigit
+
+Find the leftmost digit that occurs in a given string.
+
+**Example**
+
+- For inputString = "var_1__Int", the output should be firstDigit(inputString) = '1';
+- For inputString = "q2q-q", the output should be firstDigit(inputString) = '2';
+- For inputString = "0ss", the output should be firstDigit(inputString) = '0'.
+
+---

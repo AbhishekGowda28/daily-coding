@@ -1,10 +1,14 @@
+//@ts-check
+/**
+ * @param {string} inputString
+ */
 function alphabeticShift(inputString) {
     if (inputString.length < 1) {
         return "Please provide input";
     }
-
+    
+    const shiftPostion = 1;
     const alphabets = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
     let outputString = "";
 
     for (let index = 0; index < inputString.length; index++) {
@@ -12,7 +16,7 @@ function alphabeticShift(inputString) {
         if (alphabetIndex === -1) {
             return "Input is not alphabet";
         }
-        outputString += alphabets[(alphabetIndex + 1) % alphabets.length];
+        outputString += alphabets[(alphabetIndex + shiftPostion) % alphabets.length];
     }
 
     return outputString;
