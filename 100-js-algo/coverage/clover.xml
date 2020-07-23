@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1595512020334" clover="3.2.0">
-  <project timestamp="1595512020334" name="All files">
-    <metrics statements="688" coveredstatements="688" conditionals="308" coveredconditionals="308" methods="132" coveredmethods="132" elements="1128" coveredelements="1128" complexity="0" loc="688" ncloc="688" packages="4" files="65" classes="65"/>
+<coverage generated="1595523369360" clover="3.2.0">
+  <project timestamp="1595523369360" name="All files">
+    <metrics statements="693" coveredstatements="693" conditionals="312" coveredconditionals="312" methods="133" coveredmethods="133" elements="1138" coveredelements="1138" complexity="0" loc="693" ncloc="693" packages="4" files="66" classes="66"/>
     <package name="100-js-algo">
-      <metrics statements="479" coveredstatements="479" conditionals="200" coveredconditionals="200" methods="90" coveredmethods="90"/>
+      <metrics statements="484" coveredstatements="484" conditionals="204" coveredconditionals="204" methods="91" coveredmethods="91"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -629,6 +629,14 @@
         <line num="5" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
+      </file>
+      <file name="firstNotRepeatingCharacter.js" path="D:\git\daily-coding\100-js-algo\firstNotRepeatingCharacter.js">
+        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="18" type="stmt"/>
+        <line num="9" count="18" type="cond" truecount="4" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
       </file>
     </package>
     <package name="100-js-algo.temperature-conversions">
