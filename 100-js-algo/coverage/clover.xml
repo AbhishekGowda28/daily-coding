@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1595523369360" clover="3.2.0">
-  <project timestamp="1595523369360" name="All files">
-    <metrics statements="693" coveredstatements="693" conditionals="312" coveredconditionals="312" methods="133" coveredmethods="133" elements="1138" coveredelements="1138" complexity="0" loc="693" ncloc="693" packages="4" files="66" classes="66"/>
+<coverage generated="1595608957022" clover="3.2.0">
+  <project timestamp="1595608957023" name="All files">
+    <metrics statements="701" coveredstatements="701" conditionals="314" coveredconditionals="314" methods="136" coveredmethods="136" elements="1151" coveredelements="1151" complexity="0" loc="701" ncloc="701" packages="4" files="67" classes="67"/>
     <package name="100-js-algo">
-      <metrics statements="484" coveredstatements="484" conditionals="204" coveredconditionals="204" methods="91" coveredmethods="91"/>
+      <metrics statements="492" coveredstatements="492" conditionals="206" coveredconditionals="206" methods="94" coveredmethods="94"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -637,6 +637,17 @@
         <line num="9" count="18" type="cond" truecount="4" falsecount="0"/>
         <line num="10" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
+      </file>
+      <file name="flattenArray.js" path="D:\git\daily-coding\100-js-algo\flattenArray.js">
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="17" count="7" type="stmt"/>
+        <line num="18" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="21" count="11" type="stmt"/>
+        <line num="25" count="7" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
       </file>
     </package>
     <package name="100-js-algo.temperature-conversions">

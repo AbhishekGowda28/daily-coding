@@ -679,3 +679,12 @@ Given a string s, find and return the first instance of a non-repeating characte
 - For s = "abacabaabacaba", the output should be firstNotRepeatingCharacter(s) = '_'.
 
 ---
+# Flatten Array
+
+Flatten a nested array. You must account for varying levels of nesting.
+
+**Example**
+- flattenArray([[["a"]], [["b"]]]) should return ["a", "b"]
+- flattenArray([1, [2], [3, [[4]]]]) should return [1, 2, 3, 4]
+
+---
