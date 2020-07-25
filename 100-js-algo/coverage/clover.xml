@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1595436308367" clover="3.2.0">
-  <project timestamp="1595436308367" name="All files">
-    <metrics statements="680" coveredstatements="680" conditionals="304" coveredconditionals="304" methods="131" coveredmethods="131" elements="1115" coveredelements="1115" complexity="0" loc="680" ncloc="680" packages="4" files="64" classes="64"/>
+<coverage generated="1595608957022" clover="3.2.0">
+  <project timestamp="1595608957023" name="All files">
+    <metrics statements="701" coveredstatements="701" conditionals="314" coveredconditionals="314" methods="136" coveredmethods="136" elements="1151" coveredelements="1151" complexity="0" loc="701" ncloc="701" packages="4" files="67" classes="67"/>
     <package name="100-js-algo">
-      <metrics statements="471" coveredstatements="471" conditionals="196" coveredconditionals="196" methods="89" coveredmethods="89"/>
+      <metrics statements="492" coveredstatements="492" conditionals="206" coveredconditionals="206" methods="94" coveredmethods="94"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -443,6 +443,17 @@
         <line num="21" count="13" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
       </file>
+      <file name="closestDuplicate.js" path="D:\git\daily-coding\100-js-algo\closestDuplicate.js">
+        <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="11" type="stmt"/>
+        <line num="11" count="25" type="cond" truecount="4" falsecount="0"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+      </file>
       <file name="depositeProfite.js" path="D:\git\daily-coding\100-js-algo\depositeProfite.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="4" count="2" type="stmt"/>
@@ -618,6 +629,25 @@
         <line num="5" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
+      </file>
+      <file name="firstNotRepeatingCharacter.js" path="D:\git\daily-coding\100-js-algo\firstNotRepeatingCharacter.js">
+        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="18" type="stmt"/>
+        <line num="9" count="18" type="cond" truecount="4" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+      </file>
+      <file name="flattenArray.js" path="D:\git\daily-coding\100-js-algo\flattenArray.js">
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="17" count="7" type="stmt"/>
+        <line num="18" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="21" count="11" type="stmt"/>
+        <line num="25" count="7" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
       </file>
     </package>
     <package name="100-js-algo.temperature-conversions">
