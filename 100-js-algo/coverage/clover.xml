@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1595608957022" clover="3.2.0">
-  <project timestamp="1595608957023" name="All files">
-    <metrics statements="701" coveredstatements="701" conditionals="314" coveredconditionals="314" methods="136" coveredmethods="136" elements="1151" coveredelements="1151" complexity="0" loc="701" ncloc="701" packages="4" files="67" classes="67"/>
+<coverage generated="1595773132048" clover="3.2.0">
+  <project timestamp="1595773132049" name="All files">
+    <metrics statements="705" coveredstatements="705" conditionals="314" coveredconditionals="314" methods="137" coveredmethods="137" elements="1156" coveredelements="1156" complexity="0" loc="705" ncloc="705" packages="4" files="68" classes="68"/>
     <package name="100-js-algo">
-      <metrics statements="492" coveredstatements="492" conditionals="206" coveredconditionals="206" methods="94" coveredmethods="94"/>
+      <metrics statements="496" coveredstatements="496" conditionals="206" coveredconditionals="206" methods="95" coveredmethods="95"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -648,6 +648,13 @@
         <line num="21" count="11" type="stmt"/>
         <line num="25" count="7" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
+      </file>
+      <file name="growingPlant.js" path="D:\git\daily-coding\100-js-algo\growingPlant.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
       </file>
     </package>
     <package name="100-js-algo.temperature-conversions">
