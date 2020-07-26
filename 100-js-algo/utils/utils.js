@@ -39,9 +39,26 @@ function removeDuplicatesFromArray(inputArray) {
     return Array.from(set);
 }
 
+/**
+ * @param {any[]} array
+ * @param {any[]} result
+ */
+function flattenArray(array, result) {
+    array.forEach((element) => {
+        if (Array.isArray(element)) {
+            element = flattenArray(element, result);
+        } else {
+            result.push(element);
+        }
+    });
+
+    return result;
+}
+
 module.exports = {
     checkForElementInArray,
     checkForElementInObject,
     isEmpty,
-    removeDuplicatesFromArray
+    removeDuplicatesFromArray,
+    flattenArray
 };
