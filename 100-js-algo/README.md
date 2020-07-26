@@ -688,3 +688,25 @@ Flatten a nested array. You must account for varying levels of nesting.
 - flattenArray([1, [2], [3, [[4]]]]) should return [1, 2, 3, 4]
 
 ---
+# Growing Plant
+
+Each day a plant is growing by upSpeed meters. Each night that plant's height decreases by downSpeed meters due to the lack of sun heat. Initially, plant is 0 meters tall. We plant the seed at the beginning of a day. We want to know when the height of the plant will reach a certain level.
+
+**Example**
+
+For upSpeed = 100, downSpeed = 10 and desiredHeight = 910, the output should be growingPlant(upSpeed, downSpeed, desiredHeight) = 10.
+
+---
+# Sum of Houses
+
+A boy is walking a long way from school to his home. To make the walk more fun he decides to add up all the numbers of the houses that he passes by during his walk. Unfortunately, not all of the houses have numbers written on them, and on top of that the boy is regularly taking turns to change streets, so the numbers don't appear to him in any particular order.
+
+At some point during the walk the boy encounters a house with number 0 written on it, which surprises him so much that he stops adding numbers to his total right after seeing that house.
+
+For the given sequence of houses determine the sum that the boy will get. It is guaranteed that there will always be at least one 0 house on the path.
+
+**Example**
+
+For inputArray = [5, 1, 2, 3, 0, 1, 5, 0, 2], the output should be houseNumbersSum(inputArray) = 11.
+
+---
