@@ -2,7 +2,7 @@
 /**
  * @param {string} inputNumber
  */
-function rootNumber(inputNumber) {
+function rootNumberSum(inputNumber) {
     /**
      * @param {number} prev
      * @param {string} curr
@@ -12,4 +12,17 @@ function rootNumber(inputNumber) {
     }, 0) % 9;
 }
 
-module.exports = { rootNumber };
+/**
+ * @param {string} inputNumber
+ */
+function rootNumberProduct(inputNumber) {
+    /**
+     * @param {number} prev
+     * @param {string} curr
+     */
+    return inputNumber.split("").reduce((prev, curr) => {
+        return prev *= Number(curr);
+    }, 1) % 9;
+}
+
+module.exports = { rootNumberProduct, rootNumberSum };
