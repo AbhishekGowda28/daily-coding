@@ -719,3 +719,16 @@ For a given number reduce the given number to single digit by adding each number
 For inputNumber = 28081994, the output should be rootNumber(inputNumber) = 5.
 
 ---
+# Valid Time
+
+Check if the given string is a correct time representation of the 24-hour  clock.
+
+**Example**
+
+- For time = "13:58", the output should be validTime(time) = true;
+
+- For time = "25:51", the output should be validTime(time) = false;
+
+- For time = "02:76", the output should be validTime(time) = false.
+
+---

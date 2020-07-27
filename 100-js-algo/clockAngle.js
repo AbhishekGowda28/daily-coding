@@ -1,7 +1,7 @@
 function convertTime(time) {
     const timeRe = /([01][0-9]|2[0-3]):([0-5][0-9])/gi;
     const match = timeRe.exec(time);
-    if (match != null) {
+    if (match !== null) {
         let hr = match[1];
         const min = match[2];
         hr = convertTo12Hrs(hr);
