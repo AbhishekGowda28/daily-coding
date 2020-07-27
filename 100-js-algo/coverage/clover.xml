@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1595837097483" clover="3.2.0">
-  <project timestamp="1595837097483" name="All files">
-    <metrics statements="728" coveredstatements="728" conditionals="314" coveredconditionals="314" methods="147" coveredmethods="147" elements="1189" coveredelements="1189" complexity="0" loc="728" ncloc="728" packages="4" files="74" classes="74"/>
+<coverage generated="1595852386103" clover="3.2.0">
+  <project timestamp="1595852386103" name="All files">
+    <metrics statements="732" coveredstatements="732" conditionals="316" coveredconditionals="316" methods="149" coveredmethods="149" elements="1197" coveredelements="1197" complexity="0" loc="732" ncloc="732" packages="4" files="75" classes="75"/>
     <package name="100-js-algo">
-      <metrics statements="509" coveredstatements="509" conditionals="204" coveredconditionals="204" methods="99" coveredmethods="99"/>
+      <metrics statements="513" coveredstatements="513" conditionals="206" coveredconditionals="206" methods="101" coveredmethods="101"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -661,6 +661,13 @@
         <line num="12" count="5" type="stmt"/>
         <line num="14" count="5" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
+      </file>
+      <file name="longestWord.js" path="D:\git\daily-coding\100-js-algo\longestWord.js">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
       </file>
       <file name="rootNumberOfString.js" path="D:\git\daily-coding\100-js-algo\rootNumberOfString.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>

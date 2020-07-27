@@ -756,3 +756,12 @@ Check if the given string is a correct variable name.
 - For name = "2w2", the output should be validateVariable(name) = false.
 
 ---
+# Longest Word
+
+Define a word as a sequence of consecutive English letters. Find the longest word from the given string.
+
+**Example**
+
+For text = "Ready, steady, go!", the output should be longestWord(text) = "steady"
+
+---
