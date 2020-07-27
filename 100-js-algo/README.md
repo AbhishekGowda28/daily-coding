@@ -710,3 +710,12 @@ For the given sequence of houses determine the sum that the boy will get. It is 
 For inputArray = [5, 1, 2, 3, 0, 1, 5, 0, 2], the output should be houseNumbersSum(inputArray) = 11.
 
 ---
+# Root Numbers
+
+For a given number reduce the given number to single digit by adding each numbers
+
+**Example**
+
+For inputNumber = 28081994, the output should be rootNumber(inputNumber) = 5.
+
+---

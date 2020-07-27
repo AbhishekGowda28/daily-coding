@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1595776583966" clover="3.2.0">
-  <project timestamp="1595776583966" name="All files">
-    <metrics statements="713" coveredstatements="713" conditionals="314" coveredconditionals="314" methods="139" coveredmethods="139" elements="1166" coveredelements="1166" complexity="0" loc="713" ncloc="713" packages="4" files="69" classes="69"/>
+<coverage generated="1595834461924" clover="3.2.0">
+  <project timestamp="1595834461925" name="All files">
+    <metrics statements="718" coveredstatements="718" conditionals="314" coveredconditionals="314" methods="142" coveredmethods="142" elements="1174" coveredelements="1174" complexity="0" loc="718" ncloc="718" packages="4" files="71" classes="71"/>
     <package name="100-js-algo">
-      <metrics statements="499" coveredstatements="499" conditionals="204" coveredconditionals="204" methods="95" coveredmethods="95"/>
+      <metrics statements="501" coveredstatements="501" conditionals="204" coveredconditionals="204" methods="96" coveredmethods="96"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -662,6 +662,11 @@
         <line num="14" count="5" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
       </file>
+      <file name="rootNumberOfString.js" path="D:\git\daily-coding\100-js-algo\rootNumberOfString.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+      </file>
     </package>
     <package name="100-js-algo.temperature-conversions">
       <metrics statements="28" coveredstatements="28" conditionals="12" coveredconditionals="12" methods="6" coveredmethods="6"/>
@@ -842,7 +847,7 @@
       </file>
     </package>
     <package name="100-js-algo.utils.Math">
-      <metrics statements="69" coveredstatements="69" conditionals="28" coveredconditionals="28" methods="16" coveredmethods="16"/>
+      <metrics statements="72" coveredstatements="72" conditionals="28" coveredconditionals="28" methods="18" coveredmethods="18"/>
       <file name="Math.js" path="D:\git\daily-coding\100-js-algo\utils\Math\Math.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="5" count="48" type="stmt"/>
@@ -932,6 +937,12 @@
         <line num="17" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
+      </file>
+      <file name="rootNumber.js" path="D:\git\daily-coding\100-js-algo\utils\Math\rootNumber.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="8" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
       </file>
     </package>
   </project>
