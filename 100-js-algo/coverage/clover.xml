@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1595836223242" clover="3.2.0">
-  <project timestamp="1595836223242" name="All files">
-    <metrics statements="725" coveredstatements="725" conditionals="314" coveredconditionals="314" methods="146" coveredmethods="146" elements="1185" coveredelements="1185" complexity="0" loc="725" ncloc="725" packages="4" files="73" classes="73"/>
+<coverage generated="1595837097483" clover="3.2.0">
+  <project timestamp="1595837097483" name="All files">
+    <metrics statements="728" coveredstatements="728" conditionals="314" coveredconditionals="314" methods="147" coveredmethods="147" elements="1189" coveredelements="1189" complexity="0" loc="728" ncloc="728" packages="4" files="74" classes="74"/>
     <package name="100-js-algo">
-      <metrics statements="506" coveredstatements="506" conditionals="204" coveredconditionals="204" methods="98" coveredmethods="98"/>
+      <metrics statements="509" coveredstatements="509" conditionals="204" coveredconditionals="204" methods="99" coveredmethods="99"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -676,6 +676,12 @@
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="7" count="4" type="stmt"/>
         <line num="9" count="4" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+      </file>
+      <file name="validateVariable.js" path="D:\git\daily-coding\100-js-algo\validateVariable.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
       </file>
     </package>
