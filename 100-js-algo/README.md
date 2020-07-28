@@ -710,3 +710,58 @@ For the given sequence of houses determine the sum that the boy will get. It is 
 For inputArray = [5, 1, 2, 3, 0, 1, 5, 0, 2], the output should be houseNumbersSum(inputArray) = 11.
 
 ---
+# Root Sum
+
+For a given number reduce the given number to single digit by adding each numbers
+
+**Example**
+
+For inputNumber = 28081994, the output should be rootNumberOfString(inputNumber) = 5.
+
+---
+# Valid Time
+
+Check if the given string is a correct time representation of the 24-hour  clock.
+
+**Example**
+
+- time = "13:58", the output should be validTime(time) = true;
+
+- time = "25:51", the output should be validTime(time) = false;
+
+- time = "02:76", the output should be validTime(time) = false.
+
+---
+# Root Product
+
+For a given number reduce the given number to single digit by adding each numbers
+
+**Example**
+
+For inputNumber = 222, the output should be rootProduct(inputNumber) = 5.
+
+---
+# Validate Variable
+
+Correct variable names consist only of Latin letters, digits and underscores and they can't start with a digit.
+
+Check if the given string is a correct variable name.
+
+**Example**
+
+- For name = "var_1__Int", the output should be validateVariable(name) = true;
+
+- For name = "qq-q", the output should be validateVariable(name) = false;
+
+- For name = "2w2", the output should be validateVariable(name) = false.
+
+---
+# Longest Word
+
+Define a word as a sequence of consecutive English letters. Find the longest word from the given string.
+
+**Example**
+
+For text = "Ready, steady, go!", the output should be longestWord(text) = "steady"
+
+---
