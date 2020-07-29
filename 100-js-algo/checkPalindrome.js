@@ -1,7 +1,7 @@
-const { reverse } = require("./utils/String");
+const { reverseString } = require("./utils/reverseString");
 
 function checkPalindrome(inputString) {
-    const reverseStr = reverse(inputString);
+    const reverseStr = reverseString(inputString);
 
     return inputString === reverseStr;
 }

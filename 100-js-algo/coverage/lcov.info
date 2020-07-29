@@ -1782,11 +1782,11 @@ BRF:58
 BRH:58
 end_of_record
 TN:
-SF:utils\string.js
-FN:5,reverse
+SF:utils\reverseString.js
+FN:5,reverseString
 FNF:1
 FNH:1
-FNDA:9,reverse
+FNDA:9,reverseString
 DA:6,9
 DA:9,2
 LF:2

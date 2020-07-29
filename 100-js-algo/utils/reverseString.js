@@ -2,8 +2,8 @@
  * 
  * @param {string} inputStr 
  */
-function reverse(inputStr) {
+function reverseString(inputStr) {
     return inputStr.split("").reverse().join("");
 }
 
-module.exports = { reverse };
+module.exports = { reverseString };
