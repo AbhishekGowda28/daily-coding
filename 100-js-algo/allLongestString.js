@@ -6,7 +6,7 @@
  */
 function extractLongestString(allLongestString, str) {
     const currentLongestString = allLongestString.length > 0 ?
-        allLongestString[0] : "";
+        allLongestString[0] : ``;
     if (str.length > currentLongestString.length) {
         allLongestString = [str];
     } if (str.length === currentLongestString.length) {

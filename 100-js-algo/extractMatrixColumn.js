@@ -31,7 +31,7 @@ function validateColumn(column, matrix) {
  * @param {number} column
  */
 function validateInput(matrix, column) {
-    return !Array.isArray(matrix) || typeof column !== "number";
+    return !Array.isArray(matrix) || typeof column !== `number`;
 }
 
 /**
@@ -40,7 +40,7 @@ function validateInput(matrix, column) {
  */
 function extractMatrixColumn(matrix, column) {
     if (validateInput(matrix, column)) {
-        throw new Error("Invalid Input");
+        throw new Error(`Invalid Input`);
     }
 
     return getextractColumnValue(column, matrix);

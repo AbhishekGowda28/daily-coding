@@ -9,7 +9,7 @@ function getFruitCount(reminder) {
         return `${Math.abs(reminder)} Red apples`;
     }
 
-    return "There are same number of Red and Yellow apples";
+    return `There are same number of Red and Yellow apples`;
 }
 
 /**

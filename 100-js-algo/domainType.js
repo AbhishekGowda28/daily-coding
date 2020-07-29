@@ -5,12 +5,12 @@
  */
 function domainType(domainList) {
     const labels = {
-        dev: "developers",
-        ninja: "ninjas",
-        gov: "government",
-        com: "commercial",
-        net: "network",
-        org: "orginazation"
+        dev: `developers`,
+        ninja: `ninjas`,
+        gov: `government`,
+        com: `commercial`,
+        net: `network`,
+        org: `orginazation`
     };
     const domainLabels = [];
     let error;
@@ -20,7 +20,7 @@ function domainType(domainList) {
      * @param {string} domain
      */
     domainList.forEach((domain) => {
-        const domainLevel = domain.split(".");
+        const domainLevel = domain.split(`.`);
         const lable = domainLevel[domainLevel.length - 1];
         if (labels[lable] !== undefined) {
             if (domainLabels.includes(labels[lable]) === false) {
@@ -32,7 +32,7 @@ function domainType(domainList) {
     });
 
     if (error === true) {
-        return "Domain does not exist";
+        return `Domain does not exist`;
     }
 
     return domainLabels;

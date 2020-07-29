@@ -1,4 +1,4 @@
-const chess = require("./utils/chess");
+const chess = require(`./utils/chess`);
 
 function chessBoardCellColor(cell1, cell2) {
     const cell1Loc = chess.findPawn(cell1);
@@ -10,7 +10,7 @@ function chessBoardCellColor(cell1, cell2) {
 
         return cell1Sum === cell2Sum;
     } catch (error) {
-        return "Cell doesnot exist in the chessboard";
+        return `Cell doesnot exist in the chessboard`;
     }
 }
 

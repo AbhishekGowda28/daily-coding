@@ -47,7 +47,7 @@ function fileNaming(fileNames) {
 
         return outputFileNames;
     }
-    throw new Error("Invalid Input");
+    throw new Error(`Invalid Input`);
 }
 
 module.exports = { fileNaming };

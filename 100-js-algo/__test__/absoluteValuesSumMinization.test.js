@@ -1,28 +1,28 @@
-const expect = require("expect");
-const { absoluteValuesSumMinization, median } = require("../absoluteValuesSumMinization");
+const expect = require(`expect`);
+const { absoluteValuesSumMinization, median } = require(`../absoluteValuesSumMinization`);
 
-describe("Absolute Values SumMinization", () => {
+describe(`Absolute Values SumMinization`, () => {
 
-    test("with formula", () => {
+    test(`with formula`, () => {
         const input = [2, 4, 7];
         const expected = 4;
         const actual = absoluteValuesSumMinization(input);
         expect(actual).toBe(expected);
     });
 
-    test("with median", () => {
+    test(`with median`, () => {
         const input = [2, 4, 7];
         const expected = 4;
         const actual = median(input);
         expect(actual).toBe(expected);
     });
-    test("formula with even array", () => {
+    test(`formula with even array`, () => {
         const input = [1, 1, 3, 4];
         const expected = 1;
         const actual = absoluteValuesSumMinization(input);
         expect(actual).toBe(expected);
     });
-    test("median with even array", () => {
+    test(`median with even array`, () => {
         const input = [1, 1, 3, 4];
         const expected = 1;
         const actual = median(input);

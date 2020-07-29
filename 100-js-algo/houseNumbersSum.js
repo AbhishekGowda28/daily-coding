@@ -1,6 +1,6 @@
 // @ts-check
 
-const utils = require("./utils/utils");
+const utils = require(`./utils/utils`);
 /**
  * @param {number[]} inputArray
  */

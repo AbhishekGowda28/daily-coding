@@ -10,7 +10,7 @@ function convertTime(time) {
 
         return Math.min(angle, 360 - angle);
     }
-    throw new Error("Input time is invalid");
+    throw new Error(`Input time is invalid`);
 }
 
 function convertTo12Hrs(hour) {

@@ -16,7 +16,7 @@ function extractNth(inputArray, n) {
     if (validateInput(inputArray, n)) {
         return inputArray.filter((_, index) => ((index + 1) % n !== 0));
     }
-    throw new Error("Invalid Input");
+    throw new Error(`Invalid Input`);
 }
 
 module.exports = { extractNth };

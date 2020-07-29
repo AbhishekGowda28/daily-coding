@@ -4,7 +4,7 @@ function arrayConversion(inputArray) {
     }
     const evenLength = inputArray.length % 2 === 0 ? true : false;
     if (evenLength === false) {
-        return "Array doesn't contain even elements";
+        return `Array doesn't contain even elements`;
     }
     let eventItteration = false;
     let total = inputArray;

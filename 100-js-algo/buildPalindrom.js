@@ -1,6 +1,6 @@
 function buildPalindrom(inputString) {
     let isNumber = false;
-    if (typeof inputString === "number") {
+    if (typeof inputString === `number`) {
         inputString = new String(inputString);
         isNumber = true;
     }

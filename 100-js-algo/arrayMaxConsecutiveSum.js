@@ -1,12 +1,12 @@
 function arrayMaxConsecutiveSum(inputArray, steps) {
     if (steps <= 0) {
-        return "Steps has to be positive integer";
+        return `Steps has to be positive integer`;
     }
     if (inputArray.length === 0) {
-        return "Array cannot be empty";
+        return `Array cannot be empty`;
     }
     if (steps > inputArray.length) {
-        return "Steps size cannot be more than the array length";
+        return `Steps size cannot be more than the array length`;
     }
 
     let finalSum = 0;
