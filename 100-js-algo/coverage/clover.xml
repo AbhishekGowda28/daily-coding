@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1596027051974" clover="3.2.0">
-  <project timestamp="1596027051974" name="All files">
-    <metrics statements="740" coveredstatements="740" conditionals="316" coveredconditionals="316" methods="150" coveredmethods="150" elements="1206" coveredelements="1206" complexity="0" loc="740" ncloc="740" packages="4" files="76" classes="76"/>
+<coverage generated="1596032859572" clover="3.2.0">
+  <project timestamp="1596032859573" name="All files">
+    <metrics statements="751" coveredstatements="751" conditionals="326" coveredconditionals="326" methods="153" coveredmethods="153" elements="1230" coveredelements="1230" complexity="0" loc="751" ncloc="751" packages="4" files="77" classes="77"/>
     <package name="100-js-algo">
-      <metrics statements="521" coveredstatements="521" conditionals="206" coveredconditionals="206" methods="102" coveredmethods="102"/>
+      <metrics statements="529" coveredstatements="529" conditionals="210" coveredconditionals="210" methods="104" coveredmethods="104"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -662,6 +662,17 @@
         <line num="14" count="5" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
       </file>
+      <file name="isIPv4Address.js" path="D:\git\daily-coding\100-js-algo\isIPv4Address.js">
+        <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="7" count="11" type="stmt"/>
+        <line num="9" count="28" type="cond" truecount="4" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+      </file>
       <file name="longestWord.js" path="D:\git\daily-coding\100-js-algo\longestWord.js">
         <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
         <line num="7" count="2" type="stmt"/>
@@ -753,7 +764,7 @@
       </file>
     </package>
     <package name="100-js-algo.utils">
-      <metrics statements="117" coveredstatements="117" conditionals="70" coveredconditionals="70" methods="22" coveredmethods="22"/>
+      <metrics statements="120" coveredstatements="120" conditionals="76" coveredconditionals="76" methods="23" coveredmethods="23"/>
       <file name="chess.js" path="D:\git\daily-coding\100-js-algo\utils\chess.js">
         <metrics statements="98" coveredstatements="98" conditionals="58" coveredconditionals="58" methods="15" coveredmethods="15"/>
         <line num="2" count="3" type="stmt"/>
@@ -861,7 +872,7 @@
         <line num="9" count="2" type="stmt"/>
       </file>
       <file name="utils.js" path="D:\git\daily-coding\100-js-algo\utils\utils.js">
-        <metrics statements="17" coveredstatements="17" conditionals="12" coveredconditionals="12" methods="6" coveredmethods="6"/>
+        <metrics statements="20" coveredstatements="20" conditionals="18" coveredconditionals="18" methods="7" coveredmethods="7"/>
         <line num="9" count="5" type="stmt"/>
         <line num="17" count="2" type="stmt"/>
         <line num="19" count="2" type="cond" truecount="2" falsecount="0"/>
@@ -878,7 +889,10 @@
         <line num="49" count="5" type="stmt"/>
         <line num="51" count="20" type="stmt"/>
         <line num="55" count="8" type="stmt"/>
-        <line num="58" count="5" type="stmt"/>
+        <line num="59" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="60" count="2" type="stmt"/>
+        <line num="63" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="66" count="5" type="stmt"/>
       </file>
     </package>
     <package name="100-js-algo.utils.Math">
