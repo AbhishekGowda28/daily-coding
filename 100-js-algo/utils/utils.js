@@ -33,10 +33,11 @@ function isEmpty(object) {
     return true;
 }
 
+/**
+ * @param {Iterable<any>} inputArray
+ */
 function removeDuplicatesFromArray(inputArray) {
-    const set = new Set(inputArray);
-
-    return Array.from(set);
+    return Array.from(new Set(inputArray));
 }
 
 /**
@@ -55,19 +56,10 @@ function flattenArray(array, result) {
     return result;
 }
 
-function isDigit(inputCharacter) {
-    if (typeof inputCharacter === "string" && inputCharacter.length > 0) {
-        inputCharacter = Number(inputCharacter);
-    }
-
-    return typeof inputCharacter === "number" && !isNaN(inputCharacter);
-}
-
 module.exports = {
     checkForElementInArray,
     checkForElementInObject,
     isEmpty,
     removeDuplicatesFromArray,
-    flattenArray,
-    isDigit
+    flattenArray
 };
