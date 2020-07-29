@@ -12,14 +12,4 @@ function arthimaticProgression(initalValue, difference, nthTerm) {
     return nthValue;
 }
 
-function geometricProgression(initalValue, ratio, nthTerm) {
-    // T(n) = a*(r^n-1)
-    const nthValue = initalValue * Math.pow(ratio, nthTerm - 1);
-
-    return nthValue;
-}
-
-module.exports = {
-    arthimaticProgression,
-    geometricProgression,
-};
+module.exports = { arthimaticProgression };

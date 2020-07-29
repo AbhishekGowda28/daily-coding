@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1596033165876" clover="3.2.0">
-  <project timestamp="1596033165876" name="All files">
-    <metrics statements="746" coveredstatements="746" conditionals="326" coveredconditionals="326" methods="153" coveredmethods="153" elements="1225" coveredelements="1225" complexity="0" loc="746" ncloc="746" packages="4" files="78" classes="78"/>
+<coverage generated="1596033455041" clover="3.2.0">
+  <project timestamp="1596033455042" name="All files">
+    <metrics statements="747" coveredstatements="747" conditionals="326" coveredconditionals="326" methods="153" coveredmethods="153" elements="1226" coveredelements="1226" complexity="0" loc="747" ncloc="747" packages="5" files="79" classes="79"/>
     <package name="100-js-algo">
       <metrics statements="524" coveredstatements="524" conditionals="210" coveredconditionals="210" methods="104" coveredmethods="104"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
@@ -887,7 +887,7 @@
       </file>
     </package>
     <package name="100-js-algo.utils.Math">
-      <metrics statements="78" coveredstatements="78" conditionals="34" coveredconditionals="34" methods="21" coveredmethods="21"/>
+      <metrics statements="73" coveredstatements="73" conditionals="34" coveredconditionals="34" methods="19" coveredmethods="19"/>
       <file name="Math.js" path="D:\git\daily-coding\100-js-algo\utils\Math\Math.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="5" count="48" type="stmt"/>
@@ -977,14 +977,6 @@
         <line num="11" count="3" type="stmt"/>
         <line num="14" count="2" type="stmt"/>
       </file>
-      <file name="progression.js" path="D:\git\daily-coding\100-js-algo\utils\Math\progression.js">
-        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-      </file>
       <file name="rootNumber.js" path="D:\git\daily-coding\100-js-algo\utils\Math\rootNumber.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
         <line num="10" count="1" type="stmt"/>
@@ -992,6 +984,21 @@
         <line num="23" count="1" type="stmt"/>
         <line num="24" count="3" type="stmt"/>
         <line num="28" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="100-js-algo.utils.Math.Summation">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="arthimaticProgression.js" path="D:\git\daily-coding\100-js-algo\utils\Math\Summation\arthimaticProgression.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+      </file>
+      <file name="geometricProgression.js" path="D:\git\daily-coding\100-js-algo\utils\Math\Summation\geometricProgression.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
       </file>
     </package>
   </project>
