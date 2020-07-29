@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1596033455041" clover="3.2.0">
-  <project timestamp="1596033455042" name="All files">
+<coverage generated="1596033675898" clover="3.2.0">
+  <project timestamp="1596033675899" name="All files">
     <metrics statements="747" coveredstatements="747" conditionals="326" coveredconditionals="326" methods="153" coveredmethods="153" elements="1226" coveredelements="1226" complexity="0" loc="747" ncloc="747" packages="5" files="79" classes="79"/>
     <package name="100-js-algo">
       <metrics statements="524" coveredstatements="524" conditionals="210" coveredconditionals="210" methods="104" coveredmethods="104"/>
@@ -888,12 +888,6 @@
     </package>
     <package name="100-js-algo.utils.Math">
       <metrics statements="73" coveredstatements="73" conditionals="34" coveredconditionals="34" methods="19" coveredmethods="19"/>
-      <file name="Math.js" path="D:\git\daily-coding\100-js-algo\utils\Math\Math.js">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="48" type="stmt"/>
-        <line num="7" count="48" type="stmt"/>
-        <line num="10" count="5" type="stmt"/>
-      </file>
       <file name="factorial.js" path="D:\git\daily-coding\100-js-algo\utils\Math\factorial.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="2" count="4" type="stmt"/>
@@ -902,6 +896,12 @@
         <line num="5" count="6" type="stmt"/>
         <line num="8" count="4" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
+      </file>
+      <file name="getInteger.js" path="D:\git\daily-coding\100-js-algo\utils\Math\getInteger.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="48" type="stmt"/>
+        <line num="7" count="48" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
       </file>
       <file name="getPrimeFactors.js" path="D:\git\daily-coding\100-js-algo\utils\Math\getPrimeFactors.js">
         <metrics statements="14" coveredstatements="14" conditionals="10" coveredconditionals="10" methods="2" coveredmethods="2"/>
