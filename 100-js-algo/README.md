@@ -825,3 +825,19 @@ Your task is to check by given string inputString whether it corresponds to MAC-
 - For inputString = "not a MAC-48 address", the output should be isMAC48Address(inputString) = false.
 
 ---
+# knapsackLight
+
+You found two items in a treasure chest! The first item weighs weight1 and is worth value1,  and the second item weighs weight2 and is worth value2. 
+What is the total maximum value of the items you can take with you, assuming that your max weight capacity is maxW and you can't come back for the items later?
+
+**Example**
+
+- For value1 = 10, weight1 = 5, value2 = 6, weight2 = 4 and maxW = 8, the output should be knapsackLight(value1, weight1, value2, weight2, maxW) = 10.
+
+You can only carry the first item.
+
+- For value1 = 10, weight1 = 5, value2 = 6, weight2 = 4 and maxW = 9, the output should be knapsackLight(value1, weight1, value2, weight2, maxW) = 16.
+
+You're strong enough to take both of the items with you.
+
+---
