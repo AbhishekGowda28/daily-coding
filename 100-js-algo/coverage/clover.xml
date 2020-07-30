@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1596034340157" clover="3.2.0">
-  <project timestamp="1596034340157" name="All files">
-    <metrics statements="747" coveredstatements="747" conditionals="326" coveredconditionals="326" methods="153" coveredmethods="153" elements="1226" coveredelements="1226" complexity="0" loc="747" ncloc="747" packages="5" files="79" classes="79"/>
+<coverage generated="1596095731518" clover="3.2.0">
+  <project timestamp="1596095731518" name="All files">
+    <metrics statements="755" coveredstatements="755" conditionals="328" coveredconditionals="328" methods="154" coveredmethods="154" elements="1237" coveredelements="1237" complexity="0" loc="755" ncloc="755" packages="5" files="80" classes="80"/>
     <package name="100-js-algo">
-      <metrics statements="524" coveredstatements="524" conditionals="210" coveredconditionals="210" methods="104" coveredmethods="104"/>
+      <metrics statements="532" coveredstatements="532" conditionals="212" coveredconditionals="212" methods="105" coveredmethods="105"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -675,6 +675,17 @@
         <line num="10" count="10" type="cond" truecount="2" falsecount="0"/>
         <line num="14" count="1" type="stmt"/>
       </file>
+      <file name="luckyTicket.js" path="D:\git\daily-coding\100-js-algo\luckyTicket.js">
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="9" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+      </file>
       <file name="reverseParentheses.js" path="D:\git\daily-coding\100-js-algo\reverseParentheses.js">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
@@ -979,11 +990,11 @@
       </file>
       <file name="rootNumber.js" path="D:\git\daily-coding\100-js-algo\utils\Math\rootNumber.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="8" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="12" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
         <line num="24" count="3" type="stmt"/>
-        <line num="28" count="2" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
       </file>
     </package>
     <package name="100-js-algo.utils.Math.Summation">
