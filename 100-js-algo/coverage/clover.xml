@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1596095731518" clover="3.2.0">
-  <project timestamp="1596095731518" name="All files">
-    <metrics statements="755" coveredstatements="755" conditionals="328" coveredconditionals="328" methods="154" coveredmethods="154" elements="1237" coveredelements="1237" complexity="0" loc="755" ncloc="755" packages="5" files="80" classes="80"/>
+<coverage generated="1596096698398" clover="3.2.0">
+  <project timestamp="1596096698399" name="All files">
+    <metrics statements="764" coveredstatements="764" conditionals="335" coveredconditionals="335" methods="155" coveredmethods="155" elements="1254" coveredelements="1254" complexity="0" loc="764" ncloc="764" packages="5" files="81" classes="81"/>
     <package name="100-js-algo">
-      <metrics statements="532" coveredstatements="532" conditionals="212" coveredconditionals="212" methods="105" coveredmethods="105"/>
+      <metrics statements="541" coveredstatements="541" conditionals="219" coveredconditionals="219" methods="106" coveredmethods="106"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -667,6 +667,18 @@
         <line num="7" count="6" type="stmt"/>
         <line num="9" count="14" type="cond" truecount="4" falsecount="0"/>
         <line num="12" count="1" type="stmt"/>
+      </file>
+      <file name="isMAC48Address.js" path="D:\git\daily-coding\100-js-algo\isMAC48Address.js">
+        <metrics statements="9" coveredstatements="9" conditionals="7" coveredconditionals="7" methods="1" coveredmethods="1"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="7" type="cond" truecount="5" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
       </file>
       <file name="longestWord.js" path="D:\git\daily-coding\100-js-algo\longestWord.js">
         <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>

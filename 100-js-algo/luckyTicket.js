@@ -1,6 +1,6 @@
 // @ts-check
 
-const { rootNumberSum } = require(`./utils/Math/rootNumber`);
+const { rootNumberSum } = require("./utils/Math/rootNumber");
 
 /**
  * @param {number} ticketNumber

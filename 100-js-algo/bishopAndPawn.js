@@ -1,4 +1,4 @@
-const chess = require(`./utils/chess`);
+const chess = require("./utils/chess");
 
 function bishopAndPawn(bishop, pawn) {
     const bishopLocation = chess.findPawn(bishop);

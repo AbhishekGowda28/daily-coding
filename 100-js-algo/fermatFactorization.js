@@ -1,6 +1,6 @@
 // @ts-check
 
-const { isSquare } = require(`./utils/Math/isSquare`);
+const { isSquare } = require("./utils/Math/isSquare");
 
 /**
  * @param {number} number

@@ -3,9 +3,9 @@
  * @param {number} uberDriveIndex
  */
 function drive(uberDriveIndex) {
-    const UBER_DRIVE = [`UberX`, `UberXL`, `UberPlus`, `UberBlack`, `UberSUV`];
+    const UBER_DRIVE = ["UberX", "UberXL", "UberPlus", "UberBlack", "UberSUV"];
     if (uberDriveIndex === -1) {
-        return `Ride is Expensive`;
+        return "Ride is Expensive";
     }
 
     return UBER_DRIVE[uberDriveIndex];

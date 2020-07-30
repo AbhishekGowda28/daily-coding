@@ -1,6 +1,6 @@
 // @ts-check
 
-const { reverseString } = require(`./utils/reverseString`);
+const { reverseString } = require("./utils/reverseString");
 
 /**
  * @param {string} inputString

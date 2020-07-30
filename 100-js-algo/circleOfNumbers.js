@@ -1,11 +1,11 @@
 function circleOfNumbers(numberOfPlayers, playerNumber) {
     if (numberOfPlayers < 1) {
-        return `There are no players`;
+        return "There are no players";
     }
     if (playerNumber > numberOfPlayers) {
-        return `Player does not exist`;
+        return "Player does not exist";
     }
-    const { getInteger } = require(`./utils/Math/getInteger`);
+    const { getInteger } = require("./utils/Math/getInteger");
     const split = getInteger(numberOfPlayers / 2);
 
     return playerNumber + split;

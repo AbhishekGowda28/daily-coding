@@ -1,23 +1,23 @@
-const expect = require(`expect`);
-const { domainType } = require(`../domainType`);
+const expect = require("expect");
+const { domainType } = require("../domainType");
 
-describe(`Test Domain list`, () => {
-    test(`Domain list`, () => {
-        const domain = [`example.com`];
+describe("Test Domain list", () => {
+    test("Domain list", () => {
+        const domain = ["example.com"];
         const actual = domainType(domain);
-        const expected = [`commercial`];
+        const expected = ["commercial"];
         expect(actual).toStrictEqual(expected);
     });
-    test(`Domain does not exist`, () => {
-        const domain = [`example.abc`];
+    test("Domain does not exist", () => {
+        const domain = ["example.abc"];
         const actual = domainType(domain);
-        const expected = `Domain does not exist`;
+        const expected = "Domain does not exist";
         expect(actual).toMatch(expected);
     });
-    test(`Domain does not exist`, () => {
-        const domain = [`example.com`, `abc.gov`, `dreamerland.gov`];
+    test("Domain does not exist", () => {
+        const domain = ["example.com", "abc.gov", "dreamerland.gov"];
         const actual = domainType(domain);
-        const expected = [`commercial`, `government`];
+        const expected = ["commercial", "government"];
         expect(actual).toStrictEqual(expected);
     });
 });

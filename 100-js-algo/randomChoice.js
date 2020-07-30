@@ -1,7 +1,7 @@
 // @ts-check
 
-const readLine = require(`readline`);
-const process = require(`process`);
+const readLine = require("readline");
+const process = require("process");
 
 const readLineInterface = readLine.createInterface({
     input: process.stdin,

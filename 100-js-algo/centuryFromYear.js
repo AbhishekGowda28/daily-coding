@@ -1,7 +1,7 @@
-const { getInteger } = require(`./utils/Math/getInteger`);
+const { getInteger } = require("./utils/Math/getInteger");
 function centuryFromYear(year) {
     if (year < 1) {
-        return `Please provide proper year`;
+        return "Please provide proper year";
     }
     const century = getInteger(year / 100);
     if (year % 100 === 0) {

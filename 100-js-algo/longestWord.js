@@ -8,7 +8,7 @@ function longestWord(sentence) {
 
     return words.reduce((longestWord, currentWord) => {
         return longestWord.length > currentWord.length ? longestWord : currentWord;
-    }, ``);
+    }, "");
 }
 
 module.exports = { longestWord };
