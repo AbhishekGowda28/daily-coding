@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1596096698398" clover="3.2.0">
-  <project timestamp="1596096698399" name="All files">
-    <metrics statements="764" coveredstatements="764" conditionals="335" coveredconditionals="335" methods="155" coveredmethods="155" elements="1254" coveredelements="1254" complexity="0" loc="764" ncloc="764" packages="5" files="81" classes="81"/>
+<coverage generated="1596204596013" clover="3.2.0">
+  <project timestamp="1596204596013" name="All files">
+    <metrics statements="774" coveredstatements="774" conditionals="347" coveredconditionals="347" methods="156" coveredmethods="156" elements="1277" coveredelements="1277" complexity="0" loc="774" ncloc="774" packages="5" files="82" classes="82"/>
     <package name="100-js-algo">
-      <metrics statements="541" coveredstatements="541" conditionals="219" coveredconditionals="219" methods="106" coveredmethods="106"/>
+      <metrics statements="551" coveredstatements="551" conditionals="231" coveredconditionals="231" methods="107" coveredmethods="107"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -679,6 +679,19 @@
         <line num="16" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
+      </file>
+      <file name="knapsackWeight.js" path="D:\git\daily-coding\100-js-algo\knapsackWeight.js">
+        <metrics statements="10" coveredstatements="10" conditionals="12" coveredconditionals="12" methods="1" coveredmethods="1"/>
+        <line num="12" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="3" type="cond" truecount="4" falsecount="0"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="19" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
       </file>
       <file name="longestWord.js" path="D:\git\daily-coding\100-js-algo\longestWord.js">
         <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
