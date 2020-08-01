@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1596287563026" clover="3.2.0">
-  <project timestamp="1596287563027" name="All files">
-    <metrics statements="804" coveredstatements="804" conditionals="357" coveredconditionals="357" methods="162" coveredmethods="162" elements="1323" coveredelements="1323" complexity="0" loc="804" ncloc="804" packages="5" files="85" classes="85"/>
+<coverage generated="1596289403699" clover="3.2.0">
+  <project timestamp="1596289403700" name="All files">
+    <metrics statements="806" coveredstatements="806" conditionals="359" coveredconditionals="359" methods="165" coveredmethods="165" elements="1330" coveredelements="1330" complexity="0" loc="806" ncloc="806" packages="5" files="86" classes="86"/>
     <package name="100-js-algo">
-      <metrics statements="581" coveredstatements="581" conditionals="241" coveredconditionals="241" methods="113" coveredmethods="113"/>
+      <metrics statements="583" coveredstatements="583" conditionals="243" coveredconditionals="243" methods="116" coveredmethods="116"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -714,6 +714,11 @@
         <line num="8" count="7" type="stmt"/>
         <line num="11" count="3" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
+      </file>
+      <file name="largestOfElements.js" path="D:\git\daily-coding\100-js-algo\largestOfElements.js">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="8" count="28" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="1" type="stmt"/>
       </file>
       <file name="lineEncoding.js" path="D:\git\daily-coding\100-js-algo\lineEncoding.js">
         <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
