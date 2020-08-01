@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1596289403699" clover="3.2.0">
-  <project timestamp="1596289403700" name="All files">
-    <metrics statements="806" coveredstatements="806" conditionals="359" coveredconditionals="359" methods="165" coveredmethods="165" elements="1330" coveredelements="1330" complexity="0" loc="806" ncloc="806" packages="5" files="86" classes="86"/>
+<coverage generated="1596294381122" clover="3.2.0">
+  <project timestamp="1596294381123" name="All files">
+    <metrics statements="817" coveredstatements="817" conditionals="359" coveredconditionals="359" methods="169" coveredmethods="169" elements="1345" coveredelements="1345" complexity="0" loc="817" ncloc="817" packages="6" files="88" classes="88"/>
     <package name="100-js-algo">
-      <metrics statements="583" coveredstatements="583" conditionals="243" coveredconditionals="243" methods="116" coveredmethods="116"/>
+      <metrics statements="590" coveredstatements="590" conditionals="243" coveredconditionals="243" methods="119" coveredmethods="119"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -717,8 +717,18 @@
       </file>
       <file name="largestOfElements.js" path="D:\git\daily-coding\100-js-algo\largestOfElements.js">
         <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
-        <line num="8" count="28" type="cond" truecount="2" falsecount="0"/>
-        <line num="11" count="1" type="stmt"/>
+        <line num="7" count="28" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+      <file name="lateRide.js" path="D:\git\daily-coding\100-js-algo\lateRide.js">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
       </file>
       <file name="lineEncoding.js" path="D:\git\daily-coding\100-js-algo\lineEncoding.js">
         <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
@@ -836,6 +846,16 @@
         <line num="3" count="8" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="8" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="100-js-algo.time-coversion">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="secondsToMinute.js" path="D:\git\daily-coding\100-js-algo\time-coversion\secondsToMinute.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
       </file>
     </package>
     <package name="100-js-algo.utils">
