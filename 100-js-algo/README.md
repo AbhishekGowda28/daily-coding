@@ -908,3 +908,12 @@ Since 240 minutes have passed, the current time is 04:00. The digits sum up to 0
 808 minutes mean that it's 13:28 now, so the answer should be 1 + 3 + 2 + 8 = 14.
 
 ---
+# Longest Digit Prefix
+
+Given a string, output its longest prefix which contains only digits.
+
+**Example**
+
+- For inputString="123aa1", the output should be longestDigitsPrefix(inputString) = "123".
+
+---
