@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1596286371852" clover="3.2.0">
-  <project timestamp="1596286371852" name="All files">
-    <metrics statements="796" coveredstatements="796" conditionals="355" coveredconditionals="355" methods="161" coveredmethods="161" elements="1312" coveredelements="1312" complexity="0" loc="796" ncloc="796" packages="5" files="84" classes="84"/>
+<coverage generated="1596287563026" clover="3.2.0">
+  <project timestamp="1596287563027" name="All files">
+    <metrics statements="804" coveredstatements="804" conditionals="357" coveredconditionals="357" methods="162" coveredmethods="162" elements="1323" coveredelements="1323" complexity="0" loc="804" ncloc="804" packages="5" files="85" classes="85"/>
     <package name="100-js-algo">
-      <metrics statements="573" coveredstatements="573" conditionals="239" coveredconditionals="239" methods="112" coveredmethods="112"/>
+      <metrics statements="581" coveredstatements="581" conditionals="241" coveredconditionals="241" methods="113" coveredmethods="113"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -667,11 +667,11 @@
         <line num="3" count="1" type="stmt"/>
         <line num="10" count="2" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="7" type="cond" truecount="4" falsecount="0"/>
+        <line num="21" count="3" type="stmt"/>
         <line num="25" count="1" type="stmt"/>
-        <line num="26" count="7" type="cond" truecount="4" falsecount="0"/>
-        <line num="27" count="3" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
       </file>
       <file name="isIPv4Address.js" path="D:\git\daily-coding\100-js-algo\isIPv4Address.js">
         <metrics statements="3" coveredstatements="3" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
@@ -703,6 +703,17 @@
         <line num="20" count="1" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
         <line num="27" count="1" type="stmt"/>
+      </file>
+      <file name="largestNumber.js" path="D:\git\daily-coding\100-js-algo\largestNumber.js">
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="7" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
       </file>
       <file name="lineEncoding.js" path="D:\git\daily-coding\100-js-algo\lineEncoding.js">
         <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
