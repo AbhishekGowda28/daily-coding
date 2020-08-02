@@ -917,3 +917,36 @@ Given a string, output its longest prefix which contains only digits.
 - For inputString="123aa1", the output should be longestDigitsPrefix(inputString) = "123".
 
 ---
+# Maximum Multiple
+
+Given a divisor and a bound, find the largest integer N such that:
+
+- N is divisible by divisor.
+- N is less than or equal to bound.
+- N is greater than 0.
+
+It is guaranteed that such a number exists.
+
+**Example**
+
+For divisor = 3 and bound = 10, the output should be maxMultiple(divisor, bound) = 9.
+The largest integer divisible by 3 and not larger than 10 is 9.
+
+---
+# messageFromBinaryCode
+
+You are taking part in an Escape Room challenge designed specifically for programmers. 
+In your efforts to find a clue, you've found a binary code written on the wall behind a vase, and realized that it must be an encrypted message. 
+After some thought, your first guess is that each consecutive 8 bits of the code stand for the character with the corresponding extended ASCII code.
+
+Assuming that your hunch is correct, decode the message.
+
+**Example**
+
+#For code = "010010000110010101101100011011000110111100100001", the output should be messageFromBinaryCode(code) = "Hello!".
+
+The first 8 characters of the code are 01001000, which is 72 in the binary numeral system. 
+72 stands for H in the ASCII-table, so the first letter is H.
+Other letters can be obtained in the same manner.
+
+---
