@@ -1,18 +1,19 @@
 // @ts-check
 
+const { binaryToDecimal } = require("./numeric-conversion/binaryToDecimal");
+
 /**
  * @param {string} encryptedCode
  */
 function messageFromBinaryCode(encryptedCode) {
-    // console.log(encryptedCode.length);
-    // const e = encryptedCode.split("", 8);
-    // console.log({ e, encryptedCode });
-    let codeSeperator = [];
+    let codeSeperator = "";
     for (let counter = 1; counter < encryptedCode.length;) {
-        codeSeperator.push(encryptedCode.substring(counter - 1, counter + 7));
+        const subStr = encryptedCode.substring(counter - 1, counter + 7);
+        codeSeperator += String.fromCharCode(binaryToDecimal(subStr));
         counter += 8;
     }
-    console.log(codeSeperator);
+
+    return codeSeperator;
 }
 
 module.exports = { messageFromBinaryCode };
