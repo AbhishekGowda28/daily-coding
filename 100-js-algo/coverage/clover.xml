@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1596385935060" clover="3.2.0">
-  <project timestamp="1596385935061" name="All files">
-    <metrics statements="846" coveredstatements="846" conditionals="363" coveredconditionals="363" methods="173" coveredmethods="173" elements="1382" coveredelements="1382" complexity="0" loc="846" ncloc="846" packages="7" files="92" classes="92"/>
+<coverage generated="1596444874799" clover="3.2.0">
+  <project timestamp="1596444874799" name="All files">
+    <metrics statements="857" coveredstatements="857" conditionals="365" coveredconditionals="365" methods="175" coveredmethods="175" elements="1397" coveredelements="1397" complexity="0" loc="857" ncloc="857" packages="7" files="93" classes="93"/>
     <package name="100-js-algo">
-      <metrics statements="610" coveredstatements="610" conditionals="245" coveredconditionals="245" methods="122" coveredmethods="122"/>
+      <metrics statements="621" coveredstatements="621" conditionals="247" coveredconditionals="247" methods="124" coveredmethods="124"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -794,6 +794,20 @@
         <line num="16" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
       </file>
+      <file name="minimalNumberOfCoins.js" path="D:\git\daily-coding\100-js-algo\minimalNumberOfCoins.js">
+        <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="8" count="41" type="stmt"/>
+        <line num="9" count="41" type="stmt"/>
+        <line num="10" count="75" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="41" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="41" type="stmt"/>
+        <line num="25" count="41" type="stmt"/>
+        <line num="26" count="41" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+      </file>
       <file name="reverseParentheses.js" path="D:\git\daily-coding\100-js-algo\reverseParentheses.js">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
@@ -1043,9 +1057,9 @@
       </file>
       <file name="getInteger.js" path="D:\git\daily-coding\100-js-algo\utils\Math\getInteger.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="49" type="stmt"/>
-        <line num="7" count="49" type="stmt"/>
-        <line num="10" count="6" type="stmt"/>
+        <line num="5" count="124" type="stmt"/>
+        <line num="7" count="124" type="stmt"/>
+        <line num="10" count="7" type="stmt"/>
       </file>
       <file name="getPrimeFactors.js" path="D:\git\daily-coding\100-js-algo\utils\Math\getPrimeFactors.js">
         <metrics statements="14" coveredstatements="14" conditionals="10" coveredconditionals="10" methods="2" coveredmethods="2"/>
