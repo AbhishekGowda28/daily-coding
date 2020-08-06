@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1596444874799" clover="3.2.0">
-  <project timestamp="1596444874799" name="All files">
-    <metrics statements="857" coveredstatements="857" conditionals="365" coveredconditionals="365" methods="175" coveredmethods="175" elements="1397" coveredelements="1397" complexity="0" loc="857" ncloc="857" packages="7" files="93" classes="93"/>
+<coverage generated="1596741584565" clover="3.2.0">
+  <project timestamp="1596741584565" name="All files">
+    <metrics statements="886" coveredstatements="886" conditionals="369" coveredconditionals="369" methods="183" coveredmethods="183" elements="1438" coveredelements="1438" complexity="0" loc="886" ncloc="886" packages="7" files="94" classes="94"/>
     <package name="100-js-algo">
-      <metrics statements="621" coveredstatements="621" conditionals="247" coveredconditionals="247" methods="124" coveredmethods="124"/>
+      <metrics statements="650" coveredstatements="650" conditionals="251" coveredconditionals="251" methods="132" coveredmethods="132"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -803,10 +803,42 @@
         <line num="21" count="3" type="stmt"/>
         <line num="22" count="3" type="stmt"/>
         <line num="23" count="41" type="stmt"/>
+        <line num="24" count="41" type="stmt"/>
         <line num="25" count="41" type="stmt"/>
-        <line num="26" count="41" type="stmt"/>
-        <line num="30" count="3" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+      </file>
+      <file name="mostFrequentDigitSum.js" path="D:\git\daily-coding\100-js-algo\mostFrequentDigitSum.js">
+        <metrics statements="29" coveredstatements="29" conditionals="4" coveredconditionals="4" methods="8" coveredmethods="8"/>
+        <line num="7" count="18" type="stmt"/>
+        <line num="8" count="18" type="stmt"/>
+        <line num="14" count="37" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="18" type="stmt"/>
+        <line num="24" count="18" type="stmt"/>
+        <line num="25" count="18" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="37" count="3" type="stmt"/>
+        <line num="38" count="3" type="stmt"/>
+        <line num="39" count="3" type="stmt"/>
+        <line num="40" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="3" type="stmt"/>
+        <line num="42" count="3" type="stmt"/>
+        <line num="46" count="3" type="stmt"/>
+        <line num="53" count="3" type="stmt"/>
+        <line num="54" count="3" type="stmt"/>
+        <line num="55" count="3" type="stmt"/>
+        <line num="56" count="18" type="stmt"/>
+        <line num="57" count="18" type="stmt"/>
+        <line num="60" count="3" type="stmt"/>
+        <line num="67" count="3" type="stmt"/>
+        <line num="68" count="3" type="stmt"/>
+        <line num="69" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="71" count="18" type="stmt"/>
+        <line num="74" count="3" type="stmt"/>
+        <line num="77" count="1" type="stmt"/>
       </file>
       <file name="reverseParentheses.js" path="D:\git\daily-coding\100-js-algo\reverseParentheses.js">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>

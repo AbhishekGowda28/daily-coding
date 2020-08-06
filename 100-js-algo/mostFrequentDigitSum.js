@@ -1,12 +1,22 @@
 // @ts-check
 
+/**
+ * @param {string | number | string[]} numbers
+ */
 function sumOfDigits(numbers) {
     numbers = String(numbers);
     numbers = numbers.split("");
 
+    /**
+     * @param {number} prev
+     * @param {string} curr
+     */
     return numbers.reduce((prev, curr) => prev += Number(curr), 0);
 }
 
+/**
+ * @param {number} numbers
+ */
 function getTailArr(numbers) {
     const numArr = [];
     while (numbers > 9) {
@@ -19,9 +29,28 @@ function getTailArr(numbers) {
     return numArr;
 }
 
-function differenceArr(n) {
-    const nums = getTailArr(n);
-    console.log({ num: nums });
+/**
+ * @param {number} num
+ * @param {{ [x: string]: number; }} concequence
+ */
+function getHeighestKey(num, concequence) {
+    let heighestCount = 0;
+    let heighestKey = num;
+    Object.keys(concequence).forEach((key) => {
+        if (concequence[key] > heighestCount) {
+            heighestCount = concequence[key];
+            heighestKey = Number(key);
+        }
+    });
+
+    return heighestKey;
+}
+
+/**
+ * @param {number} num
+ */
+function differenceArr(num) {
+    const nums = getTailArr(num);
     const diff = [];
     for (let count = 1; count < nums.length; count++) {
         const res = nums[count - 1] - nums[count];
@@ -32,20 +61,17 @@ function differenceArr(n) {
 }
 
 /**
- * @param {number} n
+ * @param {number} num
  */
-function mostFrequentDigitSum(n) {
-    const list = differenceArr(n);
+function mostFrequentDigitSum(num) {
+    const list = differenceArr(num);
     const concequence = list.reduce((prev, curr) => {
-         prev[curr] = (prev[curr] || 0) + 1;
-         
-         return prev;
+        prev[curr] = (prev[curr] || 0) + 1;
+
+        return prev;
     }, {});
-    console.log({ list, concequence });
+
+    return getHeighestKey(num, concequence);
 }
 
-console.log(mostFrequentDigitSum(88));
-
-console.log(mostFrequentDigitSum(8));
-
-// module.export = { mostFrequentDigitSum };
+module.exports = { mostFrequentDigitSum };
