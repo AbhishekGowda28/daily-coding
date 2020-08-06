@@ -35,7 +35,13 @@ function differenceArr(n) {
  * @param {number} n
  */
 function mostFrequentDigitSum(n) {
-    console.log(differenceArr(n));
+    const list = differenceArr(n);
+    const concequence = list.reduce((prev, curr) => {
+         prev[curr] = (prev[curr] || 0) + 1;
+         
+         return prev;
+    }, {});
+    console.log({ list, concequence });
 }
 
 console.log(mostFrequentDigitSum(88));
