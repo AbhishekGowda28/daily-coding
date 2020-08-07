@@ -975,3 +975,17 @@ Building a single sequence isn't enough for you, so you replace all elements of 
 - For n = 8, the output should be mostFrequentDigitSum(n) = 8. At first you built the following sequence: 8, 0. s(x) for each of its elements is: 8, 0. As you can see, the answer is 8 (it appears as often as 0, but is greater than it).
 
 ---
+# Pig Latin
+
+Translate the provided string to pig latin.
+
+Pig Latin takes the first consonant (or consonant cluster) of an English word, moves it to the end of the word and suffixes an "ay".
+
+If a word begins with a vowel you just add "way" to the end.
+
+**Example**
+
+- pigLatin("glove") should return "oveglay".
+- pigLatin("eight") should return "eightway".
+
+---
