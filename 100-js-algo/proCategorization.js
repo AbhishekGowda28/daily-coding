@@ -1,6 +1,25 @@
 // @ts-check
 
-const utils = require("./utils/utils");
+/**
+ * @param {string[]} pros
+ * @param {string[]} preferences
+ */
+function factorPreferences(pros, preferences) {
+    const utils = require("./utils/utils");
+    const valueAssign = {};
+    /**
+     * @param {string} professional
+     * @param {number} index
+     */
+    pros.forEach((professional, index) => {
+        valueAssign[professional] = preferences[index];
+    });
+    let flatPreference = [];
+    flatPreference = utils.flattenArray(preferences, flatPreference);
+    flatPreference = utils.removeDuplicatesFromArray(flatPreference).sort();
+
+    return { flatPreference, valueAssign };
+}
 
 /**
  * @param {string[]} pros
@@ -8,22 +27,18 @@ const utils = require("./utils/utils");
  */
 function proCategorization(pros, preferences) {
     const anotherEmptyArr = [];
-    const valueAssign = {};
-    pros.forEach((professional, index) => {
-        valueAssign[professional] = preferences[index];
-    });
-    let flatPreference = [];
-    flatPreference = utils.flattenArray(preferences, flatPreference);
-    console.log({ flatPreference, valueAssign });
-    flatPreference.forEach((flat, index) => {
+    const { flatPreference, valueAssign } = factorPreferences(pros, preferences);
+    flatPreference.forEach((flat) => {
+        const professionalNames = [];
         Object.keys(valueAssign).forEach((val) => {
-            console.log(index, flat, val);
+            if (valueAssign[val].includes(flat)) {
+                professionalNames.push(val);
+            }
         });
+        anotherEmptyArr.push([[flat], professionalNames]);
     });
-}
 
-console.log(proCategorization(["Jack", "Leon", "Maria"],
-    [["Computer repair", "Handyman", "House cleaning"],
-    ["Computer lessons", "Computer repair", "Data recovery service"], ["Computer lessons", "House cleaning"]]));
+    return anotherEmptyArr;
+}
 
 module.exports = { proCategorization };
