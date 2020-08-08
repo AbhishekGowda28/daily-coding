@@ -7,7 +7,7 @@ const utils = require("./utils/utils");
  */
 function flattenArray(inputArray) {
     const result = [];
-
+    
     return utils.flattenArray(inputArray, result);
 }
 
