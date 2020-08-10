@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1596911924583" clover="3.2.0">
-  <project timestamp="1596911924583" name="All files">
-    <metrics statements="914" coveredstatements="914" conditionals="375" coveredconditionals="375" methods="190" coveredmethods="190" elements="1479" coveredelements="1479" complexity="0" loc="914" ncloc="914" packages="7" files="96" classes="96"/>
+<coverage generated="1597082619752" clover="3.2.0">
+  <project timestamp="1597082619752" name="All files">
+    <metrics statements="924" coveredstatements="924" conditionals="377" coveredconditionals="377" methods="194" coveredmethods="194" elements="1495" coveredelements="1495" complexity="0" loc="924" ncloc="924" packages="7" files="98" classes="98"/>
     <package name="100-js-algo">
-      <metrics statements="678" coveredstatements="678" conditionals="257" coveredconditionals="257" methods="139" coveredmethods="139"/>
+      <metrics statements="688" coveredstatements="688" conditionals="259" coveredconditionals="259" methods="143" coveredmethods="143"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -360,6 +360,13 @@
         <line num="5" count="2" type="stmt"/>
         <line num="8" count="2" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
+      </file>
+      <file name="capatilize.js" path="D:\git\daily-coding\100-js-algo\capatilize.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
       </file>
       <file name="centuryFromYear.js" path="D:\git\daily-coding\100-js-algo\centuryFromYear.js">
         <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
@@ -873,6 +880,15 @@
         <line num="38" count="5" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
         <line num="44" count="1" type="stmt"/>
+      </file>
+      <file name="ratingThreshold.js" path="D:\git\daily-coding\100-js-algo\ratingThreshold.js">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="21" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
       </file>
       <file name="reverseParentheses.js" path="D:\git\daily-coding\100-js-algo\reverseParentheses.js">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
