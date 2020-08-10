@@ -33,10 +33,11 @@ function isEmpty(object) {
     return true;
 }
 
+/**
+ * @param {Iterable<any>} inputArray
+ */
 function removeDuplicatesFromArray(inputArray) {
-    const set = new Set(inputArray);
-
-    return Array.from(set);
+    return Array.from(new Set(inputArray));
 }
 
 /**

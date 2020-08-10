@@ -683,6 +683,8 @@ Given a string s, find and return the first instance of a non-repeating characte
 
 Flatten a nested array. You must account for varying levels of nesting.
 
+This problem can also be solved using Array Method [Array.flat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat).
+
 **Example**
 - flattenArray([[["a"]], [["b"]]]) should return ["a", "b"]
 - flattenArray([1, [2], [3, [[4]]]]) should return [1, 2, 3, 4]
@@ -763,5 +765,259 @@ Define a word as a sequence of consecutive English letters. Find the longest wor
 **Example**
 
 For text = "Ready, steady, go!", the output should be longestWord(text) = "steady"
+
+---
+# Reverse Parentheses
+
+You have a string s that consists of English letters, punctuation marks, whitespace characters, and brackets. It is guaranteed that the parentheses in s form a regular bracket sequence.
+
+Your task is to reverse the strings contained in each pair of matching parentheses, starting from the innermost pair. The results string should not contain any parentheses.
+
+**Example**
+
+#For string s = "a(bc)de", the output should be reverseParentheses(s) = "acbde".
+
+---
+# isIPv4Address
+
+An IP address is a numerical label assigned to each device (e.g., computer, printer) participating in a computer network  that uses the Internet Protocol for communication. 
+There are two versions of the Internet protocol, and thus two versions of addresses. 
+One of them is the IPv4 address.
+
+**Example**
+
+- For inputString = "172.16.254.1", the output should be isIPv4Address(inputString) = true;
+
+- For inputString = "172.316.254.1", the output should be isIPv4Address(inputString) = false.
+316 is not in range [0, 255].
+
+- For inputString = ".254.255.0", the output should be isIPv4Address(inputString) = false.
+There is no first number.
+
+---
+# Lucky Lottery Ticket
+
+Ticket numbers usually consist of an even number of digits. 
+A ticket number is considered lucky if the sum of the first half of the digits is equal to the sum of the second half.
+
+Given a ticket number n, determine if it's lucky or not.
+
+**Example**
+
+- For n = 1230, the output should be luckyTicket(n) = true.
+
+- For n = 239017, the output should be luckyTicket(n) = false.
+
+---
+# isMAC48Address
+
+A media access control address (MAC address) is a unique identifier assigned to network interfaces for communications on the physical network segment.
+
+The standard (IEEE 802) format for printing MAC-48 addresses in human-friendly form is six groups of two hexadecimal digits (0 to 9 or A to F), 
+separated by hyphens (e.g. 01-23-45-67-89-AB).
+
+Your task is to check by given string inputString whether it corresponds to MAC-48 address or not.
+
+**Example**
+
+- For inputString = "00-1B-63-84-45-E6", the output should be isMAC48Address(inputString) = true
+
+- For inputString = "Z1-1B-63-84-45-E6", the output should be isMAC48Address(inputString) = false
+
+- For inputString = "not a MAC-48 address", the output should be isMAC48Address(inputString) = false.
+
+---
+# knapsackWeight
+
+You found two items in a treasure chest! The first item weighs weight1 and is worth value1,  and the second item weighs weight2 and is worth value2. 
+What is the total maximum value of the items you can take with you, assuming that your max weight capacity is maxW and you can't come back for the items later?
+
+**Example**
+
+- For value1 = 10, weight1 = 5, value2 = 6, weight2 = 4 and maxW = 8, the output should be knapsackWeight(value1, weight1, value2, weight2, maxW) = 10.
+
+You can only carry the first item.
+
+- For value1 = 10, weight1 = 5, value2 = 6, weight2 = 4 and maxW = 9, the output should be knapsackWeight(value1, weight1, value2, weight2, maxW) = 16.
+
+You're strong enough to take both of the items with you.
+
+---
+# Line Encoding
+
+Given a string, return its encoding defined as follows:
+
+First, the string is divided into the least possible number of disjoint substrings consisting of identical characters for example, "aabbbc" is divided into ["aa", "bbb", "c"]
+Next, each substring with length greater than one is replaced with a concatenation of its length and the repeating character for example, substring "bbb" is replaced by "3b"
+Finally, all the new strings are concatenated together in the same order and a new string is returned.
+
+**Example**
+
+For line = "aabbbc", the output should be lineEncoding(line) = "2a3bc".
+
+---
+# Increment Backups
+
+One of the easiest ways to back up files is with an incremental backup. This method only backs up files that have changed since the last backup.
+
+You are given a list of changes that were made to the files in your database, where for each valid i, fileChanges[i][0] is the timestamp of the time the change was made, and fileChanges[i][1] is the file id.
+
+Knowing the timestamp of the last backup lastBackupTime, your task is to find the files which should be included in the next backup. Return the ids of the files that should be backed up as an array sorted in ascending order.
+
+**Example**
+
+For lastBackupTime = 461620205 and fileChanges = [[461620203, 1], [461620204, 2], [461620205, 6], [461620206, 5], [461620207, 3], [461620207, 5], [461620208, 1]] the output should be incrementalBackups(lastBackupTime, fileChanges) = [1, 3, 5].
+
+---
+# Larget Number
+
+Largest Number of the given digit
+
+**Example**
+
+For n = 2, the output should be largestNumber(n) = 99.
+
+---
+# Larget of the Given Array
+
+Return an array consisting of the largest number from each provided sub-array.
+
+**Example**
+
+- For largestOfElements([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]) returns [5, 27, 39, 1001];
+
+- For largestOfElements([[4, 9, 1, 3], [13, 35, 18, 26], [32, 35, 97, 39], [1000000, 1001, 857, 1]]) returns [9, 35, 97, 1000000];
+
+---
+# Late Ride
+
+One night you go for a ride on your motorcycle. At 00:00 you start your engine, and the built-in timer automatically begins counting the length of your ride, in minutes. Off you go to explore the neighborhood.
+
+When you finally decide to head back, you realize there's a chance the bridges on your route home are up, leaving you stranded! Unfortunately, you don't have your watch on you and don't know what time it is. All you know thanks to the bike's timer is that n minutes have passed since 00:00.
+
+Using the bike's timer, calculate the current time. Return an answer as the sum of digits that the digital timer in the format hh:mm would show.
+
+**Example**
+
+- For n = 240, the output should be lateRide(n) = 4.
+
+Since 240 minutes have passed, the current time is 04:00. The digits sum up to 0 + 4 + 0 + 0 = 4, which is the answer.
+
+- For n = 808, the output should be lateRide(n) = 14.
+
+808 minutes mean that it's 13:28 now, so the answer should be 1 + 3 + 2 + 8 = 14.
+
+---
+# Longest Digit Prefix
+
+Given a string, output its longest prefix which contains only digits.
+
+**Example**
+
+- For inputString="123aa1", the output should be longestDigitsPrefix(inputString) = "123".
+
+---
+# Maximum Multiple
+
+Given a divisor and a bound, find the largest integer N such that:
+
+- N is divisible by divisor.
+- N is less than or equal to bound.
+- N is greater than 0.
+
+It is guaranteed that such a number exists.
+
+**Example**
+
+For divisor = 3 and bound = 10, the output should be maxMultiple(divisor, bound) = 9.
+The largest integer divisible by 3 and not larger than 10 is 9.
+
+---
+# messageFromBinaryCode
+
+You are taking part in an Escape Room challenge designed specifically for programmers. 
+In your efforts to find a clue, you've found a binary code written on the wall behind a vase, and realized that it must be an encrypted message. 
+After some thought, your first guess is that each consecutive 8 bits of the code stand for the character with the corresponding extended ASCII code.
+
+Assuming that your hunch is correct, decode the message.
+
+**Example**
+
+#For code = "010010000110010101101100011011000110111100100001", the output should be messageFromBinaryCode(code) = "Hello!".
+
+The first 8 characters of the code are 01001000, which is 72 in the binary numeral system. 
+72 stands for H in the ASCII-table, so the first letter is H.
+Other letters can be obtained in the same manner.
+
+---
+# minimalNumberOfCoins
+
+You find yourself in Bananaland trying to buy a banana. You are super rich so you have an unlimited supply of banana-coins, but you are trying to use as few coins as possible.
+
+The coin values available in Bananaland are stored in a sorted array coins. coins[0] = 1, and for each i (0 < i < coins.length) coins[i] is divisible by coins[i - 1]. Find the minimal number of banana-coins you'll have to spend to buy a banana given the banana's price.
+
+**Example**
+
+For coins = [1, 2, 10] and price = 28, the output should be minimalNumberOfCoins(coins, price) = 6.
+You have to use 10 twice, and 2 four times.
+
+---
+# mostFrequentDigitSum
+
+A step(x) operation works like this: it changes a number x into x - s(x), where s(x) is the sum of x's digits. You like applying functions to numbers, so given the number n, you decide to build a decreasing sequence of numbers: n, step(n), step(step(n)), etc., with 0 as the last element.
+
+Building a single sequence isn't enough for you, so you replace all elements of the sequence with the sums of their digits (s(x)). Now you're curious as to which number appears in the new sequence most often. If there are several answers, return the maximal one.
+
+**Example**
+
+- For n = 88, the output should be mostFrequentDigitSum(n) = 9. Here is the first sequence you built: 88, 72, 63, 54, 45, 36, 27, 18, 9, 0. And here is s(x) for each of its elements: 16, 9, 9, 9, 9, 9, 9, 9, 9, 0.  As you can see, the most frequent number in the second sequence is 9.
+
+- For n = 8, the output should be mostFrequentDigitSum(n) = 8. At first you built the following sequence: 8, 0. s(x) for each of its elements is: 8, 0. As you can see, the answer is 8 (it appears as often as 0, but is greater than it).
+
+---
+# Pig Latin
+
+Translate the provided string to pig latin.
+
+Pig Latin takes the first consonant (or consonant cluster) of an English word, moves it to the end of the word and suffixes an "ay".
+
+If a word begins with a vowel you just add "way" to the end.
+
+**Example**
+
+- pigLatin("glove") should return "oveglay".
+- pigLatin("eight") should return "eightway".
+
+---
+# proCategorization
+
+Thumbtack helps Professionals (Pros) grow their business by identifying new customers. Upon registering on Thumbtack, a Pro specifies which categories of services they provide. To help match customer requests with qualified Pros, Thumbtack maintains a list of Pros grouped by service categories.
+
+Given a list of pros and their category preferences, return the list of Pros for each category.
+
+**Example**
+
+For pros = ["Jack", "Leon", "Maria"] and
+
+preferences = [["Computer repair", "Handyman", "House cleaning"], ["Computer lessons", "Computer repair", "Data recovery service"], ["Computer lessons", "House cleaning"]]
+
+Output -> proCategorization(pros, preferences) = 
+[
+    [
+        ["Computer lessons"], ["Leon", "Maria"]
+    ], 
+    [
+        ["Computer repair"], ["Jack", "Leon"]
+    ], 
+    [
+        ["Data recovery service"], ["Leon"]
+    ], 
+    [
+        ["Handyman"], ["Jack"]
+    ], 
+    [
+        ["House cleaning"], ["Jack", "Maria"]
+    ]
+]
 
 ---
