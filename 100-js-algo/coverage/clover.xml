@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1597161227343" clover="3.2.0">
-  <project timestamp="1597161227343" name="All files">
-    <metrics statements="974" coveredstatements="974" conditionals="413" coveredconditionals="412" methods="196" coveredmethods="196" elements="1583" coveredelements="1582" complexity="0" loc="974" ncloc="974" packages="7" files="99" classes="99"/>
+<coverage generated="1597165054788" clover="3.2.0">
+  <project timestamp="1597165054788" name="All files">
+    <metrics statements="989" coveredstatements="989" conditionals="433" coveredconditionals="432" methods="198" coveredmethods="198" elements="1620" coveredelements="1619" complexity="0" loc="989" ncloc="989" packages="7" files="100" classes="100"/>
     <package name="100-js-algo">
-      <metrics statements="738" coveredstatements="738" conditionals="295" coveredconditionals="294" methods="145" coveredmethods="145"/>
+      <metrics statements="753" coveredstatements="753" conditionals="315" coveredconditionals="314" methods="147" coveredmethods="147"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -963,6 +963,24 @@
         <line num="69" count="2" type="stmt"/>
         <line num="74" count="3" type="stmt"/>
         <line num="78" count="1" type="stmt"/>
+      </file>
+      <file name="strongPwd.js" path="D:\git\daily-coding\100-js-algo\strongPwd.js">
+        <metrics statements="15" coveredstatements="15" conditionals="20" coveredconditionals="20" methods="2" coveredmethods="2"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="8" count="6" type="stmt"/>
+        <line num="10" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="67" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="15" type="stmt"/>
+        <line num="17" count="67" type="cond" truecount="4" falsecount="0"/>
+        <line num="18" count="17" type="stmt"/>
+        <line num="19" count="67" type="cond" truecount="4" falsecount="0"/>
+        <line num="20" count="16" type="stmt"/>
+        <line num="21" count="67" type="cond" truecount="4" falsecount="0"/>
+        <line num="22" count="19" type="stmt"/>
+        <line num="26" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="29" count="1" type="stmt"/>
       </file>
       <file name="validTime.js" path="D:\git\daily-coding\100-js-algo\validTime.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
