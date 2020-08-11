@@ -11,10 +11,10 @@ function spiralNumbers(num) {
     let column = 0;
     let direction = "right";
     while (count <= num * num) {
-        if (sprialArray[row][column] === undefined) {
+        // if (sprialArray[row][column] === undefined) {
             sprialArray[row][column] = count++;
             nextStep();
-        }
+        // }
     }
 
     function nextStep() {
@@ -36,7 +36,7 @@ function spiralNumbers(num) {
                 column--;
                 row++;
                 direction = "down";
-                if (sprialArray[row] === undefined && row < num) {
+                if (sprialArray[row] === undefined ) {
                     sprialArray[row] = [];
                 }
             }
@@ -50,11 +50,11 @@ function spiralNumbers(num) {
                 column--;
                 row--;
             }
-            if (row < 0) {
-                direction = "right";
-                column++;
-                row++;
-            }
+            // if (row < 0) {
+            //     direction = "right";
+            //     column++;
+            //     row++;
+            // }
             if (sprialArray[row][column] !== undefined && direction === "up") {
                 direction = "right";
                 row++;
