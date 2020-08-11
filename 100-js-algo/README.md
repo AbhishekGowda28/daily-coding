@@ -1061,3 +1061,6 @@ Construct a square matrix with a size N x N containing integers from 1 to N * N 
                                                     ]
 
 ---
+# Strong Password Checker
+
+---
