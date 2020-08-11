@@ -18,48 +18,73 @@ function spiralNumbers(num) {
     }
 
     function nextStep() {
-        console.log({ sprialArray, row, column, count });
-        if (direction === "right") {
-            column++;
-        } else if (direction === "down") {
-            row++;
-            if (sprialArray[row] === undefined) {
-                sprialArray[row] = [];
+        if (count <= num * num) {
+
+            if (direction === "right") {
+                column++;
+            } else if (direction === "down") {
+                row++;
+                if (sprialArray[row] === undefined && row < num) {
+                    sprialArray[row] = [];
+                }
+            } else if (direction === "left") {
+                column--;
+            } else {
+                row--;
             }
-        } else if (direction === "left") {
-            column--;
-        } else {
-            row--;
-        }
-        if (column === num) {
-            column--;
-            row++;
-            direction = "down";
-            if (sprialArray[row] === undefined) {
-                sprialArray[row] = [];
+            if (column === num) {
+                column--;
+                row++;
+                direction = "down";
+                if (sprialArray[row] === undefined && row < num) {
+                    sprialArray[row] = [];
+                }
             }
-        }
-        if (column < 0) {
-            column++;
-            row--;
-            direction = "up";
-        }
-        if (row === num) {
-            direction = "left";
-            column--;
-            row--;
-        }
-        if (row < 0) {
-            direction = "right";
-            column++;
-            row++;
+            if (column < 0) {
+                direction = "up";
+                column++;
+                row--;
+            }
+            if (row === num) {
+                direction = "left";
+                column--;
+                row--;
+            }
+            if (row < 0) {
+                direction = "right";
+                column++;
+                row++;
+            }
+            if (sprialArray[row][column] !== undefined && direction === "up") {
+                direction = "right";
+                row++;
+                column++;
+            }
+            if (sprialArray[row][column] !== undefined && direction === "right") {
+                direction = "down";
+                row++;
+                column--;
+            }
+            if (sprialArray[row][column] !== undefined && direction === "down") {
+                direction = "left";
+                column--;
+                row--;
+            }
+            if (sprialArray[row][column] !== undefined && direction === "left") {
+                direction = "up";
+                column++;
+                row--;
+            }
         }
     }
-    console.log(sprialArray);
 
     return sprialArray;
 }
 
-spiralNumbers(4);
+for (let i = 0; i <= 10; i++) {
+    spiralNumbers(i);
+}
+
+// spiralNumbers(2);
 
 module.exports = spiralNumbers;

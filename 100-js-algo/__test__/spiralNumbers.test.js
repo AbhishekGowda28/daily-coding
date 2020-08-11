@@ -4,7 +4,7 @@ const spiralNumbers = require("../spiralNumbers");
 describe("Sprial Array", () => {
     test("Empty Array", () => {
         const num = 0;
-        const expected = [];
+        const expected = [[]];
         const actual = spiralNumbers(num);
         expect(actual).toStrictEqual(expected);
     });
@@ -16,7 +16,7 @@ describe("Sprial Array", () => {
     });
     test("Even Array", () => {
         const num = 2;
-        const expected = [[1, 2], [3, 4]];
+        const expected = [[1, 2], [4, 3]];
         const actual = spiralNumbers(num);
         expect(actual).toStrictEqual(expected);
     });
