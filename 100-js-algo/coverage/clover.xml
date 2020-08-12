@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1597247744789" clover="3.2.0">
-  <project timestamp="1597247744790" name="All files">
-    <metrics statements="1001" coveredstatements="1001" conditionals="437" coveredconditionals="436" methods="202" coveredmethods="202" elements="1640" coveredelements="1639" complexity="0" loc="1001" ncloc="1001" packages="7" files="102" classes="102"/>
+<coverage generated="1597255351933" clover="3.2.0">
+  <project timestamp="1597255351934" name="All files">
+    <metrics statements="1024" coveredstatements="1024" conditionals="457" coveredconditionals="456" methods="206" coveredmethods="206" elements="1687" coveredelements="1686" complexity="0" loc="1024" ncloc="1024" packages="7" files="103" classes="103"/>
     <package name="100-js-algo">
-      <metrics statements="765" coveredstatements="765" conditionals="319" coveredconditionals="318" methods="151" coveredmethods="151"/>
+      <metrics statements="788" coveredstatements="788" conditionals="339" coveredconditionals="338" methods="155" coveredmethods="155"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -981,6 +981,32 @@
         <line num="69" count="2" type="stmt"/>
         <line num="74" count="3" type="stmt"/>
         <line num="78" count="1" type="stmt"/>
+      </file>
+      <file name="stolenLunch.js" path="D:\git\daily-coding\100-js-algo\stolenLunch.js">
+        <metrics statements="23" coveredstatements="23" conditionals="20" coveredconditionals="20" methods="4" coveredmethods="4"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="9" count="6" type="cond" truecount="4" falsecount="0"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="12" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="3" type="cond" truecount="4" falsecount="0"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="26" count="21" type="stmt"/>
+        <line num="27" count="21" type="cond" truecount="4" falsecount="0"/>
+        <line num="28" count="5" type="stmt"/>
+        <line num="30" count="5" type="stmt"/>
+        <line num="34" count="16" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="27" type="cond" truecount="2" falsecount="0"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="47" count="27" type="cond" truecount="2" falsecount="0"/>
+        <line num="48" count="21" type="stmt"/>
+        <line num="50" count="6" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
       </file>
       <file name="strongPwd.js" path="D:\git\daily-coding\100-js-algo\strongPwd.js">
         <metrics statements="15" coveredstatements="15" conditionals="20" coveredconditionals="20" methods="2" coveredmethods="2"/>
