@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1597255351933" clover="3.2.0">
-  <project timestamp="1597255351934" name="All files">
-    <metrics statements="1024" coveredstatements="1024" conditionals="457" coveredconditionals="456" methods="206" coveredmethods="206" elements="1687" coveredelements="1686" complexity="0" loc="1024" ncloc="1024" packages="7" files="103" classes="103"/>
+<coverage generated="1597256703225" clover="3.2.0">
+  <project timestamp="1597256703225" name="All files">
+    <metrics statements="1026" coveredstatements="1026" conditionals="457" coveredconditionals="456" methods="208" coveredmethods="208" elements="1691" coveredelements="1690" complexity="0" loc="1026" ncloc="1026" packages="7" files="104" classes="104"/>
     <package name="100-js-algo">
-      <metrics statements="788" coveredstatements="788" conditionals="339" coveredconditionals="338" methods="155" coveredmethods="155"/>
+      <metrics statements="790" coveredstatements="790" conditionals="339" coveredconditionals="338" methods="157" coveredmethods="157"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -1026,6 +1026,11 @@
         <line num="26" count="5" type="cond" truecount="4" falsecount="0"/>
         <line num="29" count="1" type="stmt"/>
       </file>
+      <file name="sumAllPrimes.js" path="D:\git\daily-coding\100-js-algo\sumAllPrimes.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
       <file name="validTime.js" path="D:\git\daily-coding\100-js-algo\validTime.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="7" count="4" type="stmt"/>
@@ -1277,31 +1282,31 @@
       </file>
       <file name="getPrimeNumbers.js" path="D:\git\daily-coding\100-js-algo\utils\Math\getPrimeNumbers.js">
         <metrics statements="25" coveredstatements="25" conditionals="9" coveredconditionals="9" methods="6" coveredmethods="6"/>
-        <line num="7" count="16" type="cond" truecount="3" falsecount="0"/>
-        <line num="15" count="15" type="stmt"/>
-        <line num="16" count="15" type="stmt"/>
-        <line num="17" count="425" type="stmt"/>
-        <line num="20" count="15" type="stmt"/>
-        <line num="27" count="15" type="stmt"/>
-        <line num="32" count="15" type="stmt"/>
-        <line num="33" count="425" type="cond" truecount="2" falsecount="0"/>
-        <line num="34" count="136" type="stmt"/>
-        <line num="38" count="15" type="stmt"/>
-        <line num="45" count="15" type="stmt"/>
-        <line num="46" count="35" type="stmt"/>
-        <line num="47" count="35" type="stmt"/>
-        <line num="48" count="393" type="cond" truecount="2" falsecount="0"/>
-        <line num="49" count="289" type="stmt"/>
-        <line num="51" count="393" type="stmt"/>
-        <line num="53" count="35" type="stmt"/>
-        <line num="54" count="35" type="stmt"/>
-        <line num="55" count="22" type="stmt"/>
-        <line num="64" count="16" type="cond" truecount="2" falsecount="0"/>
-        <line num="65" count="15" type="stmt"/>
-        <line num="66" count="15" type="stmt"/>
-        <line num="68" count="15" type="stmt"/>
+        <line num="7" count="17" type="cond" truecount="3" falsecount="0"/>
+        <line num="15" count="16" type="stmt"/>
+        <line num="16" count="16" type="stmt"/>
+        <line num="17" count="434" type="stmt"/>
+        <line num="20" count="16" type="stmt"/>
+        <line num="27" count="16" type="stmt"/>
+        <line num="32" count="16" type="stmt"/>
+        <line num="33" count="434" type="cond" truecount="2" falsecount="0"/>
+        <line num="34" count="140" type="stmt"/>
+        <line num="38" count="16" type="stmt"/>
+        <line num="45" count="16" type="stmt"/>
+        <line num="46" count="37" type="stmt"/>
+        <line num="47" count="37" type="stmt"/>
+        <line num="48" count="398" type="cond" truecount="2" falsecount="0"/>
+        <line num="49" count="294" type="stmt"/>
+        <line num="51" count="398" type="stmt"/>
+        <line num="53" count="37" type="stmt"/>
+        <line num="54" count="37" type="stmt"/>
+        <line num="55" count="23" type="stmt"/>
+        <line num="64" count="17" type="cond" truecount="2" falsecount="0"/>
+        <line num="65" count="16" type="stmt"/>
+        <line num="66" count="16" type="stmt"/>
+        <line num="68" count="16" type="stmt"/>
         <line num="70" count="1" type="stmt"/>
-        <line num="73" count="4" type="stmt"/>
+        <line num="73" count="5" type="stmt"/>
       </file>
       <file name="isDigit.js" path="D:\git\daily-coding\100-js-algo\utils\Math\isDigit.js">
         <metrics statements="4" coveredstatements="4" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
