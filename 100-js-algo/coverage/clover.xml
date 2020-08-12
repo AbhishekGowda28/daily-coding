@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1597165054788" clover="3.2.0">
-  <project timestamp="1597165054788" name="All files">
-    <metrics statements="989" coveredstatements="989" conditionals="433" coveredconditionals="432" methods="198" coveredmethods="198" elements="1620" coveredelements="1619" complexity="0" loc="989" ncloc="989" packages="7" files="100" classes="100"/>
+<coverage generated="1597246602142" clover="3.2.0">
+  <project timestamp="1597246602142" name="All files">
+    <metrics statements="999" coveredstatements="999" conditionals="437" coveredconditionals="436" methods="200" coveredmethods="200" elements="1636" coveredelements="1635" complexity="0" loc="999" ncloc="999" packages="7" files="101" classes="101"/>
     <package name="100-js-algo">
-      <metrics statements="753" coveredstatements="753" conditionals="315" coveredconditionals="314" methods="147" coveredmethods="147"/>
+      <metrics statements="763" coveredstatements="763" conditionals="319" coveredconditionals="318" methods="149" coveredmethods="149"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -889,6 +889,19 @@
         <line num="11" count="4" type="stmt"/>
         <line num="15" count="3" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
+      </file>
+      <file name="reflectionString.js" path="D:\git\daily-coding\100-js-algo\reflectionString.js">
+        <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="11" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
       </file>
       <file name="reverseParentheses.js" path="D:\git\daily-coding\100-js-algo\reverseParentheses.js">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
