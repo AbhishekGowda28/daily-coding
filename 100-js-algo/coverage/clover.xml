@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1597296738581" clover="3.2.0">
-  <project timestamp="1597296738582" name="All files">
-    <metrics statements="1043" coveredstatements="1043" conditionals="463" coveredconditionals="462" methods="212" coveredmethods="212" elements="1718" coveredelements="1717" complexity="0" loc="1043" ncloc="1043" packages="7" files="106" classes="106"/>
+<coverage generated="1597332492531" clover="3.2.0">
+  <project timestamp="1597332492531" name="All files">
+    <metrics statements="1048" coveredstatements="1048" conditionals="465" coveredconditionals="464" methods="214" coveredmethods="214" elements="1727" coveredelements="1726" complexity="0" loc="1048" ncloc="1048" packages="7" files="107" classes="107"/>
     <package name="100-js-algo">
-      <metrics statements="793" coveredstatements="793" conditionals="341" coveredconditionals="340" methods="160" coveredmethods="160"/>
+      <metrics statements="798" coveredstatements="798" conditionals="343" coveredconditionals="342" methods="162" coveredmethods="162"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -928,6 +928,14 @@
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="8" count="7" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
+      </file>
+      <file name="sortByField.js" path="D:\git\daily-coding\100-js-algo\sortByField.js">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
       </file>
       <file name="spiralNumbers.js" path="D:\git\daily-coding\100-js-algo\spiralNumbers.js">
         <metrics statements="50" coveredstatements="50" conditionals="36" coveredconditionals="35" methods="2" coveredmethods="2"/>
