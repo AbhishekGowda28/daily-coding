@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1597332492531" clover="3.2.0">
-  <project timestamp="1597332492531" name="All files">
-    <metrics statements="1048" coveredstatements="1048" conditionals="465" coveredconditionals="464" methods="214" coveredmethods="214" elements="1727" coveredelements="1726" complexity="0" loc="1048" ncloc="1048" packages="7" files="107" classes="107"/>
+<coverage generated="1597335952007" clover="3.2.0">
+  <project timestamp="1597335952008" name="All files">
+    <metrics statements="1050" coveredstatements="1050" conditionals="465" coveredconditionals="464" methods="217" coveredmethods="217" elements="1732" coveredelements="1731" complexity="0" loc="1050" ncloc="1050" packages="7" files="108" classes="108"/>
     <package name="100-js-algo">
-      <metrics statements="798" coveredstatements="798" conditionals="343" coveredconditionals="342" methods="162" coveredmethods="162"/>
+      <metrics statements="800" coveredstatements="800" conditionals="343" coveredconditionals="342" methods="165" coveredmethods="165"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -1045,6 +1045,11 @@
         <line num="9" count="1010" type="cond" truecount="2" falsecount="0"/>
         <line num="12" count="1" type="stmt"/>
       </file>
+      <file name="uniqueDigitProducts.js" path="D:\git\daily-coding\100-js-algo\uniqueDigitProducts.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
       <file name="validTime.js" path="D:\git\daily-coding\100-js-algo\validTime.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="7" count="4" type="stmt"/>
@@ -1251,13 +1256,13 @@
         <line num="26" count="5" type="cond" truecount="2" falsecount="0"/>
         <line num="27" count="3" type="stmt"/>
         <line num="33" count="5" type="stmt"/>
-        <line num="40" count="11" type="stmt"/>
+        <line num="40" count="12" type="stmt"/>
         <line num="48" count="12" type="stmt"/>
         <line num="49" count="36" type="cond" truecount="2" falsecount="0"/>
         <line num="50" count="8" type="stmt"/>
         <line num="52" count="28" type="stmt"/>
         <line num="56" count="12" type="stmt"/>
-        <line num="59" count="7" type="stmt"/>
+        <line num="59" count="8" type="stmt"/>
       </file>
     </package>
     <package name="100-js-algo.utils.Math">
