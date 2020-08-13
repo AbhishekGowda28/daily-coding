@@ -1,20 +1,26 @@
 // @ts-check
 
 /**
- * @param {number} count
+ * @param {number} expectedFibonacciCount
  */
-function fibonacci(count) {
+function fibonacci(expectedFibonacciCount) {
+    const fib = [1];
+    if (expectedFibonacciCount === 0) {
+        return [];
+    }
+    if (expectedFibonacciCount === 1) {
+        return [1];
+    }
     let prev = 0, curr = 1, counter = 2;
-    while (counter <= count) {
+    while (counter <= expectedFibonacciCount) {
         const sum = prev + curr;
         prev = curr;
         curr = sum;
         counter++;
+        fib.push(curr);
     }
 
-    return curr;
+    return fib;
 }
-
-console.log(fibonacci(102));
 
 module.exports = fibonacci;

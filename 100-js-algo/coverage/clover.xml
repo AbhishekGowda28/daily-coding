@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1597256703225" clover="3.2.0">
-  <project timestamp="1597256703225" name="All files">
-    <metrics statements="1026" coveredstatements="1026" conditionals="457" coveredconditionals="456" methods="208" coveredmethods="208" elements="1691" coveredelements="1690" complexity="0" loc="1026" ncloc="1026" packages="7" files="104" classes="104"/>
+<coverage generated="1597296738581" clover="3.2.0">
+  <project timestamp="1597296738582" name="All files">
+    <metrics statements="1043" coveredstatements="1043" conditionals="463" coveredconditionals="462" methods="212" coveredmethods="212" elements="1718" coveredelements="1717" complexity="0" loc="1043" ncloc="1043" packages="7" files="106" classes="106"/>
     <package name="100-js-algo">
-      <metrics statements="790" coveredstatements="790" conditionals="339" coveredconditionals="338" methods="157" coveredmethods="157"/>
+      <metrics statements="793" coveredstatements="793" conditionals="341" coveredconditionals="340" methods="160" coveredmethods="160"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -1031,6 +1031,12 @@
         <line num="7" count="4" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
       </file>
+      <file name="sumOddFibonacci.js" path="D:\git\daily-coding\100-js-algo\sumOddFibonacci.js">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="9" count="1010" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+      </file>
       <file name="validTime.js" path="D:\git\daily-coding\100-js-algo\validTime.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="7" count="4" type="stmt"/>
@@ -1247,7 +1253,7 @@
       </file>
     </package>
     <package name="100-js-algo.utils.Math">
-      <metrics statements="73" coveredstatements="73" conditionals="34" coveredconditionals="34" methods="19" coveredmethods="19"/>
+      <metrics statements="87" coveredstatements="87" conditionals="38" coveredconditionals="38" methods="20" coveredmethods="20"/>
       <file name="factorial.js" path="D:\git\daily-coding\100-js-algo\utils\Math\factorial.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="2" count="4" type="stmt"/>
@@ -1256,6 +1262,23 @@
         <line num="5" count="6" type="stmt"/>
         <line num="8" count="4" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
+      </file>
+      <file name="fibonacci.js" path="D:\git\daily-coding\100-js-algo\utils\Math\fibonacci.js">
+        <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="1017" type="stmt"/>
+        <line num="17" count="1017" type="stmt"/>
+        <line num="18" count="1017" type="stmt"/>
+        <line num="19" count="1017" type="stmt"/>
+        <line num="20" count="1017" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
       </file>
       <file name="getInteger.js" path="D:\git\daily-coding\100-js-algo\utils\Math\getInteger.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
