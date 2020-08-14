@@ -1,4 +1,5 @@
 /* eslint-disable max-params */
+// @ts-check
 
 /**
  * @param {number} initalValue
@@ -12,4 +13,13 @@ function arthimaticProgression(initalValue, difference, nthTerm) {
     return nthValue;
 }
 
-module.exports = { arthimaticProgression };
+/**
+ * @param {number} initalTerm
+ * @param {number} difference
+ * @param {number} nthTerm
+ */
+function arthimaticSummation(initalTerm, difference, nthTerm) {
+    return (nthTerm / 2) * (2 * initalTerm + ((nthTerm - 1) * difference));
+}
+
+module.exports = { arthimaticProgression, arthimaticSummation };

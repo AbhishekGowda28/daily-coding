@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1597381459743" clover="3.2.0">
-  <project timestamp="1597381459743" name="All files">
-    <metrics statements="1059" coveredstatements="1059" conditionals="471" coveredconditionals="470" methods="221" coveredmethods="221" elements="1751" coveredelements="1750" complexity="0" loc="1059" ncloc="1059" packages="7" files="109" classes="109"/>
+<coverage generated="1597402498263" clover="3.2.0">
+  <project timestamp="1597402498263" name="All files">
+    <metrics statements="1063" coveredstatements="1063" conditionals="471" coveredconditionals="470" methods="223" coveredmethods="223" elements="1757" coveredelements="1756" complexity="0" loc="1063" ncloc="1063" packages="7" files="110" classes="110"/>
     <package name="100-js-algo">
-      <metrics statements="809" coveredstatements="809" conditionals="349" coveredconditionals="348" methods="169" coveredmethods="169"/>
+      <metrics statements="812" coveredstatements="812" conditionals="349" coveredconditionals="348" methods="170" coveredmethods="170"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -929,6 +929,12 @@
         <line num="8" count="7" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
       </file>
+      <file name="shapeArea.js" path="D:\git\daily-coding\100-js-algo\shapeArea.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+      </file>
       <file name="sortByField.js" path="D:\git\daily-coding\100-js-algo\sortByField.js">
         <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
         <line num="8" count="3" type="stmt"/>
@@ -1395,12 +1401,13 @@
       </file>
     </package>
     <package name="100-js-algo.utils.Math.Summation">
-      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="arthimaticProgression.js" path="D:\git\daily-coding\100-js-algo\utils\Math\Summation\arthimaticProgression.js">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
       </file>
       <file name="geometricProgression.js" path="D:\git\daily-coding\100-js-algo\utils\Math\Summation\geometricProgression.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
