@@ -1147,3 +1147,24 @@ Let's call product(x) the product of x's digits. Given an array of integers a, c
 - For a = [2, 8, 121, 42, 222, 23], the output should be uniqueDigitProducts(a) = 3.
 
 ---
+# Tasks Type
+
+You have some tasks in your Asana account. For each ith of them you know its deadlinesi, which is the last day by which it should be completed. As you can see in your calendar, today's date is day. Asana labels each task in accordance with its due date:
+
+- If the task is due today or it's already overdue, it is labeled as Today;
+- If the task is due within a week but not today - that is, its deadline is somewhere between day + 1 and day + 7 both inclusive - it is labeled as Upcoming;
+- All other tasks are labeled as Later;
+
+Given an array of deadlines and today's date day, your goal is to find the number of tasks with each label type and return it as an array with the format [Today, Upcoming, Later], where Today, Upcoming and Later are the number of tasks that correspond to that label.
+
+**Example**
+
+- For deadlines = [1, 2, 3, 4, 5] and day = 2, the output should be tasksTypes(deadlines, day) = [2, 3, 0].
+
+![Image](https://codefightsuserpics.s3.amazonaws.com/tasks/tasksTypes/img/example2.png?_tm=1491409778572)
+
+- For deadlines = [1, 2, 4, 2, 10, 3, 1, 4, 5, 4, 9, 8] and day = 1, the output should be tasksTypes(deadlines, day) = [2, 8, 2].
+
+![Image](https://codefightsuserpics.s3.amazonaws.com/tasks/tasksTypes/img/example1.png?_tm=1491409778393)
+
+---

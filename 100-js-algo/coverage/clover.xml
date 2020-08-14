@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1597335952007" clover="3.2.0">
-  <project timestamp="1597335952008" name="All files">
-    <metrics statements="1050" coveredstatements="1050" conditionals="465" coveredconditionals="464" methods="217" coveredmethods="217" elements="1732" coveredelements="1731" complexity="0" loc="1050" ncloc="1050" packages="7" files="108" classes="108"/>
+<coverage generated="1597381459743" clover="3.2.0">
+  <project timestamp="1597381459743" name="All files">
+    <metrics statements="1059" coveredstatements="1059" conditionals="471" coveredconditionals="470" methods="221" coveredmethods="221" elements="1751" coveredelements="1750" complexity="0" loc="1059" ncloc="1059" packages="7" files="109" classes="109"/>
     <package name="100-js-algo">
-      <metrics statements="800" coveredstatements="800" conditionals="343" coveredconditionals="342" methods="165" coveredmethods="165"/>
+      <metrics statements="809" coveredstatements="809" conditionals="349" coveredconditionals="348" methods="169" coveredmethods="169"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -1044,6 +1044,18 @@
         <line num="3" count="1" type="stmt"/>
         <line num="9" count="1010" type="cond" truecount="2" falsecount="0"/>
         <line num="12" count="1" type="stmt"/>
+      </file>
+      <file name="tasksTypes.js" path="D:\git\daily-coding\100-js-algo\tasksTypes.js">
+        <metrics statements="9" coveredstatements="9" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
+        <line num="10" count="17" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="13" type="cond" truecount="4" falsecount="0"/>
+        <line num="13" count="11" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="29" count="17" type="stmt"/>
+        <line num="31" count="6" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
       </file>
       <file name="uniqueDigitProducts.js" path="D:\git\daily-coding\100-js-algo\uniqueDigitProducts.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
