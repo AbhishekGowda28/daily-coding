@@ -10,7 +10,6 @@ function sortByHeight(arr, shallowValue) {
 
     return arr.map((val) => {
         if (val !== shallowValue) {
-            // initalIndex++;
             return sortedArr[initalIndex++];
         }
 
