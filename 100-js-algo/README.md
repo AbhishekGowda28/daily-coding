@@ -1192,3 +1192,15 @@ Some people are standing in a row in a park.  There are trees between them which
 For arr = [-1, 150, 190, 170, -1, -1, 160, 180], the output should be sortByHeight(arr) = [-1, 150, 160, 170, -1, -1, 180, 190].
 
 ---
+# Minesweeper
+
+In the popular Minesweeper game you have a board with some mines and those cells that don't contain a mine have a number in it that indicates the total number of mines in the neighboring cells. 
+Starting off with some arrangement of mines we want to create a Minesweeper game setup.
+
+**Example**
+
+matrix = [[true, false, false],[false, true, false],[false, false, false]]
+
+minesweeper(matrix) = [[1, 2, 1],[2, 1, 1],[1, 1, 1]]
+
+---
