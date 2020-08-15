@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1597500695763" clover="3.2.0">
-  <project timestamp="1597500695764" name="All files">
-    <metrics statements="1083" coveredstatements="1083" conditionals="481" coveredconditionals="480" methods="228" coveredmethods="228" elements="1792" coveredelements="1791" complexity="0" loc="1083" ncloc="1083" packages="7" files="112" classes="112"/>
+<coverage generated="1597502773284" clover="3.2.0">
+  <project timestamp="1597502773284" name="All files">
+    <metrics statements="1092" coveredstatements="1092" conditionals="485" coveredconditionals="484" methods="230" coveredmethods="230" elements="1807" coveredelements="1806" complexity="0" loc="1092" ncloc="1092" packages="7" files="113" classes="113"/>
     <package name="100-js-algo">
-      <metrics statements="832" coveredstatements="832" conditionals="359" coveredconditionals="358" methods="175" coveredmethods="175"/>
+      <metrics statements="841" coveredstatements="841" conditionals="363" coveredconditionals="362" methods="177" coveredmethods="177"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
         <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="9" type="stmt"/>
@@ -628,6 +628,18 @@
         <line num="8" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
+      </file>
+      <file name="findPair.js" path="D:\git\daily-coding\100-js-algo\findPair.js">
+        <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
+        <line num="11" count="12" type="cond" truecount="4" falsecount="0"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
       </file>
       <file name="firstDigit.js" path="D:\git\daily-coding\100-js-algo\firstDigit.js">
         <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
