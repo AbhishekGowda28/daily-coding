@@ -1215,3 +1215,15 @@ Given an unsorted array of integers, find a pair with a given sum in it.
 - For arr = [8, 7, 2, 5, 3, 1] sum = 100 findPair(arr, sum) = [ ]
 
 ---
+# String Peeler
+
+Remove first and last character of the string.
+If string cannot be peeled return the string.
+
+**Example**
+
+- peeler("abcvf") = "bcv"
+
+- peeler("ab") = "ab"
+
+---
