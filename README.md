@@ -1,4 +1,4 @@
-# Daily Coding
+# Dump
 
 
 Direct links to github-pages
