@@ -15,6 +15,6 @@ function Plus(pattern, num) {
     return _plus;
 }
 
-console.log(Plus("+", 10));
+console.log(Plus("-", 10));
 
 module.exports = Plus;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1597592890979" clover="3.2.0">
-  <project timestamp="1597592890979" name="All files">
-    <metrics statements="1115" coveredstatements="1115" conditionals="491" coveredconditionals="490" methods="236" coveredmethods="236" elements="1842" coveredelements="1841" complexity="0" loc="1115" ncloc="1115" packages="8" files="117" classes="117"/>
+<coverage generated="1597674301582" clover="3.2.0">
+  <project timestamp="1597674301582" name="All files">
+    <metrics statements="1135" coveredstatements="1135" conditionals="493" coveredconditionals="492" methods="239" coveredmethods="239" elements="1867" coveredelements="1866" complexity="0" loc="1135" ncloc="1135" packages="9" files="120" classes="120"/>
     <package name="100-js-algo">
       <metrics statements="853" coveredstatements="853" conditionals="367" coveredconditionals="366" methods="179" coveredmethods="179"/>
       <file name="absoluteValuesSumMinization.js" path="D:\git\daily-coding\100-js-algo\absoluteValuesSumMinization.js">
@@ -1454,6 +1454,38 @@
         <line num="23" count="1" type="stmt"/>
         <line num="24" count="3" type="stmt"/>
         <line num="28" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="100-js-algo.utils.Math.Matrix">
+      <metrics statements="20" coveredstatements="20" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <file name="addition.js" path="D:\git\daily-coding\100-js-algo\utils\Math\Matrix\addition.js">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="12" count="15" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+      </file>
+      <file name="scalarMultiplication.js" path="D:\git\daily-coding\100-js-algo\utils\Math\Matrix\scalarMultiplication.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="10" count="15" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+      <file name="transpose.js" path="D:\git\daily-coding\100-js-algo\utils\Math\Matrix\transpose.js">
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="10" count="15" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="13" count="15" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
       </file>
     </package>
     <package name="100-js-algo.utils.Math.Set">
