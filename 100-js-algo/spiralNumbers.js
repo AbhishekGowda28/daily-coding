@@ -1,15 +1,21 @@
 // @ts-check
 
+const Directions = {
+    Right: "right",
+    Left: "left",
+    Up: "up",
+    Down: "down"
+};
+
 /**
  * @param {number} num
  */
 function spiralNumbers(num) {
     const sprialArray = [[]];
-
     let count = 1;
     let row = 0;
     let column = 0;
-    let direction = "right";
+    let direction = Directions.Right;
     while (count <= num * num) {
         sprialArray[row][column] = count++;
         nextStep();
@@ -18,14 +24,14 @@ function spiralNumbers(num) {
     function nextStep() {
         if (count <= num * num) {
 
-            if (direction === "right") {
+            if (direction === Directions.Right) {
                 column++;
-            } else if (direction === "down") {
+            } else if (direction === Directions.Down) {
                 row++;
                 if (sprialArray[row] === undefined && row < num) {
                     sprialArray[row] = [];
                 }
-            } else if (direction === "left") {
+            } else if (direction === Directions.Left) {
                 column--;
             } else {
                 row--;
@@ -33,38 +39,38 @@ function spiralNumbers(num) {
             if (column === num) {
                 column--;
                 row++;
-                direction = "down";
+                direction = Directions.Down;
                 if (sprialArray[row] === undefined) {
                     sprialArray[row] = [];
                 }
             }
             if (column < 0) {
-                direction = "up";
+                direction = Directions.Up;
                 column++;
                 row--;
             }
             if (row === num) {
-                direction = "left";
+                direction = Directions.Left;
                 column--;
                 row--;
             }
-            if (sprialArray[row][column] !== undefined && direction === "up") {
-                direction = "right";
+            if (sprialArray[row][column] !== undefined && direction === Directions.Up) {
+                direction = Directions.Right;
                 row++;
                 column++;
             }
-            if (sprialArray[row][column] !== undefined && direction === "right") {
-                direction = "down";
+            if (sprialArray[row][column] !== undefined && direction === Directions.Right) {
+                direction = Directions.Down;
                 row++;
                 column--;
             }
-            if (sprialArray[row][column] !== undefined && direction === "down") {
-                direction = "left";
+            if (sprialArray[row][column] !== undefined && direction === Directions.Down) {
+                direction = Directions.Left;
                 column--;
                 row--;
             }
-            if (sprialArray[row][column] !== undefined && direction === "left") {
-                direction = "up";
+            if (sprialArray[row][column] !== undefined && direction === Directions.Left) {
+                direction = Directions.Up;
                 column++;
                 row--;
             }
@@ -73,6 +79,5 @@ function spiralNumbers(num) {
 
     return sprialArray;
 }
-
 
 module.exports = spiralNumbers;
