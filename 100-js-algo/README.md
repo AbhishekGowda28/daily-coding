@@ -1021,3 +1021,247 @@ Output -> proCategorization(pros, preferences) =
 ]
 
 ---
+# Capatilize word
+
+Proper nouns always begin with a capital letter, followed by small letters.
+
+Correct a given proper noun so that it fits this statement.
+
+**Example**
+
+- For noun = "pARiS", the output should be capatilize(noun) = "Paris";
+
+- For noun = "John", the output should be capatilize(noun) = "John".
+
+---
+# ratingThreshold
+
+In Thumbtack, users are able to rate Pros based on their experience working with them. Each rating is an integer ranging from 1 to 5, and all ratings are averaged to produce a single number rating for any given Pro. Those Pros who have a rating lower than a specified threshold are manually reviewed by Thumbtack staff to ensure high quality of service.
+
+You're given a list of ratings for some Pros. Find out which Pros should be manually reviewed.
+
+**Example**
+
+- For threshold = 3.5 and ratings = [[3, 4], [3, 3, 3, 4], [4]] the output should be ratingThreshold(threshold, ratings) = [1].
+
+`Assume that we have 3 Pros that have received the following ratings: [3, 4], [3, 3, 3, 4] and [4]. Then And if threshold = 3.5 the answer is ratingThreshold(threshold, ratings) = [1]. The first Pro's rating is 3.5, the second one's is 3.25, and the last one's is 4, so only the second Pro should be reviewed manually (the output is their 0-based index).`
+
+---
+# spiralNumbers
+
+Construct a square matrix with a size N x N containing integers from 1 to N * N in a spiral order, starting from top-left and in clockwise direction.
+
+**Example**
+
+- For n = 3, the output should be spiralNumbers(n) = 
+                                                    [
+                                                        [1, 2, 3],
+                                                        [8, 9, 4],
+                                                        [7, 6, 5]
+                                                    ]
+
+---
+# Strong Password Checker
+ 
+Password should be more than 8 characters long, should have atleast a number, Captial letter, small letter and special characters.
+
+---
+# Refelection String
+
+Define an alphabet reflection as follows: a turns into z, b turns into y, c turns into x, ..., n turns into m, m turns into n, ..., z turns into a.
+
+Define a string reflection as the result of applying the alphabet reflection to each of its characters.
+
+Reflect the given string.
+
+**Example**
+
+For inputString = "name", the output should be reflectionString(inputString) = "mznv".
+
+---
+# Seek And Destroy
+
+You will be provided with an initial array (the first argument in the destroyer function), followed by one or more arguments. Remove all elements from the initial array that are of the same value as these arguments.
+
+**Example**
+
+- seekAndDestroy([3, 5, 1, 2, 2], [2, 3, 5]) should return [1]
+
+- seekAndDestroy([1, 2, 3, 5, 1, 2, 3], [2, 3]) should return [1, 5, 1]
+
+---
+# Stolen Lunch
+
+When you recently visited your little nephew, he told you a sad story: there's a bully at school who steals his lunch every day, and locks it away in his locker. He also leaves a note with a strange, coded message. Your nephew gave you one of the notes in hope that you can decipher it for him. And you did: it looks like all the digits in it are replaced with letters and vice versa. Digit 0 is replaced with 'a', 1 is replaced with 'b' and so on, with digit 9 replaced by 'j'.
+
+The note is different every day, so you decide to write a function that will decipher it for your nephew on an ongoing basis.
+
+**Example**
+
+For note = "you'll n4v4r 6u4ss 8t: cdja", the output should be stolenLunch(note) = "you'll never guess it: 2390".
+
+---
+# Sum of all Primes
+
+Sum all the prime numbers up to and including the provided number.
+
+A prime number is defined as a number greater than one and having only two divisors, one and itself. For example, 2 is a prime number because it's only divisible by one and two.
+
+The provided number may not be a prime.
+
+**Example**
+
+- sumAllPrimes(10) should return 17
+
+- sumAllPrimes(977) should return 73156
+
+---
+# Sum of odd Fibonacci numbers
+
+Given a positive integer num, return the sum of all odd Fibonacci numbers that are less than or equal to num.
+
+The first two numbers in the Fibonacci sequence are 1 and 1. Every additional number in the sequence is the sum of the two previous numbers. The first six numbers of the Fibonacci sequence are 1, 1, 2, 3, 5 and 8.
+
+**Example**
+
+- sumOddFibonacciNums(10) should return 10
+
+For example, sumFibs(10) should return 10 because all odd Fibonacci numbers less than or equal to 10 are 1, 1, 3, and 5.
+
+---
+# Sort array elements based on the provided feild.
+
+An array of object is provided. Sort the given array in ascending order, based on the provided field.
+
+**Example**
+
+- arr = [{name: "A",gender: "F",age: 1},{name: "B",gender: "M",age: 2},{name: "C",gender: "M",age: 3}] field = "age" sortByField(arr, field) = [{name: "A",gender: "F",age: 1},{name: "B",gender: "M",age: 2},{name: "C",gender: "M",age: 3}];
+
+---
+# Unique Digit Products
+
+Let's call product(x) the product of x's digits. Given an array of integers a, calculate product(x) for each x in a, and return the number of distinct results you get.
+
+**Example**
+
+- For a = [2, 8, 121, 42, 222, 23], the output should be uniqueDigitProducts(a) = 3.
+
+---
+# Tasks Type
+
+You have some tasks in your Asana account. For each ith of them you know its deadlinesi, which is the last day by which it should be completed. As you can see in your calendar, today's date is day. Asana labels each task in accordance with its due date:
+
+- If the task is due today or it's already overdue, it is labeled as Today;
+- If the task is due within a week but not today - that is, its deadline is somewhere between day + 1 and day + 7 both inclusive - it is labeled as Upcoming;
+- All other tasks are labeled as Later;
+
+Given an array of deadlines and today's date day, your goal is to find the number of tasks with each label type and return it as an array with the format [Today, Upcoming, Later], where Today, Upcoming and Later are the number of tasks that correspond to that label.
+
+**Example**
+
+- For deadlines = [1, 2, 3, 4, 5] and day = 2, the output should be tasksTypes(deadlines, day) = [2, 3, 0].
+
+![Image](https://codefightsuserpics.s3.amazonaws.com/tasks/tasksTypes/img/example2.png?_tm=1491409778572)
+
+- For deadlines = [1, 2, 4, 2, 10, 3, 1, 4, 5, 4, 9, 8] and day = 1, the output should be tasksTypes(deadlines, day) = [2, 8, 2].
+
+![Image](https://codefightsuserpics.s3.amazonaws.com/tasks/tasksTypes/img/example1.png?_tm=1491409778393)
+
+---
+# shapeArea
+
+Below we will define an n-interesting polygon. Your task is to find the area of a polygon for a given n.
+
+A 1-interesting polygon is just a square with a side of length 1. An n-interesting polygon is obtained by taking the n - 1-interesting polygon and appending 1-interesting polygons to its rim, side by side. You can see the 1-, 2-, 3- and 4-interesting polygons in the picture below.
+
+![Image](https://codefightsuserpics.s3.amazonaws.com/tasks/shapeArea/img/area.png?_tm=1491302317375)
+
+**Example**
+
+- For n = 2, the output should be shapeArea(n) = 5;
+
+- For n = 3, the output should be shapeArea(n) = 13.
+
+---
+# Sort By Height
+
+Some people are standing in a row in a park.  There are trees between them which cannot be moved. Your task is to rearrange the people by their heights in a non-descending order without moving the trees.
+
+**Example**
+
+For arr = [-1, 150, 190, 170, -1, -1, 160, 180], the output should be sortByHeight(arr) = [-1, 150, 160, 170, -1, -1, 180, 190].
+
+---
+# Minesweeper
+
+In the popular Minesweeper game you have a board with some mines and those cells that don't contain a mine have a number in it that indicates the total number of mines in the neighboring cells. 
+Starting off with some arrangement of mines we want to create a Minesweeper game setup.
+
+**Example**
+
+matrix = [[true, false, false],[false, true, false],[false, false, false]]
+
+minesweeper(matrix) = [[1, 2, 1],[2, 1, 1],[1, 1, 1]]
+
+---
+# Find Pair
+
+Given an unsorted array of integers, find a pair with a given sum in it.
+
+**Example**
+
+- For arr = [8, 7, 2, 5, 3, 1] sum = 10 findPair(arr, sum) = [ [ 8, 2 ], [ 7, 3 ] ]
+
+- For arr = [8, 7, 2, 5, 3, 1] sum = 100 findPair(arr, sum) = [ ]
+
+---
+# String Peeler
+
+Remove first and last character of the string.
+If string cannot be peeled return the string.
+
+**Example**
+
+- peeler("abcvf") = "bcv"
+
+- peeler("ab") = "ab"
+
+---
+# Vowel
+
+ Number of vowels in a string
+
+ **Example**
+
+For str = "Hello World. This is first output C Programming book", vowelsCount(str) = 12
+
+---
+# CheckBook Balance
+
+You are given a small checkbook to balance that is given to you as a string. Sometimes, this checkbook will be cluttered by non-alphanumeric characters.
+
+The first line shows the original balance. Each other (not blank) line gives information: check number, category, and check amount.
+
+You need to clean the lines first, keeping only letters, digits, dots, and spaces. Next, return the report as a string. On each line of the report, you have to add the new balance. In the last two lines, return the total expenses and average expense. Round your results to two decimal places. 
+
+**Example**
+
+1000.00
+125 Market 125.45
+126 Hardware 34.95
+127 Video 7.45
+128 Book 14.32
+129 Gasoline 16.10
+
+Solution
+
+Original_Balance: 1000.00
+125 Market 125.45 Balance 874.55
+126 Hardware 34.95 Balance 839.60
+127 Video 7.45 Balance 832.15
+128 Book 14.32 Balance 817.83
+129 Gasoline 16.10 Balance 801.73
+Total expense 198.27
+Average expense 39.65
+
+---
