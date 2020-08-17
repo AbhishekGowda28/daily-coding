@@ -1,14 +1,5 @@
 # Daily Coding
 
-**100 Algorithm**
-
-![Unit Test](https://github.com/AbhishekGowda28/daily-coding/workflows/Unit%20Test/badge.svg)
-
-![Static Code Check](https://github.com/AbhishekGowda28/daily-coding/workflows/Static%20Code%20Check/badge.svg)
-
-[100 Algorithm Test Coverage](https://abhishekgowda28.github.io/daily-coding/100-js-algo/coverage/lcov-report/)
-
----
 
 Direct links to github-pages
 
