@@ -1,0 +1,14 @@
+{
+  "name": "first-app",
+  "version": "1.0.0",
+  "description": "First App with electron",
+  "main": "main.js",
+  "author": "Abhishek Gowda",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^10.1.0"
+  }
+}
