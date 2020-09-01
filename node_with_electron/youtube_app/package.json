@@ -1,0 +1,15 @@
+{
+  "name": "local_yt_app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "yarn install",
+    "start": "electron .",
+    "build": "electron-packager . --asar"
+  },
+  "devDependencies": {
+    "electron": "latest",
+    "electron-packager": "^15.1.0"
+  }
+}
