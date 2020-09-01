@@ -1,0 +1,16 @@
+{
+  "name": "dev_app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "yarn install",
+    "start": "electron .",
+    "build": "npx electron-packager . --asar"
+  },
+  "devDependencies": {
+    "electron": "^10.1.1",
+    "electron-packager": "^15.1.0",
+    "electron-prebuilt": "^1.4.13"
+  }
+}
