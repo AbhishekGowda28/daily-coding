@@ -8,7 +8,6 @@ function createWindow() {
             nodeIntegration: true
         }
     });
-
     electronWindow.loadFile("index.html");
 }
 
