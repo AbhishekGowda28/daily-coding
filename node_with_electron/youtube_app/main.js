@@ -1,7 +1,7 @@
 const { app, BrowserWindow } = require("electron");
 
 function createWindow() {
-    const electronWindow = new BrowserWindow();
+    const electronWindow = new BrowserWindow({ icon: "./resource/youtube.ico" });
     electronWindow.loadURL("https://youtube.com");
 }
 
