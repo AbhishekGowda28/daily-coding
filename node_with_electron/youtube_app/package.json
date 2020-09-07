@@ -6,7 +6,7 @@
   "scripts": {
     "prebuild": "yarn install",
     "start": "electron .",
-    "build": "electron-packager . --asar"
+    "build": "electron-packager . --asar --icon=resource/youtube.ico"
   },
   "devDependencies": {
     "electron": "latest",
