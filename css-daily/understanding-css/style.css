@@ -1,0 +1,21 @@
+.onlyDiv {
+    background-color: aliceblue;
+}
+
+.onlySpan {
+    background-color: antiquewhite;
+}
+
+.parent-span {
+    display: inline;
+    background-color: green;
+}
+
+.note {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f1670b;
+    background-color: #080c0c;
+    margin: 10px;
+}
