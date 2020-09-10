@@ -1,9 +1,13 @@
+:root {
+    --block-size: 50px
+}
+
 .block-1 {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: var(--block-size);
+    height: var(--block-size);
     animation-name: movement;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
 }
@@ -11,27 +15,12 @@
 @keyframes movement {
 
     0% {
-        background-color: red;
-        top: 10%;
-    }
-
-    25% {
-        background-color: yellow;
-        top: 25%;
-    }
-
-    50% {
-        background-color: blue;
-        top: 50%;
-    }
-
-    75% {
-        background-color: green;
-        top: 75%;
+        background-color: #ff0000;
+        left: calc(0% - var(--block-size));
     }
 
     100% {
-        background-color: red;
-        top: 100%;
+        background-color: #0000ff;
+        left: calc(100% - var(--block-size));
     }
 }
