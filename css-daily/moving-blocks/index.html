@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <!-- <script src="https://unpkg.com/lodash@4/lodash.min.js"></script>
+    <script src="https://unpkg.com/lowdb@0.17/dist/low.min.js"></script>
+    <script src="https://unpkg.com/lowdb@0.17/dist/LocalStorage.min.js"></script> -->
     <title>Document</title>
 </head>
 
@@ -21,29 +24,31 @@
                 <input id="name" placeholder="Add Contact Name" />
             </label>
         </div>
-        <div class="gird-item">
+        <!-- <div class="gird-item">
             <label for="dob">
                 <span>Important Date</span>
                 <input id="dob" type="date" />
             </label>
-        </div>
+        </div> -->
         <div class="gird-item">
             <label for="phone">
                 <span>Phone number</span>
                 <input id="phone" type="tel" max="10" />
             </label>
         </div>
-        <div class="gird-item">
+        <!-- <div class="gird-item">
             <label for="email">
                 <span>Email</span>
                 <input if="email" type="email" />
             </label>
-        </div>
+        </div> -->
         <div>
             <button type="button">Cancel</button>
-            <button type="submit">Add to Contact list</button>
+            <button class="submit" type="submit">Add to Contact list</button>
         </div>
     </div>
+    <div class="contact-list"></div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
