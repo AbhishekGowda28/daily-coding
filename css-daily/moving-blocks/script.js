@@ -24,8 +24,7 @@ submit_button.addEventListener("click", () => {
     const name = document.getElementById("name").value;
     const phone = document.getElementById("phone").value;
     _contact_list = getContactList();
-    const nameExist  = _contact_list.includes(e => e.name === name);
-    if (name !== "" && phone !== "" && isNaN(phone) === false && nameExist === false) {
+    if (validateInput(name, phone)) {
         const data = {
             id: _contact_list.length + 1,
             name,
@@ -38,3 +37,7 @@ submit_button.addEventListener("click", () => {
         document.getElementById("phone").value = "";
     }
 });
+function validateInput(name, phone) {
+    const nameExist  = _contact_list.includes(e => e.name === name);
+    return name !== "" && phone !== "" && isNaN(phone) === false && nameExist === false;
+}
