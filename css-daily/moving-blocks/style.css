@@ -1,7 +1,8 @@
 html {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-:root {
+
+/* :root {
     --block-size: 50px
 }
 
@@ -26,12 +27,59 @@ html {
         background-color: #0000ff;
         left: calc(100% - var(--block-size));
     }
+} */
+
+.contact-form {
+    background-color: #f5f5f5;
+    margin: 25px auto;
+    width: 50%;
+    padding: 2rem;
+    text-align: center;
+}
+
+button {
+    border-radius: 12px;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-color: transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    text-transform: none;
+}
+
+input {
+    padding: 5px;
+    border: 0.01px solid grey;
+    border-radius: 8px;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.buttons {
+    margin: 25px;
 }
 
 label {
     display: inline-block;
     margin: 5px;
-    /* height: 50px; */
 }
 
 label span {
@@ -45,4 +93,25 @@ label span {
 
 label input {
     width: 150px;
+}
+
+.contact-list {
+    background-color: honeydew;
+    margin: 10px auto ;
+}
+
+.contact-list .header {
+    display: grid;
+    grid: auto / auto auto auto;
+    background-color: #4e6ac9;
+    padding: 1.2rem;
+    border: 1px solid #4e6ac9;
+    border-radius: 12px;
+}
+
+.grid-item {
+    display: grid;
+    grid: auto / auto auto auto;
+    padding: 10px;
+    border: 1px solid;
 }

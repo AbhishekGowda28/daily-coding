@@ -5,10 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <!-- <script src="https://unpkg.com/lodash@4/lodash.min.js"></script>
-    <script src="https://unpkg.com/lowdb@0.17/dist/low.min.js"></script>
-    <script src="https://unpkg.com/lowdb@0.17/dist/LocalStorage.min.js"></script> -->
-    <title>Document</title>
+    <title>Contact List</title>
 </head>
 
 <body>
@@ -17,37 +14,31 @@
         <div class="block-2"></div>
         <div class="block-3"></div> -->
     </div>
-    <div class="form">
+    <div class="contact-form">
         <div class="gird-item">
             <label for="name">
                 <span>Name to be displayed</span>
                 <input id="name" placeholder="Add Contact Name" />
             </label>
         </div>
-        <!-- <div class="gird-item">
-            <label for="dob">
-                <span>Important Date</span>
-                <input id="dob" type="date" />
-            </label>
-        </div> -->
         <div class="gird-item">
             <label for="phone">
                 <span>Phone number</span>
                 <input id="phone" type="tel" max="10" />
             </label>
         </div>
-        <!-- <div class="gird-item">
-            <label for="email">
-                <span>Email</span>
-                <input if="email" type="email" />
-            </label>
-        </div> -->
-        <div>
-            <button type="button">Cancel</button>
+        <div class="buttons">
+            <button class="reset" type="button">Cancel</button>
             <button class="submit" type="submit">Add to Contact list</button>
         </div>
     </div>
-    <div class="contact-list"></div>
+    <div class="contact-list">
+        <div class="header">
+            <div>ID</div>
+            <div>Name</div>
+            <div>Phone</div>
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 
