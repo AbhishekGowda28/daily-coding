@@ -13,6 +13,7 @@ input {
     font-size: 1.4em;
     margin: 10px;
     border: 1px solid;
+    border-radius: 5px;
 }
 
 button {
@@ -21,7 +22,7 @@ button {
 
 #app {
     width: 50%;
-    margin: 8% auto;
+    margin: 0% auto;
 }
 
 @media only screen and (max-width: 400px) {
@@ -34,4 +35,16 @@ button {
     input {
         width: 200px;
     }
+}
+
+.error{
+    color: #d43737;
+}
+
+.title{
+    font-size: 32px;
+    font-weight: bold;
+    width: 50%;
+    margin: 0% auto;
+    margin-bottom: 32px;
 }
