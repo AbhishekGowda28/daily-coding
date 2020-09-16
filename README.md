@@ -7,6 +7,8 @@ Direct links to github-pages
 
 [Happybirthday](https://abhishekgowda28.github.io/daily-coding/ClubProjects/HappyBirthday/)
 
+[Binary 2 Decimal](https://abhishekgowda28.github.io/dump/ClubProjects/Bin2Dec)
+
 [Timer](https://abhishekgowda28.github.io/daily-coding/ClubProjects/timer/)
 - CSS-Daily
 
