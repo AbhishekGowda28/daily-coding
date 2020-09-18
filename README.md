@@ -9,6 +9,8 @@ Direct links to github-pages
 
 [Binary 2 Decimal](https://abhishekgowda28.github.io/dump/ClubProjects/Bin2Dec)
 
+[CSS Border Radius](https://abhishekgowda28.github.io/dump/ClubProjects/css-border-radius)
+
 [Timer](https://abhishekgowda28.github.io/daily-coding/ClubProjects/timer/)
 - CSS-Daily
 
