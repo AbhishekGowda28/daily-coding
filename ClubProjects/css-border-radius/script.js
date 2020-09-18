@@ -25,4 +25,13 @@ parentContainer.addEventListener("input", (event) => {
 });
 
 
+parentContainer.addEventListener("dragstart", (event) => {
+    console.log("event Details", event);
+    let currentValue = event.target.parentElement.style.left !== "" ? Number((event.target.parentElement.style.left).substring(0, event.target.parentElement.style.left.length - 1)) : 0;
+    console.log("event.target", JSON.stringify(event.x));
+    event.target.parentElement.style.left = `${currentValue + 1}%`;
+});
 
+parentContainer.addEventListener("drop", (dragEndEvent) => {
+    console.log("Drag End", dragEndEvent);
+});
