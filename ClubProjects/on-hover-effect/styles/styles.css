@@ -3,7 +3,7 @@ html {
 }
 
 .asset {
-    background-color: cornflowerblue;
+    background-color: #6495ed;
     margin: 2rem;
     width: 200px;
     height: 245px;
@@ -11,7 +11,7 @@ html {
 }
 
 .asset:hover {
-    box-shadow: darkgray 0px 0px 10px;
+    box-shadow: #6495f9 0px 0px 10px;
     cursor: pointer;
 }
 

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway');
-
 body {
-    background-color: #2ecc71;
+    background-color: #C239B3;
 }
 
 #app {
@@ -13,10 +12,7 @@ body {
     width: 250px;
     height: 250px;
     border: 1px solid;
-    background:
-        linear-gradient(217deg, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0) 70.71%),
-        linear-gradient(127deg, rgba(0, 255, 0, 1), rgba(0, 255, 0, 0) 70.71%),
-        linear-gradient(336deg, rgba(0, 0, 255, 1), rgba(0, 0, 255, 0) 70.71%);
+    background-color: #038387;
 }
 
 #copy {
