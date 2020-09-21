@@ -1,0 +1,30 @@
+html {
+    background-color: #4498b9;
+}
+
+.asset {
+    background-color: cornflowerblue;
+    margin: 2rem;
+    width: 200px;
+    height: 245px;
+    display: inline-block;
+}
+
+.asset:hover {
+    box-shadow: darkgray 0px 0px 10px;
+    cursor: pointer;
+}
+
+.asset img {
+    width: 200px;
+    height: 200px;
+}
+
+.asset span {
+    display: inline-block;
+    background-color: #83dd77;
+    width: 200px;
+    font-size: 2rem;
+    box-sizing: border-box;
+    padding-left: 12%;
+}
