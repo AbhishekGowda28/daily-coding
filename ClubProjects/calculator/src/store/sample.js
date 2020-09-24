@@ -25,12 +25,4 @@ function calculator(state, action) {
     }
 }
 
-let CalculatorStore = createStore(calculator);
-
-CalculatorStore.subscribe(() => {
-    console.log(CalculatorStore.getState());
-});
-
-CalculatorStore.dispatch({type: "add"});
-CalculatorStore.dispatch({type: "div"});
-CalculatorStore.dispatch({type: "rem"});
+export const calculatorStore = createStore(calculator);
