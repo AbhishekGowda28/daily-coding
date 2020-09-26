@@ -6,10 +6,10 @@ import {
   incrementByAmount,
   incrementAsync,
   selectCount,
-} from './counterSlice';
-import styles from './Counter.module.css';
+} from './calculatorSlice';
+import styles from './Calculator.module.css';
 
-export function Counter() {
+export function Calculator() {
   const count = useSelector(selectCount);
   const dispatch = useDispatch();
   const [incrementAmount, setIncrementAmount] = useState('2');
