@@ -16,7 +16,7 @@ export function Calculator() {
 
   return (
     <div>
-      <div className="calculator">
+      {/* <div className="calculator">
         <div className="previous-actions">
           ABCD
         </div>
@@ -60,7 +60,7 @@ export function Calculator() {
         </div>
         <div>
         </div>
-      </div>
+      </div> */}
 
 
 
