@@ -24,10 +24,10 @@
   padding-right: 12px;
   outline: none;
   border: 2px solid transparent;
-  color: rgb(112, 76, 182);
+  color: #704cb6;
   padding-bottom: 4px;
   cursor: pointer;
-  background-color: rgba(112, 76, 182, 0.1);
+  background-color: #704cb61a;
   border-radius: 2px;
   transition: all 0.15s;
 }
@@ -42,11 +42,11 @@
 
 .button:hover,
 .button:focus {
-  border: 2px solid rgba(112, 76, 182, 0.4);
+  border: 2px solid #704cb666;
 }
 
 .button:active {
-  background-color: rgba(112, 76, 182, 0.2);
+  background-color: #704cb633;
 }
 
 .asyncButton {
@@ -57,7 +57,7 @@
 
 .asyncButton:after {
   content: "";
-  background-color: rgba(112, 76, 182, 0.15);
+  background-color: #704cb626;
   display: block;
   position: absolute;
   width: 100%;
@@ -75,7 +75,7 @@
 }
 
 .calculator {
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   height: 100%;
   width: 100%;
 }
