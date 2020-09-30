@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./Calculator.css";
 
 export function Calculator() {
 
@@ -16,52 +17,49 @@ export function Calculator() {
           {result}
         </div>
         <div>
-          <button onClick={(value) => {
+          <button className="button" onClick={(value) => {
             setResult(Number(result + value.currentTarget.innerText));
-          }}>1</button>
-          <button onClick={(value) => {
-            const prev = String(result) + "+";
-            setPreviousState(prev);
-            setResult(0);
-            setOperator("+")
-          }}>+</button>
-          <button onClick={(value) => {
-            const lhs = previousState.split(operator)[0];
-            const rhs = result;
-            const final = (Number(lhs) + Number(rhs));
-            setResult(final);
-            setPreviousState(lhs + "+" + rhs);
-          }}>=</button>
+          }}>7</button>
+          <button className="button" onClick={(value) => {
+            setResult(Number(result + value.currentTarget.innerText));
+          }}>8</button>
+          <button className="button" onClick={(value) => {
+            setResult(Number(result + value.currentTarget.innerText));
+          }}>9</button>
         </div>
         <div>
-          <button onClick={(value) => {
+          <button className="button" onClick={(value) => {
             setResult(Number(result + value.currentTarget.innerText));
-          }}>1</button>
-          <button onClick={(value) => {
-            const prev = String(result) + "+";
-            setPreviousState(prev);
-            setResult(0);
-            setOperator("+")
-          }}>+</button>
-          <button onClick={(value) => {
-            const lhs = previousState.split(operator)[0];
-            const rhs = result;
-            const final = (Number(lhs) + Number(rhs));
-            setResult(final);
-            setPreviousState(lhs + "+" + rhs);
-          }}>=</button>
+          }}>4</button>
+          <button className="button" onClick={(value) => {
+            setResult(Number(result + value.currentTarget.innerText));
+          }}>5</button>
+          <button className="button" onClick={(value) => {
+            setResult(Number(result + value.currentTarget.innerText));
+          }}>6</button>
         </div>
         <div>
-          <button onClick={(value) => {
+          <button className="button" onClick={(value) => {
             setResult(Number(result + value.currentTarget.innerText));
           }}>1</button>
-          <button onClick={(value) => {
+          <button className="button" onClick={(value) => {
+            setResult(Number(result + value.currentTarget.innerText));
+          }}>2</button>
+          <button className="button" onClick={(value) => {
+            setResult(Number(result + value.currentTarget.innerText));
+          }}>3</button>
+        </div>
+        <div>
+          <button  className="button" onClick={(value) => {
+            setResult(Number(result + value.currentTarget.innerText));
+          }}>0</button>
+          <button  className="button" onClick={(value) => {
             const prev = String(result) + "+";
             setPreviousState(prev);
             setResult(0);
             setOperator("+")
           }}>+</button>
-          <button onClick={(value) => {
+          <button className="button" onClick={(value) => {
             const lhs = previousState.split(operator)[0];
             const rhs = result;
             const final = (Number(lhs) + Number(rhs));
@@ -69,6 +67,10 @@ export function Calculator() {
             setPreviousState(lhs + "+" + rhs);
           }}>=</button>
         </div>
+        <button className="button" onClick={(value) => {
+            setResult(0);
+            setPreviousState("");
+          }}>C</button>
       </div>
     </div>
   );
