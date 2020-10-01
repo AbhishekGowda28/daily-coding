@@ -8,69 +8,39 @@ export function Calculator() {
   const [operator, setOperator] = useState("");
 
   return (
-    <div>
-      <div className="calculator">
-        <div className="previous-state">
-          {previousState}
+    <div className="calculator">
+      <div className="calculation">2 X 10 X 5 + 700</div>
+      <div className="result">1.700</div>
+      <div className="controls">
+        <div className="row-1">
+          <div>C</div>
+          <div>+/-</div>
+          <div>%</div>
+          <div>&#247;</div>
         </div>
-        <div className="result">
-          {result}
+        <div className="row-2">
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>&times;</div>
         </div>
-        <div>
-          <button className="button" onClick={(value) => {
-            setResult(Number(result + value.currentTarget.innerText));
-          }}>7</button>
-          <button className="button" onClick={(value) => {
-            setResult(Number(result + value.currentTarget.innerText));
-          }}>8</button>
-          <button className="button" onClick={(value) => {
-            setResult(Number(result + value.currentTarget.innerText));
-          }}>9</button>
+        <div className="row-3">
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>-</div>
         </div>
-        <div>
-          <button className="button" onClick={(value) => {
-            setResult(Number(result + value.currentTarget.innerText));
-          }}>4</button>
-          <button className="button" onClick={(value) => {
-            setResult(Number(result + value.currentTarget.innerText));
-          }}>5</button>
-          <button className="button" onClick={(value) => {
-            setResult(Number(result + value.currentTarget.innerText));
-          }}>6</button>
+        <div className="row-4">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>+</div>
         </div>
-        <div>
-          <button className="button" onClick={(value) => {
-            setResult(Number(result + value.currentTarget.innerText));
-          }}>1</button>
-          <button className="button" onClick={(value) => {
-            setResult(Number(result + value.currentTarget.innerText));
-          }}>2</button>
-          <button className="button" onClick={(value) => {
-            setResult(Number(result + value.currentTarget.innerText));
-          }}>3</button>
+        <div className="row-4">
+          <div className="span-2-column">0</div>
+          <div>,</div>
+          <div className="equals">=</div>
         </div>
-        <div>
-          <button  className="button" onClick={(value) => {
-            setResult(Number(result + value.currentTarget.innerText));
-          }}>0</button>
-          <button  className="button" onClick={(value) => {
-            const prev = String(result) + "+";
-            setPreviousState(prev);
-            setResult(0);
-            setOperator("+")
-          }}>+</button>
-          <button className="button" onClick={(value) => {
-            const lhs = previousState.split(operator)[0];
-            const rhs = result;
-            const final = (Number(lhs) + Number(rhs));
-            setResult(final);
-            setPreviousState(lhs + "+" + rhs);
-          }}>=</button>
-        </div>
-        <button className="button" onClick={(value) => {
-            setResult(0);
-            setPreviousState("");
-          }}>C</button>
       </div>
     </div>
   );

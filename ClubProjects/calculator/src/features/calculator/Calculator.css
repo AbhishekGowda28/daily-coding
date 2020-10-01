@@ -89,3 +89,12 @@
     height: 3rem;
     color: #704cb6;
 }
+
+.row-1>div {
+    width: 10px;
+    background-color: #f0f;
+    padding: 20px;
+    border-radius: 58px;
+    height: 10px;
+    margin: 10px;
+}
