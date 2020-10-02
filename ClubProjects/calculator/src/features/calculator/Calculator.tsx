@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import "./Calculator.css";
-
+import "./calculator.css"
 export function Calculator() {
 
   const [previousState, setPreviousState] = useState("");
@@ -9,37 +8,37 @@ export function Calculator() {
 
   return (
     <div className="calculator">
-      <div className="calculation">2 X 10 X 5 + 700</div>
-      <div className="result">1.700</div>
+      <div className="calculation">{previousState}</div>
+      <div className="result">{result}</div>
       <div className="controls">
-        <div className="row-1">
-          <div>C</div>
-          <div>+/-</div>
-          <div>%</div>
-          <div>&#247;</div>
+        <div className="row">
+          <div className="control">C</div>
+          <div className="control">+/-</div>
+          <div className="control">%</div>
+          <div className="control">&divide;</div>
         </div>
-        <div className="row-2">
-          <div>7</div>
-          <div>8</div>
-          <div>9</div>
-          <div>&times;</div>
+        <div className="row">
+          <div className="control">7</div>
+          <div className="control">8</div>
+          <div className="control">9</div>
+          <div className="control">&times;</div>
         </div>
-        <div className="row-3">
-          <div>4</div>
-          <div>5</div>
-          <div>6</div>
-          <div>-</div>
+        <div className="row">
+          <div className="control">4</div>
+          <div className="control">5</div>
+          <div className="control">6</div>
+          <div className="control">&minus;</div>
         </div>
-        <div className="row-4">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>+</div>
+        <div className="row">
+          <div className="control">1</div>
+          <div className="control">2</div>
+          <div className="control">3</div>
+          <div className="control">+</div>
         </div>
-        <div className="row-4">
-          <div className="span-2-column">0</div>
-          <div>,</div>
-          <div className="equals">=</div>
+        <div className="row">
+          <div className="control zero">0</div>
+          <div className="control">.</div>
+          <div className="control equals">=</div>
         </div>
       </div>
     </div>
