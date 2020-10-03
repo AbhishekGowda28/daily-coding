@@ -12,7 +12,11 @@ export function Calculator() {
       <div className="result">{result}</div>
       <div className="controls">
         <div className="row">
-          <div className="control">C</div>
+          <div className="control" onClick={() => {
+              setPreviousState("");
+              setResult(0);
+              setOperator("");
+            }}>C</div>
           <div className="control">+/-</div>
           <div className="control">%</div>
           <div className="control">&divide;</div>
