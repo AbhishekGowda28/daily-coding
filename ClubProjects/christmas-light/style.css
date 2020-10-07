@@ -7,31 +7,60 @@
 }
 
 .light-1 {
+    background-color: #ca4646;
+}
+
+.lite-1 {
+    background-blend-mode: darken;
     background-color: #ff0000;
 }
 
 .light-2 {
+    background-color: #c0c043;
+}
+
+.lite-2 {
     background-color: #ffff00;
 }
 
 .light-3 {
+    background-color: #c89639;
+}
+
+.lite-3 {
     background-color: #ffa500;
 }
 
 .light-4 {
+    background-color: #4cce4c;
+}
+
+.lite-4 {
     background-color: #008000;
 }
 
 .light-5 {
+    background-color: #5555d9;
+}
+
+.lite-5 {
     background-color: #0000ff;
 }
 
 .light-6 {
+    background-color: #a256d9;
+}
+
+.lite-6 {
     background-color: #4b0082;
 }
 
 .light-7 {
     background-color: #ee82ee;
+}
+
+.lite-7 {
+    background-color: #b3b;
 }
 
 button {
@@ -46,6 +75,6 @@ button {
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background: #95dd28;
 }
