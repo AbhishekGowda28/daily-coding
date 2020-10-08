@@ -1,6 +1,6 @@
 .blub {
-    width: 5rem;
-    height: 5rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
     border-color: transparent;
     display: inline-block;
@@ -32,11 +32,11 @@
 }
 
 .light-4 {
-    background-color: #4cce4c;
+    background-color: #008000;
 }
 
 .lite-4 {
-    background-color: #008000;
+    background-color: #4cce4c;
 }
 
 .light-5 {
@@ -44,7 +44,7 @@
 }
 
 .lite-5 {
-    background-color: #0000ff;
+    background-color: #00a2ff;
 }
 
 .light-6 {
