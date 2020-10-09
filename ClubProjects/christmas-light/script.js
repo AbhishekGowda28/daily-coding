@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-    let count = 0;
+    let count = 0,
+        speed = 0;
     const bulbs = document.getElementsByClassName("blub");
     const playButton = document.querySelector(".controller button");
+    const slider = document.getElementById("slider");
     playButton.addEventListener("click", (event) => {
         const text = event.currentTarget.value;
         if (text === "Start") {
@@ -19,6 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    slider.addEventListener("change", (event) => {
+        const sliderValue = event.currentTarget.value;
+        speed = 1 * Number(sliderValue);
+        clearInterval(timer);
+        startBlub();
+    });
+
     function start() {
         for (let bulbCount = 0; bulbCount < bulbs.length; bulbCount++) {
             let bulb = bulbs[bulbCount];
@@ -33,7 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let timer;
 
     function startBlub() {
-        timer = setInterval(start, 500);
+        console.log(speed);
+        timer = setInterval(start, 100 + speed);
     }
 
 });
