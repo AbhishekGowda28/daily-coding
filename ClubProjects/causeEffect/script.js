@@ -13,8 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
     function displayUserList(userDetails) {
         const user = document.createElement("ul");
         user.innerText = userDetails.first_name;
+        user.className = "user";
         userListContainer.appendChild(user);
         user.addEventListener("click", (event) => {
+            const other = document.getElementsByClassName("active")[0];
+            if (other !== undefined) {
+                other.className = "user";
+            }
+            event.currentTarget.className += " active"
             event.stopPropagation();
             let leftPane = document.getElementById("left-pane");
             leftPane.innerHTML = "";
