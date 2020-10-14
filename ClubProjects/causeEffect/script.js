@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const usersUrl = "https://my-json-server.typicode.com/abhishekgowda28/sampledata/users";
+    const usersUrl = "https://randomuser.me/api/?results=10";
 
     const userListContainer = document.getElementById("users-list");
 
@@ -11,8 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function displayUserList(userDetails) {
+
         const user = document.createElement("ul");
-        user.innerText = userDetails.first_name;
+        user.innerText = userDetails.name.first;
         user.className = "user";
         userListContainer.appendChild(user);
         user.addEventListener("click", (event) => {
@@ -25,14 +26,14 @@ document.addEventListener("DOMContentLoaded", () => {
             let leftPane = document.getElementById("left-pane");
             leftPane.innerHTML = "";
             const userDetailsPane = document.createElement("div");
-            userDetailsPane.innerHTML = `<div><span>ID</span>${userDetails.id}</div><div><span> Name </span>${userDetails.first_name} ${userDetails.last_name}</div>`;
+            userDetailsPane.innerHTML = `<div><span> Name </span>${userDetails.name.first} ${userDetails.name.last}</div>`;
             leftPane.appendChild(userDetailsPane);
         });
     }
 
     function updateUserList() {
         getUsersList().then((users) => {
-            users.forEach((userDetails) => {
+            users.results.forEach((userDetails) => {
                 displayUserList(userDetails);
             });
         });;
