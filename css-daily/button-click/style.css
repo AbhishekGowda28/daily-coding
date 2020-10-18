@@ -1,0 +1,22 @@
+button {
+    background-color: #00c1f1;
+    border: none;
+    width: 10rem;
+    border-radius: 0.2em;
+    height: 2rem;
+}
+
+button:hover {
+    background-color: #12bae4;
+    animation-name: buttonHover;
+    animation-duration: 40s;
+}
+
+@keyframes buttonHover {
+    from {
+        background-color: green;
+    }
+    to {
+        background-color: #1797b8;
+    }
+}
