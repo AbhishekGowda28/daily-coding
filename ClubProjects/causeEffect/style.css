@@ -1,17 +1,13 @@
-#app {
+#app > div {
+    float: left;
     width: 50%;
 }
-
 #users-list {
-    float: left;
-    width: 65%;
     font-size: 3rem;
-
 }
 
 ul {
     background: cornflowerblue;
-    height: 3rem;
     text-align: center;
     font-size: 2rem;
 }
@@ -29,4 +25,8 @@ ul:hover {
         width: 50%;
         margin: auto;
     }
+}
+
+#left-pane{
+    margin-left: 5px;
 }
