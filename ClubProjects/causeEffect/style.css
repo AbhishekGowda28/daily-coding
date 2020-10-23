@@ -16,10 +16,6 @@ ul:hover {
     cursor: pointer;
 }
 
-/* .active {
-    border-left: 16px red solid;
-} */
-
 @media only screen and (max-width: 400px) {
     #users-list {
         width: 50%;
