@@ -1,14 +1,15 @@
-#app > div {
+#app>div {
     float: left;
     width: 50%;
 }
+
 #users-list {
     font-size: 3rem;
 }
 
 ul {
-    background: cornflowerblue;
-    text-align: center;
+    /* background: cornflowerblue; */
+    /* text-align: center; */
     font-size: 2rem;
 }
 
@@ -23,6 +24,11 @@ ul:hover {
     }
 }
 
-#left-pane{
-    margin-left: 5px;
+img {
+    margin-left: 35%;
+    display: block;
+}
+
+span.userName {
+    font-size: 5rem;
 }
