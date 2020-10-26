@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var leftPane = document.getElementById("left-pane");
       leftPane.innerHTML = "";
       var userDetailsPane = document.createElement("div");
-      userDetailsPane.innerHTML = "<div><img src=\"".concat(userDetails.picture.large, "\" alt=\"").concat(userDetails.name.first, " ").concat(userDetails.name.last, "\"/><span class=\"userName\">").concat(userDetails.name.first, " ").concat(userDetails.name.last, "</span></div>");
+      userDetailsPane.innerHTML = "<div><img src=\"".concat(userDetails.picture.large, "\" alt=\"").concat(userDetails.name.first, " ").concat(userDetails.name.last, "\"/><span class=\"userName\">").concat(userDetails.name.first, " ").concat(userDetails.name.last, "</span></div><div>\n            #").concat(userDetails.location.street.number, " ").concat(userDetails.location.street.name, ",\n            ").concat(userDetails.location.city, ", ").concat(userDetails.location.state, ", ").concat(userDetails.location.country, "\n            </div>\n            <div>\n            <span>Telephone : ").concat(userDetails.phone, "</span><br/>\n            <span>Cell: ").concat(userDetails.cell, "</span>\n            </div>\n            <div> ").concat(userDetails.dob.date, "</div>\n            ");
       leftPane.appendChild(userDetailsPane);
     });
   }

@@ -26,7 +26,16 @@ document.addEventListener("DOMContentLoaded", () => {
             let leftPane = document.getElementById("left-pane");
             leftPane.innerHTML = "";
             const userDetailsPane = document.createElement("div");
-            userDetailsPane.innerHTML = `<div><img src="${userDetails.picture.large}" alt="${userDetails.name.first} ${userDetails.name.last}"/><span class="userName">${userDetails.name.first} ${userDetails.name.last}</span></div>`;
+            userDetailsPane.innerHTML = `<div><img src="${userDetails.picture.large}" alt="${userDetails.name.first} ${userDetails.name.last}"/><span class="userName">${userDetails.name.first} ${userDetails.name.last}</span></div><div>
+            #${userDetails.location.street.number} ${userDetails.location.street.name},
+            ${userDetails.location.city}, ${userDetails.location.state}, ${userDetails.location.country}
+            </div>
+            <div>
+            <span>Telephone : ${userDetails.phone}</span><br/>
+            <span>Cell: ${userDetails.cell}</span>
+            </div>
+            <div> ${userDetails.dob.date}</div>
+            `;
             leftPane.appendChild(userDetailsPane);
         });
     }
