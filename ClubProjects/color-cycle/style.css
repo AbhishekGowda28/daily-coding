@@ -1,0 +1,19 @@
+body {
+    background-color: aliceblue;
+    animation-name: colorChange;
+    animation-duration: 2s;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: aliceblue;
+    }
+
+    50% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
