@@ -1,5 +1,4 @@
 body {
-    background-color: aliceblue;
     animation-name: colorChange;
     animation-duration: 2s;
 }
@@ -8,11 +7,15 @@ body {
     0% {
         background-color: aliceblue;
     }
-
+    25% {
+        background-color: blue;
+    }
     50% {
         background-color: green;
     }
-
+    75% {
+        background-color: yellow;
+    }
     100% {
         background-color: red;
     }
