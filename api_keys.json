@@ -1,1 +1,7 @@
-{google_api_key=AIzaSyDngyeW1WpI_CwiguOtoSRq5r7CdBISGDU}
+{
+  "google_api_key":"AIzaSyDngyeW1WpI_CwiguOtoSRq5r7CdBISGDU",
+  "oauth":{
+    "clientID":"550963546957-rhos917qpok76esjf20qn9d05gbj86gu.apps.googleusercontent.com",
+    "clientSecret": "cH07xf0lUdd8_7j3bP_nk8M8"
+  }
+}
