@@ -1,6 +1,15 @@
 # VS Code setup
 
+**Table Of Content**
 
+- [VS Code Settings](#Settings)
+- [VS Code Extensions](#Extensions)
+- [VS Code Snippet](#Snipptes)
+
+---
+## Settings
+
+```JSONC
     "editor.minimap.enabled": false,
     "workbench.activityBar.visible": false,
     "workbench.statusBar.visible": false,
@@ -27,23 +36,22 @@
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     }
+```
+
+## Extensions
+
+- [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+- [deno](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno)
+
+- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
+- [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
 
 
-**Extensions**
+## Snipptes
 
-[Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-
-[deno](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno)
-
-[Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-
-[Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
-
-
-**Snipptes**
-
-[Javascript]
-
+```JSON
     "log": {
         "prefix": "wcl",
         "body": "window.console.log({$1});",
@@ -59,3 +67,4 @@
         "description": "State",
         "body": "const [${1:stateName}, set${1:stateName}] = useState(${2:type});$3"
     }
+```
