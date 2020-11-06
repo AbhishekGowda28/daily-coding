@@ -15,7 +15,7 @@ function JSON2CSV(json) {
 }
 
 const SAMPLE_JSON = {
-    a: 1,
+    firstProperty: 1,
     name: "ABCD",
     age: "123",
     string: ["a", "w"],
