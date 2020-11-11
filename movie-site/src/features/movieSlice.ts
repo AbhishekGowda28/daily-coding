@@ -1,17 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 type InitalState = {
-    movieList: any[];
+    movieList: number;
 };
 
 export const movieSlice = createSlice({
     name: "movie",
     initialState: {
-        movieList: [],
+        movieList: 0,
     },
     reducers: {
         getMovieList: (state: InitalState) => {
-            state.movieList.push();
+            state.movieList += 1;
         }
     }
 });
