@@ -1,44 +1,42 @@
 import { createSlice } from "@reduxjs/toolkit";
-
+import store from "../app/store";
+type genreType = {
+    id: number;
+    name: string;
+};
 type InitalState = {
     movieList: number;
-    genre: any;
+    genres: genreType[];
 };
 
 export const movieSlice = createSlice({
     name: "movie",
     initialState: {
         movieList: 0,
-        genre: {}
-    },
+        genres: []
+    } as InitalState,
     reducers: {
-        getMovieList: (state: InitalState) => {
-            let response = {};
-            fetchGenre().then(genre => {
-                response = genre;
-                state.genre = { a: response };
-            });
-            Object.assign(state.genre, { a: "there was no updation" });
+        updateGenerList: (state, action) => {
+            Object.assign(state.genres, action.payload.genres);
         }
-    }
+    },
 });
 
-export const { getMovieList } = movieSlice.actions;
+export const { updateGenerList } = movieSlice.actions;
 
 export default movieSlice.reducer;
-async function fetchGenre() {
+export async function fetchGenre() {
     const URL = "https://api.themoviedb.org/3/genre/tv/list?api_key=95bb88008f8df4bbc4f8a9220fc14508&language=en-US";
-    // let finalResult = {};
-    let finalResult = await fetch(URL).then(response => {
+    fetch(URL).then(response => {
         console.log(`${new Date()} -> {response ${response}}`);
         return response.json();
-    }).then(result => {
+    }).then((result: genreType) => {
         console.log(`${new Date()} -> {Result -> ${JSON.stringify(result)}}`);
+        store.dispatch(updateGenerList(result));
         return result;
     }).catch(error => {
         console.trace(error);
         console.log(`${new Date()} -> {Error fetching Data}, ${error}`);
     });
-    return finalResult
 }
 
