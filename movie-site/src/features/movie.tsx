@@ -9,7 +9,7 @@ export const Movie = () => {
     return (
         <div>
             <div onClick={dispatching}>Moives</div>
-            <div>{JSON.stringify(movieState)}</div>
+            <div>{JSON.stringify(movieState.genre)}</div>
         </div>
     );
 }
