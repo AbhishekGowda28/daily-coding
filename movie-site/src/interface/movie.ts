@@ -3,7 +3,7 @@ export type genreType = {
     name: string;
 };
 
-type DiscoverResult = {
+type MovieResult = {
     poster_path: string | null;
     adult: boolean;
     overview: string;
@@ -19,10 +19,25 @@ type DiscoverResult = {
     video: boolean;
     vote_average: number;
 };
+type TVResult = {
+    poster_path: string | null;
+    popularity: number;
+    id: number;
+    backdrop_path: string | null;
+    vote_average: number;
+    overview: string;
+    first_air_date: string;
+    origin_country: string[];
+    genre_ids: number[];
+    original_language: string;
+    vote_count: number;
+    original_name: string;
+    name: string;
+};
 
 export type DiscoverType = {
     page: number;
-    results: DiscoverResult[];
+    results: MovieResult[] | TVResult[];
     total_results: number;
     total_pages: number;
 };

@@ -6,28 +6,36 @@ import { getGenreList } from "../service/genre";
 
 type Genre = {
     movies: genreType[],
-    tv: genreType[]
+    tv: genreType[],
 };
 
 type InitalState = {
     movieList: number;
     genres: Genre;
+    configuration: {
+        change_keys: string[],
+        images: any;
+    };
 };
 
 export const movieSlice = createSlice({
     name: "movie",
     initialState: {
         movieList: 0,
-        genres: { movies: [], tv: [] }
+        genres: { movies: [], tv: [] },
+        configuration: { change_keys: [], images: {} }
     } as InitalState,
     reducers: {
         updateGenerList: (state, action) => {
             Object.assign(state.genres, action.payload);
         },
+        updateConfiguration: (state, action) => {
+            Object.assign(state.configuration, action.payload);
+        }
     },
 });
 
-export const { updateGenerList } = movieSlice.actions;
+export const { updateGenerList, updateConfiguration } = movieSlice.actions;
 
 export default movieSlice.reducer;
 

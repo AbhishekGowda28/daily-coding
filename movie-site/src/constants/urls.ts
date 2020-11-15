@@ -8,8 +8,11 @@ const MovieDBURL = {
         movie: `${BaseURL}/genre/movie/list?api_key=${APIKEY}&language=en-US`
     },
     discover: {
-        tv: `${BaseURL}//discover/tv?api_key=${APIKEY}&language=en-US`,
-        movie: `${BaseURL}//discover/movie?api_key=${APIKEY}&language=en-US`
+        tv: `${BaseURL}/discover/tv?api_key=${APIKEY}&language=en-US`,
+        movie: `${BaseURL}/discover/movie?api_key=${APIKEY}&language=en-US`
+    },
+    configuration:{
+        api: `${BaseURL}/configuration?api_key=${APIKEY}&language=en-US`
     },
 };
 
