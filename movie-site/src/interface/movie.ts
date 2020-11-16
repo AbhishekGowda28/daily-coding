@@ -3,7 +3,7 @@ export type genreType = {
     name: string;
 };
 
-type MovieResult = {
+export type MovieResult = {
     poster_path: string | null;
     adult: boolean;
     overview: string;
@@ -19,7 +19,7 @@ type MovieResult = {
     video: boolean;
     vote_average: number;
 };
-type TVResult = {
+export type TVResult = {
     poster_path: string | null;
     popularity: number;
     id: number;
