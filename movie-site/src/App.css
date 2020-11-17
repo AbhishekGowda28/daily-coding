@@ -51,3 +51,8 @@
   background-color: green;
   font-size: 2rem;
 }
+
+.try-me{
+  display: flex;
+  flex-direction: row;
+}
