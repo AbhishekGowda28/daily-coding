@@ -4,7 +4,7 @@ import { LastestMovie } from './components/LastestMovie';
 import { LatestTVShows } from './components/LatestTVShows';
 import { Switch } from './components/Switch';
 import { apiConfiguration } from './service/configuration';
-// import { Movie } from './components/Movie';
+import { Movie } from './components/Genre';
 
 function App() {
   const [loadMovies, setLoadMovies] = React.useState(false);
