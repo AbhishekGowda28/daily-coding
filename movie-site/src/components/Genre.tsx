@@ -1,7 +1,7 @@
 import React from "react";
 import store from "../app/store";
 import { MovieDBURL } from "../constants/urls";
-import { fetchGenre } from "../features/movieSlice";
+import { fetchGenre } from "../features/genreSlice";
 import { apiConfiguration } from "../service/configuration";
 import { getLatest } from "../service/discover";
 
