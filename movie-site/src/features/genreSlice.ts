@@ -18,7 +18,7 @@ type InitalState = {
     };
 };
 
-export const movieSlice = createSlice({
+export const genreSlice = createSlice({
     name: "movie",
     initialState: {
         movieList: 0,
@@ -35,9 +35,9 @@ export const movieSlice = createSlice({
     },
 });
 
-export const { updateGenerList, updateConfiguration } = movieSlice.actions;
+export const { updateGenerList, updateConfiguration } = genreSlice.actions;
 
-export default movieSlice.reducer;
+export default genreSlice.reducer;
 
 export async function fetchGenre() {
     let genreList: Genre = { tv: [], movies: [] };
