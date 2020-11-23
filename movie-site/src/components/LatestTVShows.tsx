@@ -4,14 +4,13 @@ import { MovieDBURL } from "../constants/urls";
 import { updateTVList } from "../features/discoverSlice";
 import { TVResult } from "../interface/movie";
 import { getLatest } from "../service/discover";
-
 interface LatestTVShowsProps {
 
 }
 
 const LatestTVShows = (props: LatestTVShowsProps) => {
     const [showList, setShowList] = React.useState(store.getState().discover.tvShows);
-    const [images, setImages] = React.useState(store.getState().movie.configuration.images);
+    const [images, setImages] = React.useState(store.getState().genre.configuration.images);
     const [pageNumber, setPageNumber] = React.useState(1);
     React.useEffect(() => {
         getLatest({ url: MovieDBURL.discover.tv, pageNumber: pageNumber }).then(result => {
@@ -20,7 +19,7 @@ const LatestTVShows = (props: LatestTVShowsProps) => {
     }, [pageNumber]);
     store.subscribe(() => {
         setShowList(store.getState().discover.tvShows);
-        setImages(store.getState().movie.configuration.images);
+        setImages(store.getState().genre.configuration.images);
     });
     const getVoteRating = (vote: number) => {
         vote = Math.round(vote / 2);
@@ -58,4 +57,3 @@ const LatestTVShows = (props: LatestTVShowsProps) => {
 }
 
 export { LatestTVShows };
-

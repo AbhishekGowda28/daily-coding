@@ -1,6 +1,6 @@
 import store from "../app/store";
 import { MovieDBURL } from "../constants/urls";
-import { updateConfiguration } from "../features/movieSlice";
+import { updateConfiguration } from "../features/genreSlice";
 import { get } from "./agent";
 
 export async function apiConfiguration() {

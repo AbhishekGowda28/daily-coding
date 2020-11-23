@@ -6,7 +6,7 @@ import { apiConfiguration } from "../service/configuration";
 import { getLatest } from "../service/discover";
 
 export const Movie = () => {
-    const [movieState, updateMovieState] = React.useState(store.getState().movie.genres);
+    const [movieState, updateMovieState] = React.useState(store.getState().genre.genres);
     React.useEffect(() => {
         apiConfiguration();
         fetchGenre();
@@ -14,7 +14,7 @@ export const Movie = () => {
         getLatest({ url: MovieDBURL.discover.tv });
     }, []);
 
-    store.subscribe(() => { updateMovieState(store.getState().movie.genres); });
+    store.subscribe(() => { updateMovieState(store.getState().genre.genres); });
     return (
         <div style={{ display: "flex" }}>
             <div>

@@ -4,14 +4,13 @@ import { MovieDBURL } from "../constants/urls";
 import { updateMovieList } from "../features/discoverSlice";
 import { MovieResult } from "../interface/movie";
 import { getLatest } from "../service/discover";
-
 interface LatestMovieProps {
 
 };
 
 const LastestMovie = (props: LatestMovieProps) => {
     const [movieList, setMovieList] = React.useState(store.getState().discover.movies);
-    const [images, setImages] = React.useState(store.getState().movie.configuration.images);
+    const [images, setImages] = React.useState(store.getState().genre.configuration.images);
     const [pageNumber, setPageNumber] = React.useState(1);
     React.useEffect(() => {
         getLatest({ url: MovieDBURL.discover.movie, pageNumber: pageNumber }).then(result => {
@@ -21,7 +20,7 @@ const LastestMovie = (props: LatestMovieProps) => {
     }, [pageNumber]);
     store.subscribe(() => {
         setMovieList(store.getState().discover.movies);
-        setImages(store.getState().movie.configuration.images);
+        setImages(store.getState().genre.configuration.images);
     });
     const getVoteRating = (vote: number) => {
         vote = Math.round(vote / 2);
@@ -59,4 +58,3 @@ const LastestMovie = (props: LatestMovieProps) => {
 };
 
 export { LastestMovie };
-
