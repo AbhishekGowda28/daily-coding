@@ -1,8 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
-import store from "../app/store";
 import { MovieDBURL } from "../constants/urls";
+import { ApiConfiguration } from "../interface/configuration";
 import { genreType } from "../interface/movie";
 import { getGenreList } from "../service/genre";
+import store from "../store";
 
 type Genre = {
     movies: genreType[],
@@ -10,20 +11,26 @@ type Genre = {
 };
 
 type InitalState = {
-    movieList: number;
     genres: Genre;
-    configuration: {
-        change_keys: string[],
-        images: any;
-    };
+    configuration: ApiConfiguration;
 };
 
 export const genreSlice = createSlice({
     name: "movie",
     initialState: {
-        movieList: 0,
         genres: { movies: [], tv: [] },
-        configuration: { change_keys: [], images: {} }
+        configuration: {
+            change_keys: [],
+            images: {
+                backdrop_sizes: [],
+                base_url: "",
+                logo_sizes: [],
+                poster_sizes: [],
+                profile_sizes: [],
+                secure_base_url: "",
+                still_sizes: []
+            }
+        }
     } as InitalState,
     reducers: {
         updateGenerList: (state, action) => {

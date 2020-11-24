@@ -1,5 +1,5 @@
 import React from "react";
-import store from "../app/store";
+import store from "../store";
 import { MovieDBURL } from "../constants/urls";
 import { updateTVList } from "../features/discoverSlice";
 import { TVResult } from "../interface/movie";

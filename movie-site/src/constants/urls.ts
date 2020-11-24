@@ -17,4 +17,3 @@ const MovieDBURL = {
 };
 
 export { MovieDBURL };
-
