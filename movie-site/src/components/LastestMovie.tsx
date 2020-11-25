@@ -46,7 +46,7 @@ const LastestMovie = (props: LatestMovieProps) => {
                 return (
                     <div key={movie.id} className="latest-movie">
                         <div className="title">{movie.title} - {getVoteRating(movie.vote_average)}</div>
-                        <div className="try-me">
+                        <div className="description">
                             <img src={imgSrc} alt={movie.title} width="120" height="180" />
                             {movie.overview}
                         </div>

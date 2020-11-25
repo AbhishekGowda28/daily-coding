@@ -45,7 +45,7 @@ const LatestTVShows = (props: LatestTVShowsProps) => {
                 return (
                     <div key={show.id} className="latest-movie">
                         <div className="title">{show.name} - {getVoteRating(show.vote_average)}</div>
-                        <div className="try-me">
+                        <div className="description">
                             <img src={imgSrc} alt={show.original_name} width="120" height="180" />
                             {show.overview}
                         </div>
