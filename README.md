@@ -3,25 +3,27 @@
 
 Direct links to github-pages
 
-[Wireframe](https://abhishekgowda28.github.io/daily-coding/youtube-tutorials/Pontus/wireframe-renderer/)
+[Wireframe](https://abhishekgowda28.github.io/dump/youtube-tutorials/Pontus/wireframe-renderer/)
 
-[Happybirthday](https://abhishekgowda28.github.io/daily-coding/ClubProjects/HappyBirthday/)
+[Happybirthday](https://abhishekgowda28.github.io/dump/ClubProjects/HappyBirthday/)
 
 [Binary 2 Decimal](https://abhishekgowda28.github.io/dump/ClubProjects/Bin2Dec)
 
 [CSS Border Radius](https://abhishekgowda28.github.io/dump/ClubProjects/css-border-radius)
 
-[Timer](https://abhishekgowda28.github.io/daily-coding/ClubProjects/timer/)
+[Timer](https://abhishekgowda28.github.io/dump/ClubProjects/timer/)
 - CSS-Daily
 
-  - [feb62019](https://abhishekgowda28.github.io/daily-coding/css-daily/feb62019/)
+  - [feb62019](https://abhishekgowda28.github.io/dump/css-daily/feb62019/)
 
-  - [feb92019](https://abhishekgowda28.github.io/daily-coding/css-daily/feb92019/)
+  - [feb92019](https://abhishekgowda28.github.io/dump/css-daily/feb92019/)
 
-  - [Color-Theme](https://abhishekgowda28.github.io/daily-coding/css-daily/color-theme/)
+  - [Color-Theme](https://abhishekgowda28.github.io/dump/css-daily/color-theme/)
 
-  - [Movements](https://abhishekgowda28.github.io/daily-coding/css-daily/movements/)
+  - [Movements](https://abhishekgowda28.github.io/dump/css-daily/movements/)
+  
+  - [Gears](https://abhishekgowda28.github.io/dump/css-daily/gears/)
 
-[MovingBlock](https://abhishekgowda28.github.io/daily-coding/MovingBlock/)
+[MovingBlock](https://abhishekgowda28.github.io/dump/MovingBlock/)
 
-[google-search](https://abhishekgowda28.github.io/daily-coding/TheOdenProject/google-search/)
+[google-search](https://abhishekgowda28.github.io/dump/TheOdenProject/google-search/)
