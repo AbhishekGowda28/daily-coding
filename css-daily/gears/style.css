@@ -1,0 +1,280 @@
+body {
+    background: #000000;
+}
+
+.box-canvas {
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 8%;
+    width: 50rem;
+    height: 50rem;
+}
+
+.cog-one {
+    --cog-color: #c04c4c;
+    --cog-accent-color: #A5A2A2;
+    --cog-inner-size: 30px;
+    --cog-outer-size: 50px;
+
+    --start-rotation: 360deg;
+    --end-rotation: 0deg;
+}
+
+.cog-two {
+    --cog-color: #A16036;
+    --cog-accent-color: #BC7F60;
+    --cog-inner-size: 15px;
+    --cog-outer-size: 40px;
+
+    --start-rotation: 16deg;
+    --end-rotation: 376deg;
+
+    left: 120px;
+    top: 110px;
+
+    transform: rotate(var(--start-rotation));
+}
+
+.cog-three {
+    --cog-color: #F1B72E;
+    --cog-accent-color: #FFD100;
+    --cog-inner-size: 20px;
+    --cog-outer-size: 50px;
+
+    --start-rotation: 300deg;
+    --end-rotation: -60deg;
+
+    left: 33px;
+    top: 210px;
+
+    transform: rotate(var(--start-rotation));
+
+}
+
+.cog {
+    position: absolute;
+    width: var(--cog-inner-size);
+    height: var(--cog-inner-size);
+    background: transparent;
+    border-radius: 50%;
+    border: var(--cog-outer-size) solid var(--cog-color);
+
+    animation: 5s cogRotate infinite linear;
+}
+
+@keyframes cogRotate {
+    0% {
+        transform: rotate(var(--start-rotation));
+    }
+
+    100% {
+        transform: rotate(var(--end-rotation))
+    }
+}
+
+/* Inner circle accent */
+.cog::before {
+    content: '';
+    position: absolute;
+    width: calc(var(--cog-inner-size) + 10px);
+    height: calc(var(--cog-inner-size) + 10px);
+    border: 3px solid var(--cog-accent-color);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Outer circle accent */
+.cog::after {
+    content: '';
+    position: absolute;
+    width: calc(var(--cog-inner-size) + var(--cog-outer-size) * 2 - 20px);
+    height: calc(var(--cog-inner-size) + var(--cog-outer-size) * 2 - 20px);
+    border: 3px solid var(--cog-accent-color);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.teeth.vertical {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Top and bottom teeth */
+.cog-one .teeth.vertical {
+    background: linear-gradient(to bottom,
+            var(--cog-color),
+            var(--cog-color) 30px,
+            transparent 30px,
+            transparent 120px,
+            var(--cog-color) 120px,
+            var(--cog-color));
+    height: 170px;
+    width: 25px;
+    top: -70px;
+}
+
+.cog-two .teeth.vertical {
+    width: 15px;
+    height: 125px;
+    top: -55px;
+
+    background: linear-gradient(to bottom,
+            var(--cog-color),
+            var(--cog-color) 30px,
+            transparent 30px,
+            transparent 80px,
+            var(--cog-color) 80px,
+            var(--cog-color));
+
+}
+
+.cog-three .teeth.vertical {
+    background: linear-gradient(to bottom,
+            var(--cog-color),
+            var(--cog-color) 30px,
+            transparent 30px,
+            transparent 120px,
+            var(--cog-color) 120px,
+            var(--cog-color));
+    height: 160px;
+    width: 25px;
+    top: -70px;
+}
+
+.teeth.vertical::after {
+    content: '';
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+/* Top right and bottom left teeth */
+.cog-one .teeth.vertical::after {
+    background: linear-gradient(to bottom,
+            var(--cog-color),
+            var(--cog-color) 30px,
+            transparent 30px,
+            transparent 120px,
+            var(--cog-color) 120px,
+            var(--cog-color));
+    height: 170px;
+    width: 25px;
+}
+
+.cog-two .teeth.vertical::after {
+    background: linear-gradient(to bottom,
+            var(--cog-color),
+            var(--cog-color) 30px,
+            transparent 30px,
+            transparent 80px,
+            var(--cog-color) 80px,
+            var(--cog-color));
+    width: 15px;
+    height: 125px;
+}
+
+.cog-three .teeth.vertical::after {
+    background: linear-gradient(to bottom,
+            var(--cog-color),
+            var(--cog-color) 30px,
+            transparent 30px,
+            transparent 120px,
+            var(--cog-color) 120px,
+            var(--cog-color));
+    height: 160px;
+    width: 25px;
+}
+
+.teeth.horizontal {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+/* Left and right teeth */
+.cog-one .teeth.horizontal {
+    left: -70px;
+    background: linear-gradient(to right,
+            var(--cog-color),
+            var(--cog-color) 30px,
+            transparent 30px,
+            transparent 120px,
+            var(--cog-color) 120px,
+            var(--cog-color));
+    height: 25px;
+    width: 170px;
+}
+
+.cog-two .teeth.horizontal {
+    background: linear-gradient(to right,
+            var(--cog-color),
+            var(--cog-color) 30px,
+            transparent 30px,
+            transparent 80px,
+            var(--cog-color) 80px,
+            var(--cog-color));
+    height: 15px;
+    width: 125px;
+    left: -55px;
+}
+
+.cog-three .teeth.horizontal {
+    left: -70px;
+    background: linear-gradient(to right,
+            var(--cog-color),
+            var(--cog-color) 30px,
+            transparent 30px,
+            transparent 120px,
+            var(--cog-color) 120px,
+            var(--cog-color));
+    height: 25px;
+    width: 160px;
+}
+
+.teeth.horizontal::after {
+    content: '';
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+/* Top left and bottom right teeth */
+.cog-one .teeth.horizontal::after {
+    background: linear-gradient(to right,
+            var(--cog-color),
+            var(--cog-color) 30px,
+            transparent 30px,
+            transparent 120px,
+            var(--cog-color) 120px,
+            var(--cog-color));
+    height: 25px;
+    width: 170px;
+}
+
+.cog-two .teeth.horizontal::after {
+    background: linear-gradient(to right,
+            var(--cog-color),
+            var(--cog-color) 30px,
+            transparent 30px,
+            transparent 80px,
+            var(--cog-color) 80px,
+            var(--cog-color));
+    height: 15px;
+    width: 125px;
+}
+
+.cog-three .teeth.horizontal::after {
+    background: linear-gradient(to right,
+            var(--cog-color),
+            var(--cog-color) 30px,
+            transparent 30px,
+            transparent 120px,
+            var(--cog-color) 120px,
+            var(--cog-color));
+    height: 25px;
+    width: 160px;
+}
