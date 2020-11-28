@@ -24,6 +24,8 @@ Direct links to github-pages
   
   - [Gears](https://abhishekgowda28.github.io/dump/css-daily/gears/)
 
+  - [Emoji](https://abhishekgowda28.github.io/dump/css-daily/emoji/)
+
 [MovingBlock](https://abhishekgowda28.github.io/dump/MovingBlock/)
 
 [google-search](https://abhishekgowda28.github.io/dump/TheOdenProject/google-search/)
