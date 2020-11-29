@@ -10,43 +10,43 @@
 
 @keyframes progress {
     0% {
-        background-image: linear-gradient(to right, #ffffff, #fcd0d0);
+        background-image: linear-gradient(to left, #ffffff, #fcd0d0);
     }
 
     10% {
-        background-image: linear-gradient(to right, #fcd0d0, #f8a8a8);
+        background-image: linear-gradient(to left, #fcd0d0, #f8a8a8);
     }
 
     20% {
-        background-image: linear-gradient(to right, #f8a8a8, #f87474);
+        background-image: linear-gradient(to left, #f8a8a8, #f87474);
     }
 
     30% {
-        background-image: linear-gradient(to right, #f87474, #fa6363);
+        background-image: linear-gradient(to left, #f87474, #fa6363);
     }
 
     40% {
-        background-image: linear-gradient(to right, #fa6363, #fa4747);
+        background-image: linear-gradient(to left, #fa6363, #fa4747);
     }
 
     50% {
-        background-image: linear-gradient(to right, #fa4747, #fc3131);
+        background-image: linear-gradient(to left, #fa4747, #fc3131);
     }
 
     60% {
-        background-image: linear-gradient(to right, #fc3131, #fc2828);
+        background-image: linear-gradient(to left, #fc3131, #fc2828);
     }
 
     70% {
-        background-image: linear-gradient(to right, #fc2828, #fc1f1f);
+        background-image: linear-gradient(to left, #fc2828, #fc1f1f);
     }
 
     80% {
-        background-image: linear-gradient(to right, #fc1f1f, #fa1414);
+        background-image: linear-gradient(to left, #fc1f1f, #fa1414);
     }
 
     90% {
-        background-image: linear-gradient(to right, #fa1414, #fd0a0a);
+        background-image: linear-gradient(to left, #fa1414, #fd0a0a);
     }
 
     100% {
