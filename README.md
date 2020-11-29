@@ -26,6 +26,8 @@ Direct links to github-pages
 
   - [Emoji](https://abhishekgowda28.github.io/dump/css-daily/emoji/)
 
+  - [Progress Bar](https://abhishekgowda28.github.io/dump/css-daily/progress-bar/)
+
 [MovingBlock](https://abhishekgowda28.github.io/dump/MovingBlock/)
 
 [google-search](https://abhishekgowda28.github.io/dump/TheOdenProject/google-search/)
