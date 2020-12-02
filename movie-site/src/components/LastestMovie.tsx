@@ -4,6 +4,7 @@ import { MovieDBURL } from "../constants/urls";
 import { updateMovieList } from "../features/discoverSlice";
 import { MovieResult } from "../interface/movie";
 import { getLatest } from "../service/discover";
+import { Input } from "./Input";
 interface LatestMovieProps {
 
 };
@@ -32,6 +33,12 @@ const LastestMovie = (props: LatestMovieProps) => {
     }
     return (
         <div className="discover">
+            <Input
+                type="text"
+                onChange={(event) => {
+                    window.console.log(event.target.value);
+                }}
+            />
             Latest Movies- {pageNumber}
             <div>
                 <button disabled={pageNumber <= 1 ? true : false} onClick={() => {
