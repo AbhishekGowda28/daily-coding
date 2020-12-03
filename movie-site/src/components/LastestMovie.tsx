@@ -1,9 +1,10 @@
 import React from "react";
-import store from "../store";
 import { MovieDBURL } from "../constants/urls";
 import { updateMovieList } from "../features/discoverSlice";
 import { MovieResult } from "../interface/movie";
+import { get } from "../service/agent";
 import { getLatest } from "../service/discover";
+import store from "../store";
 import { Input } from "./Input";
 interface LatestMovieProps {
 
@@ -13,6 +14,7 @@ const LastestMovie = (props: LatestMovieProps) => {
     const [movieList, setMovieList] = React.useState(store.getState().discover.movies);
     const [images, setImages] = React.useState(store.getState().genre.configuration.images);
     const [pageNumber, setPageNumber] = React.useState(1);
+    const [text, setText] = React.useState("");
     React.useEffect(() => {
         getLatest({ url: MovieDBURL.discover.movie, pageNumber: pageNumber }).then(result => {
             console.log(result)
@@ -33,12 +35,20 @@ const LastestMovie = (props: LatestMovieProps) => {
     }
     return (
         <div className="discover">
-            <Input
-                type="text"
-                onChange={(event) => {
-                    window.console.log(event.target.value);
-                }}
-            />
+            <div>
+                <Input
+                    type="text"
+                    onChange={(event) => {
+                        setText(event.target.value);
+                        // window.console.log(event.target.value);
+                    }}
+                />
+                <button onClick={() => {
+                    get(`https://api.themoviedb.org/3/search/movie?api_key=95bb88008f8df4bbc4f8a9220fc14508&language=en-US&query=${text}`).then((result) => {
+                        window.console.log(result);
+                    });
+                }}>Search</button>
+            </div>
             Latest Movies- {pageNumber}
             <div>
                 <button disabled={pageNumber <= 1 ? true : false} onClick={() => {
