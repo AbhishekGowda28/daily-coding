@@ -14,6 +14,10 @@ const MovieDBURL = {
     configuration:{
         api: `${BaseURL}/configuration?api_key=${APIKEY}&language=en-US`
     },
+    search: {
+        movie: `${BaseURL}/search/movie?api_key=${APIKEY}&language=en-US`,
+        tv: `${BaseURL}/search/tv?api_key=${APIKEY}&language=en-US`
+    }
 };
 
 export { MovieDBURL };

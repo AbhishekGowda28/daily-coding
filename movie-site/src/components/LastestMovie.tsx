@@ -40,7 +40,6 @@ const LastestMovie = (props: LatestMovieProps) => {
                     type="text"
                     onChange={(event) => {
                         setText(event.target.value);
-                        // window.console.log(event.target.value);
                     }}
                 />
                 <button onClick={() => {
@@ -49,7 +48,7 @@ const LastestMovie = (props: LatestMovieProps) => {
                     });
                 }}>Search</button>
             </div>
-            Latest Movies- {pageNumber}
+            <div>Latest Movies- {pageNumber}</div>
             <div>
                 <button disabled={pageNumber <= 1 ? true : false} onClick={() => {
                     setPageNumber(pageNumber - 1);
