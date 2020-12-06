@@ -8,7 +8,7 @@
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{39F07B30-029D-40B1-96F0-C0CD538BCCCE}
+AppId={{93ED3E6F-8300-4E14-94E3-119EAEF0CD9F}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
@@ -16,7 +16,8 @@ DefaultDirName={autopf}\{#MyAppName}
 DisableProgramGroupPage=yes
 ; Remove the following line to run in administrative install mode (install for all users.)
 PrivilegesRequired=lowest
-OutputBaseFilename=mysetup
+OutputDir=D:\git\daily-coding\node_with_electron\reddit_app
+OutputBaseFilename=Reddit
 SetupIconFile=D:\git\daily-coding\node_with_electron\reddit_app\resource\reddit.ico
 Compression=lzma
 SolidCompression=yes
@@ -30,6 +31,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 
 [Files]
 Source: "D:\git\daily-coding\node_with_electron\reddit_app\reddit_app-win32-x64\reddit_app.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\git\daily-coding\node_with_electron\reddit_app\reddit_app-win32-x64\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
