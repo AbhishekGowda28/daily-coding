@@ -1,0 +1,15 @@
+{
+  "name": "reddit_app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "yarn install",
+    "start": "electron .",
+    "build": "electron-packager . --asar --icon=resource/reddit.ico"
+  },
+  "devDependencies": {
+    "electron": "^11.0.3",
+    "electron-packager": "^15.2.0"
+  }
+}
