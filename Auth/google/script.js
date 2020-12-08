@@ -8,8 +8,12 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", () => {
         console.log("Clicked on login button");
         fetch(authorizeURL, { mode: "no-cors" }).
+            then(response => {
+                console.log(response.json());
+                return response.json();
+            }).
             then(result => {
-                console.log(result);
+                console.log("Result", result);
             }).
             catch(error => {
                 console.error("Error", error);
