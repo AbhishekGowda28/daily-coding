@@ -1,8 +1,19 @@
+let properties = [];
+
+function recordProperties(keys) {
+    keys.forEach((key) => {
+        if (properties.includes(key) === false) {
+            properties.push(key);
+        }
+    });
+}
+
 function JSON2CSV(json) {
     const keys = Object.keys(json);
+    recordProperties(keys);
     const values = Object.values(json);
     let keyStr = "";
-    keys.forEach((key) => {
+    properties.forEach((key) => {
         keyStr += `${key}\t`;
     });
     keyStr += "\n";
