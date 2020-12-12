@@ -2,8 +2,8 @@ let mango = require("mongodb");
 const mongoClient = mango.MongoClient;
 
 const MONGO_URL: string = "mongodb://localhost:27017/";
-let DATABASE: string;
-const collections: string[] = [];
+let DATABASE: string = "userprofile";
+const collections: string[] = ["customers"];
 
 function createDatabase(databaseName: string) {
     const URL = `${MONGO_URL}/${databaseName}`;
@@ -60,10 +60,9 @@ function getRecords(query: any): any[] {
     let data = [];
     mongoClient.connect(MONGO_URL, function (err, db) {
         if (err) throw err;
-        let dbo = db.db("userprofile");
-        const collection = "customers";
+        let dbo = db.db(DATABASE);
 
-        dbo.collection(collection).find(query).toArray(function (err, result) {
+        dbo.collection(collections[0]).find(query).toArray(function (err, result) {
             if (err) throw err;
             console.log(result);
             data = result;
