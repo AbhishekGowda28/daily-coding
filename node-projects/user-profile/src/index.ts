@@ -55,3 +55,22 @@ function insertRecords(records: any) {
         });
     });
 }
+
+function getRecords(query: any): any[] {
+    let data = [];
+    mongoClient.connect(MONGO_URL, function (err, db) {
+        if (err) throw err;
+        let dbo = db.db("userprofile");
+        const collection = "customers";
+
+        dbo.collection(collection).find(query).toArray(function (err, result) {
+            if (err) throw err;
+            console.log(result);
+            data = result;
+            db.close();
+        });
+    });
+    return data;
+}
+
+getRecords({ address: /^H/ });
