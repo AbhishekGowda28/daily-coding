@@ -1,5 +1,5 @@
-import mango from "mongodb";
 import express from "express";
+import mango from "mongodb";
 
 const app = express();
 const mongoClient = mango.MongoClient;
@@ -60,20 +60,20 @@ function insertRecords(records: any) {
     });
 }
 
-function getRecords(query: any): any[] {
+async function getRecords(query: any): Promise<any> {
     let data = [];
-    mongoClient.connect(MONGO_URL, function (err, db) {
-        if (err) throw err;
-        let dbo = db.db(DATABASE);
 
-        dbo.collection(collections[0]).find(query).toArray(function (err, result) {
+    return new Promise(async (resolve) => {
+        mongoClient.connect(MONGO_URL, async function (err, db) {
             if (err) throw err;
-            console.log(result);
-            data = result;
-            db.close();
+            await db.db(DATABASE).collection(collections[0]).find(query).toArray(function (err, result) {
+                if (err) throw err;
+                db.close();
+                data = result;
+                resolve(data);
+            });
         });
     });
-    return data;
 }
 
 function deleteRecords(query: any): any {
@@ -109,6 +109,14 @@ function updateRecords(currentRecord: any, newRecord: any): any {
 
 app.get("/", (request, response) => {
     response.send(`App Powered by Express ${request.path}`);
+});
+
+app.get("/user", (request, response) => {
+    getRecords({ name: /.*/ }).then((data) => {
+        response.status(200).json({
+            data: data
+        });
+    });
 });
 
 app.listen(PORT, () => {
