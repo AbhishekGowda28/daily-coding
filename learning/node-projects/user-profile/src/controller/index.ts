@@ -32,14 +32,25 @@ export function createCollection(collectionName: string) {
     });
 }
 
-export function insertRecord(record: any) {
-    mongoClient.connect(MONGO_URL, function (err: any, db: { db: (arg0: string) => any; close: () => void; }) {
-        if (err) throw err;
-        const dbo = db.db(DATABASE);
-        dbo.collection(collections[0]).insertOne(record, function (err: any, res: any) {
-            if (err) throw err;
-            console.log("1 document inserted");
-            db.close();
+export async function insertRecord(record: any) {
+    return new Promise(async (resolve) => {
+        mongoClient.connect(MONGO_URL, async function (err: any, db: { db: (arg0: string) => any; close: () => void; }) {
+            if (err) {
+                resolve(false);
+                throw err;
+            } else {
+                const dbo = db.db(DATABASE);
+                await dbo.collection(collections[0]).insertOne(record, function (err: any, res: any) {
+                    if (err) {
+                        resolve(false);
+                        throw err;
+                    } else {
+                        console.log("1 document inserted");
+                        db.close();
+                        resolve(true);
+                    }
+                });
+            }
         });
     });
 }
