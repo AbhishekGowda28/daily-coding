@@ -1,4 +1,4 @@
-import mango from "mongodb";
+import mango, { ObjectID } from "mongodb";
 
 const mongoClient = mango.MongoClient;
 
@@ -45,7 +45,6 @@ export async function insertRecord(record: any) {
                         resolve(false);
                         throw err;
                     } else {
-                        console.log("1 document inserted");
                         db.close();
                         resolve(true);
                     }
@@ -62,7 +61,6 @@ export function insertRecords(records: any) {
         const dbo = db.db(DATABASE);
         dbo.collection(collections[0]).insertMany(records, function (err: any, res: { insertedCount: string; }) {
             if (err) throw err;
-            console.log("Number of documents inserted: " + res.insertedCount);
             db.close();
         });
     });
@@ -85,29 +83,42 @@ export async function getRecords(query: any): Promise<any> {
 }
 
 export async function deleteRecords(query: any): Promise<any> {
-    return new Promise(() => {
+    return new Promise((resolve) => {
         mongoClient.connect(MONGO_URL, async function (err, db) {
-            if (err) throw err;
+            if (err) {
+                resolve(false);
+                throw err;
+            }
             const dbo = db.db(DATABASE);
-            await dbo.collection(collections[0]).deleteMany(query, function (err, obj) {
-                if (err) throw err;
-                console.log(obj.result.n + " document(s) deleted");
-                db.close();
+            await dbo.collection(collections[0]).deleteOne(query, function (err, obj) {
+                if (err) {
+                    resolve(false);
+                    throw err;
+                } else {
+                    db.close();
+                    resolve(true);
+                }
             });
         })
     });
 }
 
 export async function updateRecords(currentRecord: any, newRecord: any): Promise<any> {
-    return new Promise(() => {
+    return new Promise((resolve) => {
         mongoClient.connect(MONGO_URL, async function (err, db) {
-            if (err) throw err;
+            if (err) {
+                resolve(false);
+                throw err;
+            }
             const dbo = db.db(DATABASE);
-
-            await dbo.collection(collections[0]).updateMany(currentRecord, newRecord, function (err, res) {
-                if (err) throw err;
-                console.log("1 document updated");
-                db.close();
+            await dbo.collection(collections[0]).updateOne(currentRecord, { $set: { ...newRecord } }, { upsert: true }, function (err, res) {
+                if (err) {
+                    resolve(false);
+                    throw err;
+                } else {
+                    db.close();
+                    resolve(true);
+                }
             });
         });
     });
