@@ -1,6 +1,6 @@
 import bodyParser from "body-parser";
 import express from "express";
-import { getRecords, insertRecord } from "./controller";
+import { deleteRecords, getRecords, insertRecord, updateRecords } from "./controller";
 
 const app = express();
 const PORT = 3000;
@@ -22,10 +22,10 @@ app.get("/user", (request, response) => {
 });
 
 app.post("/create", (request, response) => {
-    // const properties = ["firstName", "lastName", "age", "gender", "email"];
+    const id = request.body.id;
     const record = request.body;
-    // const bodyKeys = Object.keys(record);
-    insertRecord(record).then((result) => {
+    delete record._id;
+    insertRecord({ ...record, _id: id }).then((result) => {
         if (result) {
             response.status(200).send(true);
         } else {
@@ -36,4 +36,20 @@ app.post("/create", (request, response) => {
 
 app.listen(PORT, () => {
     console.log("Server started");
+});
+
+
+app.post("/update", (request, response) => {
+    const id = request.body.id;
+    const record = request.body;
+    updateRecords({ _id: id }, record).then(() => {
+        response.status(200).send(true);
+    });
+});
+
+app.post("/delete", (request, response) => {
+    const id = request.body.id;
+    deleteRecords({ _id: id }).then(() => {
+        response.status(200).send(true);
+    });
 });
