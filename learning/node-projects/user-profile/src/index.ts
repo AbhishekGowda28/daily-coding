@@ -1,6 +1,5 @@
 import bodyParser from "body-parser";
 import express from "express";
-import { ObjectID } from "mongodb";
 import { deleteRecords, getRecords, insertRecord, updateRecords } from "./controller";
 
 const app = express();
@@ -14,52 +13,45 @@ app.get("/", (request, response) => {
     response.send(`App Powered by Express ${request.path}`);
 });
 
-app.get("/user", (request, response) => {
-    getRecords(request.query).then((data) => {
-        response.status(200).json({
-            data: data
+app.route("/user").
+    get((request, response) => {
+        getRecords(request.query).then((data) => {
+            response.status(200).json({
+                data: data
+            });
+        });
+    }).post((request, response) => {
+        insertRecord({ ...request.body }).then((result) => {
+            if (result) {
+                response.status(200).send(true);
+            } else {
+                response.send(true);
+            }
+        });
+    }).
+    put((request, response) => {
+        const record = Object.assign({}, request.body);
+        const id = request.body._id;
+        delete record._id;
+        updateRecords({ _id: id }, record).then((result) => {
+            if (result) {
+                response.status(200).send(true);
+            } else {
+                response.send(false);
+            }
+        });
+    }).
+    delete((request, response) => {
+        const id = request.body._id;
+        deleteRecords({ _id: id }).then((result) => {
+            if (result) {
+                response.status(200).send(true);
+            } else {
+                response.send(false);
+            }
         });
     });
-});
-
-app.post("/create", (request, response) => {
-    const record = request.body;
-    const _id = request.body._id;
-    delete record._id;
-    insertRecord({ ...record, _id }).then((result) => {
-        if (result) {
-            response.status(200).send(true);
-        } else {
-            response.send(true);
-        }
-    });
-});
 
 app.listen(PORT, () => {
     console.log("Server started");
-});
-
-
-app.post("/update", (request, response) => {
-    const record = Object.assign({}, request.body);
-    const id = request.body._id;
-    delete record._id;
-    updateRecords({ _id: id }, record).then((result) => {
-        if (result) {
-            response.status(200).send(true);
-        } else {
-            response.send(false);
-        }
-    });
-});
-
-app.post("/delete", (request, response) => {
-    const id = request.body._id;
-    deleteRecords({ _id: id }).then((result) => {
-        if (result) {
-            response.status(200).send(true);
-        } else {
-            response.send(false);
-        }
-    });
 });
