@@ -1,4 +1,4 @@
-import mango, { ObjectID } from "mongodb";
+import mango from "mongodb";
 
 const mongoClient = mango.MongoClient;
 

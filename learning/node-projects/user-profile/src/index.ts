@@ -13,7 +13,7 @@ app.get("/", (request, response) => {
     response.send(`App Powered by Express ${request.path}`);
 });
 
-app.route("/user").
+export const server = app.route("/user").
     get((request, response) => {
         getRecords(request.query).then((data) => {
             response.status(200).json({
