@@ -1,19 +1,19 @@
-import * as chai from 'chai';
-import 'mocha';
-import { server } from '../../index';
-import chaiHttp = require('chai-http');
-
-chai.use(chaiHttp);
-// const expect = chai.expect;
-
-describe('Hello API Request', () => {
-    it('should return response on call', () => {
-        let chaiLib = <any>chai;
-        let chaiRequestLib = chaiLib.default.request;
-        return chaiRequestLib(server).get('/user')
-            .then(res => {
-                console.log(res);
-                // chai.expect(res.text).to.eql("true");
-            })
-    })
-})
+const expect = require("chai").expect;
+const request = require("supertest");
+// import { server } from "../../index";
+const { server } = require("../../index");
+describe("Test Post /user", () => {
+    it("Posting a new user", (done) => {
+        request(server).
+            post("/user").
+            send({
+                _id: "2",
+                name: "test name"
+            }).
+            then((response) => {
+                const body = response.body;
+                expect(body).to.true;
+                done();
+            });
+    });
+});

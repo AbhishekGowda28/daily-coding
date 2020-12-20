@@ -1,4 +1,5 @@
-import bodyParser from "body-parser";
+// import bodyParser from "body-parser";
+const bodyParser = require("body-parser");
 import express from "express";
 import { deleteRecords, getRecords, insertRecord, updateRecords } from "./controller";
 
