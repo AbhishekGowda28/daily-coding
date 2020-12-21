@@ -1,7 +1,6 @@
 const expect = require("chai").expect;
 const request = require("supertest");
-// import { server } from "../../index";
-const { server } = require("../../index");
+import server from "../../index";
 describe("Test Post /user", () => {
     it("Posting a new user", (done) => {
         request(server).

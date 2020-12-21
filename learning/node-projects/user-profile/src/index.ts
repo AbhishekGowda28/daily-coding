@@ -1,10 +1,11 @@
-// import bodyParser from "body-parser";
-const bodyParser = require("body-parser");
+import bodyParser from "body-parser";
 import express from "express";
 import { deleteRecords, getRecords, insertRecord, updateRecords } from "./controller";
 
 const app = express();
 const PORT = 3000;
+
+const server = app.listen(PORT);
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -14,7 +15,7 @@ app.get("/", (request, response) => {
     response.send(`App Powered by Express ${request.path}`);
 });
 
-export const server = app.route("/user").
+app.route("/user").
     get((request, response) => {
         getRecords(request.query).then((data) => {
             response.status(200).json({
@@ -53,6 +54,4 @@ export const server = app.route("/user").
         });
     });
 
-app.listen(PORT, () => {
-    console.log("Server started");
-});
+export default server;
