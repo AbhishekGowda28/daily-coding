@@ -10,15 +10,15 @@ fetch(`${BaseURL}/${endPoints.all}`, {
         "x-rapidapi-key": Key,
         "x-rapidapi-host": host
     }
-})
-.then(response => {
-    console.log(response);
-    response.json().then(result => {
-        const counties = document.getElementById("counties");
-        const countryName = result.map(country => country.name)
-        counties.innerText = JSON.stringify(countryName);
-    })
-    })
-    .catch(err => {
+}).
+    then(response => {
+        response.json().
+            then(result => {
+                const counties = document.getElementById("counties");
+                let countryNames = "";
+                result.forEach(country => countryNames += country.name + "\n");
+                counties.innerText = countryNames
+            });
+    }).catch(err => {
         console.error(err);
     });
