@@ -1,29 +1,38 @@
-import { GoogleLogin } from 'react-google-login';
+import React from "react";
+import { GoogleLogin, GoogleLogout } from 'react-google-login';
+import { googleClientID } from "../constants/secrets";
 import '../styles/App.css';
 
 function App() {
+  const [loggedIn, setLoggedIn] = React.useState(false);
   return (
     <div className="App">
-      <GoogleWithLogin />
+      {loggedIn ? <GoogleLogout clientId={googleClientID} onLogoutSuccess={() => { setLoggedIn(false) }} /> :
+        <GoogleWithLogin signedIn={(status: boolean) => { setLoggedIn(status) }} />}
     </div>
   );
 }
 
 export default App;
-
-function GoogleWithLogin() {
+interface GoogleLoginProps {
+  signedIn: Function;
+}
+function GoogleWithLogin(props: GoogleLoginProps) {
   function onLoginSuccess(response: any) {
     console.log(response);
+    props.signedIn(true);
   }
   function onLoginFailure(response: any) {
     console.error(response);
+    props.signedIn(false);
   }
   return (
     <GoogleLogin
-      clientId="550963546957-rhos917qpok76esjf20qn9d05gbj86gu.apps.googleusercontent.com"
+      clientId={googleClientID}
       buttonText="Login with google"
       onSuccess={onLoginSuccess}
       onFailure={onLoginFailure}
+      theme="light"
       isSignedIn={true}
     />
   )
