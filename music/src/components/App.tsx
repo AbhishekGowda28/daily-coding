@@ -16,14 +16,15 @@ function GoogleWithLogin() {
     console.log(response);
   }
   function onLoginFailure(response: any) {
-    console.log(response);
+    console.error(response);
   }
   return (
     <GoogleLogin
       clientId="550963546957-rhos917qpok76esjf20qn9d05gbj86gu.apps.googleusercontent.com"
-      buttonText="Login"
+      buttonText="Login with google"
       onSuccess={onLoginSuccess}
       onFailure={onLoginFailure}
+      isSignedIn={true}
     />
   )
 }
