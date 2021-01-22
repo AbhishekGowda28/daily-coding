@@ -1,5 +1,5 @@
 import React from "react";
-import { GoogleLogin, GoogleLogout } from 'react-google-login';
+import { GoogleLogin, GoogleLoginResponse, GoogleLoginResponseOffline, GoogleLogout } from 'react-google-login';
 import { googleClientID } from "../constants/secrets";
 import '../styles/App.css';
 
@@ -8,7 +8,12 @@ function App() {
   return (
     <div className="App">
       {loggedIn ? <GoogleLogout clientId={googleClientID} onLogoutSuccess={() => { setLoggedIn(false) }} /> :
-        <GoogleWithLogin signedIn={(status: boolean) => { setLoggedIn(status) }} />}
+        <GoogleWithLogin
+          signedIn={(status: boolean) => { setLoggedIn(status) }}
+          loginTokens={(result: GoogleLoginResponse) => {
+            console.log(result);
+          }}
+        />}
     </div>
   );
 }
@@ -16,10 +21,11 @@ function App() {
 export default App;
 interface GoogleLoginProps {
   signedIn: Function;
+  loginTokens: Function;
 }
 function GoogleWithLogin(props: GoogleLoginProps) {
-  function onLoginSuccess(response: any) {
-    console.log(response);
+  function onLoginSuccess(response: GoogleLoginResponse | GoogleLoginResponseOffline) {
+    props.loginTokens(response);
     props.signedIn(true);
   }
   function onLoginFailure(response: any) {
@@ -33,7 +39,6 @@ function GoogleWithLogin(props: GoogleLoginProps) {
       onSuccess={onLoginSuccess}
       onFailure={onLoginFailure}
       theme="light"
-      isSignedIn={true}
     />
   )
 }
