@@ -1,0 +1,1 @@
+export const youtubeBaseURL = "https://www.googleapis.com/youtube/v3/search";
