@@ -1,44 +1,21 @@
 import React from "react";
-import { GoogleLogin, GoogleLoginResponse, GoogleLoginResponseOffline, GoogleLogout } from 'react-google-login';
-import { googleClientID } from "../constants/secrets";
 import '../styles/App.css';
+import { GoogleWithLogin } from "./google/Login";
+import { LogOutOfGoogle } from "./google/Logout";
+
 
 function App() {
   const [loggedIn, setLoggedIn] = React.useState(false);
   return (
     <div className="App">
-      {loggedIn ? <GoogleLogout clientId={googleClientID} onLogoutSuccess={() => { setLoggedIn(false) }} /> :
-        <GoogleWithLogin
-          signedIn={(status: boolean) => { setLoggedIn(status) }}
-          loginTokens={(result: GoogleLoginResponse) => {
-            console.log(result);
-          }}
-        />}
+      <div className="authorize__google">
+        {loggedIn ?
+          <LogOutOfGoogle onSucessfulLogout={(logoutStatus) => { setLoggedIn(logoutStatus) }} /> :
+          <GoogleWithLogin signedIn={(loginStatus) => { setLoggedIn(loginStatus) }} loginTokens={(result) => { console.log(result); }}
+          />}
+      </div>
     </div>
   );
 }
 
 export default App;
-interface GoogleLoginProps {
-  signedIn: Function;
-  loginTokens: Function;
-}
-function GoogleWithLogin(props: GoogleLoginProps) {
-  function onLoginSuccess(response: GoogleLoginResponse | GoogleLoginResponseOffline) {
-    props.loginTokens(response);
-    props.signedIn(true);
-  }
-  function onLoginFailure(response: any) {
-    console.error(response);
-    props.signedIn(false);
-  }
-  return (
-    <GoogleLogin
-      clientId={googleClientID}
-      buttonText="Login with google"
-      onSuccess={onLoginSuccess}
-      onFailure={onLoginFailure}
-      theme="light"
-    />
-  )
-}
