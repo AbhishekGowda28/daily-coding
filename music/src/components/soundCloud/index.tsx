@@ -1,6 +1,6 @@
 import React from "react";
 
-function LoginWithSoundCloud() {
+export function LoginWithSoundCloud() {
     return (
         <div className="authorize__soundCloud">
             SoundCloud
