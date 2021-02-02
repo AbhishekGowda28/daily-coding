@@ -22,6 +22,7 @@ export function GoogleWithLogin(props: GoogleLoginProps) {
             onSuccess={onLoginSuccess}
             onFailure={onLoginFailure}
             theme="light"
+            scope={"https://www.googleapis.com/auth/youtube"}
         />
     )
 }
