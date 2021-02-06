@@ -5,6 +5,7 @@ interface LogOutOfGoogleProps {
     onSucessfulLogout(logoutStatus: boolean): void;
 }
 export function LogOutOfGoogle(props: LogOutOfGoogleProps) {
+    console.log("Logout");
     return (
         <GoogleLogout
             clientId={googleClientID}
