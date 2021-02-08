@@ -12,7 +12,6 @@ export function GoogleWithLogin(props: GoogleLoginProps) {
         props.signedIn(true);
     }
     function onLoginFailure(response: any) {
-        console.error(response);
         props.signedIn(false);
     }
     return (
