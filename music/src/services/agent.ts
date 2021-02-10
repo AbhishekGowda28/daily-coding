@@ -1,10 +1,9 @@
 export async function get(url: string) {
-    return fetch(url, { method: "get" }).
-        then(response => { return response.json() }).
-        then(result => {
+    return fetch(url, { method: "get" })
+        .then(response => { return response.json() })
+        .then(result => {
             return result;
-        }).
-        catch((error: Error) => {
+        }).catch((error: Error) => {
             console.error(`Error in fetching ${url}`, error.name);
             console.error(error.message)
             console.trace(error.stack);
