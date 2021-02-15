@@ -1,11 +1,6 @@
 import { API_KEY } from "../../constants/secrets";
+import { YoutTubeItemProperties, YouTubeSearchResult } from "../../interface/youTube/search";
 import { get } from "../../services/agent";
-
-type YoutTubeItemProperties = {
-    maxResults: number;
-    queryString: string;
-    part: string;
-}
 
 export class YouTubeClass {
     private YTURL = {
@@ -13,10 +8,10 @@ export class YouTubeClass {
     };
     private key = API_KEY.substr(3, 39);
 
-    async getSearchResult(searchItemProperties: YoutTubeItemProperties) {
+    async getSearchResult(searchItemProperties: YoutTubeItemProperties): Promise<YouTubeSearchResult> {
         return await get(`${this.YTURL.search}?maxResults=${searchItemProperties.maxResults}&part=${searchItemProperties.part}&q=${searchItemProperties.queryString}&key=${this.key}`).then(response => {
             return response;
-        });
+        }).catch(e => { return [] });
     }
 
 }

@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+.tag{
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-top: 8px;
+  width: 60px;
+}
+
+.tag.video{
+  background-color: #dd203f;
+}
+
+.tag.channel {
+  background-color: #1ba71b;
+}
+
+.tag.playlist {
+  background-color: #0284b8;
+}
