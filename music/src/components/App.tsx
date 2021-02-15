@@ -30,7 +30,7 @@ function App() {
             const thumbnailsType = tagKind === "channel" ? "high" : "medium";
             return (
               <div className="item">
-                <img src={item.snippet.thumbnails[thumbnailsType].url} width={"320px"} height={"180px"} />
+                <img src={item.snippet.thumbnails[thumbnailsType].url} width={"320px"} height={"180px"} alt={item.snippet.title}/>
                 <span className={`tag ${tagKind}`}>{tagKind}</span>
                 <span>{item.snippet.title}</span>
               </div>
