@@ -1,14 +1,14 @@
 export type YoutTubeItemProperties = {
-    maxResults: number;
-    queryString: string;
     part: string;
+    queryString: string;
+    nextPageToken?: string;
 }
 
 export type YouTubeSearchResult = {
     etag: string;
     items: SearchItem[];
     kind: string;
-    nextPageToke: string;
+    nextPageToken: string;
     pageInfo: {
         totalResults: number;
         resultsPerPage: number;
