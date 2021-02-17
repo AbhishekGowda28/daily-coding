@@ -2,6 +2,8 @@ import React from "react";
 import { YouTubeClass } from "../components/youTube";
 import { SearchItem } from "../interface/youTube/search";
 import '../styles/App.css';
+import Button from "./common/Button";
+import Input from "./common/Input";
 
 function App() {
   const [items, setItems] = React.useState<SearchItem[]>([]);
@@ -13,25 +15,29 @@ function App() {
     <div className="App">
       <section id="video">
         <div>
-          <input
-            onChange={(event) => {
-              setSearchString(event.target.value);
+          <Input
+            value={searchString}
+            onChange={(value) => {
+              setSearchString(value);
               setNextToken("");
             }}
           />
-          <button onClick={() => {
-            youTube.getSearchResult({
-              part: "snippet", queryString: searchString,
-              nextPageToken: nextToken
-            }).then(searchItems => {
-              if (searchItems.nextPageToken !== undefined) {
-                setNextToken(searchItems.nextPageToken);
-              } else {
-                setNextToken("");
-              }
-              searchItems === undefined ? setItems([]) : setItems(searchItems.items);
-            });
-          }}>Search</button>
+          <Button
+            text="Search"
+            onClick={() => {
+              youTube.getSearchResult({
+                part: "snippet", queryString: searchString,
+                nextPageToken: nextToken
+              }).then(searchItems => {
+                if (searchItems.nextPageToken !== undefined) {
+                  setNextToken(searchItems.nextPageToken);
+                } else {
+                  setNextToken("");
+                }
+                searchItems === undefined ? setItems([]) : setItems(searchItems.items);
+              });
+            }}
+          />
         </div>
         <div className="items">
           {items.map(item => {
@@ -46,12 +52,17 @@ function App() {
             )
           })}
         </div>
-        {nextToken.length > 0 ? <button onClick={() => {
-          youTube.getSearchResult({ part: "snippet", queryString: searchString, nextPageToken: nextToken }).then(result => {
-            setItems([...items, ...result.items]);
-            setNextToken(result.nextPageToken);
-          });
-        }}>Next</button> : <React.Fragment />}
+        {nextToken.length > 0 ?
+          <Button
+            text="NEXT"
+            onClick={() => {
+              youTube.getSearchResult({ part: "snippet", queryString: searchString, nextPageToken: nextToken }).then(result => {
+                setItems([...items, ...result.items]);
+                setNextToken(result.nextPageToken);
+              });
+            }}
+          />
+          : <React.Fragment />}
       </section>
     </div>
   );
