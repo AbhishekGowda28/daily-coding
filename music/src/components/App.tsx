@@ -25,8 +25,7 @@ function App() {
           <Button
             text="Search"
             onClick={() => {
-              youTube.getSearchResult({
-                part: "snippet", queryString: searchString,
+              youTube.getSearchResult({ queryString: searchString,
                 nextPageToken: nextToken
               }).then(searchItems => {
                 if (searchItems.nextPageToken !== undefined) {
@@ -56,7 +55,7 @@ function App() {
           <Button
             text="NEXT"
             onClick={() => {
-              youTube.getSearchResult({ part: "snippet", queryString: searchString, nextPageToken: nextToken }).then(result => {
+              youTube.getSearchResult({ queryString: searchString, nextPageToken: nextToken }).then(result => {
                 setItems([...items, ...result.items]);
                 setNextToken(result.nextPageToken);
               });

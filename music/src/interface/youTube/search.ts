@@ -1,7 +1,6 @@
 export type YoutTubeItemProperties = {
-    part: string;
     queryString: string;
-    nextPageToken?: string;
+    nextPageToken: string;
 }
 
 export type YouTubeSearchResult = {
