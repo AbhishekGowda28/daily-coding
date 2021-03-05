@@ -40,7 +40,7 @@ function App() {
           />
         </div>
         <div className="items">
-          {items.map(item => <DisplayItem item={item} />)}
+          {items.map(item => <DisplayItem item={item} key={item.id.channelId} />)}
         </div>
         {nextToken.length > 0 ?
           <Button
@@ -59,6 +59,7 @@ function App() {
 }
 
 function DisplayItem(props: { item: SearchItem }) {
+  console.log("Items", props.item);
   const tagKind = props.item.id.kind.split("#")[1];
   const thumbnailsType = tagKind === "channel" ? "high" : "medium";
   return (

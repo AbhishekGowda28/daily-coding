@@ -29,7 +29,6 @@ class Input extends React.Component<InputProps, InputState> {
             />
         )
     }
-
 }
 
 export default Input;
