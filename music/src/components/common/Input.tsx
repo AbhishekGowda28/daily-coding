@@ -1,34 +1,14 @@
-import React from "react";
-
 interface InputProps {
     value: string;
     placeholder?: string;
     onChange: (input: string) => void;
 }
 
-type InputState = {
-    value: string;
-}
+function Input(props: InputProps) {
 
-class Input extends React.Component<InputProps, InputState> {
-    constructor(props: InputProps) {
-        super(props);
-        this.state = {
-            value: this.props.value
-        };
-    }
-
-    render() {
-        return (
-            <input
-                onChange={(event) => {
-                    this.setState({ value: event.target.value }, () => {
-                        this.props.onChange(this.state.value)
-                    });
-                }}
-            />
-        )
-    }
+    return (
+        <input onChange={(event) => { props.onChange(event.target.value); }} />
+    )
 }
 
 export default Input;
