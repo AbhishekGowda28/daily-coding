@@ -1,3 +1,3 @@
 # Music App
 
-Fetch Music from SoundCloud and Youtube
+Fetch Music from Youtube
