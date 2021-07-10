@@ -1,0 +1,15 @@
+{
+    "name": "chat-room",
+    "version": "1.0.0",
+    "description": "Chat room using nodeJS",
+    "main": "index.js",
+    "scripts": {
+        "start:server": "node server.js"
+    },
+    "author": "Abhishek Gowda",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "ws": "^7.3.0"
+    }
+}

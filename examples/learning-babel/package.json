@@ -1,0 +1,16 @@
+{
+  "name": "learning-babel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "tsc",
+    "build": "babel build -d lib"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "typescript": "^4.1.3"
+  }
+}

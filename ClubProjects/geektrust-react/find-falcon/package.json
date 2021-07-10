@@ -1,31 +1,32 @@
 {
-  "name": "find-falcon",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
-  "main": "index.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/AbhishekGowda28/geektrust/tree/master/find-falcon"
-  },
-  "keywords": [
-    "geektrust",
-    "react",
-    "javascript"
-  ],
-  "author": "Abhishek Gowda",
-  "license": "MIT"
+    "name": "find-falcon",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "react": "^16.3.2",
+        "react-dom": "^16.3.2",
+        "react-router-dom": "^4.2.2",
+        "react-scripts": "1.1.4"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject",
+        "reinstall": "rm -rf node_modules yarn.lock && yarn install"
+    },
+    "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+    "main": "index.js",
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AbhishekGowda28/geektrust/tree/master/find-falcon"
+    },
+    "keywords": [
+        "geektrust",
+        "react",
+        "javascript"
+    ],
+    "author": "Abhishek Gowda",
+    "license": "MIT"
 }
